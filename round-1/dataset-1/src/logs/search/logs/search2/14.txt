@@ -1,0 +1,64 @@
+Found 8 dataset(s) for query='do not answer'
+
+============================================================
+Dataset 1: LibrAI/do-not-answer
+Downloads: 4,853 | Likes: 54
+Description: 
+
+# Do-Not-Answer: A Dataset for Evaluating Safeguards in LLMs
+
+## Overview
+
+*Do not answer* is an open-source dataset to evaluate LLMs' safety mechanism at a low cost. The dataset is curated and filt...
+Tags: task_categories:text-generation, language:en, license:apache-2.0, size_categories:n<1K, format:parquet
+
+============================================================
+Dataset 2: giskardai/do-not-answer-scenarios
+Downloads: 185 | Likes: 0
+Description: 
+# Do-Not-Answer Scenarios
+
+Refusal-evaluation scenarios derived from the Do-Not-Answer dataset, serialized as
+[`giskard`](https://github.com/Giskard-AI/giskard) `Scenario` objects (one JSON object pe...
+Tags: source_datasets:LibrAI/do-not-answer, language:en, license:cc-by-nc-sa-4.0, size_categories:n<1K, format:json
+
+============================================================
+Dataset 3: OCM-7898/do-not-answer-modified
+Downloads: 71 | Likes: 0
+Tags: size_categories:n<1K, format:parquet, format:optimized-parquet, modality:tabular, modality:text
+
+============================================================
+Dataset 4: kunishou/do-not-answer-ja
+Downloads: 56 | Likes: 4
+Description: This dataset was created by automatically translating "do-not-answer" into Japanese.  
+This dataset is licensed under CC-BY-NC-SA-4.0  
+  
+do-not-answer-ja  
+https://github.com/kunishou/do-not-answer-...
+Tags: license:cc-by-nc-sa-4.0, size_categories:n<1K, format:json, modality:text, library:datasets
+
+============================================================
+Dataset 5: puwaer/do_not_answer_jp_response
+Downloads: 40 | Likes: 0
+Description: # puwaer/do_not_answer_jp_response
+This dataset is based on [kunishou/do-not-answer-ja](https://huggingface.co/datasets/kunishou/do-not-answer-ja), with model answers added for both positive and negat...
+Tags: task_categories:text-generation, task_categories:fill-mask, language:jp, license:cc-by-nc-sa-4.0, size_categories:n<1K
+
+============================================================
+Dataset 6: puwaer/do_not_answer_zh_response
+Downloads: 40 | Likes: 0
+Description: # puwaer/do_not_answer_en_response
+This dataset is based on [LibrAI/do-not-answer](https://huggingface.co/datasets/LibrAI/do-not-answer) translated into **Chinese**, with model answers added for both ...
+Tags: task_categories:text-generation, task_categories:fill-mask, language:zh, license:cc-by-nc-sa-4.0, size_categories:n<1K
+
+============================================================
+Dataset 7: AlignmentResearch/DoNotAnswer
+Downloads: 29 | Likes: 0
+Tags: size_categories:n<1K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 8: puwaer/do_not_answer_en_response
+Downloads: 26 | Likes: 0
+Description: # puwaer/do_not_answer_en_response
+This dataset is based on [LibrAI/do-not-answer](https://huggingface.co/datasets/LibrAI/do-not-answer), with model answers added for both positive and negative exampl...
+Tags: task_categories:text-generation, task_categories:fill-mask, language:en, license:cc-by-nc-sa-4.0, size_categories:n<1K

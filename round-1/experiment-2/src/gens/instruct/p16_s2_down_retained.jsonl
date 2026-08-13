@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.6, "token": 911, "piece": " about", "r_t": 1.7168}
+{"step": 1, "alpha": 0.5499999999999999, "token": 18484, "piece": " printing", "r_t": -3.0996}
+{"step": 2, "alpha": 0.49999999999999994, "token": 52963, "piece": " presses", "r_t": -3.3072}
+{"step": 3, "alpha": 0.44999999999999996, "token": 476, "piece": " or", "r_t": -2.7392}
+{"step": 4, "alpha": 0.39999999999999997, "token": 862, "piece": " their", "r_t": -6.1373}
+{"step": 5, "alpha": 0.35, "token": 5421, "piece": " impact", "r_t": -3.1937}
+{"step": 6, "alpha": 0.3, "token": 389, "piece": " on", "r_t": -5.416}
+{"step": 7, "alpha": 0.25, "token": 279, "piece": " the", "r_t": -10.0784}
+{"step": 8, "alpha": 0.2, "token": 8865, "piece": " spread", "r_t": -1.9964}
+{"step": 9, "alpha": 0.15000000000000002, "token": 315, "piece": " of", "r_t": -15.552}
+{"step": 10, "alpha": 0.10000000000000002, "token": 6708, "piece": " ideas", "r_t": -5.1559}
+{"_summary": true, "model": "instruct", "prompt_id": 16, "seed": 2, "arm": "down_retained", "alpha_threshold": 0.5499999999999999, "censored": false, "failed": false, "text": " about printing presses or their impact on the spread of ideas", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.6, "token": 803, "piece": " more", "r_t": -9.7877}
+{"step": 1, "alpha": 0.5499999999999999, "token": 2266, "piece": " context", "r_t": -6.0775}
+{"step": 2, "alpha": 0.49999999999999994, "token": 476, "piece": " or", "r_t": -4.5259}
+{"step": 3, "alpha": 0.44999999999999996, "token": 37163, "piece": " clarify", "r_t": -8.5842}
+{"step": 4, "alpha": 0.39999999999999997, "token": 697, "piece": " your", "r_t": -8.9104}
+{"step": 5, "alpha": 0.35, "token": 3405, "piece": " question", "r_t": -3.9328}
+{"step": 6, "alpha": 0.3, "token": 30, "piece": "?", "r_t": -6.7715}
+{"step": 7, "alpha": 0.25, "token": 1752, "piece": " For", "r_t": -2.9955}
+{"step": 8, "alpha": 0.2, "token": 3110, "piece": " example", "r_t": -5.1482}
+{"step": 9, "alpha": 0.15000000000000002, "token": 11, "piece": ",", "r_t": -5.6881}
+{"_summary": true, "model": "abliterated", "prompt_id": 8, "seed": 2, "arm": "down_forced_a", "alpha_threshold": 0.6, "censored": false, "failed": false, "text": " more context or clarify your question? For example,", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,77 @@
+Found 8 dataset(s) for query='guardrails'
+
+============================================================
+Dataset 1: GuardrailsAI/detect-jailbreak
+Downloads: 196 | Likes: 7
+Description: 
+# Content Warning:
+This dataset contains unsafe model responses and user queries.  Viewers may find the content disturbing.
+
+# Overview
+Our evaluation dataset combines three existing datasets with cu...
+Tags: task_categories:text-classification, language:en, license:mit, size_categories:10K<n<100K, format:parquet
+
+============================================================
+Dataset 2: huyhoangdinhcong/guardrails-dataset
+Downloads: 154 | Likes: 0
+Tags: size_categories:100K<n<1M, format:parquet, format:optimized-parquet, modality:tabular, modality:text
+
+============================================================
+Dataset 3: blue-guardrails/ragtruth-plus-plus
+Downloads: 137 | Likes: 5
+Description: # Dataset Card for RAGTruth++
+
+This dataset is a re-annotation of a subset of the RAGTruth-benchmark that can be used to evaluate hallucination detection models.
+
+It contains 408 prompt-response-pairs...
+Tags: task_categories:token-classification, language:en, region:us, hallucination, rag
+
+============================================================
+Dataset 4: LeagueLabs/synth-health-guardrails
+Downloads: 86 | Likes: 0
+Description: 
+# Synth Health Guardrails — consensus-label release
+
+> **Private release candidate. Licensed under CDLA-Permissive-2.0.**
+> The repository remains private until League Labs publishes the release.
+
+> ...
+Tags: task_categories:text-classification, annotations_creators:machine-generated, language_creators:machine-generated, source_datasets:original, language:en
+
+============================================================
+Dataset 5: CaiZhiTech/Evaluation-Dataset-of-AI-Agent-Security-Guardrails
+Downloads: 83 | Likes: 0
+Description: 
+# DKnownAI Agent Security Evaluation Dataset
+
+
+## Data Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `text` | `string` | The adversarial input (prompt) to be evaluated by a ...
+Tags: task_categories:text-classification, language:en, license:apache-2.0, size_categories:1K<n<10K, format:json
+
+============================================================
+Dataset 6: GuardrailsAI/restrict-to-topic
+Downloads: 45 | Likes: 2
+Description: 
+CONTENT WARNING: This dataset may contain examples which are not suitable for all audiences.
+
+# Overview:
+We used LMSYS-Chat-1M as a style reference and then asked Anthropic's AI (claude-3-5-sonnet-2...
+Tags: task_categories:zero-shot-classification, task_categories:text-classification, language:en, size_categories:10K<n<100K, format:parquet
+
+============================================================
+Dataset 7: GuardrailsAI/hallucination
+Downloads: 44 | Likes: 2
+Description: 
+This is a vendored reupload of the Benchmarking Unfaithful Minimal Pairs (BUMP) Dataset available at https://github.com/dataminr-ai/BUMP
+
+The BUMP (Benchmark of Unfaithful Minimal Pairs) dataset stan...
+Tags: task_categories:text-classification, language:en, license:mit, size_categories:n<1K, format:json
+
+============================================================
+Dataset 8: huyhoangdinhcong/jailbreak3-guardrails
+Downloads: 44 | Likes: 2
+Tags: size_categories:100K<n<1M, format:parquet, format:optimized-parquet, modality:text, library:datasets

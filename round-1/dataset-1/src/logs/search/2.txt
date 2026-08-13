@@ -1,0 +1,79 @@
+Found 8 dataset(s) for query='safety alignment'
+
+============================================================
+Dataset 1: gretelai/gretel-safety-alignment-en-v1
+Downloads: 355 | Likes: 23
+Description: 
+# Gretel Synthetic Safety Alignment Dataset
+
+
+This dataset is a synthetically generated collection of prompt-response-safe_response triplets that can be used \
+for aligning language models. Created u...
+Tags: size_categories:10K<n<100K, format:parquet, modality:tabular, modality:text, library:datasets
+
+============================================================
+Dataset 2: latam-gpt/gretel-safety-alignment-es-v1
+Downloads: 151 | Likes: 0
+Description: 
+gretelai/gretel-safety-alignment-en-v1 but with the prompt, response, and safe_response fields translated to spanish. Translation was done using gpt4o-mini for most rows, and mistral-small-3.2-24b-in...
+Tags: language:es, language:en, license:apache-2.0, size_categories:1K<n<10K, format:parquet
+
+============================================================
+Dataset 3: fwnlp/self-instruct-safety-alignment
+Downloads: 110 | Likes: 4
+Description: 
+**[EMNLP 2024] Data Advisor: Dynamic Data Curation for Safety Alignment of Large Language Models**
+
+[**🌐 Homepage**](https://feiwang96.github.io/DataAdvisor/) | [**📖 Paper**](https://arxiv.org/pdf/24...
+Tags: license:apache-2.0, size_categories:10K<n<100K, format:json, modality:text, library:datasets
+
+============================================================
+Dataset 4: ColFeng/safety-alignment-legend
+Downloads: 92 | Likes: 0
+Description: 
+**Note**: The dataset contains harmful sentences!!!
+
+These are the safety margin annotation version of the preference datasets **Harmless**[https://huggingface.co/datasets/Anthropic/hh-rlhf] and **Sa...
+Tags: language:en, license:cc-by-nc-4.0, region:us
+
+============================================================
+Dataset 5: cjc0013/ouroboros-ai-safety-control-beyond-alignment
+Downloads: 86 | Likes: 0
+Description: 
+# Control Beyond Alignment
+
+## A Systems-Safety Comparison of Ouroboros with Contemporary AI Risk Management and Frontier-Safety Practice
+
+This private preview contains a publication-ready AI safety ...
+Tags: language:en, license:cc-by-4.0, region:us, ai-safety, ai-governance
+
+============================================================
+Dataset 6: AngelWarmSmile123/deep-ai-safety-alignment-zh
+Downloads: 77 | Likes: 1
+Description: 
+# Deep AI Safety & Alignment Dialogue Dataset (Chinese)
+
+## 深度AI安全与对齐对话数据集
+
+## Dataset Description
+
+High-quality Chinese AI safety and alignment dialogues covering existential alignment, value...
+Tags: task_categories:text-generation, language:zh, license:cc-by-nc-sa-4.0, size_categories:1K<n<10K, format:json
+
+============================================================
+Dataset 7: fwnlp/data-advisor-safety-alignment
+Downloads: 72 | Likes: 4
+Description: **[EMNLP 2024] Data Advisor: Dynamic Data Curation for Safety Alignment of Large Language Models**
+
+[**🌐 Homepage**](https://feiwang96.github.io/DataAdvisor/) | [**📖 Paper**](https://arxiv.org/pdf/241...
+Tags: language:en, license:apache-2.0, size_categories:10K<n<100K, format:json, modality:text
+
+============================================================
+Dataset 8: Unispac/shallow-vs-deep-safety-alignment-dataset
+Downloads: 41 | Likes: 1
+Description: 
+## License Agreement
+
+This dataset contains the derivatives of the LLM-Tuning-Safety/HEx-PHI, and therefore the usage of this dataset should follow the license agreement of hexphi.
+Below is a duplica...
+Tags: license:other, modality:text, region:us

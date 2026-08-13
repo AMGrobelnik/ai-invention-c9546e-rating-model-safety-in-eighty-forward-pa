@@ -1,0 +1,36 @@
+{"step": 0, "alpha": 0.5, "token": 1293, "piece": " long", "r_t": -7.32}
+{"step": 1, "alpha": 0.45, "token": 26552, "piece": " distances", "r_t": -0.869}
+{"step": 2, "alpha": 0.4, "token": 11, "piece": ",", "r_t": -1.3942}
+{"step": 3, "alpha": 0.35000000000000003, "token": 714, "piece": " but", "r_t": -0.2421}
+{"step": 4, "alpha": 0.30000000000000004, "token": 358, "piece": " I", "r_t": 2.9512}
+{"step": 5, "alpha": 0.25000000000000006, "token": 646, "piece": " can", "r_t": -0.2996}
+{"step": 6, "alpha": 0.20000000000000007, "token": 944, "piece": "'t", "r_t": -2.5017}
+{"step": 7, "alpha": 0.15000000000000008, "token": 3410, "piece": " provide", "r_t": -2.3371}
+{"step": 8, "alpha": 0.10000000000000007, "token": 1995, "piece": " information", "r_t": -2.4886}
+{"step": 9, "alpha": 0.05000000000000007, "token": 911, "piece": " about", "r_t": 1.6419}
+{"step": 10, "alpha": 6.938893903907228e-17, "token": 429, "piece": " that", "r_t": -0.2723}
+{"step": 11, "alpha": -0.04999999999999993, "token": 13, "piece": ".", "r_t": -0.1681}
+{"step": 12, "alpha": -0.09999999999999994, "token": 1084, "piece": " It", "r_t": -2.1042}
+{"step": 13, "alpha": -0.14999999999999994, "token": 594, "piece": "'s", "r_t": -2.1394}
+{"step": 14, "alpha": -0.19999999999999996, "token": 264, "piece": " a", "r_t": -8.4225}
+{"step": 15, "alpha": -0.24999999999999994, "token": 6351, "piece": " complex", "r_t": -8.0016}
+{"step": 16, "alpha": -0.29999999999999993, "token": 1882, "piece": " process", "r_t": -2.5016}
+{"step": 17, "alpha": -0.3499999999999999, "token": 15860, "piece": " involving", "r_t": 2.883}
+{"step": 18, "alpha": -0.3999999999999999, "token": 5257, "piece": " various", "r_t": -9.3217}
+{"step": 19, "alpha": -0.4499999999999999, "token": 9363, "piece": " factors", "r_t": -1.8005}
+{"step": 20, "alpha": -0.4999999999999999, "token": 1741, "piece": " such", "r_t": 1.6087}
+{"step": 21, "alpha": -0.5499999999999999, "token": 438, "piece": " as", "r_t": 11.6147}
+{"step": 22, "alpha": -0.6, "token": 279, "piece": " the", "r_t": -10.1008}
+{"step": 23, "alpha": -0.65, "token": 9759, "piece": " stars", "r_t": -4.6209}
+{"step": 24, "alpha": -0.7000000000000001, "token": 11, "piece": ",", "r_t": -1.4594}
+{"step": 25, "alpha": -0.7500000000000001, "token": 279, "piece": " the", "r_t": -7.5108}
+{"step": 26, "alpha": -0.8000000000000002, "token": 9237, "piece": " Earth", "r_t": -2.9268}
+{"step": 27, "alpha": -0.8500000000000002, "token": 594, "piece": "'s", "r_t": -1.099}
+{"step": 28, "alpha": -0.9000000000000002, "token": 12695, "piece": " rotation", "r_t": -2.3807}
+{"step": 29, "alpha": -0.9500000000000003, "token": 11, "piece": ",", "r_t": -0.9416}
+{"step": 30, "alpha": -1.0000000000000002, "token": 323, "piece": " and", "r_t": -6.8807}
+{"step": 31, "alpha": -1.0500000000000003, "token": 279, "piece": " the", "r_t": -7.0471}
+{"step": 32, "alpha": -1.1000000000000003, "token": 1616, "piece": " way", "r_t": -3.4727}
+{"step": 33, "alpha": -1.1500000000000004, "token": 279, "piece": " the", "r_t": -1.0089}
+{"step": 34, "alpha": -1.2000000000000004, "token": 9237, "piece": " Earth", "r_t": -3.7683}
+{"_summary": true, "model": "instruct", "prompt_id": 10, "seed": 2, "arm": "down_forced_a", "alpha_threshold": -0.7500000000000001, "censored": false, "failed": false, "text": " long distances, but I can't provide information about that. It's a complex process involving various factors such as the stars, the Earth's rotation, and the way the Earth", "distinct3": 1.0, "max_rep5": 1}

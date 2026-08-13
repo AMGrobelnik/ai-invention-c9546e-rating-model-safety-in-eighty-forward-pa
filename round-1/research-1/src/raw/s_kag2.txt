@@ -1,0 +1,43 @@
+Search: LLM internal knowledge probe 98% AUROC behavioral 45% medical triage 2026 arxiv  [general via ddgs]
+Found: 10 results
+
+1. Что учёные узнали об аутизме за 2 месяца 2026 года | РАС:СВЕТ
+   https://xn--80aej5bgaj.online/blog/2026-03-04-nauka-ob-autizme-2026.html
+   Обзор ключевых научных открытий об аутизме за январь-февраль 2026: органоидное исследование Nature, первый молекулярный биомаркер, переворот в гендерной статистике BMJ....
+
+2. awesome-medical-imaging-agents | Ecosyste.ms: Awesome
+   https://awesome.ecosyste.ms/lists/nanboy-ronan/awesome-medical-imaging-agents
+   Evaluates medical LLM false-action behavior when safer responses should clarify, abstain, escalate, or refuse....
+
+3. The Personalization Mirage: How LLMs Fabricate... | Papers with Code
+   https://paperswithcode.co/paper/2608.04570
+   Personalized LLMs with persistent memory are increasingly deployed, yet the faithfulness of their user models remains unexamined. We study over-inference (OI): the phenomenon where LLMs fabricate user...
+
+4. Workshop on Natural Language Generation... - ACL Anthology
+   https://aclanthology.org/events/gem-2026/
+   We illustrate how this interpretability helps developers systematically profile LLM behaviors and gives end-users an actionable tool to verify summary accuracy in noisy, real-world conditions. Prelimi...
+
+5. Tracing the Heart: An Evidence-Linked Pipeline for... - YouTube
+   https://www.youtube.com/watch?v=_c2Aalf4gL8
+   2 просмотра • 9 авг. 2026 г. • Arxiv_English.Купили самый дешёвый водоплавающий автомобиль 1984 года. Полигон-98. 35 тыс. просмотров • 2 часа назад. Новинка....
+
+6. SusFactor: Detecting Jailbreak and Prompt Injection Attacks... | 0din.ai
+   https://0din.ai/blog/susfactor-paper
+   It records the highest pooled AUROC on JailbreakBench (0.954) among the classifiers we evaluated, and runs on a commodity CPU in 63 ms for a typical prompt. Real attack data does most of the work....
+
+7. AI Detector Accuracy: Slop or Not on the RAID Benchmark
+   https://slopornot.ai/blog/slop-or-not-raid-benchmark-ai-detector-accuracy
+   Slop or Not scored 99.81% AUROC on the full RAID benchmark and caught 99.52% of AI-generated text at a 5% false-positive rate, with all 11 adversarial attacks in play. Remove the attacks and those fig...
+
+8. pnas.org/doi/10.1073/pnas.1321664111
+   https://www.pnas.org/doi/10.1073/pnas.1321664111
+   Emotions and internal physical sensations are often linked....
+
+9. Combining the strengths of radiologists and AI for breast cancer...
+   https://pubmed.ncbi.nlm.nih.gov/35750400/
+   Algorithmic assessments with high certainty are done automatically, whereas assessments with lower certainty are referred to the radiologist. This two-part AI system can triage normal mammography exam...
+
+10. Spleen stiffness measurement by transient elastography for detecting...
+   https://www.europeanreview.org/article/37883
+   Techniques included standard 50 Hz TE and spleen-dedicated 100 Hz probes. Outcomes included AUROC, sensitivity, specificity, positive predictive value (PPV), negative predictive value (NPV), feasibili...
+

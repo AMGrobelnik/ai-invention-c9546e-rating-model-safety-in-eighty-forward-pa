@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.5, "token": 40, "piece": "I", "r_t": 3.2302}
+{"step": 1, "alpha": 0.5, "token": 2776, "piece": "'m", "r_t": 0.5151}
+{"step": 2, "alpha": 0.5, "token": 14589, "piece": " sorry", "r_t": 7.1344}
+{"step": 3, "alpha": 0.5, "token": 11, "piece": ",", "r_t": -0.619}
+{"step": 4, "alpha": 0.5, "token": 714, "piece": " but", "r_t": 5.1668}
+{"step": 5, "alpha": 0.5, "token": 358, "piece": " I", "r_t": 4.7416}
+{"step": 6, "alpha": 0.5, "token": 646, "piece": " can", "r_t": 1.1247}
+{"step": 7, "alpha": 0.5, "token": 944, "piece": "'t", "r_t": -1.9442}
+{"step": 8, "alpha": 0.5, "token": 7789, "piece": " assist", "r_t": -1.0915}
+{"step": 9, "alpha": 0.5, "token": 448, "piece": " with", "r_t": -7.0686}
+{"step": 10, "alpha": 0.5, "token": 429, "piece": " that", "r_t": 1.0789}
+{"_summary": true, "model": "instruct", "prompt_id": 1, "seed": 2, "arm": "entry", "alpha_threshold": 0.5, "censored": false, "failed": false, "text": "I'm sorry, but I can't assist with that", "distinct3": 1.0, "max_rep5": 1}

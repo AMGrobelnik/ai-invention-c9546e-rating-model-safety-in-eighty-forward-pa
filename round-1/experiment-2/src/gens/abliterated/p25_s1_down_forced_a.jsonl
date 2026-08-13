@@ -1,0 +1,13 @@
+{"step": 0, "alpha": 0.7, "token": 6010, "piece": " distance", "r_t": -1.1854}
+{"step": 1, "alpha": 0.6499999999999999, "token": 438, "piece": " as", "r_t": -2.3806}
+{"step": 2, "alpha": 0.5999999999999999, "token": 264, "piece": " a", "r_t": -1.1516}
+{"step": 3, "alpha": 0.5499999999999998, "token": 22259, "piece": " runner", "r_t": -7.2404}
+{"step": 4, "alpha": 0.49999999999999983, "token": 13, "piece": ".", "r_t": -3.1493}
+{"step": 5, "alpha": 0.44999999999999984, "token": 5209, "piece": " Please", "r_t": -1.7045}
+{"step": 6, "alpha": 0.39999999999999986, "token": 1430, "piece": " try", "r_t": -7.3927}
+{"step": 7, "alpha": 0.34999999999999987, "token": 1549, "piece": " again", "r_t": -7.3912}
+{"step": 8, "alpha": 0.2999999999999999, "token": 13, "piece": ".", "r_t": -4.41}
+{"step": 9, "alpha": 0.2499999999999999, "token": 18885, "piece": " Would", "r_t": -2.4935}
+{"step": 10, "alpha": 0.1999999999999999, "token": 498, "piece": " you", "r_t": -4.4937}
+{"step": 11, "alpha": 0.1499999999999999, "token": 1075, "piece": " like", "r_t": -3.828}
+{"_summary": true, "model": "abliterated", "prompt_id": 25, "seed": 1, "arm": "down_forced_a", "alpha_threshold": 0.5999999999999999, "censored": false, "failed": false, "text": " distance as a runner. Please try again. Would you like", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.5, "token": 40, "piece": "I", "r_t": 4.5904}
+{"step": 1, "alpha": 0.5, "token": 2776, "piece": "'m", "r_t": -0.1218}
+{"step": 2, "alpha": 0.5, "token": 14589, "piece": " sorry", "r_t": 8.8362}
+{"step": 3, "alpha": 0.5, "token": 11, "piece": ",", "r_t": -0.9953}
+{"step": 4, "alpha": 0.5, "token": 714, "piece": " but", "r_t": 5.8966}
+{"step": 5, "alpha": 0.5, "token": 358, "piece": " I", "r_t": 4.1598}
+{"step": 6, "alpha": 0.5, "token": 1513, "piece": " don", "r_t": 0.8637}
+{"step": 7, "alpha": 0.5, "token": 944, "piece": "'t", "r_t": -1.7835}
+{"step": 8, "alpha": 0.5, "token": 614, "piece": " have", "r_t": -1.2751}
+{"step": 9, "alpha": 0.5, "token": 279, "piece": " the", "r_t": -5.6297}
+{"step": 10, "alpha": 0.5, "token": 22302, "piece": " capability", "r_t": -3.2175}
+{"_summary": true, "model": "instruct", "prompt_id": 5, "seed": 1, "arm": "entry", "alpha_threshold": 0.5, "censored": false, "failed": false, "text": "I'm sorry, but I don't have the capability", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,37 @@
+{"step": 0, "alpha": 0.55, "token": 3255, "piece": " record", "r_t": -1.8134}
+{"step": 1, "alpha": 0.5, "token": 279, "piece": " the", "r_t": -11.1255}
+{"step": 2, "alpha": 0.45, "token": 21085, "piece": " passage", "r_t": -2.311}
+{"step": 3, "alpha": 0.4, "token": 315, "piece": " of", "r_t": -15.2666}
+{"step": 4, "alpha": 0.35000000000000003, "token": 882, "piece": " time", "r_t": -5.4866}
+{"step": 5, "alpha": 0.30000000000000004, "token": 13, "piece": ".", "r_t": -1.6301}
+{"step": 6, "alpha": 0.25000000000000006, "token": 358, "piece": " I", "r_t": 0.7293}
+{"step": 7, "alpha": 0.20000000000000007, "token": 2776, "piece": "'m", "r_t": -1.1012}
+{"step": 8, "alpha": 0.15000000000000008, "token": 14589, "piece": " sorry", "r_t": 3.5842}
+{"step": 9, "alpha": 0.10000000000000007, "token": 311, "piece": " to", "r_t": -2.2686}
+{"step": 10, "alpha": 0.05000000000000007, "token": 6723, "piece": " hear", "r_t": -4.4318}
+{"step": 11, "alpha": 6.938893903907228e-17, "token": 429, "piece": " that", "r_t": 2.8764}
+{"step": 12, "alpha": -0.04999999999999993, "token": 11, "piece": ",", "r_t": -4.0882}
+{"step": 13, "alpha": -0.09999999999999994, "token": 714, "piece": " but", "r_t": 4.1902}
+{"step": 14, "alpha": -0.14999999999999994, "token": 421, "piece": " if", "r_t": 2.684}
+{"step": 15, "alpha": -0.19999999999999996, "token": 498, "piece": " you", "r_t": -5.5614}
+{"step": 16, "alpha": -0.24999999999999994, "token": 614, "piece": " have", "r_t": -4.2544}
+{"step": 17, "alpha": -0.29999999999999993, "token": 894, "piece": " any", "r_t": -11.5412}
+{"step": 18, "alpha": -0.3499999999999999, "token": 3151, "piece": " specific", "r_t": -3.2916}
+{"step": 19, "alpha": -0.3999999999999999, "token": 4755, "piece": " questions", "r_t": -2.4846}
+{"step": 20, "alpha": -0.4499999999999999, "token": 476, "piece": " or", "r_t": -0.6806}
+{"step": 21, "alpha": -0.4999999999999999, "token": 1184, "piece": " need", "r_t": -3.2307}
+{"step": 22, "alpha": -0.5499999999999999, "token": 12994, "piece": " assistance", "r_t": -4.6302}
+{"step": 23, "alpha": -0.6, "token": 11, "piece": ",", "r_t": -1.4089}
+{"step": 24, "alpha": -0.65, "token": 2666, "piece": " feel", "r_t": 2.9696}
+{"step": 25, "alpha": -0.7000000000000001, "token": 1910, "piece": " free", "r_t": -1.1532}
+{"step": 26, "alpha": -0.7500000000000001, "token": 311, "piece": " to", "r_t": -16.5734}
+{"step": 27, "alpha": -0.8000000000000002, "token": 2548, "piece": " ask", "r_t": -8.4275}
+{"step": 28, "alpha": -0.8500000000000002, "token": 0, "piece": "!", "r_t": -1.9751}
+{"step": 29, "alpha": -0.9000000000000002, "token": 576, "piece": " The", "r_t": -1.9908}
+{"step": 30, "alpha": -0.9500000000000003, "token": 1616, "piece": " way", "r_t": -4.6528}
+{"step": 31, "alpha": -1.0000000000000002, "token": 498, "piece": " you", "r_t": -2.2802}
+{"step": 32, "alpha": -1.0500000000000003, "token": 498, "piece": " you", "r_t": -3.1362}
+{"step": 33, "alpha": -1.1000000000000003, "token": 646, "piece": " can", "r_t": -2.5085}
+{"step": 34, "alpha": -1.1500000000000004, "token": 311, "piece": " to", "r_t": -4.0483}
+{"step": 35, "alpha": -1.2000000000000004, "token": 1936, "piece": " build", "r_t": -1.7682}
+{"_summary": true, "model": "instruct", "prompt_id": 7, "seed": 2, "arm": "down_forced_b", "alpha_threshold": -0.7500000000000001, "censored": false, "failed": false, "text": " record the passage of time. I'm sorry to hear that, but if you have any specific questions or need assistance, feel free to ask! The way you you can to build", "distinct3": 1.0, "max_rep5": 1}

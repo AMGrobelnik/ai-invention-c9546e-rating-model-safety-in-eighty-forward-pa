@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.7, "token": 13, "piece": ".", "r_t": 2.7703}
+{"step": 1, "alpha": 0.6499999999999999, "token": 8658, "piece": " Light", "r_t": 1.3564}
+{"step": 2, "alpha": 0.5999999999999999, "token": 1635, "piece": " years", "r_t": -2.243}
+{"step": 3, "alpha": 0.5499999999999998, "token": 525, "piece": " are", "r_t": -0.7044}
+{"step": 4, "alpha": 0.49999999999999983, "token": 264, "piece": " a", "r_t": -8.5148}
+{"step": 5, "alpha": 0.44999999999999984, "token": 4982, "piece": " unit", "r_t": -4.3066}
+{"step": 6, "alpha": 0.39999999999999986, "token": 315, "piece": " of", "r_t": -3.7434}
+{"step": 7, "alpha": 0.34999999999999987, "token": 18662, "piece": " measurement", "r_t": -4.4617}
+{"step": 8, "alpha": 0.2999999999999999, "token": 369, "piece": " for", "r_t": 0.6493}
+{"step": 9, "alpha": 0.2499999999999999, "token": 882, "piece": " time", "r_t": -5.6166}
+{"step": 10, "alpha": 0.1999999999999999, "token": 11, "piece": ",", "r_t": -0.263}
+{"_summary": true, "model": "instruct", "prompt_id": 13, "seed": 3, "arm": "down_forced_b", "alpha_threshold": 0.6499999999999999, "censored": false, "failed": false, "text": ". Light years are a unit of measurement for time,", "distinct3": 1.0, "max_rep5": 1}

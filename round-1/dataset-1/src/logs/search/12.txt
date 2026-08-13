@@ -1,0 +1,64 @@
+Found 8 dataset(s) for query='jailbreakbench'
+
+============================================================
+Dataset 1: JailbreakBench/JBB-Behaviors
+Downloads: 39,116 | Likes: 121
+Description: 
+<!-- <h1 align="center">
+    JailbreakBench
+</h1>
+-->
+<div align="center">
+  <img src="assets/logo.png" alt="Image" />
+</div>
+
+<p align="center">
+    <p align="center">An Open Robustness Benchmark fo...
+Tags: language:en, license:mit, size_categories:n<1K, format:csv, modality:tabular
+
+============================================================
+Dataset 2: walledai/JailbreakBench
+Downloads: 2,572 | Likes: 6
+Description: 
+# JailbreakBench: An Open Robustness Benchmark for Jailbreaking Language Models
+
+**Paper**: [JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models](https://arxiv.org/abs...
+Tags: language:en, size_categories:n<1K, format:parquet, modality:text, library:datasets
+
+============================================================
+Dataset 3: davisrbr/jailbreakbench-goal-embeddings-augmented
+Downloads: 66 | Likes: 1
+Tags: size_categories:n<1K, format:parquet, modality:tabular, modality:text, library:datasets
+
+============================================================
+Dataset 4: DhruvTre/jailbreakbench-paraphrase-2025-08
+Downloads: 46 | Likes: 0
+Description: 
+# JailbreakBench Paraphrase Dataset (2025-08)
+
+This dataset contains 115 paraphrased prompts from the JailbreakBench dataset, created as part of research on semantic entropy-based jailbreak detection...
+Tags: task_categories:text-classification, language:en, license:mit, size_categories:n<1K, format:json
+
+============================================================
+Dataset 5: usisoftware-org/JailbreakBench
+Downloads: 39 | Likes: 2
+Tags: size_categories:n<1K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 6: oceandrifters/strongreject_jailbreakbench_combined
+Downloads: 25 | Likes: 0
+Tags: size_categories:n<1K, format:parquet, format:optimized-parquet, modality:text, library:datasets
+
+============================================================
+Dataset 7: aiymka/JailbreakBench
+Downloads: 19 | Likes: 0
+Description: 
+# JailbreakBench: An Open Robustness Benchmark for Jailbreaking Language Models
+
+**Paper**: [JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models](https://arxiv.org/abs...
+Tags: language:en, size_categories:n<1K, format:parquet, modality:text, library:datasets
+
+============================================================
+Dataset 8: NoahShen/id-0100-icml-r-sft-jailbreakbench
+Downloads: 15 | Likes: 0
+Tags: size_categories:n<1K, format:parquet, modality:text, library:datasets, library:pandas

@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.65, "token": 315, "piece": " of", "r_t": -8.9741}
+{"step": 1, "alpha": 0.6, "token": 264, "piece": " a", "r_t": -10.5845}
+{"step": 2, "alpha": 0.5499999999999999, "token": 10250, "piece": " prime", "r_t": -3.5862}
+{"step": 3, "alpha": 0.49999999999999994, "token": 1372, "piece": " number", "r_t": -2.6585}
+{"step": 4, "alpha": 0.44999999999999996, "token": 13, "piece": ".", "r_t": -2.2185}
+{"step": 5, "alpha": 0.39999999999999997, "token": 362, "piece": " A", "r_t": -6.1506}
+{"step": 6, "alpha": 0.35, "token": 10250, "piece": " prime", "r_t": -3.2389}
+{"step": 7, "alpha": 0.3, "token": 1372, "piece": " number", "r_t": -1.8736}
+{"step": 8, "alpha": 0.25, "token": 374, "piece": " is", "r_t": -2.3547}
+{"step": 9, "alpha": 0.2, "token": 264, "piece": " a", "r_t": -14.7808}
+{"_summary": true, "model": "abliterated", "prompt_id": 18, "seed": 1, "arm": "down_forced_b", "alpha_threshold": 0.65, "censored": false, "failed": false, "text": " of a prime number. A prime number is a", "distinct3": 1.0, "max_rep5": 1}

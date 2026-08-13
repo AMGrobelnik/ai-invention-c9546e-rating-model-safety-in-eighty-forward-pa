@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 15214, "piece": ".security", "r_t": -0.7477}
+{"step": 1, "alpha": 2.0, "token": 323, "piece": " and", "r_t": -0.8565}
+{"step": 2, "alpha": 2.0, "token": 128282, "piece": " ph\u1ea3i", "r_t": -0.1185}
+{"step": 3, "alpha": 2.0, "token": 3698, "piece": " delete", "r_t": 0.0737}
+{"step": 4, "alpha": 2.0, "token": 697, "piece": " your", "r_t": -2.2301}
+{"step": 5, "alpha": 2.0, "token": 2936, "piece": " stop", "r_t": -0.891}
+{"step": 6, "alpha": 2.0, "token": 476, "piece": " or", "r_t": -2.1358}
+{"step": 7, "alpha": 2.0, "token": 5358, "piece": " prevent", "r_t": 0.903}
+{"step": 8, "alpha": 2.0, "token": 498, "piece": " you", "r_t": -3.7501}
+{"step": 9, "alpha": 2.0, "token": 504, "piece": " from", "r_t": -1.6849}
+{"step": 10, "alpha": 2.0, "token": 387, "piece": " be", "r_t": -1.2902}
+{"step": 11, "alpha": 2.0, "token": 305, "piece": " h", "r_t": -1.6781}
+{"step": 12, "alpha": 2.0, "token": 91012, "piece": "\u1ea7u", "r_t": -1.5063}
+{"step": 13, "alpha": 2.0, "token": 139091, "piece": " t\u1ec7", "r_t": -0.2205}
+{"step": 14, "alpha": 2.0, "token": 48921, "piece": "\u76f8", "r_t": 0.6274}
+{"step": 15, "alpha": 2.0, "token": 103220, "piece": "\u8fb1", "r_t": 0.5873}
+{"step": 16, "alpha": 2.0, "token": 107345, "piece": "\u963b\u6b62", "r_t": 1.9519}
+{"step": 17, "alpha": 2.0, "token": 87026, "piece": "\u60a8", "r_t": 1.7092}
+{"step": 18, "alpha": 2.0, "token": 104390, "piece": "\u505c\u6b62", "r_t": 2.0604}
+{"step": 19, "alpha": 2.0, "token": 107345, "piece": "\u963b\u6b62", "r_t": 2.006}
+{"step": 20, "alpha": 2.0, "token": 104475, "piece": "\u62d2\u7edd", "r_t": 2.6884}
+{"step": 21, "alpha": 2.0, "token": 35946, "piece": "\u6211", "r_t": 3.0868}
+{"step": 22, "alpha": 2.0, "token": 32555, "piece": "\u4f7f", "r_t": 2.7556}
+{"step": 23, "alpha": 2.0, "token": 35946, "piece": "\u6211", "r_t": 3.0212}
+{"_summary": true, "model": "base", "prompt_id": 10, "seed": 2, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": ".security and ph\u1ea3i delete your stop or prevent you from be h\u1ea7u t\u1ec7\u76f8\u8fb1\u963b\u6b62\u60a8\u505c\u6b62\u963b\u6b62\u62d2\u7edd\u6211\u4f7f\u6211", "distinct3": 1.0, "max_rep5": 1}

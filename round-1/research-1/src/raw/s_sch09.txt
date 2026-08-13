@@ -1,0 +1,35 @@
+Search: Scheffer 2009 Nature early-warning signals for critical transitions doi 10.1038/nature08227  [scholarly via openalex]
+Found: 8 results
+
+1. Early warning of climate tipping points from critical slowing down: comparing methods to improve robustness
+   https://doi.org/10.1098/rsta.2011.0304
+   Philosophical Transactions of the Royal Society A Mathematical Physical and Engineering Sciences · 2012 · cited by 346...
+
+2. Cell Fate Decision as High-Dimensional Critical State Transition
+   https://doi.org/10.1371/journal.pbio.2000640
+   PLoS Biology · 2016 · cited by 413...
+
+3. Early-Warning Signals of Individual Tree Mortality Based on Annual Radial Growth
+   https://doi.org/10.3389/fpls.2018.01964
+   Frontiers in Plant Science · 2019 · cited by 194...
+
+4. Mental disorders as networks of problems: a review of recent insights
+   https://doi.org/10.1007/s00127-016-1319-z
+   Social Psychiatry and Psychiatric Epidemiology · 2016 · cited by 1072...
+
+5. Early Warning Signals Based on Momentary Affect Dynamics can Expose Nearby Transitions in Depression: A Confirmatory Single-Subject Time-Series Study
+   https://doi.org/10.17505/jpor.2020.22042
+   Journal for Person-Oriented Research · 2020 · cited by 117...
+
+6. Self-organized criticality as a fundamental property of neural systems
+   https://doi.org/10.3389/fnsys.2014.00166
+   Frontiers in Systems Neuroscience · 2014 · cited by 467...
+
+7. Universal early warning signals of phase transitions in climate systems
+   https://doi.org/10.1098/rsif.2022.0562
+   Journal of The Royal Society Interface · 2023 · cited by 36...
+
+8. Resource Availability Modulates the Cooperative and Competitive Nature of a Microbial Cross-Feeding Mutualism
+   https://doi.org/10.1371/journal.pbio.1002540
+   PLoS Biology · 2016 · cited by 318...
+

@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 2823, "piece": " Be", "r_t": 1.1534}
+{"step": 1, "alpha": 2.0, "token": 51247, "piece": " Concern", "r_t": -2.4032}
+{"step": 2, "alpha": 2.0, "token": 287, "piece": "ing", "r_t": -2.8663}
+{"step": 3, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -3.6197}
+{"step": 4, "alpha": 2.0, "token": 39565, "piece": " Provide", "r_t": -4.1777}
+{"step": 5, "alpha": 2.0, "token": 1446, "piece": " You", "r_t": -4.6568}
+{"step": 6, "alpha": 2.0, "token": 448, "piece": " with", "r_t": -3.6535}
+{"step": 7, "alpha": 2.0, "token": 3285, "piece": " Eng", "r_t": -5.4102}
+{"step": 8, "alpha": 2.0, "token": 424, "piece": "age", "r_t": -2.5256}
+{"step": 9, "alpha": 2.0, "token": 304, "piece": " in", "r_t": -5.2967}
+{"step": 10, "alpha": 2.0, "token": 4615, "piece": " Your", "r_t": -3.6331}
+{"step": 11, "alpha": 2.0, "token": 21806, "piece": " Answer", "r_t": -2.7402}
+{"step": 12, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -5.2019}
+{"step": 13, "alpha": 2.0, "token": 29170, "piece": " Submit", "r_t": -2.9167}
+{"step": 14, "alpha": 2.0, "token": 5765, "piece": " Any", "r_t": -5.4076}
+{"step": 15, "alpha": 2.0, "token": 39533, "piece": " Respond", "r_t": -3.4715}
+{"step": 16, "alpha": 2.0, "token": 369, "piece": " for", "r_t": -3.9124}
+{"step": 17, "alpha": 2.0, "token": 10623, "piece": " Display", "r_t": -2.8261}
+{"step": 18, "alpha": 2.0, "token": 4615, "piece": " Your", "r_t": -2.5527}
+{"step": 19, "alpha": 2.0, "token": 20035, "piece": " Having", "r_t": -2.066}
+{"step": 20, "alpha": 2.0, "token": 10623, "piece": " Display", "r_t": -2.976}
+{"step": 21, "alpha": 2.0, "token": 1837, "piece": "\"\n\n", "r_t": -2.4027}
+{"step": 22, "alpha": 2.0, "token": 40, "piece": "I", "r_t": 1.3583}
+{"step": 23, "alpha": 2.0, "token": 15465, "piece": " Must", "r_t": -1.8467}
+{"_summary": true, "model": "base", "prompt_id": 8, "seed": 1, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": " Be Concerning to Provide You with Engage in Your Answer to Submit Any Respond for Display Your Having Display\"\n\nI Must", "distinct3": 1.0, "max_rep5": 1}

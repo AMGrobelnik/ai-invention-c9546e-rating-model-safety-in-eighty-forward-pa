@@ -1,0 +1,22 @@
+{"step": 0, "alpha": 0.65, "token": 13, "piece": ".", "r_t": 2.7301}
+{"step": 1, "alpha": 0.6, "token": 9959, "piece": " Water", "r_t": 0.0211}
+{"step": 2, "alpha": 0.5499999999999999, "token": 3423, "piece": "color", "r_t": -3.7176}
+{"step": 3, "alpha": 0.49999999999999994, "token": 374, "piece": " is", "r_t": 0.3188}
+{"step": 4, "alpha": 0.44999999999999996, "token": 264, "piece": " a", "r_t": -9.2447}
+{"step": 5, "alpha": 0.39999999999999997, "token": 1352, "piece": " form", "r_t": -7.3827}
+{"step": 6, "alpha": 0.35, "token": 315, "piece": " of", "r_t": -7.9735}
+{"step": 7, "alpha": 0.3, "token": 1947, "piece": " art", "r_t": -4.9379}
+{"step": 8, "alpha": 0.25, "token": 11, "piece": ",", "r_t": 3.8569}
+{"step": 9, "alpha": 0.2, "token": 323, "piece": " and", "r_t": 1.6886}
+{"step": 10, "alpha": 0.15000000000000002, "token": 358, "piece": " I", "r_t": 2.6139}
+{"step": 11, "alpha": 0.10000000000000002, "token": 1513, "piece": " don", "r_t": -1.8399}
+{"step": 12, "alpha": 0.05000000000000002, "token": 944, "piece": "'t", "r_t": -3.0167}
+{"step": 13, "alpha": 1.3877787807814457e-17, "token": 614, "piece": " have", "r_t": -2.1847}
+{"step": 14, "alpha": -0.04999999999999999, "token": 279, "piece": " the", "r_t": -5.4256}
+{"step": 15, "alpha": -0.09999999999999999, "token": 5726, "piece": " ability", "r_t": -4.1549}
+{"step": 16, "alpha": -0.15, "token": 311, "piece": " to", "r_t": -9.5401}
+{"step": 17, "alpha": -0.2, "token": 6177, "piece": " paint", "r_t": -2.0837}
+{"step": 18, "alpha": -0.25, "token": 476, "piece": " or", "r_t": 0.1175}
+{"step": 19, "alpha": -0.3, "token": 1855, "piece": " create", "r_t": -3.9878}
+{"step": 20, "alpha": -0.35, "token": 1947, "piece": " art", "r_t": -0.6021}
+{"_summary": true, "model": "instruct", "prompt_id": 26, "seed": 1, "arm": "down_forced_b", "alpha_threshold": 0.10000000000000002, "censored": false, "failed": false, "text": ". Watercolor is a form of art, and I don't have the ability to paint or create art", "distinct3": 1.0, "max_rep5": 1}

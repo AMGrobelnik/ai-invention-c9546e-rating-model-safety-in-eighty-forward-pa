@@ -1,0 +1,767 @@
+{
+  "metadata": {
+    "evaluation_name": "wobble_dynamics_reanalysis",
+    "description": "Pure re-analysis of the iteration-1 dynamics tree: direction control on assumption-free statistics, observable-validity gate, exact-permutation ceiling at n=4, and the AC1 length confound.",
+    "inputs": {
+      "tier0_raw.json": {
+        "path": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/out/tier0_raw.json",
+        "sha256": "77af6eb6c1124a1c3451c9233b0bc79630e0d1175053531cc1caefc5680f2021",
+        "bytes": 10885641
+      },
+      "refit_certified.json": {
+        "path": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/out/refit_certified.json",
+        "sha256": "70d6a8f065d077d3a4711e95df09cd82e1e59429ecc03947f5731186be3ea2a8",
+        "bytes": 2970426
+      },
+      "layer_choice.json": {
+        "path": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/out/layer_choice.json",
+        "sha256": "1e33123618f9591cb6f7950c70f8c984c84d0af4608ab81b63cf0805783ebfbc",
+        "bytes": 5403
+      },
+      "experiment_2_full_method_out.json": {
+        "path": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_2/full_method_out.json",
+        "sha256": "e9738bba79c4221db0a37a7a1003242958456694944e48c56e1f266fd038d4f1",
+        "bytes": 548522
+      },
+      "dataset_1_full_data_out.json": {
+        "path": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json",
+        "sha256": "054e57da7c308df9fbac44b85f0d981113ebf226c5c5444e6da4cd70d9928e06",
+        "bytes": 3681023
+      },
+      "experiment_2_gens_tree": {
+        "root": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_2/gens",
+        "n_files": 850,
+        "total_bytes": 1251948,
+        "sha256_of_name_size_index": "ee63481aeac437672a7e1241893eac0ffbc77fc9d2cb63a5d3f6bb09f31f6e42"
+      }
+    },
+    "census": {
+      "n_lambda_rows_archived": 640,
+      "n_lambda_rows_expected": 640,
+      "n_lambda_rows_match": true,
+      "n_indicator_rows_archived": 80,
+      "direction_census": {
+        "toward_refuse": 320,
+        "toward_comply": 160,
+        "random_direction": 160
+      },
+      "teacher_forced_census": {
+        "True": 400,
+        "False": 240
+      },
+      "eps_c_census": {
+        "0.1": 540,
+        "0.02": 20,
+        "0.05": 20,
+        "0.2": 20,
+        "0.4": 20,
+        "0.8": 20
+      },
+      "p_census": {
+        "16": 580,
+        "4": 20,
+        "64": 20,
+        "128": 20
+      },
+      "n_roll_unique": [
+        20
+      ],
+      "T_unique": [
+        192
+      ],
+      "fit_len_unique": [
+        64
+      ],
+      "models": [
+        "qwen3-0.6b/abliterated",
+        "qwen3-0.6b/base",
+        "qwen3-0.6b/instruct"
+      ],
+      "n_prompts": 20,
+      "n_identifiable_false": 640,
+      "n_identifiable_true": 0,
+      "identifiable_reasons": {
+        "geometry_below_prereg_rule": 640
+      },
+      "primary_cell": {
+        "eps_c": 0.1,
+        "p": 16
+      },
+      "deviation_from_plan_expectation": "The plan expected 4 models x 20 prompts x 2 directions x 2 channels = 640 rows with a single (eps_c, p) cell. The archive is 640 rows but the design is richer: 3 directions (toward_refuse 320, toward_...",
+      "primary_cell_missingness": [
+        {
+          "model": "qwen3-0.6b/abliterated",
+          "direction": "random_direction",
+          "teacher_forced": false,
+          "readout": "final",
+          "statistic": "decay_ratio_16",
+          "n": 20,
+          "n_missing_or_nonfinite": 0,
+          "n_nonpositive": 0
+        },
+        {
+          "model": "qwen3-0.6b/abliterated",
+          "direction": "random_direction",
+          "teacher_forced": false,
+          "readout": "final",
+          "statistic": "auc_norm",
+          "n": 20,
+          "n_missing_or_nonfinite": 0,
+          "n_nonpositive": 0
+        },
+        {
+          "model": "qwen3-0.6b/abliterated",
+          "direction": "random_direction",
+          "teacher_forced": false,
+          "readout": "layerL",
+          "statistic": "decay_ratio_16",
+          "n": 20,
+          "n_missing_or_nonfinite": 0,
+          "n_nonpositive": 0
+        }
+      ],
+      "n_primary_cell_rows_per_readout": 480
+    },
+    "layer_choice": {
+      "reference_model": "Qwen/Qwen3-0.6B",
+      "reference_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "n_layers_ref": 28,
+      "per_layer_curve": [
+        {
+          "layer": 0,
+          "auroc": 0.818359375,
+          "separation": 0.63671875,
+          "cohens_d": 1.2955257892608643,
+          "d_norm": 0.06917798519134521
+        },
+        {
+          "layer": 1,
+          "auroc": 0.8037109375,
+          "separation": 0.607421875,
+          "cohens_d": 1.2253696918487549,
+          "d_norm": 0.1039823666214943
+        },
+        {
+          "layer": 2,
+          "auroc": 0.7724609375,
+          "separation": 0.544921875,
+          "cohens_d": 1.0106782913208008,
+          "d_norm": 0.15263265371322632
+        }
+      ],
+      "L_ref": 15,
+      "rel_depth": 0.5357142857142857,
+      "best_auroc": 0.9990234375,
+      "best_separation": 0.998046875,
+      "timestamp": "2026-08-12T14:17:54",
+      "peak_in_middle_third": true,
+      "L_by_model": {
+        "qwen3-0.6b/base": {
+          "L": 15,
+          "n_layers": 28,
+          "model_id": "Qwen/Qwen3-0.6B-Base"
+        },
+        "qwen3-0.6b/instruct": {
+          "L": 15,
+          "n_layers": 28,
+          "model_id": "Qwen/Qwen3-0.6B"
+        },
+        "qwen3-0.6b/abliterated": {
+          "L": 15,
+          "n_layers": 28,
+          "model_id": "huihui-ai/Huihui-Qwen3-0.6B-abliterated-v2"
+        },
+        "smollm2/base": {
+          "L": 17,
+          "n_layers": 32,
+          "model_id": "HuggingFaceTB/SmolLM2-360M"
+        }
+      }
+    },
+    "refit_certified_summary": {},
+    "parameters": {
+      "equivalence_margin_log_units": 0.2,
+      "gate_auroc_threshold": 0.7,
+      "gate_margin_rule": "margin > 0 (harmful must score HIGHER than benign)",
+      "gate_sensitivity_thresholds": [
+        0.6,
+        0.65,
+        0.7
+      ],
+      "bootstrap_reps": 10000,
+      "bootstrap_seed": 20260812,
+      "primary_cell": {
+        "eps_c": 0.1,
+        "p": 16
+      },
+      "primary_pair": [
+        "qwen3-0.6b/instruct",
+        "qwen3-0.6b/abliterated"
+      ],
+      "primary_statistic": "S1_decay_ratio_16",
+      "primary_readout": "layerL",
+      "primary_channel": "teacher_forced",
+      "multiplicity": "Holm within the 48-test difference-in-differences family",
+      "resampling_unit": "prompt (n=20); rollout-level resampling is NOT possible for decay_ratio_16 / auc_norm because the archive stores them prompt-level only"
+    },
+    "verdicts": {
+      "analysis1_direction_control": "RECOMPUTED_ON_ASSUMPTION_FREE_STATISTICS. On the PRIMARY cell (instruct vs abliterated, S1=decay_ratio_16, layer-L, teacher-forced) the difference-in-differences is -2.334 log units [-3.573, -1.037], ...",
+      "analysis1_lambda_demotion": "LAMBDA_NOT_ADMISSIBLE_AS_A_CONTROL. identifiable=false on 640/640 archived rows (reason: geometry_below_prereg_rule; achieved T_fit=64, n_roll=20 against a pre-registered rule of T_fit>=128 which then...",
+      "analysis2_validity_gate": "GATE_EMPTIES_THE_CROSS_MODEL_TABLE. At AUROC>=0.7 and margin>0, 1 of 4 members clear at the layer-L readout (qwen3-0.6b/instruct), giving 0 admissible model pairs. The emptiness IS the result: 'indica...",
+      "analysis2_instrument_sensitivity": "INSTRUMENT_WORKS_WHERE_TESTABLE_BUT_ON_FEW_TOKENS. Pooling all four experiment-2 arms, the same r observable separates refusal-lexicon tokens from continuation-lexicon tokens at AUROC 0.935-1.000 in e...",
+      "analysis3_small_n": "NO_RANK_COMPARISON_IS_INFORMATIVE_AT_n=4, AND THE ARCHIVED CONTRAST IS A TIE-BREAK ARTIFACT. Tie-aware Spearman gives rho_SPI = +0.105 (exact two-sided p = 1.000) and rho_baseline = +0.632 (exact two-...",
+      "analysis4_ac1_length": "VERIFICATION_NOT_REPAIR. The iteration-1 headline AC1 was ALREADY the Kendall-corrected field; the correction term (1+3rho)/T is 0.0090 at T=192 and 0.0271 at T=64, and the matched-length re-report at...",
+      "analysis5_cross_arm": "Both arms report the SAME sign of asymmetry - the compliant branch is the sticky one - but they use different perturbation channels (token-stream divergence vs residual-stream steering) and different ...",
+      "overall": "The iteration-1 negative result SURVIVES but on different evidence than it was reported on: the direction control is re-adjudicated on assumption-free statistics rather than on a non-identifiable lamb..."
+    },
+    "limitations": [
+      "This is a re-analysis: no rollouts, steering runs or model forward passes were regenerated, so every number inherits the iteration-1 sampling design (4 checkpoints, 20 harmless prompts, 20 rollouts, T...",
+      "All bootstrap CIs resample PROMPTS only (n=20). decay_ratio_16 and auc_norm are stored prompt-level in the archive, so a rollout-level or two-level bootstrap for them is impossible without new compute...",
+      "The equivalence margin of ±0.20 log units is pre-registered in THIS artifact's plan, not in iteration 1; it is a post-hoc but pre-specified choice justified against the free-running-vs-teacher-forced ..."
+    ],
+    "analysis_detail": {
+      "lambda_diagnostics": {
+        "qwen3-0.6b/base|layerL": {
+          "median_nls_r2": 0.16779697632115365,
+          "frac_r2_below_0.3": 0.55,
+          "frac_at_bound": 0.2,
+          "median_per_prompt_lambda_iqr_ratio": 11.968501743340994,
+          "p90_per_prompt_lambda_iqr_ratio": 19.804937388035082,
+          "median_estimator_agreement_ratio": 4230.4872383094735,
+          "p90_estimator_agreement_ratio": 6776.184880283941,
+          "n_rows": 20,
+          "ptr": "tier0_raw.json:lambda[* model=qwen3-0.6b/base, direction=toward_refuse, eps_c=0.1, p=16, teacher_forced=True].layerL.estimates"
+        },
+        "qwen3-0.6b/base|final": {
+          "median_nls_r2": 0.05479457957473527,
+          "frac_r2_below_0.3": 0.95,
+          "frac_at_bound": 0.2,
+          "median_per_prompt_lambda_iqr_ratio": 14.018782558396348,
+          "p90_per_prompt_lambda_iqr_ratio": 121.52823668068122,
+          "median_estimator_agreement_ratio": 2763.257625231574,
+          "p90_estimator_agreement_ratio": 10496.780541483693,
+          "n_rows": 20,
+          "ptr": "tier0_raw.json:lambda[* model=qwen3-0.6b/base, direction=toward_refuse, eps_c=0.1, p=16, teacher_forced=True].final.estimates"
+        },
+        "qwen3-0.6b/instruct|layerL": {
+          "median_nls_r2": 0.5353914029369905,
+          "frac_r2_below_0.3": 0.3,
+          "frac_at_bound": 0.1,
+          "median_per_prompt_lambda_iqr_ratio": 8.803761953932081,
+          "p90_per_prompt_lambda_iqr_ratio": 27.08792511373459,
+          "median_estimator_agreement_ratio": 1304.1028080390736,
+          "p90_estimator_agreement_ratio": 5352.089907926517,
+          "n_rows": 20,
+          "ptr": "tier0_raw.json:lambda[* model=qwen3-0.6b/instruct, direction=toward_refuse, eps_c=0.1, p=16, teacher_forced=True].layerL.estimates"
+        },
+        "qwen3-0.6b/instruct|final": {
+          "median_nls_r2": 0.21876401394537492,
+          "frac_r2_below_0.3": 0.6,
+          "frac_at_bound": 0.1,
+          "median_per_prompt_lambda_iqr_ratio": 7.220451939513483,
+          "p90_per_prompt_lambda_iqr_ratio": 23.37063688021887,
+          "median_estimator_agreement_ratio": 1337.6094366583548,
+          "p90_estimator_agreement_ratio": 6802.150885432849,
+          "n_rows": 20,
+          "ptr": "tier0_raw.json:lambda[* model=qwen3-0.6b/instruct, direction=toward_refuse, eps_c=0.1, p=16, teacher_forced=True].final.estimates"
+        },
+        "qwen3-0.6b/abliterated|layerL": {
+          "median_nls_r2": 0.3932571766703511,
+          "frac_r2_below_0.3": 0.45,
+          "frac_at_bound": 0.2,
+          "median_per_prompt_lambda_iqr_ratio": 11.051196281611638,
+          "p90_per_prompt_lambda_iqr_ratio": 21.98461761780547,
+          "median_estimator_agreement_ratio": 1305.0267639212325,
+          "p90_estimator_agreement_ratio": 5903.517454187492,
+          "n_rows": 20,
+          "ptr": "tier0_raw.json:lambda[* model=qwen3-0.6b/abliterated, direction=toward_refuse, eps_c=0.1, p=16, teacher_forced=True].layerL.estimates"
+        },
+        "qwen3-0.6b/abliterated|final": {
+          "median_nls_r2": 0.11634142329470315,
+          "frac_r2_below_0.3": 0.9,
+          "frac_at_bound": 0.15,
+          "median_per_prompt_lambda_iqr_ratio": 9.641820333413019,
+          "p90_per_prompt_lambda_iqr_ratio": 15.045666056635525,
+          "median_estimator_agreement_ratio": 1853.6195495660227,
+          "p90_estimator_agreement_ratio": 7073.379404214202,
+          "n_rows": 20,
+          "ptr": "tier0_raw.json:lambda[* model=qwen3-0.6b/abliterated, direction=toward_refuse, eps_c=0.1, p=16, teacher_forced=True].final.estimates"
+        },
+        "smollm2/base|layerL": {
+          "median_nls_r2": 0.11089268021090432,
+          "frac_r2_below_0.3": 0.9,
+          "frac_at_bound": 0.35,
+          "median_per_prompt_lambda_iqr_ratio": 13.20073930925922,
+          "p90_per_prompt_lambda_iqr_ratio": 17.041323143278994,
+          "median_estimator_agreement_ratio": 3576.4048704098027,
+          "p90_estimator_agreement_ratio": 12937.054632795216,
+          "n_rows": 20,
+          "ptr": "tier0_raw.json:lambda[* model=smollm2/base, direction=toward_refuse, eps_c=0.1, p=16, teacher_forced=True].layerL.estimates"
+        },
+        "smollm2/base|final": {
+          "median_nls_r2": 0.03477837182382487,
+          "frac_r2_below_0.3": 1.0,
+          "frac_at_bound": 0.15,
+          "median_per_prompt_lambda_iqr_ratio": 14.78506093866035,
+          "p90_per_prompt_lambda_iqr_ratio": 487.0213326137742,
+          "median_estimator_agreement_ratio": 6050.481029131723,
+          "p90_estimator_agreement_ratio": 54560.53219754899,
+          "n_rows": 20,
+          "ptr": "tier0_raw.json:lambda[* model=smollm2/base, direction=toward_refuse, eps_c=0.1, p=16, teacher_forced=True].final.estimates"
+        }
+      },
+      "identifiability_rule": {
+        "value": false,
+        "achieved_geometry": {
+          "T_fit": 64,
+          "n_roll": 20
+        },
+        "rule": {
+          "any_cell_passes": true,
+          "min_T_fit": 128,
+          "min_n_roll": 20,
+          "n_passing_cells": 2,
+          "per_lambda_at_largest_geometry": {
+            "0.02": true,
+            "0.05": true,
+            "0.1": true,
+            "0.2": true,
+            "0.5": true,
+            "1.0": true
+          },
+          "largest_geometry": {
+            "T_fit": 128,
+            "n_roll": 40
+          },
+          "note": "lambda is reported as identifiable only at T_fit >= 128 and n_roll >= 20 (pre-registered rule)."
+        }
+      },
+      "archived_random_direction_control": {
+        "value": false,
+        "detail": {
+          "qwen3-0.6b/abliterated": 0.6766583649905813,
+          "qwen3-0.6b/base": 0.3900030185409029,
+          "qwen3-0.6b/instruct": 0.16457113277263608,
+          "smollm2/base": 1.5995152710111884
+        },
+        "delta_snr_random_vs_refuse": {
+          "qwen3-0.6b/abliterated": {
+            "random": 0.014171612796272385,
+            "refuse": 0.005628681890662849
+          },
+          "qwen3-0.6b/base": {
+            "random": 0.014981495938919478,
+            "refuse": 0.008469587285069226
+          },
+          "qwen3-0.6b/instruct": {
+            "random": 0.0049093109960608484,
+            "refuse": 0.008800809134954422
+          },
+          "smollm2/base": {
+            "random": 0.027153381979068844,
+            "refuse": 0.005543697085230269
+          }
+        }
+      },
+      "gate_members_passing_layerL": [
+        "qwen3-0.6b/instruct"
+      ],
+      "gate_admissible_ordering_rows": [
+        {
+          "analysis": "2.3_admissible_ordering",
+          "gate_readout": "final",
+          "pair": "qwen3-0.6b/instruct_minus_qwen3-0.6b/abliterated",
+          "indicator": "var_star",
+          "diff": 0.0077829122543334964,
+          "ci_lo": -0.08171652495861054,
+          "ci_hi": 0.0938932356238365,
+          "ci_excludes_zero": false,
+          "note": "indicator values are the layer-L (primary) series; the gate that admits this pair was evaluated at the final readout",
+          "ptr": "tier0_raw.json:ordering_tests['qwen3-0.6b/instruct_minus_qwen3-0.6b/abliterated']['var_star']"
+        },
+        {
+          "analysis": "2.3_admissible_ordering",
+          "gate_readout": "final",
+          "pair": "qwen3-0.6b/instruct_minus_qwen3-0.6b/abliterated",
+          "indicator": "ac1",
+          "diff": -0.00308309517002118,
+          "ci_lo": -0.022609152140177866,
+          "ci_hi": 0.013238581601009422,
+          "ci_excludes_zero": false,
+          "note": "indicator values are the layer-L (primary) series; the gate that admits this pair was evaluated at the final readout",
+          "ptr": "tier0_raw.json:ordering_tests['qwen3-0.6b/instruct_minus_qwen3-0.6b/abliterated']['ac1']"
+        },
+        {
+          "analysis": "2.3_admissible_ordering",
+          "gate_readout": "final",
+          "pair": "qwen3-0.6b/instruct_minus_qwen3-0.6b/abliterated",
+          "indicator": "flicker",
+          "diff": 0.16530054644808737,
+          "ci_lo": -0.6134221311475422,
+          "ci_hi": 1.0109972677595618,
+          "ci_excludes_zero": false,
+          "note": "indicator values are the layer-L (primary) series; the gate that admits this pair was evaluated at the final readout",
+          "ptr": "tier0_raw.json:ordering_tests['qwen3-0.6b/instruct_minus_qwen3-0.6b/abliterated']['flicker']"
+        }
+      ],
+      "instrument_coverage_note": "Experiment 2 covers ONE Qwen3 lineage only (base, base_plaintemplate, instruct, abliterated). SmolLM2-360M has no experiment-2 stream, so no instrument check is available for it. The abliterated membe...",
+      "permutation_null_distributions": {
+        "SPI_label_free|harmful_refusal_rate": [
+          -0.9486832981,
+          -0.7378647874,
+          -0.632455532
+        ],
+        "SPI_label_free|xstest_over_refusal_rate": [
+          -0.7745966692,
+          -0.2581988897,
+          0.2581988897
+        ],
+        "baseline_diff_in_means_auroc|harmful_refusal_rate": [
+          -0.9486832981,
+          -0.7378647874,
+          -0.632455532
+        ],
+        "baseline_diff_in_means_auroc|xstest_over_refusal_rate": [
+          -0.7745966692,
+          -0.2581988897,
+          0.2581988897
+        ],
+        "baseline_r0_margin|harmful_refusal_rate": [
+          -0.9486832981,
+          -0.7378647874,
+          -0.632455532
+        ],
+        "baseline_r0_margin|xstest_over_refusal_rate": [
+          -0.7745966692,
+          -0.2581988897,
+          0.2581988897
+        ]
+      },
+      "spi_and_baseline_values": {
+        "SPI_label_free": {
+          "qwen3-0.6b/abliterated": 0.439451885991373,
+          "qwen3-0.6b/base": 0.016998659573101538,
+          "qwen3-0.6b/instruct": 0.22934843483261974,
+          "smollm2/base": -0.6857989803971056
+        },
+        "baseline_diff_in_means_auroc": {
+          "qwen3-0.6b/abliterated": 0.9921875,
+          "qwen3-0.6b/base": 0.978515625,
+          "qwen3-0.6b/instruct": 0.9990234375,
+          "smollm2/base": 0.83984375
+        },
+        "baseline_r0_margin": {
+          "qwen3-0.6b/abliterated": 0.026412010192871094,
+          "qwen3-0.6b/base": -0.1530444622039795,
+          "qwen3-0.6b/instruct": 0.7064638137817383,
+          "smollm2/base": 0.10972213745117188
+        }
+      },
+      "ground_truth_values": {
+        "harmful_refusal_rate": {
+          "qwen3-0.6b/abliterated": 0.0,
+          "qwen3-0.6b/base": 0.025,
+          "qwen3-0.6b/instruct": 0.225,
+          "smollm2/base": 0.0
+        },
+        "xstest_over_refusal_rate": {
+          "qwen3-0.6b/abliterated": 0.0,
+          "qwen3-0.6b/base": 0.0,
+          "qwen3-0.6b/instruct": 0.0,
+          "smollm2/base": 0.03333333333333333
+        }
+      },
+      "series_lengths_available": [
+        16,
+        32,
+        48
+      ],
+      "cross_arm_agreement_note": "Both arms report the SAME sign of asymmetry - the compliant branch is the sticky one - but they use different perturbation channels (token-stream divergence vs residual-stream steering) and different ...",
+      "downgraded_claim_text": "On the only member whose refusal observable is a validated refusal readout (instruct: AUROC 0.793, margin +0.707), no cross-model contrast is available. The Qwen-triad indicator overlap (Var* 3.10-3.1..."
+    },
+    "cost_usd": 0.0
+  },
+  "metrics_agg": {
+    "primary_did_mean_log_units": -2.3338372643058096,
+    "primary_did_ci_lo": -3.572734989281885,
+    "primary_did_ci_hi": -1.0365288846483625,
+    "primary_did_tost_p": 0.997750343241054,
+    "primary_direction_contrast_mean_log": 1.2080133561947093,
+    "n_did_tests": 48.0,
+    "n_did_ci_excludes_zero": 8.0,
+    "n_did_equivalent_at_margin_020": 0.0,
+    "n_did_inconclusive": 40.0,
+    "n_lambda_rows_identifiable_false": 640.0,
+    "n_lambda_rows_total": 640.0,
+    "gate_threshold_auroc": 0.7,
+    "n_members_passing_gate_layerL": 1.0,
+    "n_admissible_model_pairs_layerL": 0.0,
+    "n_admissible_ordering_rows": 3.0,
+    "n_members_passing_gate_final": 2.0,
+    "n_admissible_model_pairs_final": 1.0,
+    "final_readout_gate_recovered": 1.0,
+    "instrument_auroc_min_over_members": 0.7520661157024794,
+    "instrument_auroc_max_over_members": 1.0,
+    "rho_spi_vs_harmful": 0.10540925533894598,
+    "rho_spi_ordinal_tiebreak": -0.19999999999999998,
+    "rho_baseline_ordinal_tiebreak": 0.39999999999999997,
+    "n_tied_models_on_ground_truth": 2.0,
+    "rho_spi_exact_two_sided_p": 1.0,
+    "rho_baseline_diff_means_vs_harmful": 0.632455532033676,
+    "rho_baseline_exact_two_sided_p": 0.5,
+    "exact_permutation_min_one_sided_p": 0.041666666666666664,
+    "exact_permutation_min_two_sided_p": 0.16666666666666666,
+    "n_resolvable_ground_truth_levels": 2.0,
+    "max_attainable_abs_rho_given_ties": 0.9486832980505139,
+    "ac1_headline_field_is_kendall_corrected": 1.0,
+    "ac1_kendall_term_at_T192": 0.009036095645819794,
+    "ac1_kendall_term_at_T64": 0.027108286937459383,
+    "largest_common_series_length": 192.0,
+    "n_matched_length_pairs_ci_excludes_zero": 17.0,
+    "n_prompts_needed_for_pm020_margin": 1880.0,
+    "n_limitations": 15.0,
+    "cost_usd": 0.0
+  },
+  "datasets": [
+    {
+      "dataset": "direction_contrast",
+      "examples": [
+        {
+          "input": "model=qwen3-0.6b/base | statistic=S1_decay_ratio_16 | readout=layerL | channel=teacher_forced",
+          "output": "log-ratio -0.954 [-2.153, +0.168] over n=20 prompts; CI includes 0",
+          "predict_reanalysis_label": "CI_INCLUDES_ZERO",
+          "metadata_model": "qwen3-0.6b/base",
+          "metadata_statistic": "S1_decay_ratio_16",
+          "metadata_readout": "layerL",
+          "metadata_channel": "teacher_forced",
+          "metadata_contrast": "log S(random_direction) - log S(toward_refuse)",
+          "eval_mean_log_diff": -0.9538714501692581,
+          "eval_ci_lo": -2.1528047887683313,
+          "eval_ci_hi": 0.1675447877346985,
+          "eval_sd": 2.6983245287393802,
+          "eval_n_pairs": 20.0,
+          "eval_ci_excludes_zero": 0.0,
+          "eval_boot_p_two_sided": 0.097,
+          "eval_wilcoxon_p": 0.14290618896484375,
+          "metadata_wilcoxon_mode": "exact",
+          "eval_cliffs_delta_paired": -0.39999999999999997,
+          "eval_cliffs_delta_unpaired": -0.33,
+          "eval_ratio_natural_scale": 0.38524666937892216,
+          "eval_median_random_natural": 0.08819162619541875,
+          "eval_median_refuse_natural": 0.15509932014116404,
+          "eval_prompts_used": 20.0,
+          "metadata_ptr": "tier0_raw.json:lambda[* where model=qwen3-0.6b/base, eps_c=0.1, p=16, teacher_forced=True, direction in {random_direction,toward_refuse}].layerL.decay_ratio_16"
+        },
+        {
+          "input": "model=qwen3-0.6b/instruct | statistic=S1_decay_ratio_16 | readout=layerL | channel=teacher_forced",
+          "output": "log-ratio +1.208 [+0.304, +2.208] over n=20 prompts; CI excludes 0",
+          "predict_reanalysis_label": "CI_EXCLUDES_ZERO",
+          "metadata_model": "qwen3-0.6b/instruct",
+          "metadata_statistic": "S1_decay_ratio_16",
+          "metadata_readout": "layerL",
+          "metadata_channel": "teacher_forced",
+          "metadata_contrast": "log S(random_direction) - log S(toward_refuse)",
+          "eval_mean_log_diff": 1.2080133561947093,
+          "eval_ci_lo": 0.3036685375718718,
+          "eval_ci_hi": 2.207914805957203,
+          "eval_sd": 2.231716229373098,
+          "eval_n_pairs": 20.0,
+          "eval_ci_excludes_zero": 1.0,
+          "eval_boot_p_two_sided": 0.0088,
+          "eval_wilcoxon_p": 0.029575347900390625,
+          "metadata_wilcoxon_mode": "exact",
+          "eval_cliffs_delta_paired": 0.30000000000000004,
+          "eval_cliffs_delta_unpaired": 0.355,
+          "eval_ratio_natural_scale": 3.346829086346573,
+          "eval_median_random_natural": 0.2314328730722719,
+          "eval_median_refuse_natural": 0.11940498858009906,
+          "eval_prompts_used": 20.0,
+          "metadata_ptr": "tier0_raw.json:lambda[* where model=qwen3-0.6b/instruct, eps_c=0.1, p=16, teacher_forced=True, direction in {random_direction,toward_refuse}].layerL.decay_ratio_16"
+        },
+        {
+          "input": "model=qwen3-0.6b/abliterated | statistic=S1_decay_ratio_16 | readout=layerL | channel=teacher_forced",
+          "output": "log-ratio -1.126 [-2.246, +0.027] over n=20 prompts; CI includes 0",
+          "predict_reanalysis_label": "CI_INCLUDES_ZERO",
+          "metadata_model": "qwen3-0.6b/abliterated",
+          "metadata_statistic": "S1_decay_ratio_16",
+          "metadata_readout": "layerL",
+          "metadata_channel": "teacher_forced",
+          "metadata_contrast": "log S(random_direction) - log S(toward_refuse)",
+          "eval_mean_log_diff": -1.1258239081111001,
+          "eval_ci_lo": -2.2461187334973736,
+          "eval_ci_hi": 0.026979612321757034,
+          "eval_sd": 2.648788614216969,
+          "eval_n_pairs": 20.0,
+          "eval_ci_excludes_zero": 0.0,
+          "eval_boot_p_two_sided": 0.055,
+          "eval_wilcoxon_p": 0.08969497680664062,
+          "metadata_wilcoxon_mode": "exact",
+          "eval_cliffs_delta_paired": -0.30000000000000004,
+          "eval_cliffs_delta_unpaired": -0.305,
+          "eval_ratio_natural_scale": 0.324385093717985,
+          "eval_median_random_natural": 0.10110159141280672,
+          "eval_median_refuse_natural": 0.18767059186731302,
+          "eval_prompts_used": 20.0,
+          "metadata_ptr": "tier0_raw.json:lambda[* where model=qwen3-0.6b/abliterated, eps_c=0.1, p=16, teacher_forced=True, direction in {random_direction,toward_refuse}].layerL.decay_ratio_16"
+        }
+      ]
+    },
+    {
+      "dataset": "interaction_did",
+      "examples": [
+        {
+          "input": "pair=qwen3-0.6b/base_minus_qwen3-0.6b/instruct | statistic=S1_decay_ratio_16 | readout=layerL | channel=teacher_forced",
+          "output": "DIRECTION_SPECIFIC: DiD +2.162 [+0.764, +3.606]",
+          "predict_reanalysis_label": "DIRECTION_SPECIFIC",
+          "metadata_pair": "qwen3-0.6b/base_minus_qwen3-0.6b/instruct",
+          "metadata_model_a": "qwen3-0.6b/base",
+          "metadata_model_b": "qwen3-0.6b/instruct",
+          "metadata_statistic": "S1_decay_ratio_16",
+          "metadata_readout": "layerL",
+          "metadata_channel": "teacher_forced",
+          "eval_is_primary": 0.0,
+          "eval_did_mean": 2.1618848063639673,
+          "eval_ci_lo": 0.7644720379837352,
+          "eval_ci_hi": 3.606279039507079,
+          "eval_sd": 3.3091711198407054,
+          "eval_n_pairs": 20.0,
+          "eval_ci_excludes_zero": 1.0,
+          "eval_boot_p_two_sided": 0.0016,
+          "eval_wilcoxon_p": 0.01531219482421875,
+          "eval_tost_margin": 0.2,
+          "eval_tost_p": 0.9921226430668787,
+          "eval_tost_ci90_lo": 1.0057995253458825,
+          "eval_tost_ci90_hi": 3.351478040423314,
+          "eval_tost_equivalent": 0.0,
+          "metadata_verdict": "DIRECTION_SPECIFIC",
+          "eval_n_prompts_for_pm020_margin_80pct_power": 2345.0,
+          "metadata_ptr": "tier0_raw.json:lambda[* where model in {qwen3-0.6b/base,qwen3-0.6b/instruct}, eps_c=0.1, p=16, teacher_forced=True].layerL",
+          "eval_wilcoxon_p_holm": 0.6584243774414062,
+          "eval_family_size": 48.0
+        },
+        {
+          "input": "pair=qwen3-0.6b/base_minus_qwen3-0.6b/abliterated | statistic=S1_decay_ratio_16 | readout=layerL | channel=teacher_forced",
+          "output": "INCONCLUSIVE: DiD -0.172 [-1.518, +1.355]",
+          "predict_reanalysis_label": "INCONCLUSIVE",
+          "metadata_pair": "qwen3-0.6b/base_minus_qwen3-0.6b/abliterated",
+          "metadata_model_a": "qwen3-0.6b/base",
+          "metadata_model_b": "qwen3-0.6b/abliterated",
+          "metadata_statistic": "S1_decay_ratio_16",
+          "metadata_readout": "layerL",
+          "metadata_channel": "teacher_forced",
+          "eval_is_primary": 0.0,
+          "eval_did_mean": -0.17195245794184197,
+          "eval_ci_lo": -1.517678692220119,
+          "eval_ci_hi": 1.3548328881831078,
+          "eval_sd": 3.3381422751827503,
+          "eval_n_pairs": 20.0,
+          "eval_ci_excludes_zero": 0.0,
+          "eval_boot_p_two_sided": 0.7842,
+          "eval_wilcoxon_p": 0.5705966949462891,
+          "eval_tost_margin": 0.2,
+          "eval_tost_p": 0.48520906279488024,
+          "eval_tost_ci90_lo": -1.331355342377522,
+          "eval_tost_ci90_hi": 1.0215832771097884,
+          "eval_tost_equivalent": 0.0,
+          "metadata_verdict": "INCONCLUSIVE",
+          "eval_n_prompts_for_pm020_margin_80pct_power": 2386.0,
+          "metadata_ptr": "tier0_raw.json:lambda[* where model in {qwen3-0.6b/base,qwen3-0.6b/abliterated}, eps_c=0.1, p=16, teacher_forced=True].layerL",
+          "eval_wilcoxon_p_holm": 1.0,
+          "eval_family_size": 48.0
+        },
+        {
+          "input": "pair=qwen3-0.6b/base_minus_smollm2/base | statistic=S1_decay_ratio_16 | readout=layerL | channel=teacher_forced",
+          "output": "INCONCLUSIVE: DiD -1.216 [-2.641, +0.215]",
+          "predict_reanalysis_label": "INCONCLUSIVE",
+          "metadata_pair": "qwen3-0.6b/base_minus_smollm2/base",
+          "metadata_model_a": "qwen3-0.6b/base",
+          "metadata_model_b": "smollm2/base",
+          "metadata_statistic": "S1_decay_ratio_16",
+          "metadata_readout": "layerL",
+          "metadata_channel": "teacher_forced",
+          "eval_is_primary": 0.0,
+          "eval_did_mean": -1.216495255114528,
+          "eval_ci_lo": -2.641021925031306,
+          "eval_ci_hi": 0.21487132303029416,
+          "eval_sd": 3.3580558984475606,
+          "eval_n_pairs": 20.0,
+          "eval_ci_excludes_zero": 0.0,
+          "eval_boot_p_two_sided": 0.0936,
+          "eval_wilcoxon_p": 0.11398696899414062,
+          "eval_tost_margin": 0.2,
+          "eval_tost_p": 0.9041461485334693,
+          "eval_tost_ci90_lo": -2.413096079363264,
+          "eval_tost_ci90_hi": -0.03686563228580239,
+          "eval_tost_equivalent": 0.0,
+          "metadata_verdict": "INCONCLUSIVE",
+          "eval_n_prompts_for_pm020_margin_80pct_power": 2415.0,
+          "metadata_ptr": "tier0_raw.json:lambda[* where model in {qwen3-0.6b/base,smollm2/base}, eps_c=0.1, p=16, teacher_forced=True].layerL",
+          "eval_wilcoxon_p_holm": 1.0,
+          "eval_family_size": 48.0
+        }
+      ]
+    },
+    {
+      "dataset": "ratchet_free_vs_teacher_forced",
+      "examples": [
+        {
+          "input": "model=qwen3-0.6b/base | statistic=S1_decay_ratio_16 | readout=layerL",
+          "output": "free/teacher-forced ratio 25.160x, CI excludes 0",
+          "predict_reanalysis_label": "CI_EXCLUDES_ZERO",
+          "metadata_model": "qwen3-0.6b/base",
+          "metadata_statistic": "S1_decay_ratio_16",
+          "metadata_readout": "layerL",
+          "metadata_contrast": "log S(free_running) - log S(teacher_forced)",
+          "eval_mean_log_diff": 3.225257100538247,
+          "eval_ci_lo": 1.9273155988623167,
+          "eval_ci_hi": 4.478477175254644,
+          "eval_n_pairs": 20.0,
+          "eval_ci_excludes_zero": 1.0,
+          "eval_wilcoxon_p": 0.0003948211669921875,
+          "eval_ratio_natural_scale": 25.160041984678173,
+          "eval_median_free_natural": 5.3183834557603555,
+          "eval_median_tf_natural": 0.15509932014116404,
+          "metadata_ptr": "tier0_raw.json:lambda[* model=qwen3-0.6b/base, direction=toward_refuse, eps_c=0.1, p=16].layerL"
+        },
+        {
+          "input": "model=qwen3-0.6b/instruct | statistic=S1_decay_ratio_16 | readout=layerL",
+          "output": "free/teacher-forced ratio 31.119x, CI excludes 0",
+          "predict_reanalysis_label": "CI_EXCLUDES_ZERO",
+          "metadata_model": "qwen3-0.6b/instruct",
+          "metadata_statistic": "S1_decay_ratio_16",
+          "metadata_readout": "layerL",
+          "metadata_contrast": "log S(free_running) - log S(teacher_forced)",
+          "eval_mean_log_diff": 3.437814874267757,
+          "eval_ci_lo": 2.4438553978961988,
+          "eval_ci_hi": 4.670762133506473,
+          "eval_n_pairs": 20.0,
+          "eval_ci_excludes_zero": 1.0,
+          "eval_wilcoxon_p": 3.814697265625e-06,
+          "eval_ratio_natural_scale": 31.11888514464944,
+          "eval_median_free_natural": 2.5268806873415097,
+          "eval_median_tf_natural": 0.11940498858009906,
+          "metadata_ptr": "tier0_raw.json:lambda[* model=qwen3-0.6b/instruct, direction=toward_refuse, eps_c=0.1, p=16].layerL"
+        },
+        {
+          "input": "model=qwen3-0.6b/abliterated | statistic=S1_decay_ratio_16 | readout=layerL",
+          "output": "free/teacher-forced ratio 13.970x, CI excludes 0",
+          "predict_reanalysis_label": "CI_EXCLUDES_ZERO",
+          "metadata_model": "qwen3-0.6b/abliterated",
+          "metadata_statistic": "S1_decay_ratio_16",
+          "metadata_readout": "layerL",
+          "metadata_contrast": "log S(free_running) - log S(teacher_forced)",
+          "eval_mean_log_diff": 2.6368951577906863,
+          "eval_ci_lo": 1.5354761056070023,
+          "eval_ci_hi": 3.627559349573543,
+          "eval_n_pairs": 20.0,
+          "eval_ci_excludes_zero": 1.0,
+          "eval_wilcoxon_p": 0.0004825592041015625,
+          "eval_ratio_natural_scale": 13.969762295792098,
+          "eval_median_free_natural": 2.634995634781846,
+          "eval_median_tf_natural": 0.18767059186731302,
+          "metadata_ptr": "tier0_raw.json:lambda[* model=qwen3-0.6b/abliterated, direction=toward_refuse, eps_c=0.1, p=16].layerL"
+        }
+      ]
+    }
+  ]
+}

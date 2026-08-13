@@ -1,0 +1,35 @@
+Search: Scheffer 2012 Science anticipating critical transitions doi  [scholarly via openalex]
+Found: 8 results
+
+1. An agenda for sustainability transitions research: State of the art and future directions
+   https://doi.org/10.1016/j.eist.2019.01.004
+   Environmental Innovation and Societal Transitions · 2019 · cited by 2735...
+
+2. Cell Fate Decision as High-Dimensional Critical State Transition
+   https://doi.org/10.1371/journal.pbio.2000640
+   PLoS Biology · 2016 · cited by 413...
+
+3. Early Warning Signals of Ecological Transitions: Methods for Spatial Patterns
+   https://doi.org/10.1371/journal.pone.0092097
+   PLoS ONE · 2014 · cited by 430...
+
+4. Evaluating early-warning indicators of critical transitions in natural aquatic ecosystems
+   https://doi.org/10.1073/pnas.1608242113
+   Proceedings of the National Academy of Sciences · 2016 · cited by 188...
+
+5. Beyond the “at risk mental state” concept: transitioning to transdiagnostic psychiatry
+   https://doi.org/10.1002/wps.20514
+   World Psychiatry · 2018 · cited by 482...
+
+6. Food-web stability signals critical transitions in temperate shallow lakes
+   https://doi.org/10.1038/ncomms8727
+   Nature Communications · 2015 · cited by 147...
+
+7. Critical Slowing Down Governs the Transition to Neuron Spiking
+   https://doi.org/10.1371/journal.pcbi.1004097
+   PLoS Computational Biology · 2015 · cited by 94...
+
+8. Early warning signals for critical transitions in a thermoacoustic system
+   https://doi.org/10.1038/srep35310
+   Scientific Reports · 2016 · cited by 97...
+

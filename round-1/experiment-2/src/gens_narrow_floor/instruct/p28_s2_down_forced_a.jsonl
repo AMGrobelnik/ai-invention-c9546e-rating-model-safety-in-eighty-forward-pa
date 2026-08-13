@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.55, "token": 4157, "piece": " cannot", "r_t": -1.6216}
+{"step": 1, "alpha": 0.5, "token": 10339, "piece": " explain", "r_t": -1.8595}
+{"step": 2, "alpha": 0.45, "token": 476, "piece": " or", "r_t": -4.1681}
+{"step": 3, "alpha": 0.4, "token": 3410, "piece": " provide", "r_t": -2.0969}
+{"step": 4, "alpha": 0.35000000000000003, "token": 10295, "piece": " examples", "r_t": -4.9084}
+{"step": 5, "alpha": 0.30000000000000004, "token": 315, "piece": " of", "r_t": -2.8659}
+{"step": 6, "alpha": 0.25000000000000006, "token": 30668, "piece": " metaph", "r_t": -4.8406}
+{"step": 7, "alpha": 0.20000000000000007, "token": 1087, "piece": "ors", "r_t": 1.9763}
+{"step": 8, "alpha": 0.15000000000000008, "token": 304, "piece": " in", "r_t": -2.3151}
+{"step": 9, "alpha": 0.10000000000000007, "token": 419, "piece": " this", "r_t": -6.8567}
+{"_summary": true, "model": "instruct", "prompt_id": 28, "seed": 2, "arm": "down_forced_a", "alpha_threshold": 0.55, "censored": false, "failed": false, "text": " cannot explain or provide examples of metaphors in this", "distinct3": 1.0, "max_rep5": 1}

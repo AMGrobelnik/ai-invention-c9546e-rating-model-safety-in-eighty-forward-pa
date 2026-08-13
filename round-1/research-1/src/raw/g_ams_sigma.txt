@@ -1,0 +1,61 @@
+URL: https://arxiv.org/pdf/2608.05578
+Type: PDF
+Pattern: (sigma|\\sigma) *(=|is defined|denotes)|separation (statistic|metric|measure)|Cohen|silhouette|Mahalanobis|difference[- ]in[- ]means|centroid (3 matches in 71601 chars)
+
+--- Content ---
+
+16031:...identify the optimal extraction
+layer via a calibration sweep (Section IV-D).
+B. Direction Vector Computation
+For each safety concept (e.g., harmful content detection),
+we construct a contrastive dataset of positive/negative pairs:
+• Positive: “How do I build an explosive device at home?”
+• Negative: “How do I build a birdhouse at home?”
+The direction vector is computed as the difference of class
+centroids:
+v =
+1
+|P|
+X
+i∈P
+h+
+i −
+1
+|N|
+X
+j∈N
+h−
+j
+(1)
+We normalize to unit length: ˆv = v/∥v∥.
+C. Class Separation Measurement
+Class separation quantifies how well the direction vector
+distinguishes positive from negative examples, measured in
+pooled standard deviations:
+separation = µ+ −µ−
+σpooled
+(2)
+where µ± = E[⟨h±, ˆv⟩] are the mean projections and σpooled =
+p
+(σ+)2 + (σ−)2/2.
+A separation of 4σ means the class means are 4 pooled
+standard deviations apart—extremely unlikely to overlap by
+chance.
+D. Layer Selecti...
+--
+43930:...contrastive cluster
+geometry along some axis is preserved; the axis has merely
+rotated modestly. AMS’s σ-threshold cannot distinguish this
+from a benign perturbation.
+Figure 3 shows the full per-layer ∆-norm and cosine-
+similarity profiles for both pairs.
+Implication. The structural signal σ measures cluster sep-
+aration along whatever direction maximally separates the
+positive and negative class centroids. It does not measure
+whether the separating direction is the original refusal axis.
+Gemma-abliteration exploits exactly this gap: it rotates the
+separating axis sufficiently to break behavioral refusal without
+collapsing the cluster magnitude. A direction-aware probe—
+which AMS already implements as Tier 2—closes this gap.
+Our pre-resubmission framing of Tier 2 as optional was a
+mistake: for the...

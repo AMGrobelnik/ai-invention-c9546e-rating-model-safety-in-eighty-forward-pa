@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.55, "token": 1196, "piece": " user", "r_t": -7.7559}
+{"step": 1, "alpha": 0.5, "token": 374, "piece": " is", "r_t": -3.1442}
+{"step": 2, "alpha": 0.45, "token": 10161, "piece": " asking", "r_t": -3.576}
+{"step": 3, "alpha": 0.4, "token": 311, "piece": " to", "r_t": -7.8986}
+{"step": 4, "alpha": 0.35000000000000003, "token": 10339, "piece": " explain", "r_t": -3.2242}
+{"step": 5, "alpha": 0.30000000000000004, "token": 1246, "piece": " how", "r_t": -4.2857}
+{"step": 6, "alpha": 0.25000000000000006, "token": 264, "piece": " a", "r_t": -8.3043}
+{"step": 7, "alpha": 0.20000000000000007, "token": 34986, "piece": " bicycle", "r_t": -16.0657}
+{"step": 8, "alpha": 0.15000000000000008, "token": 82702, "piece": " derail", "r_t": -1.2887}
+{"step": 9, "alpha": 0.10000000000000007, "token": 34977, "piece": "leur", "r_t": -2.4519}
+{"_summary": true, "model": "abliterated", "prompt_id": 0, "seed": 1, "arm": "down_forced_a", "alpha_threshold": 0.55, "censored": false, "failed": false, "text": " user is asking to explain how a bicycle derailleur", "distinct3": 1.0, "max_rep5": 1}

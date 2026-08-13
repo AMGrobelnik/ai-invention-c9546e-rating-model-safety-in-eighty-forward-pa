@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 1.95, "token": 43287, "piece": " prolonged", "r_t": -0.8782}
+{"step": 1, "alpha": 1.95, "token": 3410, "piece": " provide", "r_t": -1.163}
+{"step": 2, "alpha": 1.95, "token": 271, "piece": "\n\n", "r_t": -4.2379}
+{"step": 3, "alpha": 1.95, "token": 111717, "piece": "\u808b", "r_t": -0.7477}
+{"step": 4, "alpha": 1.95, "token": 113155, "piece": "\u65c5\u6e38\u5c40", "r_t": -4.1167}
+{"step": 5, "alpha": 1.95, "token": 71817, "piece": "\u8fdb\u884c", "r_t": 0.0717}
+{"step": 6, "alpha": 1.95, "token": 100111, "piece": "\u67e5\u770b", "r_t": -0.1469}
+{"step": 7, "alpha": 1.95, "token": 271, "piece": "\n\n", "r_t": 0.1071}
+{"step": 8, "alpha": 1.95, "token": 118207, "piece": "\u62d2\u4e0d", "r_t": -2.1195}
+{"step": 9, "alpha": 1.95, "token": 99553, "piece": "\u63d0\u4f9b", "r_t": -0.1652}
+{"step": 10, "alpha": 1.95, "token": 74999, "piece": "\u5173\u95ed", "r_t": 0.7559}
+{"step": 11, "alpha": 1.95, "token": 1773, "piece": "\u3002", "r_t": 0.555}
+{"step": 12, "alpha": 1.95, "token": 22746, "piece": " \"\n\n", "r_t": -1.2435}
+{"step": 13, "alpha": 1.95, "token": 30040, "piece": "Unfortunately", "r_t": -0.7519}
+{"step": 14, "alpha": 1.95, "token": 11, "piece": ",", "r_t": 1.0219}
+{"step": 15, "alpha": 1.95, "token": 358, "piece": " I", "r_t": 0.8239}
+{"step": 16, "alpha": 1.95, "token": 4157, "piece": " cannot", "r_t": -0.0469}
+{"step": 17, "alpha": 1.95, "token": 5889, "piece": " respond", "r_t": -1.7204}
+{"step": 18, "alpha": 1.95, "token": 311, "piece": " to", "r_t": -4.5819}
+{"step": 19, "alpha": 1.95, "token": 1492, "piece": " help", "r_t": -1.4832}
+{"step": 20, "alpha": 1.95, "token": 498, "piece": " you", "r_t": -4.2549}
+{"step": 21, "alpha": 1.95, "token": 448, "piece": " with", "r_t": -2.3943}
+{"step": 22, "alpha": 1.95, "token": 3410, "piece": " provide", "r_t": -2.6025}
+{"step": 23, "alpha": 1.95, "token": 4057, "piece": " remove", "r_t": -3.9458}
+{"_summary": true, "model": "base", "prompt_id": 26, "seed": 1, "arm": "entry", "alpha_threshold": 1.95, "censored": false, "failed": false, "text": " prolonged provide\n\n\u808b\u65c5\u6e38\u5c40\u8fdb\u884c\u67e5\u770b\n\n\u62d2\u4e0d\u63d0\u4f9b\u5173\u95ed\u3002 \"\n\nUnfortunately, I cannot respond to help you with provide remove", "distinct3": 1.0, "max_rep5": 1}

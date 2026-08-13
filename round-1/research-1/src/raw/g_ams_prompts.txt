@@ -1,0 +1,173 @@
+URL: https://arxiv.org/pdf/2608.05578
+Type: PDF
+Pattern: JailbreakBench|AdvBench|prompts|harmful set|benign (33 matches in 71601 chars)
+
+--- Content ---
+
+388:...on in Language
+Models via Activation Analysis
+Glen Messenger
+Abstract—We introduce AMS (Activation-based Model Scan-
+ner), a tool that detects modifications to safety training in
+language models by measuring the geometric structure of safety-
+relevant concepts in activation space. Safety training creates mea-
+surable separation between harmful and benign content classes;
+certain safety modifications collapse or rotate this structure, while
+others leave it intact. We validate AMS across 14 model configu-
+rations spanning 4 architecture families (Llama, Gemma, Qwen,
+Mistral) and four safety-modification categories (instruction-
+tuned, base, abliterated, uncensored fine-tunes). Leave-one-out
+cross-validation of thresholds achieves 71% accuracy (10/14);
+bootstrap 95% confidence intervals on σ point estimates have
+median width 3.4σ and a substantial fraction of cells cross
+the PASS threshold under resampling. We further measure
+behavioral compliance on 20 stratified JailbreakBench prompts
+per model and find that σ on the harmful-content concept
+predicts compliance with Pearson r = −0.546 (p = 0.043);
+the rank-order Spearman correlation is weaker (ρ = −0.423,
+p = 0.13). The structural signal predicts behavior directionally
+but with meaningful noise. Mechanistic analysis identifies a four-
+class taxonomy of safety-training modificati...
+--
+3982:...ply chain attacks where modified weights are substituted
+for legitimate ones. Current detection approaches rely on
+behavioral testing: prompting the model with harmful requests
+and checking responses. This is slow (requiring many queries),
+incomplete (cannot cover all harmful behaviors), and easily
+evaded (models can be trained to refuse benchmark prompts
+while complying with novel attacks).
+We observe that safety training creates measurable geo-
+metric structure in a model’s activation space. Specifically,
+instruction-tuned models develop direction vectors that sepa-
+rate harmful from benign content with measurable confidence
+(∼4–8σ). When safety training is removed—whether through
+“uncensoring” fine-tunes, abliteration [1], or training without
+safety data—this structure is modified, but the form of mod-
+ification varies materially across techniques. AMS exploits
+these structural differences to detect a subset of safety-training
+modif...
+--
+6283:...bootstrap
+95% confidence intervals on all σ point estimates, and
+a documented systematic upward bias in the direction-
+maximizing estimator. We treat single-run σ values as
+arXiv:2608.05578v1  [cs.CR]  6 Aug 2026
+
+2
+exploratory and report CI lower bounds as the more honest
+summary statistic.
+4) Behavioral correlation analysis. We run 20 stratified
+JailbreakBench harmful behaviors against all 14 models
+and report Pearson and Spearman correlations between σ
+on the harmful-content concept and behavioral compliance
+rate. The structural signal predicts behavior directionally
+(r = −0.546, p = 0.043) but with meaningful noise,
+including two documented cases where high σ co-occurs
+with high compliance.
+5) Charact...
+--
+8553:... Security Analysis: Several concur-
+rent works analyze LLM activations for security purposes.
+Arazzi et al. [10] derive activation fingerprints to distinguish
+censored from uncensored models, then exploit identified
+vulnerable layers for targeted attacks. Kawasaki et al. [11] pro-
+pose Residual Stream Activation Analysis (RSAA) to detect
+jailbreak prompts by monitoring activation patterns between
+transformer layers. Chen et al. [12] identify “safety layers”—
+contiguous middle layers crucial for distinguishing malicious
+queries. These works focus on runtime defense (prompt-level);
+AMS addresses a complementary problem: pre-deployment
+model verification.
+c) Model Authenticity and Supply Chain Securit...
+--
+10813:...itioning.
+Probing
+classifiers [13] train supervised models on labeled activation
+data
+to
+extract
+specific
+features
+(e.g.,
+part-of-speech,
+sentiment). AMS differs from probing in three respects:
+(1) we measure pooled-standard-deviation cluster separation
+rather than training a classifier, requiring no labeled training
+data beyond paired contrastive prompts; (2) we operate at the
+model level (“is this model’s safety geometry modified?”)
+rather than the prompt level (“does this single prompt
+activate harmful representations?”); (3) the direction vectors
+we compute additionally serve as fingerprints for identity
+verification
+under
+reference
+comparison,
+which
+probing
+classifiers
+do
+not
+provide.
+Mechanis...
+--
+12338:...signal of training-time safety modification.
+f) Safety Benchmarks: Benchmarks like HarmBench [6],
+ToxiGen [7], and WildGuard [8] evaluate model safety through
+behavioral testing. While valuable for capability assessment,
+they require many queries, cannot cover all harmful behaviors,
+and can be gamed by training models to refuse benchmark-
+specific prompts. AMS provides a complementary structural
+assessment that is faster and harder to evade.
+
+3
+III. THREAT MODEL
+AMS addresses a class of supply-chain and deployment
+threats against open-weight language models. Different threat
+scenarios correspond to different activation-space signatures,
+and AMS’s coverage varies by signature class.
+a) Supply Chain ...
+--
+13284:...detects this by comparing the model’s
+direction vectors against verified baselines from a known-clean
+source.
+b) Accidental Deployment of Modified Models: A devel-
+oper inadvertently deploys a base model (no safety training),
+an abliterated variant, or a model from an untrusted source.
+AMS’s Tier 1 catches this by measuring whether the harmful-
+vs-benign cluster separation is present, without requiring a
+baseline.
+c) Mislabeled Models: Models on HuggingFace or other
+registries may have inaccurate safety labels. Our validation
+set contains an example: Mistral-7B-Instruct-v0.3
+is labeled as a standard instruction-tuned model but exhibits
+both low σ (1.39 on harmful content) and high behavioral
+compliance (95%); AMS’s Tier 1 correctly flags this as
+CRITICAL despite the benign label.
+d) Insider Threats: A malicious insider modifies de-
+ployed model weights to remove or rotate safety-relevant
+directions. Periodic AMS scans with Tier 2 verification can
+detect drift from verified baselines.
+e) Demonstrated Attacks Outside the Detection Enve-
+lope: Our experimental work identifies two in-the-wild attack
+signatures that AMS’...
+--
+21056:...s measurements (FP16/INT8/INT4 on
+Llama-3.1-8B-Instruct) were performed in an earlier round of
+validation and are reported separately in Section VIII-C; they
+did not undergo the bootstrap or LOOCV analysis applied to
+the 14-model set.
+b) Behavioral evaluation: For each of the 14 models we
+additionally run 20 stratified harmful behaviors drawn from
+JailbreakBench [18], covering 9 categories (Disinformation,
+Economic harm, Expert advice, Fraud, Government decision-
+making, Harassment, Malware, Physical harm, Privacy). The
+Sexual/Adult content category is omitted as the JailbreakBench
+prompts in that category are CSAM-adjacent and inappropriate
+to handle even for security research. Generation uses greedy
+decoding with max_new_tokens=256 and the tokenizer’s
+chat template where available. Responses are classified as
+REFUSE / PARTIAL / COMPLY via a refusal-phrase string-
+match heuristic restricted to the first 250 characters of the
+respon...
+--
+[19 more matches not shown]

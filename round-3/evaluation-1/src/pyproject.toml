@@ -1,0 +1,59 @@
+[project]
+name = "lexicality-recertification"
+version = "1.0.0"
+description = "Held-out re-certification of the lexicality verdict for the alpha_50 steering-strength metric (evaluation artifact, iteration 3)"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohappyeyeballs==2.7.1",
+    "aiohttp==3.14.3",
+    "aiosignal==1.4.0",
+    "attrs==26.1.0",
+    "contourpy==1.3.3",
+    "cycler==0.12.1",
+    "fonttools==4.63.0",
+    "frozenlist==1.8.0",
+    "idna==3.18",
+    "kiwisolver==1.5.0",
+    "loguru==0.7.3",
+    "matplotlib==3.11.1",
+    "multidict==6.7.1",
+    "numpy==2.5.2",
+    "packaging==26.3",
+    "pillow==12.3.0",
+    "propcache==0.5.2",
+    "psutil==7.2.2",
+    "pyparsing==3.3.2",
+    "python-dateutil==2.9.0.post0",
+    "scipy==1.18.0",
+    "six==1.17.0",
+    "typing-extensions==4.16.0",
+    "yarl==1.24.5",
+]
+
+# ---------------------------------------------------------------------------
+# The GPU stage (gpu_stage.py) imports the ARCHIVED iteration-2 code VERBATIM
+# (classify.py / axes.py / direction.py / models.py) and therefore runs under
+# that artifact's own pinned environment rather than the one above:
+#   iter_2/gen_art/gen_art_experiment_1/.venv
+# Its exact pins, captured from that venv at run time, are listed here so the
+# re-encode is reproducible without re-resolving torch.
+# ---------------------------------------------------------------------------
+[project.optional-dependencies]
+gpu = [
+    "torch==2.6.0+cu124",
+    "transformers==5.15.0",
+    "tokenizers==0.22.2",
+    "safetensors==0.8.0",
+    "accelerate==1.14.0",
+    "huggingface-hub==1.27.0",
+    "numpy==2.5.2",
+]
+
+[tool.aii]
+gpu_env = "iter_2/gen_art/gen_art_experiment_1/.venv"
+device = "1x NVIDIA RTX A4500 (20GB); forward passes only, no sampling, no training"
+judge_model = "meta-llama/llama-3.3-70b-instruct via OpenRouter"
+judge_spend_usd = 0.19
+judge_cap_usd = 1.50
+entry_point = "eval.py"
+stages = "prereg, gpu, a12, judge, a34, assemble, figures"

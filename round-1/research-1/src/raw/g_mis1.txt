@@ -1,0 +1,147 @@
+URL: https://arxiv.org/pdf/2604.09839
+Type: PDF
+Pattern: Theorem|Proposition|we prove|proof|almost surely|non-surjectiv (54 matches in 76391 chars)
+
+--- Content ---
+
+28:Steered LLM Activations are Non-Surjective
+Aayush Mishra, Daniel Khashabi∗& Anqi Liu∗
+Johns Hopkins University
+Abstract
+Activation steering is a popular white-box control technique that modifies model
+activations to elicit an abstract change in its behavior. It has also become a standard
+tool in interpretability (e.g., probing truthfulness, or translating activations into
+human-readable explanations) and safety research (e.g., jailbreakability). However,
+it is unclear whether steered behavior is realizable by any textual prompt. In this
+work, we cast this question as a surjectivity problem: for a fixed model, does every
+steered activation admit a preimage under the model’s natural forward pass? Under
+practical assumptions, we prove that activation steering pushes the residual stream
+off the manifold of states reachable from discrete prompts. Almost surely, no prompt
+can reproduce the same internal behavior induced by steering. We also illustrate
+this finding empirically across three widely used LLMs. Our results establish a
+formal separation between white-box steerability and black-box prompting. We
+therefore caution against interpreting the ease and success of activation steering as
+evidence of prompt-based interpretability or vulnerability, and argue for evaluation
+protocols that explicitly decouple white-box and black-box interventions.
+1
+Introduction
+A rapidly growing line of work studies a...
+--
+3647:...gap raises a foundational question:
+are steered activation states realizable by some textual prompt, or do they lie outside the model’s
+intrinsic activation manifold [36, 26]?
+∗Equal advising
+Preprint.
+arXiv:2604.09839v2  [cs.AI]  7 May 2026
+
+Figure 1: LLMs admit a countable and practically fi-
+nite number of prompts V≤K. This property implies
+the existence of holes in their real activation space Rd:
+regions that do not map back to any prompt. We show
+that activation steering, a popular white-box interven-
+tion method to change model behavior, almost surely
+steers activations into such holes resulting in almost-
+sure non-surjectivity, i.e., steered model behavior is
+not exhibited by any real prompt. Details in §4.
+Our argument:
+We show that activa-
+tion steering takes the model’s residual
+stream to unnatural states that are inacces-
+sible through black-box prompting (Fig-
+ure 1).
+Simply stated, there exist no
+prompts that elicit the same internal be-
+havior achieved through activation steer-
+ing. This implies that steering, while a pow-
+erful mechanism for behavioral control,
+does not necessarily expose unexplored
+prompt-reachable behavior in LLMs. In-
+stead, it succeed...
+--
+5031:...l
+motor control.
+To make this distinction precise, we cast
+prompt-reachability as a surjectivity prob-
+lem. For a fixed model, consider the map-
+ping from discrete prompts to internal ac-
+tivations produced by the model’s natural
+forward pass. Activation steering perturbs
+this computation by adding an external direction in activation space. The key question then becomes:
+does every steered activation admit a preimage under the natural prompt-to-activation mapping?
+Our main result answers this negatively: under practical assumption, steering is almost surely non-
+surjective, meaning that steered residual-stream states typically lie outside the set of states reachable
+by any prompt.
+Significance: This separation has direct implications for safety evaluation. In open-weight or
+developer-controlled settings, steering can be exploited to bypass safety mechanisms and induce
+harmful behavior [5, 52]. However, our results suggest that such white-box attack demonstrations do
+not automatically imply corresponding risks in closed-weight deployments where users only have
+black-box access. More broadly, they motivate evaluation protocols that explicitly decouple white-box
+controllability from black-box exploitability [9, 11].
+Contributions: Our main contributions are as follows: (i) Non-surjectivity of steering. We
+formalize prompt-reachability as a surjectivity question and prove that activation steering moves
+the residual stream off the prompt-realizable set: steered states almost surely have no exact prompt
+preimage. (ii) Empirical evidence across models. We validate this gap across three widely used open-
+weight models by comparing white-box steering trajectories to black-box, prompt-only replication
+attempts. (iii) Threat-model-aware implication. We show that white-box steered behavior does not
+imply black-box vulnerabilities, motivating evaluations that decouple internal controllability from
+prompt-side exploitability.
+2
+Related Work
+Activation steering and white-box behavioral control: A growing body of work demonstrates ...
+--
+8728:...bound and introduce activation/weight tampering attacks that expose failures more reliably [9, 11].
+Complementing these threat-model perspectives, Wallace et al. [51] estimate worst-case misuse
+by maliciously fine-tuning open-weight models in high-risk domains and evaluating the resulting
+systems against frontier benchmarks [51]. Our contribution is tangential: we show a non-implication:
+white-box behavioral control does not, by itself, imply an analogous black-box prompt vulnerability.
+3
+Notation and Background
+In this section, we establish a proof of non-existence of prompts that can elicit LLM activations
+equivalent to those produced using activation steering. Nikolaou et al. [37] showed that LLMs are
+injective, i.e. for any two distinct prompts, model internal states at all token positions are almost
+surely distinct. We use an extension of this result to show that activation steering produces internal
+states that are off the manifold spanned by prompts in the activation space. This implies that steered
+internal states can almost surely not be produced by any real (language) prompt. We first re-iterate
+some key results from Nikolaou et al. [37], before using them to derive our new results in §4.
+Notation: Let V be a discrete vocabulary of tokens. Let S = V≤K be the set of all possible
+input sequences (prompts) up to length K (the context window).2 Let an L-layer Transformer
+language model with model parameters Θ ∈RP , be defined as a mapping that serially converts inputs
+s = {s1, . . . , sN} ∈S (a prompt consisting of N ≤K tokens) into 1) token + position embeddings
+x = {e1 +...
+--
+10917:...l denote ri = rij for any arbitrarily chosen layer j). We treat the model as
+a function F : RK × V × RP →R which computes the activation at position i based on the history
+of activations and the current token: ri = F(r<i, si; Θ).
+F is shown to be real-analytic with respect to Θ by Nikolaou et al. [37] if the Transformer uses real-
+analytic MLP activation functions (e.g., tanh, GeLU, etc). Simply stated, a function is real-analytic if
+it equals its Taylor series expansion in a neighborhood around every point in its domain. Here, we
+re-write the theorem in our setting for completeness.
+Theorem 3.1 (Transformers are real-analytic). Fix embedding dimension d and context length K.
+Assume the MLP activation is real-analytic (e.g. tanh, GELU). Then for every input sequence
+s = {s1, . . . , sN} ∈S, the map: ri = F(r<i, si; Θ) is real-analytic in the parameters Θ.
+Figure 2: Due to their almost sure injectivity, natu-
+ral LLM activations can uniquely recover prompts
+using the SipIt algorithm (§5.1).
+Injectivity at initialization; preserved un-
+der training.
+Nikolaou et al. [37] use the
+real-analyticity of transformers to show that
+with random draws of initial parameters (from
+practical distributions like Gaussian, Xavier,
+etc.), internal representations of these models
+almost surely never collide, i.e., for any distinct
+prompts s, s′ ∈S, P(ri = r′
+i) = 0. Their
+proof uses Mityagin [35]’s proof stating that
+zero sets of real analytic functions (that are not
+identically zero) have measure zero. By defining
+h(Θ) = ∥ri −r′
+i∥2 as the real-analytic function,
+they show that the two prompts do not produce the same activations almost surely.
+2Real LLMs have finite context windows; denoted by K here. But our results work w.l.o.g. on arbitrarily long prompts.
+3
+
+They also show that transformers continue to preserve this property under training for a finite number
+of gradient descent steps. This practically applies t...
+--
+[40 more matches not shown]

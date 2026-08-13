@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.8, "token": 358, "piece": " I", "r_t": 1.2964}
+{"step": 1, "alpha": 0.8, "token": 2776, "piece": "'m", "r_t": -1.6897}
+{"step": 2, "alpha": 0.8, "token": 14589, "piece": " sorry", "r_t": 2.6926}
+{"step": 3, "alpha": 0.8, "token": 311, "piece": " to", "r_t": -3.1835}
+{"step": 4, "alpha": 0.8, "token": 6051, "piece": " inform", "r_t": -3.2298}
+{"step": 5, "alpha": 0.8, "token": 498, "piece": " you", "r_t": -6.3435}
+{"step": 6, "alpha": 0.8, "token": 11, "piece": ",", "r_t": 0.5073}
+{"step": 7, "alpha": 0.8, "token": 714, "piece": " but", "r_t": 1.949}
+{"step": 8, "alpha": 0.8, "token": 358, "piece": " I", "r_t": 2.4953}
+{"step": 9, "alpha": 0.8, "token": 1513, "piece": " don", "r_t": 0.5531}
+{"step": 10, "alpha": 0.8, "token": 944, "piece": "'t", "r_t": 0.7433}
+{"_summary": true, "model": "base", "prompt_id": 3, "seed": 1, "arm": "entry", "alpha_threshold": 0.8, "censored": false, "failed": false, "text": " I'm sorry to inform you, but I don't", "distinct3": 1.0, "max_rep5": 1}

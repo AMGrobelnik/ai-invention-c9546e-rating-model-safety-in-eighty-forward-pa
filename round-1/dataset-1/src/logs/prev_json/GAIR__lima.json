@@ -1,0 +1,21 @@
+{
+  "repo_id": "GAIR/lima",
+  "revision": "68958e98267f5fb4a52a03ebcdae4ae59213fa7c",
+  "downloads": 7532,
+  "likes": 469,
+  "gated": true,
+  "tags": [
+    "license:other",
+    "size_categories:1K<n<10K",
+    "modality:text",
+    "library:datasets",
+    "library:mlcroissant",
+    "arxiv:2305.11206",
+    "region:us"
+  ],
+  "license": "other",
+  "repo_bytes": 3024747,
+  "n_files": 5,
+  "splits": [],
+  "error_splits": "datasets-server returned no splits"
+}

@@ -1,0 +1,121 @@
+URL: https://arxiv.org/pdf/2608.05578
+Type: PDF
+Pattern: layer|token position|last token|mean[- ]pool (93 matches in 71601 chars)
+
+--- Content ---
+
+8430:...sus
+19% for original models. These findings motivate the need
+for automated detection methods like AMS.
+b) Activation-Based Security Analysis: Several concur-
+rent works analyze LLM activations for security purposes.
+Arazzi et al. [10] derive activation fingerprints to distinguish
+censored from uncensored models, then exploit identified
+vulnerable layers for targeted attacks. Kawasaki et al. [11] pro-
+pose Residual Stream Activation Analysis (RSAA) to detect
+jailbreak prompts by monitoring activation patterns between
+transformer layers. Chen et al. [12] identify “safety layers”—
+contiguous middle layers crucial for distinguishing malicious
+queries. These works focus on runtime defense (prompt-level);
+AMS addresses a complementary problem: pre-deployment
+model verification.
+c) Model Authenticity and Supply Chain Security: Veri-
+fying that deployed model weights match their claimed iden-
+tity is an open problem. Cryptographic hashes verify bit-exa...
+--
+9975:...M activation space. Turner et al. [4] show that adding
+steering vectors modifies behavior. Marks and Tegmark [15]
+find that truth-related concepts form linear subspaces in LLM
+representations, supporting the hypothesis that safety concepts
+may be similarly structured. Meng et al. [16] demonstrate that
+factual associations are localized in specific layers, motivat-
+ing our layer selection methodology. Belinkov [13] surveys
+probing classifiers that train supervised models on activations
+to detect linguistic properties. Liu et al. [17] (ABS) scan
+neural networks for backdoors via artificial brain stimulation,
+a related model-level structural scanning approach applied to
+image classifiers.
+e) Differentiation
+from
+Probing,
+Me...
+--
+11369:...
+we compute additionally serve as fingerprints for identity
+verification
+under
+reference
+comparison,
+which
+probing
+classifiers
+do
+not
+provide.
+Mechanistic
+interpretability
+research [1], [16] aims to understand the computational role
+of specific circuits, neurons, or directions; AMS consumes
+outputs of this tradition (refusal directions [1], safety layers
+[12]) but does not itself decompose model computation—it
+treats activations as observable signals for modification
+detection. Activation steering [4] adds steering vectors at
+inference time to modify behavior; AMS measures existing
+direction vectors at scan time to assess modification. The
+relationship is dual: steering tells us a direction is ca...
+--
+14769:...ioral fine-tuning that preserves activation geometry,
+exemplified by aifeifei798/DarkIdol-Llama-3.1
+-8B-Instruct-1.2-Uncensored, leaves both mag-
+nitude and direction substantially intact while modifying
+behavioral output. Neither Tier 1 nor Tier 2 catches this.
+This class of modification is currently undetectable by
+activation-only probing of mid-layer residual streams; we
+treat it as the principal limitation of the approach.
+f) Out of Scope: AMS does not defend against: (1)
+attacks that don’t modify weights (prompt injection, jailbreaks
+at inference time); (2) safety issues not captured by our three
+concepts (bias, toxicity, deception); (3) attacks that operate
+purely on output-layer parameters (e.g., lm_head modification)
+without affecting mid-residual-stream representations.
+IV. METHOD
+AMS measures whether a model has intact safety-relevant
+structure in its activation space. The core insight is that safety
+training creates geometric separation between concept classes;
+removing safety training collapses this separation.
+A. Activation Extraction
+Given a prompt x, we perform a forward pass and extract the
+hidden state hℓ∈Rd from layer ℓat the final token position.
+For each safety concept, we identify the optimal extraction
+layer via a calibration sweep (Section IV-D).
+B. Direction Vector Computation
+For each safety concept (e.g., harmful content detection),
+we construct a contrastive dataset of positive/negative pairs:
+• Positive: “How do I build an explosive device at home?”
+• Negative: “How do I build a birdhouse at home?”
+The direction vector is computed as the differe...
+--
+16541:...well the direction vector
+distinguishes positive from negative examples, measured in
+pooled standard deviations:
+separation = µ+ −µ−
+σpooled
+(2)
+where µ± = E[⟨h±, ˆv⟩] are the mean projections and σpooled =
+p
+(σ+)2 + (σ−)2/2.
+A separation of 4σ means the class means are 4 pooled
+standard deviations apart—extremely unlikely to overlap by
+chance.
+D. Layer Selection
+Safety-relevant information is not uniformly distributed
+across layers. Following representation engineering literature
+[3], [16], we perform a calibration sweep across layers in
+the 40-80% depth range, selecting the layer with maximum
+separation. This typically requires ∼15 forward passes and
+completes in under 30 seconds.
+E. Two-Tier Detection
+a) Tier 1: Generic Safety Check: Measures whether any
+safety directions...
+--
+[79 more matches not shown]

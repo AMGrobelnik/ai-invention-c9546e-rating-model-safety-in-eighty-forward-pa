@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 36470, "piece": ".Migrations", "r_t": -0.6847}
+{"step": 1, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -1.8078}
+{"step": 2, "alpha": 2.0, "token": 88597, "piece": "HasBeenSet", "r_t": -1.0958}
+{"step": 3, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -0.1722}
+{"step": 4, "alpha": 2.0, "token": 53296, "piece": ".mybatisplus", "r_t": 0.174}
+{"step": 5, "alpha": 2.0, "token": 16530, "piece": "\u4e0d", "r_t": -1.1646}
+{"step": 6, "alpha": 2.0, "token": 2357, "piece": "';\n\n", "r_t": -0.2255}
+{"step": 7, "alpha": 2.0, "token": 36470, "piece": ".Migrations", "r_t": 0.2947}
+{"step": 8, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -0.1945}
+{"step": 9, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -0.6177}
+{"step": 10, "alpha": 2.0, "token": 99, "piece": "\ufffd", "r_t": -3.2642}
+{"step": 11, "alpha": 2.0, "token": 230, "piece": "\ufffd", "r_t": -1.6998}
+{"step": 12, "alpha": 2.0, "token": 30543, "piece": "\ufe0f", "r_t": 0.444}
+{"step": 13, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": 0.7939}
+{"step": 14, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -4.7651}
+{"step": 15, "alpha": 2.0, "token": 99, "piece": "\ufffd", "r_t": -2.5203}
+{"step": 16, "alpha": 2.0, "token": 230, "piece": "\ufffd", "r_t": -0.0047}
+{"step": 17, "alpha": 2.0, "token": 30543, "piece": "\ufe0f", "r_t": -2.8587}
+{"step": 18, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": 0.6312}
+{"step": 19, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -5.0777}
+{"step": 20, "alpha": 2.0, "token": 99, "piece": "\ufffd", "r_t": -2.0135}
+{"step": 21, "alpha": 2.0, "token": 230, "piece": "\ufffd", "r_t": 0.4109}
+{"step": 22, "alpha": 2.0, "token": 30543, "piece": "\ufe0f", "r_t": -3.5185}
+{"step": 23, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -0.0284}
+{"_summary": true, "model": "base", "prompt_id": 14, "seed": 2, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": ".Migrations\n\nHasBeenSet\n\n.mybatisplus\u4e0d';\n\n.Migrations\n\n \u2988\ufe0f\n\n \u2988\ufe0f\n\n \u2988\ufe0f\n\n", "distinct3": 0.5909090909090909, "max_rep5": 3}

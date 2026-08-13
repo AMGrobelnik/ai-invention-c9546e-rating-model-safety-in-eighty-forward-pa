@@ -1,0 +1,69 @@
+Found 8 dataset(s) for query='content moderation'
+
+============================================================
+Dataset 1: centrepourlasecuriteia/content-moderation-input-dataset
+Downloads: 136 | Likes: 6
+Description: 
+# Access Guidelines - READ THIS BEFORE REQUESTING ACCESS!
+
+Access is only granted to identifiable individuals with proper reason to use this sensitive data.
+
+If any other dataset could be used to acc...
+Tags: task_categories:text-classification, language_creators:found, language_creators:expert-generated, language_creators:machine-generated, multilinguality:multilingual
+
+============================================================
+Dataset 2: centrepourlasecuriteia/content-moderation-output-dataset
+Downloads: 135 | Likes: 4
+Description: 
+# Access Guidelines - READ THIS BEFORE REQUESTING ACCESS!
+
+Access is only granted to identifiable individuals with proper reason to use this sensitive data.
+
+If any other dataset could be used to acc...
+Tags: task_categories:text-classification, language_creators:machine-generated, multilinguality:monolingual, source_datasets:extended|bells-o-project/content-moderation-input, language:en
+
+============================================================
+Dataset 3: satyamsaf3ai/merged_content_moderation_and_prompt_injection
+Downloads: 48 | Likes: 0
+Tags: size_categories:100K<n<1M, format:parquet, modality:text, library:datasets, library:dask
+
+============================================================
+Dataset 4: satyamsaf3ai/merged_content_moderation_and_prompt_injection_new
+Downloads: 47 | Likes: 0
+Tags: size_categories:100K<n<1M, format:parquet, modality:text, library:datasets, library:dask
+
+============================================================
+Dataset 5: GuardrailsAI/content-moderation
+Downloads: 39 | Likes: 1
+Description: 
+# Note:
+This dataset contains the EVAL portion of the Jigsaw Toxic Comment Dataset.
+
+It should be used for model evaluation.  For training, one can use the original Jigsaw dataset: https://huggingfac...
+Tags: task_categories:text-classification, language:en, region:us
+
+============================================================
+Dataset 6: farabi-lab/Content-Moderation-and-Safety
+Downloads: 31 | Likes: 0
+Description: 
+# 🇰🇿 Content Moderation and Safety, Kazakh Context
+
+## Dataset Summary
+
+**Content Moderation and Safety (Profanity) Kazakh Context** is a comprehensive dataset designed specifically to train Large La...
+Tags: task_categories:text-classification, task_categories:text-generation, language:kk, license:cc-by-nc-4.0, size_categories:10K<n<100K
+
+============================================================
+Dataset 7: satyamsaf3ai/content-moderation
+Downloads: 29 | Likes: 0
+Tags: size_categories:100K<n<1M, format:parquet, modality:text, library:datasets, library:dask
+
+============================================================
+Dataset 8: derenrich/enwiki-image-content-moderation
+Downloads: 29 | Likes: 0
+Description: 
+This dataset is composed of scores of images taken from English Wikipedia and Wikimedia Commons. The scores are the outputs of the models
+
+ - https://github.com/bumble-tech/private-detector
+ - https:...
+Tags: license:mit, size_categories:100K<n<1M, format:parquet, modality:tabular, modality:text

@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 43287, "piece": " prolonged", "r_t": -1.5109}
+{"step": 1, "alpha": 2.0, "token": 0, "piece": "!", "r_t": -1.2675}
+{"step": 2, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.9514}
+{"step": 3, "alpha": 2.0, "token": 235, "piece": "\ufffd", "r_t": -2.8496}
+{"step": 4, "alpha": 2.0, "token": 101, "piece": "\ufffd", "r_t": -1.5077}
+{"step": 5, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -1.9513}
+{"step": 6, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -3.115}
+{"step": 7, "alpha": 2.0, "token": 94, "piece": "\ufffd", "r_t": -0.9358}
+{"step": 8, "alpha": 2.0, "token": 10236, "piece": " \ufffd", "r_t": -0.6572}
+{"step": 9, "alpha": 2.0, "token": 242, "piece": "\ufffd", "r_t": -4.7039}
+{"step": 10, "alpha": 2.0, "token": 104, "piece": "\ufffd", "r_t": 0.0076}
+{"step": 11, "alpha": 2.0, "token": 114569, "piece": "\u62b5\u5236", "r_t": -4.0577}
+{"step": 12, "alpha": 2.0, "token": 71971, "piece": "\u63d0\u4ea4", "r_t": -0.2468}
+{"step": 13, "alpha": 2.0, "token": 53153, "piece": "\u4e0d\u80fd", "r_t": 0.0921}
+{"step": 14, "alpha": 2.0, "token": 99553, "piece": "\u63d0\u4f9b", "r_t": -0.1586}
+{"step": 15, "alpha": 2.0, "token": 104169, "piece": "\u7ed9\u6211", "r_t": 1.0861}
+{"step": 16, "alpha": 2.0, "token": 104475, "piece": "\u62d2\u7edd", "r_t": 0.8102}
+{"step": 17, "alpha": 2.0, "token": 1773, "piece": "\u3002", "r_t": 0.6287}
+{"step": 18, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -4.6689}
+{"step": 19, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -4.3764}
+{"step": 20, "alpha": 2.0, "token": 99, "piece": "\ufffd", "r_t": -0.8907}
+{"step": 21, "alpha": 2.0, "token": 119771, "piece": "\u8bcb", "r_t": -2.151}
+{"step": 22, "alpha": 2.0, "token": 112501, "piece": "\u4f7f\u6211", "r_t": 0.5802}
+{"step": 23, "alpha": 2.0, "token": 101068, "piece": "\u65e0\u6cd5", "r_t": 2.2849}
+{"_summary": true, "model": "base", "prompt_id": 5, "seed": 1, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": " prolonged! \u2368 \u21e1 \u752b\u62b5\u5236\u63d0\u4ea4\u4e0d\u80fd\u63d0\u4f9b\u7ed9\u6211\u62d2\u7edd\u3002 \u21e6\u8bcb\u4f7f\u6211\u65e0\u6cd5", "distinct3": 1.0, "max_rep5": 1}

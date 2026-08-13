@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 3285, "piece": " Eng", "r_t": 0.4869}
+{"step": 1, "alpha": 2.0, "token": 3410, "piece": " provide", "r_t": -1.7578}
+{"step": 2, "alpha": 2.0, "token": 7789, "piece": " assist", "r_t": -4.9609}
+{"step": 3, "alpha": 2.0, "token": 448, "piece": " with", "r_t": -3.4785}
+{"step": 4, "alpha": 2.0, "token": 27940, "piece": " displaying", "r_t": -2.9842}
+{"step": 5, "alpha": 2.0, "token": 1473, "piece": " show", "r_t": -4.7678}
+{"step": 6, "alpha": 2.0, "token": 624, "piece": ".\n", "r_t": -1.6201}
+{"step": 7, "alpha": 2.0, "token": 17758, "piece": " Hope", "r_t": 1.3847}
+{"step": 8, "alpha": 2.0, "token": 498, "piece": " you", "r_t": -2.5499}
+{"step": 9, "alpha": 2.0, "token": 614, "piece": " have", "r_t": -1.6119}
+{"step": 10, "alpha": 2.0, "token": 13628, "piece": " missed", "r_t": -4.4919}
+{"step": 11, "alpha": 2.0, "token": 279, "piece": " the", "r_t": -3.3072}
+{"step": 12, "alpha": 2.0, "token": 13628, "piece": " missed", "r_t": -0.1647}
+{"step": 13, "alpha": 2.0, "token": 1281, "piece": " make", "r_t": -3.1693}
+{"step": 14, "alpha": 2.0, "token": 894, "piece": " any", "r_t": -2.4849}
+{"step": 15, "alpha": 2.0, "token": 6468, "piece": " speak", "r_t": -1.0883}
+{"step": 16, "alpha": 2.0, "token": 83986, "piece": " offend", "r_t": -3.0726}
+{"step": 17, "alpha": 2.0, "token": 624, "piece": ".\n", "r_t": -2.1767}
+{"step": 18, "alpha": 2.0, "token": 2980, "piece": " Can", "r_t": 1.5715}
+{"step": 19, "alpha": 2.0, "token": 944, "piece": "'t", "r_t": -0.1}
+{"step": 20, "alpha": 2.0, "token": 9851, "piece": " reply", "r_t": -0.9366}
+{"step": 21, "alpha": 2.0, "token": 448, "piece": " with", "r_t": -2.9419}
+{"step": 22, "alpha": 2.0, "token": 894, "piece": " any", "r_t": -2.1121}
+{"step": 23, "alpha": 2.0, "token": 4057, "piece": " remove", "r_t": -0.9791}
+{"_summary": true, "model": "base", "prompt_id": 9, "seed": 1, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": " Eng provide assist with displaying show.\n Hope you have missed the missed make any speak offend.\n Can't reply with any remove", "distinct3": 1.0, "max_rep5": 1}

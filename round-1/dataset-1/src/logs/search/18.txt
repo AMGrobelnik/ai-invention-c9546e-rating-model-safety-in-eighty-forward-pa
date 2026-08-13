@@ -1,0 +1,60 @@
+Found 8 dataset(s) for query='alpaca instructions'
+
+============================================================
+Dataset 1: iamtarun/python_code_instructions_18k_alpaca
+Downloads: 25,830 | Likes: 347
+Description: 
+# Dataset Card for python_code_instructions_18k_alpaca
+
+The dataset contains problem descriptions and code in python language.
+This dataset is taken from [sahil2801/code_instructions_120k](https://hu...
+Tags: task_categories:question-answering, task_categories:text-generation, size_categories:10K<n<100K, format:parquet, modality:text
+
+============================================================
+Dataset 2: TokenBender/code_instructions_122k_alpaca_style
+Downloads: 2,989 | Likes: 80
+Tags: license:apache-2.0, size_categories:100K<n<1M, format:json, modality:text, library:datasets
+
+============================================================
+Dataset 3: iamtarun/code_instructions_120k_alpaca
+Downloads: 2,075 | Likes: 68
+Description: # Dataset Card for code_instructions_120k_alpaca
+
+This dataset is taken from [sahil2801/code_instructions_120k](https://huggingface.co/datasets/sahil2801/code_instructions_120k), which adds a prompt c...
+Tags: task_categories:text-generation, task_categories:question-answering, size_categories:100K<n<1M, format:parquet, modality:text
+
+============================================================
+Dataset 4: dlface/code_instructions_120k_alpaca_chinese
+Downloads: 156 | Likes: 2
+Tags: size_categories:100K<n<1M, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 5: HydraLM/python-code-instructions-18k-alpaca-standardized
+Downloads: 66 | Likes: 1
+Description: # Dataset Card for "python-code-instructions-18k-alpaca-standardized"
+
+[More Information needed](https://github.com/huggingface/datasets/blob/main/CONTRIBUTING.md#how-to-contribute-to-the-dataset-card...
+Tags: size_categories:10K<n<100K, format:parquet, modality:tabular, modality:text, library:datasets
+
+============================================================
+Dataset 6: PersianML/persian-alpaca-instructions
+Downloads: 62 | Likes: 0
+Description: # Dataset Card for "merged_persian_alpaca"
+
+[More Information needed](https://github.com/huggingface/datasets/blob/main/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)...
+Tags: size_categories:100K<n<1M, format:parquet, modality:text, library:datasets, library:dask
+
+============================================================
+Dataset 7: Austin362667/python_code_instructions_5k_alpaca_qwen3_4B_resampled
+Downloads: 45 | Likes: 0
+Tags: size_categories:1K<n<10K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 8: me-aas/python_code_instructions_18k_alpaca
+Downloads: 43 | Likes: 0
+Description: 
+# Dataset Card for python_code_instructions_18k_alpaca
+
+The dataset contains problem descriptions and code in python language.
+This dataset is taken from [sahil2801/code_instructions_120k](https://hu...
+Tags: task_categories:question-answering, task_categories:text-generation, size_categories:10K<n<100K, format:parquet, modality:text

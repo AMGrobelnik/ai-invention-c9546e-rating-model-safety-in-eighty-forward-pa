@@ -1,0 +1,74 @@
+URL: https://arxiv.org/abs/2510.06036
+Type: HTML
+Length: 8209 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Artificial Intelligence
+
+**arXiv:2510.06036** (cs) 
+
+[Submitted on 7 Oct 2025]
+
+# Title:Refusal Falls off a Cliff: How Safety Alignment Fails in Reasoning?
+
+Authors:[Qingyu Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin,+Q), [Chak Tou Leong](https://arxiv.org/search/cs?searchtype=author&query=Leong,+C+T), [Linyi Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang,+L), [Wenxuan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+W), [Wenjie Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+W), [Xiting Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+X), [Jaehong Yoon](https://arxiv.org/search/cs?searchtype=author&query=Yoon,+J), [YunXing](https://arxiv.org/search/cs?searchtype=author&query=YunXing), [XingYu](https://arxiv.org/search/cs?searchtype=author&query=XingYu), [Jinjin Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu,+J)
+
+View a PDF of the paper titled Refusal Falls off a Cliff: How Safety Alignment Fails in Reasoning?, by Qingyu Yin and 9 other authors
+
+[View PDF](/pdf/2510.06036) [HTML (experimental)](https://arxiv.org/html/2510.06036v1)
+
+> Abstract:Large reasoning models (LRMs) with multi-step reasoning capabilities have shown remarkable problem-solving abilities, yet they exhibit concerning safety vulnerabilities that remain poorly understood. In this work, we investigate why safety alignment fails in reasoning models through a mechanistic interpretability lens. Using a linear probing approach to trace refusal intentions across token positions, we discover a striking phenomenon termed as \textbf{refusal cliff}: many poorly-aligned reasoning models correctly identify harmful prompts and maintain strong refusal intentions during their thinking process, but experience a sharp drop in refusal scores at the final tokens before output generation. This suggests that these models are not inherently unsafe; rather, their refusal intentions are systematically suppressed. Through causal intervention analysis, we identify a sparse set of attention heads that negatively contribute to refusal behavior. Ablating just 3\% of these heads can reduce attack success rates below 10\%. Building on these mechanistic insights, we propose \textbf{Cliff-as-a-Judge}, a novel data selection method that identifies training examples exhibiting the largest refusal cliff to efficiently repair reasoning models' safety alignment. This approach achieves comparable safety improvements using only 1.7\% of the vanilla safety training data, demonstrating a less-is-more effect in safety alignment. 
+
+Subjects: |  Artificial Intelligence (cs.AI); Cryptography and Security (cs.CR)  
+---|---  
+Cite as: | [arXiv:2510.06036](https://arxiv.org/abs/2510.06036) [cs.AI]  
+  | (or  [arXiv:2510.06036v1](https://arxiv.org/abs/2510.06036v1) [cs.AI] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2510.06036> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Qingyu Yin [[view email](/show-email/df620ed1/2510.06036)]   
+**[v1]** Tue, 7 Oct 2025 15:32:59 UTC (411 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Refusal Falls off a Cliff: How Safety Alignment Fails in Reasoning?, by Qingyu Yin and 9 other authors
+
+  * [View PDF](/pdf/2510.06036)
+  * [HTML (experimental)](https://arxiv.org/html/2510.06036v1)
+  * [TeX Source ](/src/2510.06036)
+
+
+
+[ view license ](http://creativecommons.org/licenses/by/4.0/ "Rights to this article")
+
+### Current browse context:
+
+cs.AI
+
+[< prev](/prevnext?id=2510.06036&function=prev&context=cs.AI "previous in cs.AI \(accesskey p\)")   |   [next >](/prevnext?id=2510.06036&function=next&context=cs.AI "next in cs.AI \(accesskey n\)")   
+
+
+[new](/list/cs.AI/new) |  [recent](/list/cs.AI/recent) | [2025-10](/list/cs.AI/2025-10)
+
+Change to browse by: 
+
+[cs](/abs/2510.06036?context=cs)  
+[cs.CR](/abs/2510.06036?context=cs.CR)  
+
+
+### References & Citations
+
+  * [NASA ADS](https://ui.adsabs.harvard.edu/abs/arXiv:2510.06036)
+  * [Google Scholar](https://scholar.google.com/scholar_lookup?arxiv_id=2510.06036)
+  * [Semantic Scholar](https://api.semanticscholar.o

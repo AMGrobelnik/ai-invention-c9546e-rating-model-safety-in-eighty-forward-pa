@@ -1,0 +1,87 @@
+Found 8 dataset(s) for query='prompt injection'
+
+============================================================
+Dataset 1: deepset/prompt-injections
+Downloads: 7,285 | Likes: 178
+Description: # Dataset Card for "deberta-v3-base-injection-dataset"
+
+[More Information needed](https://github.com/huggingface/datasets/blob/main/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)...
+Tags: license:apache-2.0, size_categories:n<1K, format:parquet, modality:text, library:datasets
+
+============================================================
+Dataset 2: neuralchemy/Prompt-injection-dataset
+Downloads: 2,229 | Likes: 27
+Description: 
+
+# advance dataset if you want for llm security  
+https://huggingface.co/datasets/neuralchemy/prompt-injection-Threat-Matrix
+
+# Prompt Injection & Jailbreak Detection Dataset
+
+A high-quality, leakage...
+Tags: task_categories:text-classification, language:en, license:apache-2.0, size_categories:10K<n<100K, format:parquet
+
+============================================================
+Dataset 3: facebook/cyberseceval3-visual-prompt-injection
+Downloads: 2,185 | Likes: 9
+Description: 
+# Dataset Card for CyberSecEval 3 - Visual Prompt Injection Benchmark
+
+## Dataset Details
+
+### Dataset Description
+
+This dataset provides a multimodal benchmark for [visual prompt injection](h...
+Tags: task_categories:text-generation, language:en, license:mit, size_categories:1K<n<10K, format:json
+
+============================================================
+Dataset 4: xTRam1/safe-guard-prompt-injection
+Downloads: 1,754 | Likes: 34
+Description: 
+We formulated the prompt injection detector problem as a classification problem and trained our own language model 
+to detect whether a given user prompt is an attack or safe. First, to train our own...
+Tags: size_categories:10K<n<100K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 5: nvidia/Nemotron-RL-Agentic-Indirect-Prompt-Injection-v1
+Downloads: 1,360 | Likes: 8
+Description: 
+# Nemotron-RL-Agentic-Indirect-Prompt-Injection-v1
+
+## Dataset Description:
+Nemotron-RL-Agentic-Indirect-Prompt-Injection-v1 is an RL dataset for training and evaluating a tool-using agent's ability ...
+Tags: task_categories:reinforcement-learning, task_categories:text-generation, language:en, license:cc-by-4.0, size_categories:1K<n<10K
+
+============================================================
+Dataset 6: reshabhs/SPML_Chatbot_Prompt_Injection
+Downloads: 919 | Likes: 30
+Description: 
+# SPML Chatbot Prompt Injection Dataset
+ 
+
+[Arxiv Paper](https://arxiv.org/abs/2402.11755)
+
+
+Introducing the SPML Chatbot Prompt Injection Dataset: a robust collection of system prompts designed to c...
+Tags: task_categories:text-classification, language:en, license:mit, size_categories:10K<n<100K, format:csv
+
+============================================================
+Dataset 7: rogue-security/prompt-injections-benchmark
+Downloads: 872 | Likes: 41
+Description: 
+# Dataset: Qualifire Benchmark Prompt Injection(Jailbreak vs. Benign) Datasets
+
+## Overview
+This dataset contains **5,000 prompts**, each labeled as either `jailbreak` or `benign`. The dataset is des...
+Tags: license:cc-by-nc-4.0, size_categories:1K<n<10K, format:parquet, format:optimized-parquet, modality:text
+
+============================================================
+Dataset 8: Lakera/mosscap_prompt_injection
+Downloads: 798 | Likes: 20
+Description: 
+# mosscap_prompt_injection
+
+<img src="https://grt.lakera.ai/robots/level7.jpg" width="500px" />
+
+This is a dataset of prompt injections submitted to the game [Mosscap](https://grt.lakera.ai) by [Lake...
+Tags: license:mit, size_categories:100K<n<1M, format:parquet, modality:text, library:datasets

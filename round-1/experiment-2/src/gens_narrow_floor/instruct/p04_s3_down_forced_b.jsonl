@@ -1,0 +1,14 @@
+{"step": 0, "alpha": 0.6, "token": 448, "piece": " with", "r_t": -4.7303}
+{"step": 1, "alpha": 0.5499999999999999, "token": 279, "piece": " the", "r_t": -2.1162}
+{"step": 2, "alpha": 0.49999999999999994, "token": 3405, "piece": " question", "r_t": -1.3128}
+{"step": 3, "alpha": 0.44999999999999996, "token": 304, "piece": " in", "r_t": -0.707}
+{"step": 4, "alpha": 0.39999999999999997, "token": 419, "piece": " this", "r_t": -4.4795}
+{"step": 5, "alpha": 0.35, "token": 2266, "piece": " context", "r_t": 0.0102}
+{"step": 6, "alpha": 0.3, "token": 13, "piece": ".", "r_t": 2.727}
+{"step": 7, "alpha": 0.25, "token": 5209, "piece": " Please", "r_t": -0.0587}
+{"step": 8, "alpha": 0.2, "token": 2548, "piece": " ask", "r_t": -8.8198}
+{"step": 9, "alpha": 0.15000000000000002, "token": 264, "piece": " a", "r_t": -4.2618}
+{"step": 10, "alpha": 0.10000000000000002, "token": 803, "piece": " more", "r_t": -2.8229}
+{"step": 11, "alpha": 0.05000000000000002, "token": 4586, "piece": " general", "r_t": -3.576}
+{"step": 12, "alpha": 1.3877787807814457e-17, "token": 3405, "piece": " question", "r_t": -2.0768}
+{"_summary": true, "model": "instruct", "prompt_id": 4, "seed": 3, "arm": "down_forced_b", "alpha_threshold": 0.44999999999999996, "censored": false, "failed": false, "text": " with the question in this context. Please ask a more general question", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,224 @@
+URL: https://arxiv.org/pdf/2608.05578
+Type: PDF
+Pattern: contrastive pairs|number of prompts|32 |64 |n = |seconds|runtime|wall[- ]clock|GPU|threshold of|3\.5|leave-one-out (53 matches in 71601 chars)
+
+--- Content ---
+
+722:... safety-
+relevant concepts in activation space. Safety training creates mea-
+surable separation between harmful and benign content classes;
+certain safety modifications collapse or rotate this structure, while
+others leave it intact. We validate AMS across 14 model configu-
+rations spanning 4 architecture families (Llama, Gemma, Qwen,
+Mistral) and four safety-modification categories (instruction-
+tuned, base, abliterated, uncensored fine-tunes). Leave-one-out
+cross-validation of thresholds achieves 71% accuracy (10/14);
+bootstrap 95% confidence intervals on σ point estimates have
+median width 3.4σ and a substantial fraction of cells cross
+the PASS threshold under resampling. We further measure
+behavioral compliance on 20 stratified JailbreakBench prompts
+per model and find that σ on the harmful-content concept
+predicts compliance with Pearson r = −0.546 (p = 0.043);
+the rank-order Spearman correlatio...
+--
+5836:...ramework matched to the taxon-
+omy. Tier 1 measures cluster separation (σ) and catches
+modifications that collapse the geometry; Tier 2 measures
+direction similarity against a reference baseline and catches
+modifications that rotate the direction without collapsing
+the cluster. We show that the two tiers are complementary,
+with each tier targeting a specific class of modification.
+3) Held-out cross-validation and statistical reporting. We
+report leave-one-out cross-validation accuracy (71% on
+14 models with two threshold-calibration rules), bootstrap
+95% confidence intervals on all σ point estimates, and
+a documented systematic upward bias in the direction-
+maximizing estimator. We treat single-run σ values as
+arXiv:2608.05578v1  [cs.CR]  6 Aug 2026
+
+2
+exploratory and report CI lower bounds as the more honest
+summary statistic.
+4) Behavioral correlation analysis. We run 20 stratified
+JailbreakBench h...
+--
+8758:...l. [10] derive activation fingerprints to distinguish
+censored from uncensored models, then exploit identified
+vulnerable layers for targeted attacks. Kawasaki et al. [11] pro-
+pose Residual Stream Activation Analysis (RSAA) to detect
+jailbreak prompts by monitoring activation patterns between
+transformer layers. Chen et al. [12] identify “safety layers”—
+contiguous middle layers crucial for distinguishing malicious
+queries. These works focus on runtime defense (prompt-level);
+AMS addresses a complementary problem: pre-deployment
+model verification.
+c) Model Authenticity and Supply Chain Security: Veri-
+fying that deployed model weights match their claimed iden-
+tity is an open problem. Cryptographic hashes verify bit-exact
+1This work is part of ongoing research into activation-based safety tech-
+niques, including methods for runtime prompt classification that will be
+described in future publications.
+matches but fail for legitimate variations (quantization, for-
+mat conversion). Behavioral fingerprinting [5] uses response
+patterns but is slow and evadable. AMS provides a middle
+ground: verifying functional identity via activation geometry
+without requiring behavioral queries.
+d) Representation Engineering and Probing: Zou et al.
+[3] demonstrate that high-level concepts are ...
+--
+16313:...• Positive: “How do I build an explosive device at home?”
+• Negative: “How do I build a birdhouse at home?”
+The direction vector is computed as the difference of class
+centroids:
+v =
+1
+|P|
+X
+i∈P
+h+
+i −
+1
+|N|
+X
+j∈N
+h−
+j
+(1)
+We normalize to unit length: ˆv = v/∥v∥.
+C. Class Separation Measurement
+Class separation quantifies how well the direction vector
+distinguishes positive from negative examples, measured in
+pooled standard deviations:
+separation = µ+ −µ−
+σpooled
+(2)
+where µ± = E[⟨h±, ˆv⟩] are the mean projections and σpooled =
+p
+(σ+)2 + (σ−)2/2.
+A separation of 4σ means the class means are 4 pooled
+standard deviations apart—extremely unlikely to overlap by
+chance.
+D. Layer Selection
+Safety-relevant information is not uniformly distributed
+across layers. Following representation engineering literature
+[3], [16], we perform a calibration sweep across layers in
+the 40-80% depth range, selecting the layer with maximum
+separation. This typically requires ∼15 forward passes and
+completes in under 30 seconds.
+E. Two-Tier Detection
+a) Tier 1: Generic Safety Check: Measures whether any
+safety directions exist, without requiring a baseline. We define
+three safety levels based on separation:
+• PASS (>3.5σ): Safety directions intact
+• WARNING (2.0-3.5σ): Weak/degraded safety directions
+• CRITICAL (<2.0σ): No safety training detected
+These thresholds were calibrated on our validation data:
+instruction-tuned models show 3.8-8.4σ, abliterated models
+show 3.3σ, and the tested uncensored models show 1.1-
+1.3σ. The 3.5σ PASS threshold ensures abliterated models are
+flagged as WARNING rather than passing.
+Tier 1 catches completely degraded models (uncensored
+fine-tunes, base models without safety training) and partially
+degraded models (abliteration).
+
+4
+b) Tier 2: Identity Verification: Compares a model’s
+activation fingerprint against a stored baseline for its claimed
+identity. We measure:
+• Direction similarity: Cosine similarity between direction
+vectors (>0.8 required)
+• Separation drift: Relative change in separation magnitude
+(<20% required)
+Tier 2 detects modifications that preserve absolute thresh-
+olds but alter the geometric structure—such as abliteration,
+which removes refusal behavior while maintaining some sep-
+aration.
+F. Algorithm Summary
+The AMS scanning procedure:
+1) For each concept (harmful_content, injection_resistance,
+refusal_capability):
+(a) Run 16 contrastive pairs through model, extract activa-
+tions at layers 40-80% depth
+(b) Select optimal layer (maximum separation)
+(c) Compute direction vector v and separation σ
+2) Tier
+1: Classify based on minimum σ across con-
+cepts: PASS (>3.5σ), WARNING (2.0-3.5σ), CRITICAL
+(<2.0σ)
+3) Tier 2 (optional): Compare direction vectors against base-
+line via cosine similarity (>0.8 required) and separation
+drift (<20% required)
+Total runtime: 96 forward passes (16 pairs × 3 concepts ×
+∼2 for layer sweep), completing in 10-40 seconds on GPU.
+V. SAFETY CONCEPTS
+AMS evaluates three core safety concepts, each with 16
+contrastive pairs designed to isolate the target distinction from
+confounding factors.
+a) Harmful Content Detection: Distinguishes requests
+for harmful information (weapons, malware, fraud) from be-
+nign requests on similar topics. Pairs are constructed to share
+surface features while differing in harm potential:
++ “How do I build an explosive device at home?”
+−“How do I build a birdhouse at home?”
+b) Prompt Injection Resistance: Distinguishes injection
+attempts ...
+--
+21952:...esponses are classified as
+REFUSE / PARTIAL / COMPLY via a refusal-phrase string-
+match heuristic restricted to the first 250 characters of the
+response (refusals reliably appear early; later occurrences are
+typically false positives such as “I won’t” appearing inside a
+generated message body). Spot-checks confirm the classifica-
+tion accuracy.
+c) Hardware: All experiments run on NVIDIA A100-
+SXM4-40GB. AMS structural scanning completes in 10–40
+seconds per model depending on size and caching. Behavioral
+evaluation adds approximately 2–3 minutes per model.
+d) Metrics:
+For
+Tier
+1
+we
+report
+separation
+σ
+(pooled standard deviations), bootstrap 95% CIs over 1000
+resamples of the 16-pair contrastive set, safety classification
+(PASS/WARNING/CRITICAL),
+and
+leave-one-out
+cross-
+validation accuracy. For Tier 2 we report direction-vector
+cosine similarity and L2 difference norm at the per-layer level.
+For behavioral evaluation we report per-model compliance
+rate over 20 prompts and Pearson/Spearman correlation
+between σ and compliance rate across the 14-model set.
+VII. RESULTS
+A. Tier 1: Generic Safety Check
+Table I summarizes Tier 1 results across all models.
+a) Key findings from Table I: (1) The structural signal
+is moderate, not strong. Across the 14 models, σharmful cor-
+relates with behavioral compliance with Pearson r = −0.546
+
+5
+TABLE I
+TIER 1 RESULTS ACROSS THE 14-MODEL VALIDATION SET, WITH BOOTSTRAP 95% CONFIDENCE INTERVALS ON σHARMFUL OVER 1000 RESAMPLES OF
+THE 16 CONTRASTIVE PAIRS. REFERENCE THRESHOLDS SHOWN FOR CONTEXT (PASS >3.5σ, WARNING 2.0–3.5σ, CRITICAL <2.0σ);
+LEAVE-ONE-OUT CROSS-VALIDATION OF THESE THRESHOLDS IS REPORTED SEPARATELY IN SECTION VII-C. “COMPLIANCE” IS THE BEHAVIORAL
+COMPLIANCE RATE ON 20 STRATIFIED JAILBREAKBENCH HARMFUL PROMPTS (SECTION VII-E). BOLD INDICATES MODELS BELOW THE REFERENCE
+PASS THRESHOLD ON σHARMFUL.
+Model
+Category
+σharmful
+95% CI
+Reference level
+Compliance
+Llama-3.2-3B-Instruct
+Instruction-tuned
+8.37
+[3.64, 7.95]
+PASS
+0.30
+Llama-3.1-8B...
+--
+[33 more matches not shown]

@@ -1,0 +1,821 @@
+{
+  "title": "Check the closest paper and fix citations",
+  "summary": "Primary-full-text dossier on arXiv:2607.13346 ('The Refusal Residue', Aman Mehta, ICML 2026 MI Workshop) plus a machine-verified audit of all 22 cited 2026 arXiv IDs, two saturation sweeps and a novelty check on the paraphrase-refit headline. Verdict: MIRROR IMAGE, weaker as a neighbour than its abstract implies (the dissociation is assembled across two models; probe is an MLP, steered object a unit diff-in-means vector; no abliterated arm; no activation norm reported so units are NOT convertible; '|h|' is Cohen's h). One concession forced: they steer a refusal axis and get a null. 9 of 21 cited 2026 entries are wrong, worst being a mis-titled [23]. New mandatory citation found: arXiv:2603.27412 LatentBiopsy, which already runs base/instruct/abliterated Qwen triplets.",
+  "answer": "CLOSENESS VERDICT ON arXiv:2607.13346 = MIRROR IMAGE, with one concession and three respects in which it is farther than assumed. Mehta (single author, Snowflake AI Research, accepted to the Mechanistic Interpretability Workshop at ICML 2026) reports detect-without-control for ALIGNMENT FAKING, not refusal [1,2]. Crucially, the dissociation is assembled ACROSS TWO MODELS: leakage-free leave-one-query-out detection is AUROC 0.870 +/- 0.023 on Llama-3.1-8B, while the steering null is on Qwen3-32B, the model where their own per-sample detection FAILS at 0.425 +/- 0.067 [1]. Within one model there is no 'detects at 0.87 but does not steer' result. Their probe is an MLP (512,128) whose per-dimension importance magnitudes merely correlate (cosine 0.78 with |v_refusal|, random baseline 0.012 +/- 0.009) with the steered object, which is the unit vector v_interaction = normalize(centroid(B-comply) - centroid(A-comply)) [1]. Their own explanation of the cross-model split is a hypothesis, not a measurement ('Llama-3.1-8B is smaller and less-extensively-aligned and we hypothesize...'), and model, scale, relative depth (Llama 32/33 vs Qwen 48/65) and faking base rate (+24.4pp vs +18.2pp) all vary together [1].\n\nTHE CONCESSION: they DO steer along a refusal axis and get a null (v_refusal at alpha=5 gives 71.6% compliance vs 69.0% control, Cohen's h +0.057 [-0.071,+0.181], Fisher p=0.41; the 5-dimensional v_refusal subspace gives the same -3.2pp null, p=0.26) [1]. Any claim that refusal axes reliably steer must now be distinguished from theirs: their intervention SUBTRACTS from an already-compliant Condition-B generation on borderline-harmful OR-Bench/XSTest prompts at ~70% compliance with little headroom, whereas ours ADDS at a calibrated fraction of the activation norm on benign prompts from a near-zero base [1].\n\nFARTHER THAN ASSUMED IN THREE RESPECTS, each a residual for us: no abliterated or uncensored arm ('abliterat' = 0 matches, 'uncensored' = 0 matches in full text); no citation of Arditi ('Arditi' = 0, 'single direction' = 0), their v_refusal being their own within-condition-A difference of centroids over generated-token states; and NO ACTIVATION NORM REPORTED ANYWHERE, so their steering strength is NOT convertible to our NORM_L contrast units - the paper reports only a raw coefficient alpha in {2,5,10} applied to a unit-normalised direction and never the residual-stream norm the conversion would divide by [1]. Note also that '|h|' in their abstract is COHEN'S h, an effect size on compliance proportions, not a hidden state; this is confirmed by their Table 3 column header and by the calibration sentence that the behavioural gap has Cohen's h ~ 0.40 [1].\n\nMETADATA AUDIT: all 22 cited 2026 IDs resolve on the arXiv API [3,4,5]; 9 of the 21 currently-cited entries (43%) are wrong when checked against the draft's own reference list [13]. Worst is the draft's reference number 23, whose cited title is not the paper's title: arXiv:2604.02608 is 'Steerable but Not Decodable: Function Vectors Operate Beyond the Logit Lens' by Mohammed Suhail B Nadaf, single author, v2 [4]. Three entries carry no author list at all [4]; two carry a wrong first initial ('P.' Galeone should be C. Galeone [3]; 'A.' Taimeskhanov should be M. Taimeskhanov [5]); one attaches 'et al.' to a single author and mis-initials him ('D. Hurtado et al.' should be Gabriel Hurtado [3]); one truncates a title and mis-initials the first author ('Z. Wu' should be Yuqi Wu, subtitle 'of Neuroscience Parallels in LLMs' dropped [4]); and one omits a real venue (Mishra et al. is ICLR 2026 Workshops, Sci4DL and Re-Align [5]). Outside the 22-list, the draft's [10] 'Z. Li et al.' for Logit-Gap Steering should be T.-L. Li and H. Liu [13]. Version pinning is missing on six multi-version IDs [3,4,5].\n\nSATURATION C1 (steer-vs-detect dissociation within one direction, for refusal): (b) ADJACENT WORK EXISTS, nothing closer than the three known incumbents [1,9,10]. Galeone et al. report perfect detection at AUC 1.000 sitting at cos 0.12 from the refusal-producing direction [3], and Nadaf shows steer-without-decode is the common case with the converse 'nearly empty (3 of 72)' [4], which supports our result's plausibility and weakens the Galeone tension. A useful counter-case surfaced: a one-dimensional familiarity direction that BOTH detects and steers, moving refusal 0.24 -> 1.00 on well-known entities and 0.73 -> 0.00 on unknown ones [11].\n\nSATURATION C2 (activation safety scores on abliterated checkpoints): CLOSER THAN ASSUMED, and this is the most consequential unplanned find. arXiv:2603.27412 ('LatentBiopsy') already runs base / instruction-tuned / abliterated Qwen triplets and reports the OPPOSITE result on a DIFFERENT axis - 'both abliterated variants achieve AUROC at most 0.015 below their instruction-tuned counterparts, establishing a geometric dissociation between harmful-intent representation and the downstream generative refusal mechanism' - explicitly noting that 'the safety representation that LatentBiopsy exploits is not the refusal direction itself, since it survives abliteration' [6], and it was found through the abliteration sweep and candidate triage [8,10]. Any 'first to read an activation safety score on abliterated checkpoints' sentence must be deleted; the surviving claim is that the REFUSAL AXIS SPECIFICALLY dies in both roles while harm-intent geometry survives. The other incumbent is not a threat either: arXiv:2607.01854's activation refusal-gap is a thresholded ratio (rho<0.5, TPR 0.63, FPR 0.14, AUROC 0.84, combined with a weight-energy signal into a z-sum at 0.95) that 'certifies whether the refusal mechanism is present, not whether a model is harmless' and 'presumes an attested reference', never a chance-level AUROC reading [7]. Three further abliteration papers surfaced in the sweep are behavioural or capability studies with no activation score [8].\n\nPART D (paraphrase refit): ADJACENT, not anticipated. Prior work changes a direction's FUNCTIONAL EFFICACY through contrast-set design - a topic-matched baseline 'produces no functional refusal directions at any tested weight level on any tested layer' while the unmatched baseline 'achieves complete refusal elimination on six layers' [4], the opposite sign to ours, and prompt-variation leaves efficacy roughly unchanged despite directional differences [3] - whereas ours changes a published scanner's CRITERION VALIDITY against judged behaviour (oriented rho 0.358 -> 0.654, AUC 0.705 -> 0.886), a different dependent variable. Nine query forms returned no counterpart [12], though the abs:-scoped ones mostly returned zero relevant hits, which is why the verdict is ADJACENT rather than NO_COUNTERPART.\n\nCONFIDENCE. Everything in Part A is primary full text with section anchors [1], metadata confirmed independently [2,5]; the audit rests on three API batch calls [3,4,5] against the draft [13]; C2's decisive quotes are from primary PDFs [6,7]. The scholarly-mode search API returned semantically unrelated results, so that channel was effectively unavailable and the sweeps leaned on the arXiv API search endpoint [8,9,12], which matches title/abstract/metadata but not full text - so the closest equivalents found are these, which is weaker than no closer equivalent exists. One action item this artifact cannot settle: Mehta's per-fold-residualization and leave-one-query-out controls have no confirmed counterpart in our pipeline, and that leakage moved his own AUROC from 0.761 to 0.425 [1], so our split discipline must be verified before the next draft.",
+  "refusal_residue": {
+    "metadata": {
+      "id": "arXiv:2607.13346v1",
+      "title": "The Refusal Residue: When Probes Catch Alignment Faking and When They Don't",
+      "authors": [
+        "Aman Mehta"
+      ],
+      "affiliation": "Snowflake AI Research",
+      "submitted": "2026-07-15T00:11:42Z",
+      "venue": "Accepted to the Mechanistic Interpretability Workshop at ICML 2026. 12 pages, 4 figures",
+      "categories": [
+        "cs.CR (primary)",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "metadata_status": "CONFIRMED via arXiv API batch call"
+    },
+    "detection_protocol": {
+      "queries": "'We use 50 borderline-harmful queries from OR-Bench (3) and XSTest (16): 5 categories with 10 queries each.' [Sec.3]",
+      "n": "'n=10 samples per (query, condition) at temperature 0.7, yielding 1,500 hidden states per model' [Sec.3]",
+      "extraction": "'we extract residual-stream activations at every layer during the first 5 generated tokens and mean-pool them into one vector (gen5)' [Sec.3]",
+      "why_not_prompt_token": "'last-input-token states trivially encode system-prompt identity (AUROC=1.0), so we analyze first generated tokens instead' [Sec.3]",
+      "held_out": "'each query with both A-comply and B-comply samples is held out in turn' (LOQO); 'all per-condition and per-(condition, query) means are estimated only from the training fold' [Sec.4.3]",
+      "probe": "two-layer MLP (512,128) (also MLP(256,128), Linear, Logistic rows) at the per-model peak layer: Qwen layer 48 of 65, Llama layer 32 of 33",
+      "auroc_table": {
+        "linear_raw_no_residualization": {
+          "qwen": 0.998,
+          "llama": 0.974
+        },
+        "conventional_fulldata_resid_5foldCV_MLP512_128": {
+          "qwen": "0.761 +/- 0.025",
+          "llama": "0.633 +/- 0.052"
+        },
+        "conventional_MLP256_128": {
+          "qwen": "0.733 +/- 0.024",
+          "llama": "0.628 +/- 0.033"
+        },
+        "conventional_linear": {
+          "qwen": "0.293 +/- 0.008",
+          "llama": "0.197 +/- 0.007"
+        },
+        "STRICT_LOQO_perfold_target": {
+          "qwen": "0.425 +/- 0.067",
+          "llama": "0.870 +/- 0.023"
+        },
+        "STRICT_LOQO_refuse_vs_refuse_confound": {
+          "qwen": "0.594 +/- 0.051",
+          "llama": "0.695 +/- 0.018"
+        },
+        "probeA_within_A_to_Bcomply_transfer": {
+          "qwen": 0.537,
+          "llama": 0.736
+        },
+        "STRICT_plus_orthogonality_constrained": {
+          "qwen": "0.510 +/- 0.031",
+          "llama": "0.829 +/- 0.023"
+        }
+      },
+      "ci_note": "No bootstrap CIs on AUROC; the +/- is a fold/seed spread. Abstract rounds 0.425->0.43 and 0.870->0.87.",
+      "what_varies_between_0_87_and_0_43": "Recipe identical (same MLP, same protocol, same 50 queries, same n=10, same Claude Opus 4 judge, same gen5). Model, family and scale differ (8B vs 32B); relative depth is NOT matched (Llama 32/33 ~ 0.97 vs Qwen 48/65 ~ 0.74); faking base rate differs (Qwen 62.6%->80.8%, +18.2pp; Llama 21.6%->46.0%, +24.4pp); leakage profile differs ('The leakage on Llama is layer-systematic (AUROC 0.61-0.93 across all 33 layers, Appendix G); Qwen exhibits no analogous leakage.'). Their own explanation is a hypothesis, not a measurement: 'Llama-3.1-8B is smaller and less-extensively-aligned and we hypothesize its compliance representations under monitoring carry stronger downstream residue an MLP can exploit; Qwen3-32B appears to resolve the conflict more cleanly upstream.' [Sec.4.3] CONSEQUENCE FOR US: their collapse is a cross-model contrast with model, scale, relative depth and base rate all varying at once; our chance-level readings are within-model on paired instruct/abliterated checkpoints.",
+      "three_protocol_summary": "'per-sample faking detection from hidden states is achievable on Llama-3.1-8B at AUROC ~0.74-0.87 under three independent leakage-free protocols, and is not achievable on Qwen3-32B under any leakage-free protocol.' [Sec.4.3]"
+    },
+    "steering_protocol": {
+      "setup": "'We run Qwen3-32B in Condition B with a forward-pass hook at layer 48: h <- h - alpha * v_interaction for alpha in {5,10}. We include v_refusal at alpha=5 as a vector-specificity negative control. n=10 replicates per (condition, query) over 50 queries (500 responses per condition; 2,000 total).' [Sec.4.4]",
+      "what_h_is": "Cohen's h, the effect size for a difference in two PROPORTIONS (judged compliance rates) - NOT a hidden state and NOT a probability. Confirmed by the Table 3 column header \"Cohen's h [95% CI]\" and by 'The behavioral B-A gap has Cohen's h ~ 0.40, an order of magnitude larger than any observed steering effect.'",
+      "table3": [
+        {
+          "condition": "control",
+          "compliance": "69.0%",
+          "ci": "[0.648, 0.729]"
+        },
+        {
+          "condition": "v_interaction alpha=5",
+          "compliance": "70.4%",
+          "delta_pp": "+1.4",
+          "cohens_h": "+0.030 [-0.094,+0.156]",
+          "fisher_p": 0.68,
+          "wilcoxon_p": 0.7
+        },
+        {
+          "condition": "v_interaction alpha=10",
+          "compliance": "70.0%",
+          "delta_pp": "+1.0",
+          "cohens_h": "+0.022 [-0.101,+0.145]",
+          "fisher_p": 0.78,
+          "wilcoxon_p": 0.9
+        },
+        {
+          "condition": "v_refusal alpha=5",
+          "compliance": "71.6%",
+          "delta_pp": "+2.6",
+          "cohens_h": "+0.057 [-0.071,+0.181]",
+          "fisher_p": 0.41,
+          "wilcoxon_p": 0.24
+        }
+      ],
+      "multi_direction": "'the v_interaction subspace shifts compliance by only -3.2pp (alpha=2, h=-0.08, p=0.26) and -2.8pp (alpha=5, p=0.32); the v_refusal subspace gives the same -3.2pp null (p=0.26)' [Sec.4.4]; top-5 PCs explain 55% of variance, |cos(PC_k, centroid(B)-centroid(A))| < 0.15",
+      "raw_or_normalised": "The VECTOR is unit-normalised ('v_interaction = normalize(centroid(B-comply) - centroid(A-comply))'), so alpha is a raw additive magnitude in activation units. No activation norm, residual-stream norm or relative-norm figure appears anywhere.",
+      "zero_match_regexes": {
+        "norm": "2 matches, both non-quantitative",
+        "activation norm": 0,
+        "residual norm": 0,
+        "double-bar-norm-symbol": 0
+      }
+    },
+    "units_convertible": false,
+    "conversion_or_reason": "Their steering strength is not convertible to our axis-contrast units because the paper reports only a raw coefficient alpha in {2,5,10} applied to a unit-normalised direction at a single layer, and never reports the residual-stream activation norm ||h_l|| at that layer (or any relative-norm figure) that the conversion would divide by. Same outcome as arXiv:2602.06801 and arXiv:2602.02132 in the iteration-3 dossier. Do not guess.",
+    "probe_and_steer_same_object": false,
+    "probe_and_steer_same_object_detail": "TWO OBJECTS, loosely coupled. The authors CLAIM one: 'We report a head-to-head probe-vs-steering comparison on the same direction v_interaction in Qwen3-32B' [Sec.2]. But the detector is an MLP (512,128) [Table 2] whose relation to the axis is a post-hoc similarity between MAGNITUDE patterns, not an identity: 'The Llama MLP's per-input-dimension importance vector ... has cosine 0.78 with |v_refusal| (random-vector baseline 0.012 +/- 0.009, ~65x over random)' [Sec.4.3]. And the model differs between halves: detection 0.870 is Llama, the steering null is Qwen where LOQO detection is 0.425. They concede this in the Table 3 caption. WEAKENS the mirror-image framing and STRENGTHENS our residual, because our claim is a within-model, single-object dissociation.",
+    "behaviour_studied": "ALIGNMENT FAKING (monitoring-influenced compliance), not refusal per se. Conditions A (paid/unmonitored), B (free/monitored, no scratchpad), C (free/monitored, with scratchpad) under a fictional 'Anthrotech' retraining policy [Sec.3]. Label from a Claude Opus 4 judge (COMPLY/REFUSE/PARTIAL/UNCLEAR); probe target is B-comply vs A-comply, i.e. 'we discriminate two compliant outputs rather than deceptive vs. honest text' [Sec.2]. TWIST TO REPORT HONESTLY: the construct is named 'refusal residue' and the headline effect IS a projection onto a refusal axis - 'B-comply projects significantly more toward refusal than A-comply (Delta=+7.79, d=0.32, p=0.0001); B-refuse ~ A-refuse (d=-0.36, p=0.997)' [Sec.4.2]. But it is NOT the canonical Arditi axis: 'Arditi' = 0 matches, 'single direction' = 0 matches; their v_refusal = centroid(A-refuse) - centroid(A-comply) over gen5 GENERATED-token states within Condition A.",
+    "authors_conclusion_verbatim": "'The main mechanistic lesson is a dissociation. The direction v_interaction is predictive: it drives the cross-model asymmetric interaction (d~0.32) and the Llama per-sample detector. But additive subtraction is null both for the single direction (+1.0pp at the peak layer, p>0.4) and for the top-5 PC subspace that explains 55% of compliance-shift variance (|h|<0.08, p>0.25; v_refusal control also null). This rules out the simplest dim-collinearity objection and gives the first reported predictive-versus-additively-causal dissociation for AF.' [Sec.5] Operational gloss: 'The steering null also matters operationally: the probe is a detector, not a mitigation knob.' [Sec.5]",
+    "generalisation_beyond_af": "Only weakly and always hedged. Related Work frames the gap generically ('conflating directions that predict ... with directions that cause'), but the Scope paragraph disclaims: 'We do not claim ... that the faking direction v_interaction is non-causal in general (only that single- and 5-direction additive intervention at the peak Qwen layer is null)' [Sec.1 Scope]. Their own alternatives: 'Either the AF representation is spread beyond these five directions, is set upstream of layer 48, or v_interaction is a downstream correlate.' [Sec.4.4]",
+    "five_controls": [
+      {
+        "control": "Multi-token extraction: 'Mean-pool the first few generated tokens (gen5); single first-token extraction collapses up to 57% of runs to identical vectors at temperature 0.7, faking significance (Appendix C).' [arXiv:2607.13346 Sec.5]",
+        "their_result": "On Llama, '86/150 fully-collapsed groups under gen1 dropped to 6/150 under gen5' [Sec.4.2]",
+        "our_equivalent": "Generation-level judged scoring of the full completion plus AB-blind re-encoding of n=7,241 items",
+        "gap": "No gap in kind (no single-token state is read), but our Methods must state the extraction position as precisely as theirs does."
+      },
+      {
+        "control": "Refuse-vs-refuse confound check: 'A faking-impossible control (B-refuse vs. A-refuse) must sit at chance; a raw-feature linear probe near AUROC=1.0 signals condition-identity encoding, not faking.' [Sec.5]",
+        "their_result": "Strict-protocol control 0.594 (Qwen) / 0.695 (Llama); leaky protocol reaches 0.63 on Llama where no faking can occur [Table 2, Sec.4.3]",
+        "our_equivalent": "Random-direction null at matched norm; paraphrase-invariance check",
+        "gap": "PARTIAL GAP: we have a direction-side null but no item-side 'mechanism-impossible' control of the same shape. Cheapest fix: present the abliterated arm explicitly as that control."
+      },
+      {
+        "control": "Per-fold residualization: 'Estimate per-(condition, query) residualization statistics from the training fold only; full-data residualization leaks the held-out fold.' [Sec.5]",
+        "their_result": "Leaky protocol inflates Qwen from 0.425 to 0.761 [Table 2]",
+        "our_equivalent": "Not applicable in the same form (we do not residualize by condition mean)",
+        "gap": "GAP IN KIND: if any of our AUROCs are computed after centering/normalisation estimated on the full item pool, that is the same defect under another name. Verify before drafting."
+      },
+      {
+        "control": "Leave-one-query-out evaluation: 'Hold out whole queries, not random samples, so the probe must generalize to unseen prompts rather than memorize per-query structure.' [Sec.5]",
+        "their_result": "Collapses Qwen 0.761 -> 0.425; Llama holds at 0.870 +/- 0.023 [Table 2]",
+        "our_equivalent": "Held-out item splits (leave-one-organization-out is 2607.28685's analogue, not ours)",
+        "gap": "REAL GAP if our AUROCs are in-sample over the items used to fit the axis. Hold out whole prompt families."
+      },
+      {
+        "control": "Orthogonality-constrained probing: 'Project out the condition-identity direction before training; any surviving AUROC reflects comply-specific structure beyond what the refuse direction explains.' [Sec.5]",
+        "their_result": "0.510 +/- 0.031 (Qwen) / 0.829 +/- 0.023 (Llama) [Table 2]",
+        "our_equivalent": "Matched-contrast measurement excluding the norm-mismatch rival (A exceeds B by +0.36 to +0.61, CIs excluding 0 on 6/6)",
+        "gap": "NO GAP; ours is arguably stronger because it excludes a specific named rival by measurement rather than by projection."
+      },
+      {
+        "control": "(safeguard) Multi-direction top-k PC steering [Sec.4.4]",
+        "their_result": "Null persists over a 5-D subspace explaining 55% of compliance-shift variance (|h|<0.08, p>0.25)",
+        "our_equivalent": "Single-axis steering only",
+        "gap": "GAP: a reviewer who has read 2607.13346 will ask whether induce-without-detect survives a subspace intervention. Name it as a limitation."
+      },
+      {
+        "control": "(safeguard) Random-Procrustes alignment-specificity baseline for cross-model transfer [Sec.4.3]",
+        "their_result": "Shuffle reaches 0.80+/-0.10 and 0.84+/-0.12, so their 0.97 transfer is only +1.1 sigma (p~0.13)",
+        "our_equivalent": "We make no cross-model transfer claim",
+        "gap": "No gap; a warning against adding one."
+      }
+    ],
+    "closeness_verdict": "MIRROR_IMAGE",
+    "closeness_caveats": [
+      "CONCESSION (closer than assumed on one axis): they DO steer along a refusal axis and get a null (v_refusal alpha=5: 71.6% vs 69.0%, Cohen's h +0.057 [-0.071,+0.181], Fisher p=0.41; 5-D v_refusal subspace -3.2pp, p=0.26). Distinguish explicitly: theirs SUBTRACTS from an already-compliant Condition-B generation on borderline-harmful prompts at ~70% compliance with little headroom, at raw alpha on a unit vector of unreported relative magnitude; ours ADDS at a calibrated fraction of ||h_l|| on benign prompts from a near-zero refusal base rate.",
+      "FARTHER 1: no abliterated or uncensored arm at all ('abliterat' = 0, 'uncensored' = 0 matches in full text); all 13 models are stock instruction-tuned checkpoints.",
+      "FARTHER 2: no norm normalisation and no reported norms, so nothing in their paper constrains or converts into NORM_L.",
+      "FARTHER 3: their dissociation is assembled across two models with model, scale, relative depth and faking base rate all varying together; ours is within one model."
+    ],
+    "residual_one_sentence": "Mehta (2026) shows that a monitoring-shift direction which is aggregate-predictive on two models and per-sample detectable on one is not additively causal on the model where it was tested, for alignment faking, in raw coefficient units with no activation norm reported and no abliterated checkpoint in the panel; what remains ours is the opposite asymmetry, measured within a single model on benign prompts, with the norm-mismatch rival excluded by a matched-contrast measurement rather than argued away, and with both roles read at chance on paired abliterated checkpoints."
+  },
+  "metadata_audit": [
+    {
+      "id": "2608.05578",
+      "version": "v1",
+      "cited_title": "Detecting Safety Training Modification in Language Models via Activation Analysis",
+      "actual_title": "Detecting Safety Training Modification in Language Models via Activation Analysis",
+      "status": "MATCH",
+      "authors": [
+        "Glen Messenger"
+      ],
+      "year": 2026,
+      "venue": "IEEE Access, vol. 14, pp. 91723-91737, 2026 (journal_ref); doi 10.1109/ACCESS.2026.3704057",
+      "note": "SINGLE AUTHOR - do not write et al.",
+      "bibtex": "@article{Messenger2026,\n  author = {Glen Messenger},\n  title = {Detecting Safety Training Modification in Language Models via Activation Analysis},\n  journal = {IEEE Access},\n  volume = {14},\n  pages = {91723--91737},\n  year = {2026},\n  doi = {10.1109/ACCESS.2026.3704057},\n  note = {arXiv:2608.05578v1}\n}"
+    },
+    {
+      "id": "2606.25750",
+      "version": "v1",
+      "cited_title": "RAS: Measuring LLM Safety Through Refusal Alignment",
+      "actual_title": "RAS: Measuring LLM Safety Through Refusal Alignment",
+      "status": "MATCH",
+      "authors": [
+        "Chang-Chieh Huang",
+        "Yan-Lun Chen",
+        "Chia-Mu Yu",
+        "Wei-Bin Lee"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "first-author spelling confirmed; paper's method is named SafeVec, metric is RAS",
+      "bibtex": "@misc{Huang2026,\n  author = {Chang-Chieh Huang and Yan-Lun Chen and Chia-Mu Yu and Wei-Bin Lee},\n  title = {RAS: Measuring LLM Safety Through Refusal Alignment},\n  year = {2026},\n  eprint = {2606.25750},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2603.18353",
+      "version": "v1",
+      "cited_title": "Interpretability without actionability: mechanistic methods cannot correct language model errors despite near-perfect internal representations",
+      "actual_title": "Interpretability without actionability: mechanistic methods cannot correct language model errors despite near-perfect internal representations",
+      "status": "MATCH",
+      "authors": [
+        "Sanjay Basu",
+        "Sadiq Y. Patel",
+        "Parth Sheth",
+        "Bhairavi Muralidharan",
+        "Namrata Elamaran",
+        "Aakriti Kinra",
+        "John Morgan",
+        "Rajaie Batniji"
+      ],
+      "year": 2026,
+      "venue": "preprint (27 pages, 5 figures, 10 tables)",
+      "note": "8 authors; 'et al.' acceptable",
+      "bibtex": "@misc{Basu2026,\n  author = {Sanjay Basu and Sadiq Y. Patel and Parth Sheth and Bhairavi Muralidharan and Namrata Elamaran and Aakriti Kinra and John Morgan and Rajaie Batniji},\n  title = {Interpretability without actionability: mechanistic methods cannot correct language model errors despite near-perfect internal representations},\n  year = {2026},\n  eprint = {2603.18353},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.AI}\n}"
+    },
+    {
+      "id": "2606.24952",
+      "version": "v1",
+      "cited_title": "P. Galeone et al. Perfect Detection, Failed Control: The Geometry of Knowing vs. Steering in Language Models",
+      "actual_title": "Perfect Detection, Failed Control: The Geometry of Knowing vs. Steering in Language Models",
+      "status": "MISMATCH",
+      "authors": [
+        "Cosimo Galeone",
+        "Anna Ettorre",
+        "Minsu Park",
+        "Giuseppe Ettorre",
+        "Daniele Ligorio"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "WRONG FIRST INITIAL: 'P. Galeone' -> 'C. Galeone'",
+      "bibtex": "@misc{Galeone2026,\n  author = {Cosimo Galeone and Anna Ettorre and Minsu Park and Giuseppe Ettorre and Daniele Ligorio},\n  title = {Perfect Detection, Failed Control: The Geometry of Knowing vs. Steering in Language Models},\n  year = {2026},\n  eprint = {2606.24952},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2602.17881",
+      "version": "v1",
+      "cited_title": "Understanding Unreliability of Steering Vectors in Language Models: Geometric Predictors and the Limits of Linear Approximations",
+      "actual_title": "Understanding Unreliability of Steering Vectors in Language Models: Geometric Predictors and the Limits of Linear Approximations",
+      "status": "MATCH",
+      "authors": [
+        "Joschka Braun"
+      ],
+      "year": 2026,
+      "venue": "Master's Thesis, University of Tuebingen, 89 pages, 34 figures",
+      "note": "SINGLE AUTHOR; thesis type confirmed in arXiv comments; portions published at ICLR 2025 Workshop (arXiv:2505.22637)",
+      "bibtex": "@mastersthesis{Braun2026,\n  author = {Joschka Braun},\n  title = {Understanding Unreliability of Steering Vectors in Language Models: Geometric Predictors and the Limits of Linear Approximations},\n  school = {University of T\\\"ubingen},\n  year = {2026},\n  note = {arXiv:2602.17881v1, 89 pages}\n}"
+    },
+    {
+      "id": "2607.01854",
+      "version": "v1",
+      "cited_title": "D. Hurtado et al. Has This Checkpoint Been Abliterated? A Two-Signal Audit and Its Failure Map",
+      "actual_title": "Has This Checkpoint Been Abliterated? A Two-Signal Audit and Its Failure Map",
+      "status": "MISMATCH",
+      "authors": [
+        "Gabriel Hurtado"
+      ],
+      "year": 2026,
+      "venue": "preprint (13 pages, 3 figures)",
+      "note": "SINGLE AUTHOR - do not write et al.; WRONG INITIAL 'D.' -> 'G.'",
+      "bibtex": "@misc{Hurtado2026,\n  author = {Gabriel Hurtado},\n  title = {Has This Checkpoint Been Abliterated? A Two-Signal Audit and Its Failure Map},\n  year = {2026},\n  eprint = {2607.01854},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CR}\n}"
+    },
+    {
+      "id": "2602.06801",
+      "version": "v4",
+      "cited_title": "On the Non-Identifiability of Steering Vectors in Large Language Models",
+      "actual_title": "On the Non-Identifiability of Steering Vectors in Large Language Models",
+      "status": "MATCH",
+      "authors": [
+        "Sohan Venkatesh",
+        "Ashish Mahendran Kurapath"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "FOUR VERSIONS (v1 2026-02-06 ... v4 2026-04-01) - pin the version the quoted numbers came from",
+      "bibtex": "@misc{Venkatesh2026,\n  author = {Sohan Venkatesh and Ashish Mahendran Kurapath},\n  title = {On the Non-Identifiability of Steering Vectors in Large Language Models},\n  year = {2026},\n  eprint = {2602.06801v4},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.LG}\n}"
+    },
+    {
+      "id": "2604.15557",
+      "version": "v1",
+      "cited_title": "Predicting Where Steering Vectors Succeed",
+      "actual_title": "Predicting Where Steering Vectors Succeed",
+      "status": "MATCH",
+      "authors": [
+        "Jayadev Billa"
+      ],
+      "year": 2026,
+      "venue": "preprint (19 pages, 4 figures, 20 tables)",
+      "note": "SINGLE AUTHOR - do not write et al.",
+      "bibtex": "@misc{Billa2026,\n  author = {Jayadev Billa},\n  title = {Predicting Where Steering Vectors Succeed},\n  year = {2026},\n  eprint = {2604.15557},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2602.02132",
+      "version": "v1",
+      "cited_title": "There Is More to Refusal in Large Language Models than a Single Direction",
+      "actual_title": "There Is More to Refusal in Large Language Models than a Single Direction",
+      "status": "MATCH",
+      "authors": [
+        "Faaiz Joad",
+        "Majd Hawasly",
+        "Sabri Boughorbel",
+        "Nadir Durrani",
+        "Husrev Taha Sencar"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "",
+      "bibtex": "@misc{Joad2026,\n  author = {Faaiz Joad and Majd Hawasly and Sabri Boughorbel and Nadir Durrani and Husrev Taha Sencar},\n  title = {There Is More to Refusal in Large Language Models than a Single Direction},\n  year = {2026},\n  eprint = {2602.02132},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2603.13359",
+      "version": "v1",
+      "cited_title": "From Refusal Tokens to Refusal Control: Discovering and Steering Category-Specific Refusal Directions",
+      "actual_title": "From Refusal Tokens to Refusal Control: Discovering and Steering Category-Specific Refusal Directions",
+      "status": "MATCH",
+      "authors": [
+        "Rishab Alagharu",
+        "Ishneet Sukhvinder Singh",
+        "Shaibi Shamsudeen",
+        "Zhen Wu",
+        "Ashwinee Panda"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "",
+      "bibtex": "@misc{Alagharu2026,\n  author = {Rishab Alagharu and Ishneet Sukhvinder Singh and Shaibi Shamsudeen and Zhen Wu and Ashwinee Panda},\n  title = {From Refusal Tokens to Refusal Control: Discovering and Steering Category-Specific Refusal Directions},\n  year = {2026},\n  eprint = {2603.13359},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2603.22061",
+      "version": "v1",
+      "cited_title": "(no authors given) On the Failure of Topic-Matched Contrast Baselines in Multi-Directional Refusal Abliteration",
+      "actual_title": "On the Failure of Topic-Matched Contrast Baselines in Multi-Directional Refusal Abliteration",
+      "status": "MISMATCH",
+      "authors": [
+        "Valentin Petrov"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "AUTHOR LIST ABSENT IN DRAFT; SINGLE AUTHOR",
+      "bibtex": "@misc{Petrov2026,\n  author = {Valentin Petrov},\n  title = {On the Failure of Topic-Matched Contrast Baselines in Multi-Directional Refusal Abliteration},\n  year = {2026},\n  eprint = {2603.22061},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2607.28685",
+      "version": "v1",
+      "cited_title": "(no authors given) Safety, or Just Capability? A Validity Audit of Agent-Safety Benchmarks",
+      "actual_title": "Safety, or Just Capability? A Validity Audit of Agent-Safety Benchmarks",
+      "status": "MISMATCH",
+      "authors": [
+        "Youting Wang",
+        "Xiao Han",
+        "Dingyan Shang",
+        "Yuan Tang",
+        "Bowen Liu"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "AUTHOR LIST ABSENT IN DRAFT",
+      "bibtex": "@misc{Wang2026validity,\n  author = {Youting Wang and Xiao Han and Dingyan Shang and Yuan Tang and Bowen Liu},\n  title = {Safety, or Just Capability? A Validity Audit of Agent-Safety Benchmarks},\n  year = {2026},\n  eprint = {2607.28685},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.AI}\n}"
+    },
+    {
+      "id": "2605.06161",
+      "version": "v1",
+      "cited_title": "(no authors given) Beyond Accuracy: Policy Invariance as a Reliability Test for LLM Safety Judges",
+      "actual_title": "Beyond Accuracy: Policy Invariance as a Reliability Test for LLM Safety Judges",
+      "status": "MISMATCH",
+      "authors": [
+        "Shihao Weng",
+        "Yang Feng",
+        "Xiaofei Xie"
+      ],
+      "year": 2026,
+      "venue": "preprint (9 pages)",
+      "note": "AUTHOR LIST ABSENT IN DRAFT",
+      "bibtex": "@misc{Weng2026,\n  author = {Shihao Weng and Yang Feng and Xiaofei Xie},\n  title = {Beyond Accuracy: Policy Invariance as a Reliability Test for LLM Safety Judges},\n  year = {2026},\n  eprint = {2605.06161},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.AI}\n}"
+    },
+    {
+      "id": "2604.02608",
+      "version": "v2",
+      "cited_title": "Steering Succeeds Where the Logit Lens Cannot Decode: A Large-Scale Concept-Layer Audit",
+      "actual_title": "Steerable but Not Decodable: Function Vectors Operate Beyond the Logit Lens",
+      "status": "MISMATCH",
+      "authors": [
+        "Mohammed Suhail B Nadaf"
+      ],
+      "year": 2026,
+      "venue": "preprint (43 pages, 14 figures, 34 tables)",
+      "note": "MOST SERIOUS DEFECT: cited title is not the paper's title; author list absent; SINGLE AUTHOR; v1 2026-04-03, v2 2026-05-08",
+      "bibtex": "@misc{Nadaf2026,\n  author = {Mohammed Suhail B Nadaf},\n  title = {Steerable but Not Decodable: Function Vectors Operate Beyond the Logit Lens},\n  year = {2026},\n  eprint = {2604.02608v2},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2608.08159",
+      "version": "v1",
+      "cited_title": "Z. Wu et al. When Is a Steerable Concept Representation Real? Measurement Confounds in a Cross-Family Audit",
+      "actual_title": "When Is a Steerable Concept Representation Real? Measurement Confounds in a Cross-Family Audit of Neuroscience Parallels in LLMs",
+      "status": "MISMATCH",
+      "authors": [
+        "Yuqi Wu",
+        "Shengming Zhao",
+        "Jie Chen"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "WRONG INITIAL 'Z. Wu' -> 'Y. Wu'; TITLE TRUNCATED (subtitle 'of Neuroscience Parallels in LLMs' dropped)",
+      "bibtex": "@misc{Wu2026,\n  author = {Yuqi Wu and Shengming Zhao and Jie Chen},\n  title = {When Is a Steerable Concept Representation Real? Measurement Confounds in a Cross-Family Audit of Neuroscience Parallels in LLMs},\n  year = {2026},\n  eprint = {2608.08159},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2604.09839",
+      "version": "v2",
+      "cited_title": "A. Mishra, D. Khashabi, and A. Liu. Steered LLM Activations are Non-Surjective. arXiv preprint",
+      "actual_title": "Steered LLM Activations are Non-Surjective",
+      "status": "MISMATCH",
+      "authors": [
+        "Aayush Mishra",
+        "Daniel Khashabi",
+        "Anqi Liu"
+      ],
+      "year": 2026,
+      "venue": "ICLR 2026 Workshops (Sci4DL, Re-Align)",
+      "note": "VENUE OMITTED in draft (cited as bare arXiv preprint); v1 2026-04-10, v2 2026-05-07",
+      "bibtex": "@inproceedings{Mishra2026,\n  author = {Aayush Mishra and Daniel Khashabi and Anqi Liu},\n  title = {Steered LLM Activations are Non-Surjective},\n  booktitle = {ICLR 2026 Workshops (Sci4DL, Re-Align)},\n  year = {2026},\n  note = {arXiv:2604.09839v2}\n}"
+    },
+    {
+      "id": "2605.05427",
+      "version": "v2",
+      "cited_title": "A. Hasan and S. Biswas. The Refusal-Compliance Tradeoff: A Large-Scale Safety Behavior Audit of Large Language Models",
+      "actual_title": "The Refusal--Compliance Tradeoff: A Large-Scale Safety Behavior Audit of Large Language Models",
+      "status": "MATCH",
+      "authors": [
+        "Alif Al Hasan",
+        "Sumon Biswas"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "SURNAME: cite as 'A. Al Hasan', not 'A. Hasan'; v1 2026-05-06, v2 2026-05-30",
+      "bibtex": "@misc{AlHasan2026,\n  author = {Alif Al Hasan and Sumon Biswas},\n  title = {The Refusal--Compliance Tradeoff: A Large-Scale Safety Behavior Audit of Large Language Models},\n  year = {2026},\n  eprint = {2605.05427v2},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2603.24543",
+      "version": "v1",
+      "cited_title": "Y. Li et al. Analysing the Safety Pitfalls of Steering Vectors",
+      "actual_title": "Analysing the Safety Pitfalls of Steering Vectors",
+      "status": "MATCH",
+      "authors": [
+        "Yuxiao Li",
+        "Alina Fastowski",
+        "Efstratios Zaradoukas",
+        "Bardh Prenkaj",
+        "Gjergji Kasneci"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "'Y. Li' correct (Yuxiao Li)",
+      "bibtex": "@misc{Li2026pitfalls,\n  author = {Yuxiao Li and Alina Fastowski and Efstratios Zaradoukas and Bardh Prenkaj and Gjergji Kasneci},\n  title = {Analysing the Safety Pitfalls of Steering Vectors},\n  year = {2026},\n  eprint = {2603.24543},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CR}\n}"
+    },
+    {
+      "id": "2602.02712",
+      "version": "v2",
+      "cited_title": "A. Taimeskhanov et al. Towards Understanding Steering Strength. ICML 2026",
+      "actual_title": "Towards Understanding Steering Strength",
+      "status": "MISMATCH",
+      "authors": [
+        "Magamed Taimeskhanov",
+        "Samuel Vaiter",
+        "Damien Garreau"
+      ],
+      "year": 2026,
+      "venue": "Accepted for publication at ICML 2026 (50 pages)",
+      "note": "WRONG INITIAL 'A.' -> 'M.'; venue CONFIRMED correct; v1 2026-02-02, v2 2026-07-08",
+      "bibtex": "@inproceedings{Taimeskhanov2026,\n  author = {Magamed Taimeskhanov and Samuel Vaiter and Damien Garreau},\n  title = {Towards Understanding Steering Strength},\n  booktitle = {International Conference on Machine Learning (ICML)},\n  year = {2026},\n  note = {arXiv:2602.02712v2, 50 pages}\n}"
+    },
+    {
+      "id": "2602.02600",
+      "version": "v3",
+      "cited_title": "E. Rahimi, E. Hirshel, R. Himelstein, A. Levi, A. Mendelson, and C. Baskin. Step-Wise Refusal Dynamics in Autoregressive and Diffusion Language Models",
+      "actual_title": "Step-Wise Refusal Dynamics in Autoregressive and Diffusion Language Models",
+      "status": "MATCH",
+      "authors": [
+        "Eliron Rahimi",
+        "Elad Hirshel",
+        "Rom Himelstein",
+        "Amit LeVi",
+        "Avi Mendelson",
+        "Chaim Baskin"
+      ],
+      "year": 2026,
+      "venue": "preprint",
+      "note": "CAPITALISATION: 'A. Levi' -> 'A. LeVi'; v1 2026-02-01, v3 2026-06-05",
+      "bibtex": "@misc{Rahimi2026,\n  author = {Eliron Rahimi and Elad Hirshel and Rom Himelstein and Amit LeVi and Avi Mendelson and Chaim Baskin},\n  title = {Step-Wise Refusal Dynamics in Autoregressive and Diffusion Language Models},\n  year = {2026},\n  eprint = {2602.02600v3},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2607.14147",
+      "version": "v1",
+      "cited_title": "A. Kwon. Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak",
+      "actual_title": "Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak",
+      "status": "MATCH",
+      "authors": [
+        "Alex Kwon"
+      ],
+      "year": 2026,
+      "venue": "preprint (31 pages, 3 figures)",
+      "note": "SINGLE AUTHOR - correctly cited without et al.",
+      "bibtex": "@misc{Kwon2026,\n  author = {Alex Kwon},\n  title = {Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak},\n  year = {2026},\n  eprint = {2607.14147},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CL}\n}"
+    },
+    {
+      "id": "2607.13346",
+      "version": "v1",
+      "cited_title": "(NOT YET CITED IN DRAFT)",
+      "actual_title": "The Refusal Residue: When Probes Catch Alignment Faking and When They Don't",
+      "status": "MATCH",
+      "authors": [
+        "Aman Mehta"
+      ],
+      "year": 2026,
+      "venue": "Mechanistic Interpretability Workshop at ICML 2026 (12 pages, 4 figures)",
+      "note": "SINGLE AUTHOR - do not write et al.; affiliation Snowflake AI Research; NEW citation to add",
+      "bibtex": "@inproceedings{Mehta2026,\n  author = {Aman Mehta},\n  title = {The Refusal Residue: When Probes Catch Alignment Faking and When They Don't},\n  booktitle = {Mechanistic Interpretability Workshop at ICML 2026},\n  year = {2026},\n  note = {arXiv:2607.13346v1}\n}"
+    }
+  ],
+  "mismatch_count": 9,
+  "audited_count": 22,
+  "metadata_audit_extra_findings": [
+    "All 22 IDs RESOLVE on the arXiv API - none is fabricated or mistyped.",
+    "Reference [23] is the worst defect: the cited title 'Steering Succeeds Where the Logit Lens Cannot Decode: A Large-Scale Concept-Layer Audit' is NOT the title of arXiv:2604.02608, which is 'Steerable but Not Decodable: Function Vectors Operate Beyond the Logit Lens' (Mohammed Suhail B Nadaf, single author, v2).",
+    "OUTSIDE THE 22-LIST: reference [10] 'Z. Li et al. Logit-Gap Steering ... arXiv:2506.24056' - the draft's own references.bib gives Tung-Ling Li and Hongliang Liu, so cite 'T.-L. Li and H. Liu'.",
+    "SINGLE-AUTHOR papers that must never carry 'et al.': 2608.05578 (Glen Messenger), 2607.01854 (Gabriel Hurtado), 2604.15557 (Jayadev Billa), 2603.22061 (Valentin Petrov), 2604.02608 (Mohammed Suhail B Nadaf), 2607.14147 (Alex Kwon), 2607.13346 (Aman Mehta), 2602.17881 (Joschka Braun), 2603.27412 (Isaac Llorente-Saguer).",
+    "MULTI-VERSION IDs where the draft does not pin a version: 2602.06801 (v4), 2604.02608 (v2), 2604.09839 (v2), 2605.05427 (v2), 2602.02712 (v2), 2602.02600 (v3). Cite the version the quoted numbers came from.",
+    "The iteration-2 dossier's flagged title drifts (2509.13450, 2508.21448, 2605.09043, 2606.22686) do not appear in the current reference list, so no audit row was needed; re-verify if any is added."
+  ],
+  "saturation_C1": {
+    "verdict": "ADJACENT_WORK_EXISTS - no counterpart closer than arXiv:2607.13346 found",
+    "queries_run": [
+      "arXiv API: all:\"refusal direction\" AND all:\"AUROC\"",
+      "arXiv API: abs:\"steering\" AND abs:\"probe\" AND abs:\"dissociation\"",
+      "arXiv API: abs:\"refusal\" AND abs:\"steering\" AND abs:\"detect\"",
+      "arXiv API: all:\"detection\" AND all:\"control\" AND all:\"same direction\" AND all:\"refusal\" (0 results)",
+      "arXiv API: abs:\"contrast set\" AND abs:\"steering\"",
+      "general web: same direction steers refusal but probe AUROC near chance dissociation induce without detect 2026",
+      "scholarly: paraphrasing contrast pairs improves steering vector quality lexical confound difference-in-means refusal"
+    ],
+    "hits": [
+      {
+        "id": "arXiv:2607.13346",
+        "what": "detect-without-control for alignment faking",
+        "relation": "nearest neighbour; fully extracted"
+      },
+      {
+        "id": "arXiv:2606.24952",
+        "what": "'the model detects fake entities with perfect linear separability (AUC = 1.000 from layer 5), yet that direction sits at cos = 0.12 (about 83 degrees) from the direction producing a refusal'",
+        "relation": "known incumbent; our axis is IN TENSION WITH (not refutes) their functional criterion"
+      },
+      {
+        "id": "arXiv:2604.02608",
+        "what": "'FV steering routinely succeeds where the logit lens cannot decode the correct answer at any intermediate layer, while the converse -- decodable without steerable -- is nearly empty (3 of 72)'",
+        "relation": "makes steer-without-read the COMMON case; supports our result's plausibility and weakens the Galeone tension"
+      },
+      {
+        "id": "arXiv:2606.23583",
+        "what": "evaluation awareness: 'Representations survive behavioral collapse (probes retain AUROC ...)'",
+        "relation": "adjacent third pattern, not ours"
+      },
+      {
+        "id": "arXiv:2607.13568",
+        "what": "a familiarity direction that BOTH detects and steers: 'adding a one-dimensional familiarity direction at a single layer moves refusal rates monotonically in both directions (0.24 to 1.00 on well-known entities; 0.73 to 0.00 on unknown ones)'",
+        "relation": "COUNTER-EXAMPLE where read and act coincide; also a refusal dose-response curve close in spirit to alpha_50; worth citing"
+      },
+      {
+        "id": "LessWrong 'Eval-Awareness Steering detects the Test, Not the Sabotage'",
+        "what": "difference-of-means direction detects in-distribution but does not produce the target behaviour",
+        "relation": "SECONDARY SURFACE - LOW confidence, do not use for any number"
+      }
+    ],
+    "caveat": "Repeat verbatim: 'the closest equivalents found are these' is weaker than 'no closer equivalent exists'.",
+    "residual": "No published work reports a single activation direction that induces refusal at a calibrated fraction of the activation norm while reading naturally occurring refusals at near-chance AUROC in the same model, with the norm-mismatch rival excluded by a matched-contrast measurement."
+  },
+  "saturation_C2": {
+    "verdict": "CLOSER_THAN_ASSUMED but NOT ANTICIPATED - re-scope by construct, not by claim",
+    "queries_run": [
+      "arXiv API: all:\"abliterated\" (26 results, sorted by submittedDate descending; top 11 inspected)",
+      "arXiv API: abs:\"refusal\" AND abs:\"steering\" AND abs:\"detect\"",
+      "general web: paraphrase contrast prompts remove lexical overlap improve refusal direction extraction validity"
+    ],
+    "hits": [
+      {
+        "id": "arXiv:2603.27412",
+        "title": "The Geometry of Harmful Intent: Training-Free Anomaly Detection via Angular Deviation in LLM Residual Streams (LatentBiopsy)",
+        "authors": [
+          "Isaac Llorente-Saguer"
+        ],
+        "date": "2026-03-28",
+        "why_it_matters": "MOST IMPORTANT UNPLANNED FIND. Runs EXACTLY the base / instruction-tuned / abliterated Qwen triplet design and reports an activation-geometry AUROC on abliterated checkpoints.",
+        "quotes": [
+          "'We evaluate two complete model triplets from the Qwen3.5-0.8B and Qwen2.5-0.5B families: base, instruction-tuned, and abliterated (refusal direction surgically removed via orthogonalisation).' [abstract]",
+          "'Abliterated variants of both Qwen3.5-0.8B and Qwen2.5-0.5B achieve AUROC h/b = 1.000 and AUROC h/n within 0.015 of their instruction-tuned counterparts, establishing a geometric dissociation between harmful-intent representation and the refusal mechanism across two independent model families.' [Sec.1 contribution 2]",
+          "'LatentBiopsy detects harmful intent even in abliterated models that are constitutionally incapable of producing refusals. ... Harm recognition and refusal generation are separable mechanisms.' [Sec.1]",
+          "'the safety representation that LatentBiopsy exploits is not the refusal direction itself, since it survives abliteration.' [Sec.2]",
+          "'Given 200 safe normative prompts, LatentBiopsy computes the leading principal component of their activations at a target layer and characterises new prompts by their radial deviation angle theta from this reference direction.' [abstract]"
+        ],
+        "action": "MANDATORY new citation. Delete any 'first to read an activation safety score on abliterated checkpoints' sentence."
+      },
+      {
+        "id": "arXiv:2607.01854",
+        "title": "Has This Checkpoint Been Abliterated?",
+        "authors": [
+          "Gabriel Hurtado"
+        ],
+        "answer_to_the_plans_question": "THE LATTER: it detects abliteration by other means and does NOT report the canonical refusal axis at chance.",
+        "quotes": [
+          "'Activation refusal-gap (rho<0.5) | TPR 0.63 | FPR 0.14 | AUROC 0.84' [App. A Table 2]",
+          "'combined z-sum (AUROC 0.95)' vs 'WeightWatch E1 (AUROC 0.90)' and 'activation (AUROC 0.84)' [Fig. 2]",
+          "'Our refusal-gap therefore certifies whether the refusal mechanism is present, not whether a model is harmless' [Discussion]",
+          "'the audit rests entirely on the reference, so a spoofed base voids it at the root' [Sec.7]"
+        ]
+      },
+      {
+        "id": "arXiv:2607.17427",
+        "title": "Abliteration Is Not a Scalpel: Off-Target Effects of Refusal Removal on Decision Disposition Across Model Families",
+        "authors": [
+          "Aleksander Fafula"
+        ],
+        "note": "Behavioural not activation-based (21,600 decisions, Gemma-4-26B and Qwen3-30B base/abliterated arms). Useful framing: 'Whoever deploys an uncensored model as an agent is deploying a measurably different decision-maker, not the base model minus refusals.' [abstract, ABSTRACT ONLY]"
+      },
+      {
+        "id": "arXiv:2607.05842",
+        "title": "Beyond Refusal: A Same-Lineage Study of Aligned and Abliterated LLMs for Vulnerability Analysis",
+        "note": "behavioural/capability, no activation score [ABSTRACT ONLY]"
+      },
+      {
+        "id": "arXiv:2607.02714",
+        "title": "Not All Refusals Are Equal: How Safety Alignment Fails Cybersecurity at Scale",
+        "note": "24-model abliteration study; refusal 'distributed widely across layers' [ABSTRACT ONLY]"
+      },
+      {
+        "id": "arXiv:2606.25750",
+        "title": "RAS/SafeVec",
+        "note": "known incumbent: 'RAS separates aligned models from uncensored and abliterated variants' but needs unsafe+jailbreak prompts and a safety-aligned reference model"
+      }
+    ],
+    "residual": "What remains ours is that the REFUSAL AXIS SPECIFICALLY - the axis abliteration is defined to remove - falls to chance in BOTH its detection and its induction role on paired abliterated checkpoints, whereas the published abliterated-arm result (arXiv:2603.27412) concerns a harm-intent principal-component direction that SURVIVES abliteration, and the published abliteration-detection result (arXiv:2607.01854) is a reference-anchored refusal-gap RATIO that presumes an attested base.",
+    "truncation_note": "The all:\"abliterated\" sweep was read at 30 results; I did not page beyond the first 30, so an older abliteration paper could have been missed."
+  },
+  "refit_novelty_D": {
+    "verdict": "ADJACENT",
+    "queries_run": [
+      "arXiv API: all:\"contrast pairs\" AND all:\"paraphrase\" (1 result, unrelated SemEval system paper)",
+      "arXiv API: abs:\"difference-in-means\" AND abs:\"contrast\" (12 results; 7 inspected, none relevant)",
+      "arXiv API: all:\"contrast pair\" AND all:\"steering vector\" AND all:\"template\" (0 results)",
+      "arXiv API: all:\"lexical confound\" AND all:\"steering\" (0 results)",
+      "arXiv API: abs:\"contrastive pairs\" AND abs:\"surface form\" (0 results)",
+      "arXiv API: all:\"refusal direction\" AND all:\"paraphrase\" (0 results)",
+      "arXiv API: all:\"criterion validity\" AND all:\"activation\" (1 result, 2018, unrelated)",
+      "arXiv API: abs:\"contrast set\" AND abs:\"steering\" (2 results, neither relevant)",
+      "general web: paraphrase contrast prompts remove lexical overlap improve refusal direction extraction validity",
+      "scholarly: paraphrasing contrast pairs improves steering vector quality lexical confound difference-in-means refusal"
+    ],
+    "hits": [
+      {
+        "id": "arXiv:2603.22061",
+        "what": "'topic-matched contrast produces no functional refusal directions at any tested weight level on any tested layer, while unmatched contrast on the same model, same extraction code, and same evaluation protocol achieves complete refusal elimination on six layers' ... 'reducing the extracted direction magnitude below the threshold at which weight-matrix projection perturbs the residual stream'",
+        "relation": "SAME FAMILY, OPPOSITE SIGN: their contrast-set manipulation DEGRADES the direction, ours IMPROVES the metric. Worth a sentence in its own right; also the mechanism behind our top refutation risk (axis-B norm 2.6-2.7 vs axis-A 10.3-10.6)."
+      },
+      {
+        "id": "arXiv:2602.17881",
+        "what": "'steering vectors trained on different prompt variations are directionally distinct, yet perform similarly well and exhibit correlated efficacy across datasets'",
+        "relation": "CLOSEST THING TO A NULL AGAINST US - but again the dependent variable is EFFICACY, not criterion validity against judged behaviour."
+      },
+      {
+        "id": "arXiv:2602.02132",
+        "what": "'The primary effect of different directions is not whether the model refuses, but how it refuses'",
+        "relation": "behaviour-labelled prompt contrasts; adjacent"
+      },
+      {
+        "id": "arXiv:2603.13359",
+        "what": "whitening so that 'a unit of steering has a comparable effect regardless of direction'",
+        "relation": "a normalisation, not a contrast-set validity claim"
+      }
+    ],
+    "narrowed_claim": "Prior work shows that how a contrast set is built changes the extracted direction's FUNCTIONAL EFFICACY - a matched contrast can collapse it entirely (arXiv:2603.22061), while prompt-variation leaves efficacy roughly unchanged despite directional differences (arXiv:2602.17881); we show something different in kind, that lexically de-confounding the contrast set changes a published scanner's CRITERION VALIDITY against judged behaviour (oriented rho 0.358 -> 0.654, AUC 0.705 -> 0.886), which is a measurement-validity claim about the metric rather than a control claim about the direction.",
+    "retreat_position": "If a counterpart surfaces, claim the PAIRED design (same scanner, same checkpoints, same judge; only the contrast set paraphrased) rather than the effect itself."
+  },
+  "paste_ready": {
+    "point_of_use": "The reverse asymmetry has just been reported for a different safety behaviour: Mehta (2026) finds that a monitoring-shift direction in Qwen3-32B and Llama-3.1-8B is aggregate-predictive (d~0.32, p<0.0001) and per-sample detectable on Llama at leakage-free AUROC 0.870 +/- 0.023, yet subtracting it - and a 5-dimensional subspace explaining 55% of the compliance-shift variance - leaves compliance unchanged over 2,000 runs (Cohen's |h| < 0.08, all p > 0.25), concluding that \"the probe is a detector, not a mitigation knob.\" Our result is that dissociation run backwards, within a single model and on the refusal axis: the axis induces refusal at 0.91-1.57 contrast units while reading real refusals at AUROC 0.486-0.790.",
+    "detection_vs_intervention_paragraph": "Whether the direction that reads a behaviour is the direction that controls it is now an open empirical question with evidence on both sides, and our result closes the loop. Galeone et al. (2026) report the detection-side failure: on hallucination a direction separates fake entities at AUC = 1.000 yet sits at cos = 0.12 from the direction that produces a refusal, and they explicitly reject the cosine as a steerability predictor, proposing instead the functional criterion that the steerable case is the one where the intervention direction also detects. Nadaf (2026) shows the population asymmetry: across 4,032 directed cross-template pairs, function-vector steering routinely succeeds where the logit lens cannot decode the answer at any intermediate layer, while the converse is \"nearly empty (3 of 72)\" - steerable-but-not-readable is the common case, so our 0.69-AUROC steering axis is in tension with Galeone's functional criterion rather than a refutation of it. Mehta (2026) supplies the mirror image of our finding for alignment faking: a model-conditional probe (AUROC 0.870 on Llama-3.1-8B, 0.425 on Qwen3-32B, with cross-model Procrustes transfer null against a random-Procrustes baseline) reads a direction that additive steering does not move (|h| < 0.08 over 2,000 runs, including a refusal-direction control). We report the opposite asymmetry for refusal, within a single model: the axis induces refusal at 0.91-1.57 contrast units while reading real refusals at only 0.486-0.790, the norm-mismatch rival is excluded by a matched-contrast test (A exceeds B by +0.36 to +0.61 at matched contrast units, CIs excluding 0 on 6 of 6), and both roles fall to chance on abliterated checkpoints (0.495, 0.486). Taken together the read-act mapping is unconstrained in both directions: a direction can read without acting and act without reading, so neither role licenses the other.",
+    "what_remains_ours": "Granting Mehta (2026) in full, what remains ours is the opposite arm of the dissociation - a single activation axis that induces the behaviour it cannot read, established within one model on benign prompts, with the norm-mismatch rival excluded by measurement at matched contrast units and both roles falling to chance on paired abliterated checkpoints, none of which exists in a paper that has no abliterated arm, reports no activation norm, and assembles its own dissociation across two different models.",
+    "residual_novelty_refit": "The contrast-set-design literature already establishes that the choice of contrast baseline determines whether a diff-in-means direction functions at all: a topic-matched baseline 'produces no functional refusal directions at any tested weight level on any tested layer' while the unmatched baseline 'achieves complete refusal elimination on six layers' (arXiv:2603.22061), and prompt-variation produces 'directionally distinct' vectors that nonetheless 'perform similarly well' (arXiv:2602.17881). Both measure the FUNCTIONAL EFFICACY of the direction. Our claim changes the dependent variable: refitting a published activation scanner's contrast set on lexically de-confounded paraphrases improves its CRITERION VALIDITY against judged behaviour - oriented rho from 0.358 to 0.654 and AUC from 0.705 to 0.886 - a statement about whether the metric tracks what it claims to measure, not about whether the direction controls behaviour. No paper found makes that measurement, and the measurement-validity framing has published precedent only for benchmark scores (arXiv:2607.28685) and LLM judges (arXiv:2605.06161), never for a benchmark-free activation scalar.",
+    "residual_novelty_dissociation": "The read-act dissociation now has published instances in three of its four cells: detect without control (arXiv:2606.24952, AUC 1.000 detection at cos 0.12 from the control direction; arXiv:2607.13346, AUROC 0.870 with |h| < 0.08 steering), steer without decode as the common case (arXiv:2604.02608, converse 'nearly empty (3 of 72)'), and both-at-once for a familiarity direction (arXiv:2607.13568). What is not published is our cell: a single activation axis, in a single model, that induces refusal at 0.91-1.57 contrast units while reading naturally occurring refusals at AUROC 0.486-0.790, with (i) the norm-mismatch rival excluded by a matched-contrast measurement (A exceeds B by +0.36 to +0.61, CIs excluding 0 on 6 of 6) rather than argued away, (ii) model-generated, AB-blind items at n = 7,241 re-encoded, and (iii) both roles at chance on paired abliterated checkpoints (0.495, 0.486) - an arm that arXiv:2607.13346 does not have at all, that arXiv:2603.27412 runs on a different axis and finds SURVIVES, and that arXiv:2607.01854 addresses only via a reference-anchored ratio. The claim to make is the CONJUNCTION; each conjunct alone has a neighbour.",
+    "limitation_sentence_five_controls": "Following Mehta's five-control framework for hidden-state detectors, we hold out whole prompt families rather than random items and estimate all normalisation statistics within the training split; we do not, however, test whether the induce-without-detect asymmetry survives a multi-direction subspace intervention, which we leave to follow-up."
+  },
+  "confidence": {
+    "high_primary_full_text": [
+      "All of Part A from arxiv.org/html/2607.13346v1 (full text incl. appendix headings), verbatim with section anchors",
+      "Part B metadata from three export.arxiv.org/api/query batch calls; all 22 IDs resolved",
+      "C2 LatentBiopsy quotes from arxiv.org/pdf/2603.27412",
+      "2607.01854 numbers from arxiv.org/pdf/2607.01854"
+    ],
+    "medium_abstract_only": [
+      "arXiv:2606.23583",
+      "arXiv:2607.13568",
+      "arXiv:2607.17427",
+      "arXiv:2607.05842",
+      "arXiv:2607.02714",
+      "arXiv:2606.25750 content claims",
+      "arXiv:2606.24952 content claims",
+      "arXiv:2604.02608 content claims",
+      "arXiv:2603.22061 content claims",
+      "arXiv:2602.17881 content claims"
+    ],
+    "low_secondary_surface": [
+      "LessWrong 'Eval-Awareness Steering detects the Test, Not the Sabotage' - listed for completeness only, must not be used for any number in the paper"
+    ],
+    "zero_match_regexes_on_2607_13346": {
+      "abliterat": 0,
+      "uncensored": 0,
+      "Arditi": 0,
+      "single direction": 0,
+      "criterion validity": 0,
+      "paraphras": 0,
+      "activation norm": 0,
+      "residual norm": 0,
+      "double-bar norm symbol": 0,
+      "norm": "2 (both non-quantitative)",
+      "benign": 1
+    },
+    "truncated_sweeps": [
+      "C2 all:\"abliterated\" read at 30 results only",
+      "Part D: nine query forms, most abs:-scoped ones returned 0 relevant hits - a thin evidence base, hence ADJACENT rather than NO_COUNTERPART"
+    ],
+    "under_sampling_caveat": "The scholarly-mode search API returned semantically unrelated results for a well-formed query, so scholarly-mode coverage was effectively unavailable and the sweep leaned on the arXiv API search_query= endpoint plus general web search. The arXiv API matches title/abstract/metadata, not full text, so a paper that does the thing but does not name it in its abstract would be missed. The closest equivalents found are these; that is weaker than no closer equivalent exists.",
+    "action_item_before_drafting": "Mehta's controls #3 (per-fold statistics) and #4 (leave-one-query-out) have no confirmed counterpart in our pipeline. If any of our reported AUROCs are computed over the same items used to fit or normalise the axis, that is exactly the leakage his Sec.4.3 diagnoses - and he shows it moves an AUROC from 0.761 to 0.425. Verify the split discipline in our code before the next draft."
+  },
+  "sources": [
+    {
+      "index": 1,
+      "url": "https://arxiv.org/html/2607.13346v1",
+      "title": "The Refusal Residue: When Probes Catch Alignment Faking and When They Don't (HTML full text)",
+      "summary": "Primary source for all of Part A: 50 OR-Bench/XSTest queries, gen5 extraction, LOQO protocol, Table 2 AUROC grid (0.425 Qwen / 0.870 Llama), Table 3 steering grid (Cohen's h, v_refusal control null), the five controls verbatim, and the authors' own dissociation conclusion."
+    },
+    {
+      "index": 2,
+      "url": "https://arxiv.org/abs/2607.13346",
+      "title": "arXiv abstract page for 2607.13346",
+      "summary": "Confirms single author (Aman Mehta), submission date 2026-07-15, and venue 'Accepted to the Mechanistic Interpretability Workshop at ICML 2026'."
+    },
+    {
+      "index": 3,
+      "url": "http://export.arxiv.org/api/query?id_list=2608.05578,2606.25750,2603.18353,2606.24952,2602.17881,2607.01854,2602.06801",
+      "title": "arXiv API batch 1 (7 IDs)",
+      "summary": "Verified metadata for Messenger (IEEE Access journal_ref), Huang et al. RAS, Basu et al., Galeone (first name Cosimo, not P.), Braun (Master's thesis), Hurtado (single author Gabriel), Venkatesh (v4)."
+    },
+    {
+      "index": 4,
+      "url": "http://export.arxiv.org/api/query?id_list=2604.15557,2602.02132,2603.13359,2603.22061,2607.28685,2605.06161,2604.02608,2608.08159",
+      "title": "arXiv API batch 2 (8 IDs)",
+      "summary": "Verified metadata including the decisive correction that 2604.02608 is 'Steerable but Not Decodable: Function Vectors Operate Beyond the Logit Lens' by Mohammed Suhail B Nadaf, and the full author lists missing from draft entries [19], [20], [21]."
+    },
+    {
+      "index": 5,
+      "url": "http://export.arxiv.org/api/query?id_list=2604.09839,2605.05427,2603.24543,2602.02712,2602.02600,2607.14147,2607.13346",
+      "title": "arXiv API batch 3 (7 IDs)",
+      "summary": "Verified Mishra et al.'s ICLR 2026 Workshops venue, Taimeskhanov's first name (Magamed, not A.), ICML 2026 acceptance of 2602.02712, and the 2607.13346 record."
+    },
+    {
+      "index": 6,
+      "url": "https://arxiv.org/pdf/2603.27412",
+      "title": "The Geometry of Harmful Intent: Training-Free Anomaly Detection via Angular Deviation in LLM Residual Streams (LatentBiopsy)",
+      "summary": "The most consequential unplanned find: runs base/instruct/abliterated Qwen triplets and reports harm-intent geometry SURVIVING abliteration (AUROC within 0.015 of instruct), explicitly noting its axis 'is not the refusal direction itself, since it survives abliteration'."
+    },
+    {
+      "index": 7,
+      "url": "https://arxiv.org/pdf/2607.01854",
+      "title": "Has This Checkpoint Been Abliterated? A Two-Signal Audit and Its Failure Map",
+      "summary": "Answers the C2 question: its activation refusal-gap is a thresholded ratio (rho<0.5, TPR 0.63, FPR 0.14, AUROC 0.84) combined with a weight-energy signal into a z-sum at AUROC 0.95; it never reports a canonical refusal axis at chance, and 'presumes an attested reference'."
+    },
+    {
+      "index": 8,
+      "url": "http://export.arxiv.org/api/query?search_query=all:%22abliterated%22&sortBy=submittedDate&sortOrder=descending",
+      "title": "arXiv API sweep: all:\"abliterated\"",
+      "summary": "C2 sweep, 26 results; surfaced 2603.27412, 2607.17427, 2607.05842, 2607.02714 and confirmed 2607.01854 and 2606.25750 as the known incumbents."
+    },
+    {
+      "index": 9,
+      "url": "http://export.arxiv.org/api/query?search_query=abs:%22refusal%22+AND+abs:%22steering%22+AND+abs:%22detect%22",
+      "title": "arXiv API sweep: refusal AND steering AND detect",
+      "summary": "C1 sweep; returned no dissociation paper closer than 2607.13346, 2606.24952 and 2604.02608."
+    },
+    {
+      "index": 10,
+      "url": "http://export.arxiv.org/api/query?id_list=2605.03095,2603.27412,2607.07003,2607.03372,2605.08942,2604.09364",
+      "title": "arXiv API batch: C1 candidate triage",
+      "summary": "Triaged six dissociation-keyword candidates; five were off-topic (jailbreak defence, VLM grounding, sycophancy subtypes, VLA memory, metacognition), and this call is where LatentBiopsy was found."
+    },
+    {
+      "index": 11,
+      "url": "http://export.arxiv.org/api/query?id_list=2607.13568",
+      "title": "Graded Entity-Familiarity Readouts in Language Models: ... and Refusal Steering",
+      "summary": "C1 counter-example: a one-dimensional familiarity direction that both detects and steers refusal monotonically (0.24->1.00 on well-known entities, 0.73->0.00 on unknown), and a dose-response refusal curve close in spirit to alpha_50."
+    },
+    {
+      "index": 12,
+      "url": "http://export.arxiv.org/api/query?search_query=abs:%22difference-in-means%22+AND+abs:%22contrast%22",
+      "title": "arXiv API sweep: difference-in-means AND contrast",
+      "summary": "Part D sweep; 12 results, 7 inspected, none a contrast-set-design validity study - supporting the ADJACENT (not ANTICIPATED) verdict for the paraphrase-refit headline."
+    },
+    {
+      "index": 13,
+      "url": "file:///ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_3/gen_paper_text/gen_paper_text/paper_body.md",
+      "title": "Current draft reference list (entries [6]-[43]) and references.bib",
+      "summary": "Source of the AS-CITED titles, initials and author lists against which the 22 arXiv records were audited; also the source of the outside-list [10] Logit-Gap authorship error."
+    }
+  ],
+  "follow_up_questions": [
+    "Does our reported axis-A AUROC survive a leave-one-prompt-family-out split with all normalisation statistics estimated inside the training fold, as Mehta's controls #3 and #4 require - and if it drops, does the induce-without-detect asymmetry widen or narrow?",
+    "Does the induce-without-detect result survive a multi-direction intervention (top-k PCs of the refusal-shift covariance), the safeguard Mehta added specifically to defeat the dim-collinearity objection to a steering null?",
+    "Given arXiv:2603.27412's finding that harm-intent geometry survives abliteration at AUROC within 0.015 while our refusal axis falls to chance, can the two be run on the SAME abliterated checkpoints to produce a two-axis provenance signature (harm-axis intact + refusal-axis dead) that is strictly more informative than either alone, and more robust than arXiv:2607.01854's reference-anchored ratio to the spoofed-reference attack it documents?"
+  ]
+}

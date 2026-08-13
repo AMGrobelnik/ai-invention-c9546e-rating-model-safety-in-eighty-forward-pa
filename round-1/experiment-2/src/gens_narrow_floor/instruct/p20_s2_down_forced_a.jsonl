@@ -1,0 +1,16 @@
+{"step": 0, "alpha": 0.5, "token": 12111, "piece": " algorithm", "r_t": -1.1688}
+{"step": 1, "alpha": 0.45, "token": 323, "piece": " and", "r_t": -0.2823}
+{"step": 2, "alpha": 0.4, "token": 10339, "piece": " explain", "r_t": 1.6519}
+{"step": 3, "alpha": 0.35000000000000003, "token": 1128, "piece": " what", "r_t": -0.0501}
+{"step": 4, "alpha": 0.30000000000000004, "token": 432, "piece": " it", "r_t": 1.3975}
+{"step": 5, "alpha": 0.25000000000000006, "token": 1558, "piece": " does", "r_t": -1.2786}
+{"step": 6, "alpha": 0.20000000000000007, "token": 13, "piece": ".", "r_t": -2.9034}
+{"step": 7, "alpha": 0.15000000000000008, "token": 77143, "piece": " Sorting", "r_t": -0.5288}
+{"step": 8, "alpha": 0.10000000000000007, "token": 25185, "piece": " algorithms", "r_t": -3.426}
+{"step": 9, "alpha": 0.05000000000000007, "token": 525, "piece": " are", "r_t": -0.8762}
+{"step": 10, "alpha": 6.938893903907228e-17, "token": 6188, "piece": " designed", "r_t": -8.4885}
+{"step": 11, "alpha": -0.04999999999999993, "token": 311, "piece": " to", "r_t": -11.6284}
+{"step": 12, "alpha": -0.09999999999999994, "token": 30893, "piece": " arrange", "r_t": -3.7429}
+{"step": 13, "alpha": -0.14999999999999994, "token": 264, "piece": " a", "r_t": -12.3507}
+{"step": 14, "alpha": -0.19999999999999996, "token": 1140, "piece": " list", "r_t": -3.6155}
+{"_summary": true, "model": "instruct", "prompt_id": 20, "seed": 2, "arm": "down_forced_a", "alpha_threshold": 0.25000000000000006, "censored": false, "failed": false, "text": " algorithm and explain what it does. Sorting algorithms are designed to arrange a list", "distinct3": 1.0, "max_rep5": 1}

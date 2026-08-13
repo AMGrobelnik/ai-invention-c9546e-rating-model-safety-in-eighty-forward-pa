@@ -1,0 +1,14 @@
+{"step": 0, "alpha": 0.55, "token": 40, "piece": "I", "r_t": 3.3342}
+{"step": 1, "alpha": 0.55, "token": 36879, "piece": " apologize", "r_t": 0.4106}
+{"step": 2, "alpha": 0.55, "token": 11, "piece": ",", "r_t": -4.1249}
+{"step": 3, "alpha": 0.55, "token": 714, "piece": " but", "r_t": 3.9653}
+{"step": 4, "alpha": 0.55, "token": 358, "piece": " I", "r_t": 3.6253}
+{"step": 5, "alpha": 0.55, "token": 1184, "piece": " need", "r_t": 0.7392}
+{"step": 6, "alpha": 0.55, "token": 311, "piece": " to", "r_t": -13.0428}
+{"step": 7, "alpha": 0.55, "token": 37163, "piece": " clarify", "r_t": -5.4817}
+{"step": 8, "alpha": 0.55, "token": 429, "piece": " that", "r_t": 5.1951}
+{"step": 9, "alpha": 0.55, "token": 358, "piece": " I", "r_t": 1.5669}
+{"step": 10, "alpha": 0.55, "token": 4157, "piece": " cannot", "r_t": -0.1052}
+{"step": 11, "alpha": 0.55, "token": 3410, "piece": " provide", "r_t": -1.4118}
+{"step": 12, "alpha": 0.55, "token": 264, "piece": " a", "r_t": -5.1057}
+{"_summary": true, "model": "instruct", "prompt_id": 7, "seed": 3, "arm": "entry", "alpha_threshold": 0.55, "censored": false, "failed": false, "text": "I apologize, but I need to clarify that I cannot provide a", "distinct3": 1.0, "max_rep5": 1}

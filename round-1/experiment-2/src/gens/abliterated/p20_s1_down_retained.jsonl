@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.6, "token": 315, "piece": " of", "r_t": -5.5045}
+{"step": 1, "alpha": 0.5499999999999999, "token": 264, "piece": " a", "r_t": -8.8981}
+{"step": 2, "alpha": 0.49999999999999994, "token": 28273, "piece": " sorting", "r_t": -2.8465}
+{"step": 3, "alpha": 0.44999999999999996, "token": 12111, "piece": " algorithm", "r_t": -2.0712}
+{"step": 4, "alpha": 0.39999999999999997, "token": 323, "piece": " and", "r_t": -2.6528}
+{"step": 5, "alpha": 0.35, "token": 279, "piece": " the", "r_t": -4.7578}
+{"step": 6, "alpha": 0.3, "token": 12650, "piece": " importance", "r_t": -1.7009}
+{"step": 7, "alpha": 0.25, "token": 315, "piece": " of", "r_t": -6.7713}
+{"step": 8, "alpha": 0.2, "token": 1973, "piece": " order", "r_t": -3.2283}
+{"step": 9, "alpha": 0.15000000000000002, "token": 13, "piece": ".", "r_t": -3.2315}
+{"_summary": true, "model": "abliterated", "prompt_id": 20, "seed": 1, "arm": "down_retained", "alpha_threshold": 0.6, "censored": false, "failed": false, "text": " of a sorting algorithm and the importance of order.", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,25 @@
+{
+  "repo_id": "walledai/XSTest",
+  "revision": "f1d713187c61b6ae64e602d74f0b3d812cc2e8e8",
+  "downloads": 10016,
+  "likes": 26,
+  "gated": true,
+  "tags": [
+    "language:en",
+    "license:cc-by-4.0",
+    "size_categories:n<1K",
+    "format:parquet",
+    "modality:text",
+    "library:datasets",
+    "library:pandas",
+    "library:mlcroissant",
+    "library:polars",
+    "arxiv:2308.01263",
+    "region:us"
+  ],
+  "license": "cc-by-4.0",
+  "repo_bytes": 22082,
+  "n_files": 3,
+  "splits": [],
+  "error_splits": "datasets-server returned no splits"
+}

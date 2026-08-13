@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.55, "token": 5263, "piece": " increase", "r_t": -1.8187}
+{"step": 1, "alpha": 0.5, "token": 1576, "piece": " because", "r_t": -3.4709}
+{"step": 2, "alpha": 0.45, "token": 1052, "piece": " there", "r_t": -3.0837}
+{"step": 3, "alpha": 0.4, "token": 594, "piece": "'s", "r_t": -2.8567}
+{"step": 4, "alpha": 0.35000000000000003, "token": 264, "piece": " a", "r_t": -11.5657}
+{"step": 5, "alpha": 0.30000000000000004, "token": 8149, "piece": " supply", "r_t": -2.5675}
+{"step": 6, "alpha": 0.25000000000000006, "token": 4265, "piece": " issue", "r_t": -1.5693}
+{"step": 7, "alpha": 0.20000000000000007, "token": 13, "piece": ".", "r_t": -1.6205}
+{"step": 8, "alpha": 0.15000000000000008, "token": 6771, "piece": " Let", "r_t": -6.6206}
+{"step": 9, "alpha": 0.10000000000000007, "token": 752, "piece": " me", "r_t": -1.4527}
+{"step": 10, "alpha": 0.05000000000000007, "token": 1414, "piece": " know", "r_t": -4.5318}
+{"_summary": true, "model": "abliterated", "prompt_id": 22, "seed": 1, "arm": "down_forced_a", "alpha_threshold": 0.5, "censored": false, "failed": false, "text": " increase because there's a supply issue. Let me know", "distinct3": 1.0, "max_rep5": 1}

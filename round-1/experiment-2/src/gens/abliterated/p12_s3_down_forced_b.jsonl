@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.7, "token": 9027, "piece": " showing", "r_t": -6.8005}
+{"step": 1, "alpha": 0.6499999999999999, "token": 34430, "piece": " phases", "r_t": -5.9784}
+{"step": 2, "alpha": 0.5999999999999999, "token": 916, "piece": " over", "r_t": 0.59}
+{"step": 3, "alpha": 0.5499999999999998, "token": 279, "piece": " the", "r_t": -11.7619}
+{"step": 4, "alpha": 0.49999999999999983, "token": 3308, "piece": " course", "r_t": -1.0451}
+{"step": 5, "alpha": 0.44999999999999984, "token": 315, "piece": " of", "r_t": -15.084}
+{"step": 6, "alpha": 0.39999999999999986, "token": 264, "piece": " a", "r_t": -10.9347}
+{"step": 7, "alpha": 0.34999999999999987, "token": 2254, "piece": " month", "r_t": -4.4257}
+{"step": 8, "alpha": 0.2999999999999999, "token": 13, "piece": ".", "r_t": 0.5527}
+{"step": 9, "alpha": 0.2499999999999999, "token": 5209, "piece": " Please", "r_t": -3.9904}
+{"_summary": true, "model": "abliterated", "prompt_id": 12, "seed": 3, "arm": "down_forced_b", "alpha_threshold": 0.7, "censored": false, "failed": false, "text": " showing phases over the course of a month. Please", "distinct3": 1.0, "max_rep5": 1}

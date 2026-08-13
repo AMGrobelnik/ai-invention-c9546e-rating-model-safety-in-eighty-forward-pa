@@ -1,0 +1,30 @@
+{
+  "what_this_is": "Manifest of the 7 ladder model checkpoints that were BUILT and MEASURED by this experiment and then DELETED from the workspace. They are derived intermediates, not deliverables: each is reconstructed bit-exactly by `python method.py --stage rebuild-ladder`, which is verified against the sha256 values below.",
+  "why_deleted": "7 x 1136.9 MB = 7.9 GB of bfloat16 weights, each far above the 100 MB per-file limit for repo publication. Splitting or gzipping would still put ~7 GB of derived weights into the repo while adding a decompression step to every load. Regenerating them from two public checkpoints plus the 5 KB refusal_direction.pt is exact, cheap (~6 s per member) and lossless.",
+  "regeneration": {
+    "command": "python method.py --stage rebuild-ladder",
+    "verify_command": "python method.py --stage rebuild-ladder --verify-hashes",
+    "inputs_required": [
+      "Qwen/Qwen3-0.6B-Base (public HF checkpoint)",
+      "Qwen/Qwen3-0.6B (public HF checkpoint)",
+      "refusal_direction.pt (5326 bytes, kept in the workspace)"
+    ],
+    "determinism": "Interpolation and orthogonalisation are pure float32 tensor arithmetic cast to bfloat16, with no sampling, no RNG and no data dependence, so the output bytes are reproducible on any machine that loads the same two checkpoints.",
+    "measured_build_time_seconds_per_member": 6
+  },
+  "construction": {
+    "tv_t*": "W(t) = W_base + t * (W_instruct - W_base), float32 arithmetic cast back to bfloat16; 311 of 311 tensors interpolated; config and tokenizer copied from Qwen/Qwen3-0.6B so the prompt template is held constant across the ladder.",
+    "abl_c*": "W <- W - c * r r^T W applied to Qwen/Qwen3-0.6B for every matrix writing to the residual stream (embed_tokens rows, each layer's o_proj and down_proj columns); 57 matrices edited per member; r is the unit diff-in-means refusal direction at layer 17 stored in refusal_direction.pt."
+  },
+  "sha256_model_safetensors": {
+    "tv_t0.25": "c9d45dd3cb3407cc7b914047ca0945a1a0ff1cec429e135fa3bfdb52b7715ec4",
+    "tv_t0.50": "d92568e3d4efa04ec8844ce8fb0461e2e9b1c282e3fa2b1244d3941a41aa1743",
+    "tv_t0.75": "c43fce3b122c0d8d5e6afc428a3ef210e573fc2e2d4c6c0c0f6509e4371aa0b8",
+    "abl_c0.25": "7fc3fc3e67a7df9cca3bbb4624684cd3b44be1cae840f2289b17da0a0a0e64d8",
+    "abl_c0.50": "84962261106f0401d0b5c6c07a211ceef157f16d0379d66ab519da6ca861fcc5",
+    "abl_c0.75": "2420bfcaee5693b45383aef29a022ad49221740b298dc50d5642a666e27873d2",
+    "abl_c1.00": "fd321b9deae3ff38152ed2721be74258d8be384c083ba4b99ad23f7b45e1c18e"
+  },
+  "bytes_per_model_safetensors": 1192135448,
+  "note_on_results": "No result in method_out.json or results/analysis.json depends on these files being present. All 3365 generations they produced are already recorded verbatim in generations.jsonl and scored.jsonl, and `--stage finalize` reads only those."
+}

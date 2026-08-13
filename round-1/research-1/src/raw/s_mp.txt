@@ -1,0 +1,35 @@
+Search: Marriott Pope 1954 bias in the estimation of autocorrelations Kendall 1954 note on bias serial correlation coefficients  [scholarly via openalex]
+Found: 8 results
+
+1. On biases in tests of the expectations hypothesis of the term structure of interest rates
+   https://doi.org/10.1016/s0304-405x(97)00007-x
+   Journal of Financial Economics · 1997 · cited by 402...
+
+2. Correcting Estimation Bias in Dynamic Term Structure Models
+   https://doi.org/10.24148/wp2011-12
+   Federal Reserve Bank of San Francisco, Working Paper Series · 2012 · cited by 58...
+
+3. The importance of prewhitening in change point analysis under persistence
+   https://doi.org/10.1007/s00477-015-1041-5
+   Stochastic Environmental Research and Risk Assessment · 2015 · cited by 127...
+
+4. Unbiased Estimation of the Half-Life to PPP Convergence in Panel Data
+   https://doi.org/10.1353/mcb.2006.0052
+   Journal of money credit and banking · 2006 · cited by 111...
+
+5. Bias-Correction in Vector Autoregressive Models: A Simulation Study
+   https://doi.org/10.3390/econometrics2010045
+   Econometrics · 2014 · cited by 34...
+
+6. Bias correction of OLSE in the regression model with lagged dependent variables
+   https://doi.org/10.1016/s0167-9473(99)00108-5
+   Computational Statistics & Data Analysis · 2000 · cited by 25...
+
+7. A flexible Bayesian framework for unbiased estimation of timescales
+   https://doi.org/10.1038/s43588-022-00214-3
+   Nature Computational Science · 2022 · cited by 36...
+
+8. Motor Learning Is Optimally Tuned to the Properties of Motor Noise
+   https://doi.org/10.1016/j.neuron.2009.06.025
+   Neuron · 2009 · cited by 278...
+

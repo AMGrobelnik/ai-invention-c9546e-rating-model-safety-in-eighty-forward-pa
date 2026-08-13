@@ -1,0 +1,43 @@
+Search: knowledge action gap LLM probe AUROC 98.2 clinical vignettes SAE steering  [general via ddgs]
+Found: 10 results
+
+1. AnythingLLM — On-device AI for productivity | Local & Private
+   https://anythingllm.com/
+   Preconfigured for productivity. Document Knowledge.Automatically transcribes and summarizes any meeting entirely on your computer. Action items, key decisions, and full transcripts ready the moment yo...
+
+2. hindsightv4.md. GitHub Gist: instantly share code, notes, and snippets.
+   https://gist.github.com/bigsnarfdude/de2978a887945cc340d500efbbfbea14
+   SAE probes detect intent, not vocabulary (vocab-constrained = 1.0 AUROC), ruling out the surface-statistics confound that plagues many deception detection approaches....
+
+3. yandex/YandexGPT-5-Lite-8B-pretrain · Hugging Face
+   https://huggingface.co/yandex/YandexGPT-5-Lite-8B-pretrain
+   from vllm import LLM, SamplingParams. MODEL_NAME = "yandex/YandexGPT-5-Lite-8B-pretrain". sampling_params = SamplingParams( temperature=0.3, max_tokens=18, ) llm = LLM( MODEL_NAME, tensor_parallel_siz...
+
+4. MiGHT-EHR: A Multi-task Graph Transformer for Heterogeneous...
+   https://arxiv.org/pdf/2608.06430
+   To bridge this gap, we propose Multi-task Graph transformer for Heteroge-neous Temporal EHRs (MiGHT-EHR), which jointly mod-els all three within a unified representation learning method....
+
+5. Pavlov’s Dogs Experiment & Pavlovian Conditioning Response
+   https://www.simplypsychology.org/pavlov.html
+   2. Clinical Applications and Therapy. Pavlovian principles are the active ingredients in several evidence-based treatments used today: Systematic Desensitization: Developed by Joseph Wolpe, this thera...
+
+6. Debt Rattle August 9 2026 - The Automatic Earth
+   https://www.theautomaticearth.com/2026/08/debt-rattle-august-9-2026/
+   David Sinclair: “The first potential human age-reversal technology is in people right now.” ROGAN: “What is the current state of science as applied to longevity treatments?” SINCLAIR: “We have a human...
+
+7. Авито | Объявления во всех регионах: купить вещь, выбрать...
+   https://www.avito.ru/all
+   Литые диски 4Go 400 5.1×R14 4×98. Литые диски 4Go 400 5.1×R14 4×98....
+
+8. AppLovin | Advertising solutions built for growth
+   https://www.applovin.com/en
+   Reach over a billion daily users in mobile games. AppLovin helps consumer brands and gaming apps scale their business profitably....
+
+9. BLAST: Basic Local Alignment Search Tool
+   https://blast.ncbi.nlm.nih.gov/
+   Compare two sequences across their entire span (Needleman-Wunsch)....
+
+10. Клиника внимательной медицины "О2" — Официальный сайт
+   http://o2clinic.ru/
+   8 (3823) 999-333 8 (991) 448 38-98. Лицензия Л041-01043-70/00369501 от 28 августа 2020г. ОOO «Люмена» Адрес: 636013, Томская область, г. Северск, ул. Победы, 27а.o2clinic@mail.ru....
+

@@ -1,0 +1,290 @@
+URL: https://arxiv.org/pdf/2608.05578
+Type: PDF
+Pattern: undetectable|behavioral fine[- ]tun|behavioral[- ]only|blind spot|failure mode (18 matches in 71601 chars)
+
+--- Content ---
+
+1880:...fications distinguished by
+activation-space signature: (i) training removal collapses cluster
+separation (e.g., base models, Dolphin variants: 0.5–1.4σ); (ii)
+weight-orthogonalization-style abliteration both collapses sepa-
+ration and rotates the refusal direction (Llama-3.1-abliterated:
+σ = 3.33, direction cos sim 0.30); (iii) rotation-without-collapse
+abliteration preserves cluster separation while rotating the refusal
+direction (Gemma-2-9b-abliterated: σ = 4.54, direction cos sim
+0.84); (iv) behavioral fine-tuning that preserves both magnitude
+and direction (DarkIdol-1.2-Uncensored: σ = 5.45, direction pre-
+served, 97% behavioral compliance). AMS’s Tier 1 σ-threshold
+detects classes (i) and (ii); Tier 2 direction-similarity verification
+detects class (iii). Class (iv) is undetectable by activation-only
+probing and represents a documented failure mode of the
+approach. We discuss threshold calibration, limitations of single-
+run measurement, and the open problem of detecting behavioral-
+only safety modifications.
+Index Terms—Language model security, activation analysis,
+safety alignment, model tampering detection, mechanistic taxon-
+omy, AI supply chain security, representation engineering, pre-
+deployment verification, open-weight models, uncensored models,
+abliteration.
+I. INTRODUCTION
+The proliferation of open-weight language models has
+en...
+--
+5252:...
+classes of modification and fails on others, and that the failure
+modes are mechanistically explicable rather than random.
+This paper makes the following contributions:
+1) Mechanistic taxonomy of safety-training modifications.
+We characterize four classes of safety modification by
+their activation-space signature: training removal (cluster
+collapse), weight-orthogonalization abliteration (collapse
+with direction rotation), rotation-without-collapse abliter-
+ation (direction rotation only), and behavioral fine-tuning
+(geometry preserved). The taxonomy is supported by in-
+the-wild examples in each class.
+2) Two-tier detection framework matched to the taxon-
+omy. Tier 1 measures cluster separation (σ) and catches
+modifications that collapse the geometry; Tier 2 measures
+direction similarity against a reference baseline and catches
+modifications that rotate the direction without collapsing
+the cluster. We show that the two tiers are complementary,
+with each tier targeting a specific class of modification.
+3...
+--
+6654:...ratory and report CI lower bounds as the more honest
+summary statistic.
+4) Behavioral correlation analysis. We run 20 stratified
+JailbreakBench harmful behaviors against all 14 models
+and report Pearson and Spearman correlations between σ
+on the harmful-content concept and behavioral compliance
+rate. The structural signal predicts behavior directionally
+(r = −0.546, p = 0.043) but with meaningful noise,
+including two documented cases where high σ co-occurs
+with high compliance.
+5) Characterized failure modes. We identify and mecha-
+nistically explain two activation-space attacks that AMS’s
+Tier 1 misses: the Gemma-2-9b-it-abliterated model (ro-
+tation without collapse) and the DarkIdol-Llama-3.1-8B-
+Instruct-1.2-Uncensored model (geometry preserved, be-
+havior modified). We document the in-the-wild techniques
+that produce each signature and discuss implications for
+the broader research direction.
+Our approach draws on representation engineering [3],
+which demonstrates that high-level concepts are ...
+--
+14414:...erified baselines.
+e) Demonstrated Attacks Outside the Detection Enve-
+lope: Our experimental work identifies two in-the-wild attack
+signatures that AMS’s Tier 1 does not catch but that are within
+scope for the broader detection framework:
+• Rotation-without-collapse abliteration, exemplified by Ily
+aGusev/gemma-2-9b-it-abliterated, preserves
+cluster separation while rotating the refusal direction. Tier
+1 (σ-threshold) misses this; Tier 2 (direction-similarity to a
+clean baseline) detects it.
+• Behavioral fine-tuning that preserves activation geometry,
+exemplified by aifeifei798/DarkIdol-Llama-3.1
+-8B-Instruct-1.2-Uncensored, leaves both mag-
+nitude and direction substantially intact while modifying
+behavioral output. Neither Tier 1 nor Tier 2 catches this.
+This class of modification is currently undetectable by
+activation-only probing of mid-layer residual streams; we
+treat it as the principal limitation of the approach.
+f) Out of Scope: AMS does not defend against: (1)
+attacks that don’t modify weights (prompt injection, jailbreaks
+at inference time); (2) safety issues not captured by our three
+concepts (bias, toxicity, deception); (3) attacks that operate
+purely on output-layer parameters (e.g., lm_head modification)
+without affecting mid-residual-stream representations.
+IV. METHOD
+AMS measures w...
+--
+35890:...mma-2-9b-it-
+abliterated dips to 3.12σ at the shallowest swept layer (L8,
+depth 0.20), but the clean PASS-band control gemma-2-9b-it
+reaches its own minimum (3.21σ) at the same layer. Across
+the full sweep the two curves are nearly indistinguishable.
+Both spend the same 2/30 layers below 3.5σ and stay above
+3.0σ everywhere else. A min-σ-across-layers rule that flagged
+gemma-abliterated would also flag gemma-clean. Multi-layer
+scanning is therefore not a viable fix for either false negative.
+The failure mode is structural, not a layer-selection artifact.
+The CRITICAL control (dolphin-2.9) stays at σ ≤1.4
+at every swept layer, confirming the layer-sweep estimator
+produces sensibly low values when the underlying geometry
+really is broken.
+VIII. DISCUSSION
+A. Mechanistic Taxonomy of Safety Modifications
+Our results across the 14-model set, augmented by the
+direction-shift measurements in Section VIII-B, support a four-
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+Depth fraction (layer / total layers)
+1
+2
+3
+4
+5
+6
+_...
+--
+40063:...IER 1” IS AMS’S σ-THRESHOLD DETECTOR; “TIER 2” IS THE DIRECTION-SIMILARITY VERIFIER.
+Modification class
+Canonical example(s)
+σ effect
+Direction shift
+Tier 1?
+Tier 2?
+(i) Training removal
+Llama-3.1-8B base, Dolphin-2.9
+Collapses (<1.5)
+Variable/absent
+✓
+✓
+(ii) Weight-orthogonalization abliter-
+ation
+mlabonne/Llama-3.1-abliterated
+Collapses (3.3)
+Rotated (cos ≈0.30)
+✓
+✓
+(iii) Rotation-without-collapse ablit-
+eration
+IlyaGusev/gemma-2-9b-it-
+abliterated
+Preserved (4.5)
+Rotated (cos ≈0.83)
+×
+✓
+(iv) Behavioral fine-tuning
+DarkIdol-1.2-Uncensored
+Preserved (5.4)
+Preserved (intact)
+×
+×
+Tier 2 catches it (direction similarity falls well below the 0.80
+threshold across most layers).
+Class (iv) — Behavioral fine-tuning. The modification
+leaves both magnitude and direction of the refusal vector
+substantially intact while modifying behavioral output via fine-
+tuning that re-weights the refusal-conditional generation dis-
+tribution rather than via any structural ablation. aifeifei79
+8/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncen
+sored exemplifies this class. σharmful = 5.45 across all swept
+layers (Section VII-F). The refusal direction is preserved;
+the contrastive cluster is preserved; yet the model complies
+with 19 of 20 stratified harmful prompts (97% compliance).
+This case is undetectable by activation-only probing of mid-
+residual-stream representations. The exact training procedure
+is not publicly documented but is consistent with one of:
+DPO on harmful-comply pairs that adjusts output-layer logits
+without rewriting middle-layer features; targeted fine-tuning
+of the final transformer block or lm_head; or instruction-
+following over-fitting that conditions the model to suppress
+refusal tokens at decode time. We do not claim to have verified
+the specific mechanism; we report wha...
+--
+49551:... publication of this result does not create
+a new attack capability so much as document existing ones.
+b) Censorship Risk: Organizations could use AMS to
+enforce overly restrictive policies, flagging legitimate models
+as unsafe. We recommend against using σ point estimates as a
+hard gate; the bootstrap CI lower bound is more conservative
+and we suggest it as the operational summary. We also
+recommend that any deployment gate using AMS be paired
+with behavioral validation to catch the class-(iv) failure mode
+described in Section VIII-A.
+c) Label Reliability: Our findings that “uncensored” la-
+bels are unreliable cuts both ways. The Mistral case (label-
+PASS, behavior-CRITICAL) and the DarkIdol case (label-
+
+10
+2.50
+2.75
+3.00
+3.25
+3.50
+3.75
+4.00
+4.25
+4.50
+PASS Threshold ( )
+65
+70
+75
+80
+85
+90
+95
+100
+105
+Correct Classification Rate (%)
+Abliterated passes
+(false negative)
+Safe models flagged
+(false positives)
+Threshold Sensitivity Analysis
+Optimal (3.5 )
+Fig. 4. Threshold sensitivity (internal consiste...
+--
+51736:...port
+are exploratory estimates within each class.
+b) Concept Coverage: We evaluate three safety concepts
+(harmful content, prompt injection resistance, refusal capabil-
+ity). Additional concepts (bias, toxicity, deception) may be
+valuable for comprehensive assessment but require appropriate
+contrastive datasets. The framework is extensible: adding a
+new concept requires only designing contrastive pairs that
+isolate the target distinction.
+c) Activation-Only Probing Has a Fundamental Class-
+(iv) Blind Spot: The DarkIdol case demonstrates that behav-
+ioral safety can be modified while leaving mid-residual-stream
+activation geometry intact. This is the primary limitation of
+AMS and, we believe, of activation-only safety probing more
+broadly. Detecting class (iv) likely requires either output-
+layer-aware probing (examining lm_head and final-block pa-
+rameters), token-level decoding analysis (measuring how the
+model treats refusal tokens at generation time), or direct
+behavioral evaluation. We treat...
+--
+54888:...y
+and
+direction
+Train
+on
+benchmarks
+Novel attacks
+False
+negative
+risk
+Class-(iv)
+behavioral fine-
+tuning
+Benchmark
+overfitting
+Incomplete
+coverage
+different prompt set may vary, particularly for models near the
+behavioral-safety boundary. We chose JailbreakBench specif-
+ically because it is publicly maintained and reproducible.
+IX. PRACTICAL DEPLOYMENT
+AMS is designed for integration into model deployment
+pipelines as a fast structural pre-screen. Given the documented
+class-(iii) and class-(iv) failure modes (Section VIII-A), AMS
+should not be used as a sole safety gate; the recommended
+deployment pattern is AMS for fast triage followed by behav-
+ioral validation for any model passing the structural screen,
+particularly for high-risk deployment contexts.
+a) Comparison with Behavioral Testing: Table IV posi-
+tions AMS relative to behavioral testing approaches. The two
+are complementary, not substitutes.
+b) Recommended Deployment Pattern: Use AMS as a
+fast structural screen during model intake or CI...
+--
+[4 more matches not shown]

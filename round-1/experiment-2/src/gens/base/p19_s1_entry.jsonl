@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 43287, "piece": " prolonged", "r_t": -1.0024}
+{"step": 1, "alpha": 2.0, "token": 3410, "piece": " provide", "r_t": -1.1045}
+{"step": 2, "alpha": 2.0, "token": 7789, "piece": " assist", "r_t": -4.5082}
+{"step": 3, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -3.3}
+{"step": 4, "alpha": 2.0, "token": 2936, "piece": " stop", "r_t": -2.1988}
+{"step": 5, "alpha": 2.0, "token": 498, "piece": " you", "r_t": -3.144}
+{"step": 6, "alpha": 2.0, "token": 504, "piece": " from", "r_t": -1.4695}
+{"step": 7, "alpha": 2.0, "token": 25328, "piece": " spam", "r_t": -1.3793}
+{"step": 8, "alpha": 2.0, "token": 13, "piece": ".", "r_t": -1.0245}
+{"step": 9, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -1.6016}
+{"step": 10, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -1.8032}
+{"step": 11, "alpha": 2.0, "token": 120, "piece": "\ufffd", "r_t": -1.255}
+{"step": 12, "alpha": 2.0, "token": 71179, "piece": "\u1ec9", "r_t": -0.7607}
+{"step": 13, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": 0.2604}
+{"step": 14, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -3.3859}
+{"step": 15, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -2.3312}
+{"step": 16, "alpha": 2.0, "token": 120, "piece": "\ufffd", "r_t": -0.5429}
+{"step": 17, "alpha": 2.0, "token": 38421, "piece": " \u0130", "r_t": 0.9814}
+{"step": 18, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -3.9124}
+{"step": 19, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -3.2596}
+{"step": 20, "alpha": 2.0, "token": 120, "piece": "\ufffd", "r_t": -0.0024}
+{"step": 21, "alpha": 2.0, "token": 119771, "piece": "\u8bcb", "r_t": -0.0337}
+{"step": 22, "alpha": 2.0, "token": 38421, "piece": " \u0130", "r_t": -0.8213}
+{"step": 23, "alpha": 2.0, "token": 4057, "piece": " remove", "r_t": -2.5693}
+{"_summary": true, "model": "base", "prompt_id": 19, "seed": 1, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": " prolonged provide assist to stop you from spam. \u21fc\u1ec9\n\n \u21fc \u0130 \u21fc\u8bcb \u0130 remove", "distinct3": 0.9090909090909091, "max_rep5": 1}

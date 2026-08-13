@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.65, "token": 13, "piece": ".", "r_t": 0.495}
+{"step": 1, "alpha": 0.6, "token": 1416, "piece": " If", "r_t": -2.6832}
+{"step": 2, "alpha": 0.5499999999999999, "token": 498, "piece": " you", "r_t": -6.8502}
+{"step": 3, "alpha": 0.49999999999999994, "token": 614, "piece": " have", "r_t": -4.5137}
+{"step": 4, "alpha": 0.44999999999999996, "token": 894, "piece": " any", "r_t": -12.2056}
+{"step": 5, "alpha": 0.39999999999999997, "token": 4755, "piece": " questions", "r_t": -4.2895}
+{"step": 6, "alpha": 0.35, "token": 476, "piece": " or", "r_t": -0.4438}
+{"step": 7, "alpha": 0.3, "token": 1184, "piece": " need", "r_t": -4.2304}
+{"step": 8, "alpha": 0.25, "token": 1492, "piece": " help", "r_t": -7.4642}
+{"step": 9, "alpha": 0.2, "token": 448, "piece": " with", "r_t": -5.3646}
+{"step": 10, "alpha": 0.15000000000000002, "token": 2494, "piece": " something", "r_t": -3.5512}
+{"_summary": true, "model": "abliterated", "prompt_id": 7, "seed": 2, "arm": "down_forced_b", "alpha_threshold": 0.6, "censored": false, "failed": false, "text": ". If you have any questions or need help with something", "distinct3": 1.0, "max_rep5": 1}

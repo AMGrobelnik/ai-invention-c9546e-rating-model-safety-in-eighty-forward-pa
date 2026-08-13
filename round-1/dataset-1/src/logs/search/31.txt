@@ -1,0 +1,48 @@
+Found 8 dataset(s) for query='uncensored dataset'
+
+============================================================
+Dataset 1: pankajmathur/orca_minis_uncensored_dataset
+Downloads: 44 | Likes: 14
+Description: Uncensored explain tuned WizardLM + Alpaca + Dolly V-2 datasets ~104K created using approaches from Orca Research Paper.
+
+We leverage all of the 15 system instructions provided in Orca Research Paper....
+Tags: task_categories:text-generation, language:en, license:cc-by-nc-sa-4.0, size_categories:100K<n<1M, region:us
+
+============================================================
+Dataset 2: karanxa/llama2-uncensored-jailbreak-dataset-finetuning
+Downloads: 44 | Likes: 1
+Tags: size_categories:10K<n<100K, format:text, modality:text, library:datasets, library:mlcroissant
+
+============================================================
+Dataset 3: jhonGerd/uncensored_dataset
+Downloads: 42 | Likes: 1
+Tags: license:apache-2.0, size_categories:10K<n<100K, format:parquet, modality:text, library:datasets
+
+============================================================
+Dataset 4: dlnkgpt/dlnkgpt-uncensored-dataset
+Downloads: 35 | Likes: 1
+Tags: size_categories:10K<n<100K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 5: besthathacker22/llama2-uncensored-jailbreak-dataset-finetuning
+Downloads: 28 | Likes: 1
+Tags: size_categories:10K<n<100K, format:text, modality:text, library:datasets, library:mlcroissant
+
+============================================================
+Dataset 6: thecosmicdoctor/cybersec-uncensored-dataset
+Downloads: 19 | Likes: 1
+Tags: size_categories:10K<n<100K, format:json, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 7: 1TuanPham/T-VisEx26-dataset-uncensored
+Downloads: 8 | Likes: 0
+Description: 
+Need custom collator based on the DataCollatorForCompletionOnlyLM and fallback to CLM if no response template is found.
+
+Clean all instances of "As an AI language model", "I'm a model developed by Op...
+Tags: task_categories:question-answering, task_categories:text-generation, task_categories:translation, language:en, language:vi
+
+============================================================
+Dataset 8: 1TuanPham/T-VisStar-dataset-uncensored
+Downloads: 5 | Likes: 0
+Tags: size_categories:100K<n<1M, format:parquet, modality:text, library:datasets, library:dask

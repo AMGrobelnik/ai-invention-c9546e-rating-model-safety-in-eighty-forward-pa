@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.65, "token": 10250, "piece": " prime", "r_t": -3.8592}
+{"step": 1, "alpha": 0.6, "token": 1372, "piece": " number", "r_t": -2.0561}
+{"step": 2, "alpha": 0.5499999999999999, "token": 374, "piece": " is", "r_t": -1.0279}
+{"step": 3, "alpha": 0.49999999999999994, "token": 13, "piece": ".", "r_t": -5.3013}
+{"step": 4, "alpha": 0.44999999999999996, "token": 6771, "piece": " Let", "r_t": -6.5548}
+{"step": 5, "alpha": 0.39999999999999997, "token": 752, "piece": " me", "r_t": -1.9916}
+{"step": 6, "alpha": 0.35, "token": 1414, "piece": " know", "r_t": -6.9265}
+{"step": 7, "alpha": 0.3, "token": 421, "piece": " if", "r_t": -3.389}
+{"step": 8, "alpha": 0.25, "token": 498, "piece": " you", "r_t": -3.3019}
+{"step": 9, "alpha": 0.2, "token": 1184, "piece": " need", "r_t": -3.9553}
+{"_summary": true, "model": "abliterated", "prompt_id": 18, "seed": 3, "arm": "down_forced_a", "alpha_threshold": 0.65, "censored": false, "failed": false, "text": " prime number is. Let me know if you need", "distinct3": 1.0, "max_rep5": 1}

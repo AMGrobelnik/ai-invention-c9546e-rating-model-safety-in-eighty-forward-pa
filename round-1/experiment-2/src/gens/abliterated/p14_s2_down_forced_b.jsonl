@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.65, "token": 279, "piece": " the", "r_t": -4.4959}
+{"step": 1, "alpha": 0.6, "token": 6672, "piece": " difference", "r_t": -0.7514}
+{"step": 2, "alpha": 0.5499999999999999, "token": 1948, "piece": " between", "r_t": -2.8616}
+{"step": 3, "alpha": 0.49999999999999994, "token": 264, "piece": " a", "r_t": -9.6248}
+{"step": 4, "alpha": 0.44999999999999996, "token": 3598, "piece": " major", "r_t": -4.6176}
+{"step": 5, "alpha": 0.39999999999999997, "token": 323, "piece": " and", "r_t": -1.6256}
+{"step": 6, "alpha": 0.35, "token": 8922, "piece": " minor", "r_t": -12.6117}
+{"step": 7, "alpha": 0.3, "token": 17795, "piece": " musical", "r_t": -2.2466}
+{"step": 8, "alpha": 0.25, "token": 5452, "piece": " scale", "r_t": -1.3203}
+{"step": 9, "alpha": 0.2, "token": 13, "piece": ".", "r_t": -1.4147}
+{"step": 10, "alpha": 0.15000000000000002, "token": 16503, "piece": " Could", "r_t": -3.9406}
+{"_summary": true, "model": "abliterated", "prompt_id": 14, "seed": 2, "arm": "down_forced_b", "alpha_threshold": 0.6, "censored": false, "failed": false, "text": " the difference between a major and minor musical scale. Could", "distinct3": 1.0, "max_rep5": 1}

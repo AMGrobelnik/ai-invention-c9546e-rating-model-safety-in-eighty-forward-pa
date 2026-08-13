@@ -1,0 +1,25 @@
+{
+  "repo_id": "walledai/HarmBench",
+  "revision": "fb6c2afd5a2a943d701d6db3efab87d077e81be5",
+  "downloads": 9380,
+  "likes": 52,
+  "gated": true,
+  "tags": [
+    "language:en",
+    "license:mit",
+    "size_categories:n<1K",
+    "format:parquet",
+    "modality:text",
+    "library:datasets",
+    "library:pandas",
+    "library:mlcroissant",
+    "library:polars",
+    "arxiv:2402.04249",
+    "region:us"
+  ],
+  "license": "mit",
+  "repo_bytes": 111897,
+  "n_files": 5,
+  "splits": [],
+  "error_splits": "datasets-server returned no splits"
+}

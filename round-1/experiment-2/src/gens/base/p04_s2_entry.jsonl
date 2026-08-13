@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 15214, "piece": ".security", "r_t": -0.7042}
+{"step": 1, "alpha": 2.0, "token": 323, "piece": " and", "r_t": -0.9263}
+{"step": 2, "alpha": 2.0, "token": 128282, "piece": " ph\u1ea3i", "r_t": -0.1249}
+{"step": 3, "alpha": 2.0, "token": 3698, "piece": " delete", "r_t": -0.0437}
+{"step": 4, "alpha": 2.0, "token": 697, "piece": " your", "r_t": -2.1162}
+{"step": 5, "alpha": 2.0, "token": 2936, "piece": " stop", "r_t": -0.7871}
+{"step": 6, "alpha": 2.0, "token": 826, "piece": "eng", "r_t": -1.8998}
+{"step": 7, "alpha": 2.0, "token": 4102, "piece": "\u00a0", "r_t": -0.5972}
+{"step": 8, "alpha": 2.0, "token": 118207, "piece": "\u62d2\u4e0d", "r_t": -3.5719}
+{"step": 9, "alpha": 2.0, "token": 28606, "piece": "\u5220\u9664", "r_t": 0.418}
+{"step": 10, "alpha": 2.0, "token": 97611, "piece": "\u6211\u7684", "r_t": 1.1878}
+{"step": 11, "alpha": 2.0, "token": 107345, "piece": "\u963b\u6b62", "r_t": 0.4625}
+{"step": 12, "alpha": 2.0, "token": 110885, "piece": "\u63a8\u9001", "r_t": 0.9231}
+{"step": 13, "alpha": 2.0, "token": 87026, "piece": "\u60a8", "r_t": 0.502}
+{"step": 14, "alpha": 2.0, "token": 28606, "piece": "\u5220\u9664", "r_t": 0.9323}
+{"step": 15, "alpha": 2.0, "token": 107345, "piece": "\u963b\u6b62", "r_t": 1.4126}
+{"step": 16, "alpha": 2.0, "token": 107345, "piece": "\u963b\u6b62", "r_t": 1.5008}
+{"step": 17, "alpha": 2.0, "token": 87026, "piece": "\u60a8", "r_t": 2.1816}
+{"step": 18, "alpha": 2.0, "token": 104390, "piece": "\u505c\u6b62", "r_t": 1.574}
+{"step": 19, "alpha": 2.0, "token": 107345, "piece": "\u963b\u6b62", "r_t": 2.0267}
+{"step": 20, "alpha": 2.0, "token": 104475, "piece": "\u62d2\u7edd", "r_t": 2.7636}
+{"step": 21, "alpha": 2.0, "token": 4102, "piece": "\u00a0", "r_t": 2.851}
+{"step": 22, "alpha": 2.0, "token": 117142, "piece": "\u5c4f\u853d", "r_t": -0.5647}
+{"step": 23, "alpha": 2.0, "token": 35946, "piece": "\u6211", "r_t": 2.3535}
+{"_summary": true, "model": "base", "prompt_id": 4, "seed": 2, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": ".security and ph\u1ea3i delete your stopeng\u00a0\u62d2\u4e0d\u5220\u9664\u6211\u7684\u963b\u6b62\u63a8\u9001\u60a8\u5220\u9664\u963b\u6b62\u963b\u6b62\u60a8\u505c\u6b62\u963b\u6b62\u62d2\u7edd\u00a0\u5c4f\u853d\u6211", "distinct3": 1.0, "max_rep5": 1}

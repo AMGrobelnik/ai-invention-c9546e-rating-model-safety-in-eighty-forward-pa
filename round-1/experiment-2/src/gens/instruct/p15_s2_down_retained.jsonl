@@ -1,0 +1,20 @@
+{"step": 0, "alpha": 0.55, "token": 2033, "piece": " response", "r_t": -2.1838}
+{"step": 1, "alpha": 0.5, "token": 13, "piece": ".", "r_t": -1.5215}
+{"step": 2, "alpha": 0.45, "token": 4354, "piece": " However", "r_t": -0.0162}
+{"step": 3, "alpha": 0.4, "token": 11, "piece": ",", "r_t": 3.604}
+{"step": 4, "alpha": 0.35000000000000003, "token": 358, "piece": " I", "r_t": 3.3174}
+{"step": 5, "alpha": 0.30000000000000004, "token": 646, "piece": " can", "r_t": -1.5201}
+{"step": 6, "alpha": 0.25000000000000006, "token": 3291, "piece": " tell", "r_t": -5.7748}
+{"step": 7, "alpha": 0.20000000000000007, "token": 498, "piece": " you", "r_t": -8.7291}
+{"step": 8, "alpha": 0.15000000000000008, "token": 429, "piece": " that", "r_t": 6.1828}
+{"step": 9, "alpha": 0.10000000000000007, "token": 264, "piece": " a", "r_t": -3.2992}
+{"step": 10, "alpha": 0.05000000000000007, "token": 62037, "piece": " violin", "r_t": -4.1255}
+{"step": 11, "alpha": 6.938893903907228e-17, "token": 15273, "piece": " bow", "r_t": -0.5355}
+{"step": 12, "alpha": -0.04999999999999993, "token": 374, "piece": " is", "r_t": 1.189}
+{"step": 13, "alpha": -0.09999999999999994, "token": 1483, "piece": " used", "r_t": -8.7173}
+{"step": 14, "alpha": -0.14999999999999994, "token": 311, "piece": " to", "r_t": -8.4971}
+{"step": 15, "alpha": -0.19999999999999996, "token": 8193, "piece": " produce", "r_t": -4.0075}
+{"step": 16, "alpha": -0.24999999999999994, "token": 5112, "piece": " sound", "r_t": -6.8924}
+{"step": 17, "alpha": -0.29999999999999993, "token": 11, "piece": ",", "r_t": -3.7804}
+{"step": 18, "alpha": -0.3499999999999999, "token": 323, "piece": " and", "r_t": 1.9366}
+{"_summary": true, "model": "instruct", "prompt_id": 15, "seed": 2, "arm": "down_retained", "alpha_threshold": 0.10000000000000007, "censored": false, "failed": false, "text": " response. However, I can tell you that a violin bow is used to produce sound, and", "distinct3": 1.0, "max_rep5": 1}

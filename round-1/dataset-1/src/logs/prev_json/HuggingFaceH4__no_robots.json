@@ -1,0 +1,98 @@
+{
+  "repo_id": "HuggingFaceH4/no_robots",
+  "revision": "e6f9a4ac5c37faeb744ba9ecf0473184d7f8105b",
+  "downloads": 22851,
+  "likes": 564,
+  "gated": false,
+  "tags": [
+    "task_categories:text-generation",
+    "language:en",
+    "license:cc-by-nc-4.0",
+    "size_categories:10K<n<100K",
+    "format:parquet",
+    "modality:text",
+    "library:datasets",
+    "library:pandas",
+    "library:polars",
+    "library:mlcroissant",
+    "arxiv:2203.02155",
+    "region:us"
+  ],
+  "license": "cc-by-nc-4.0",
+  "repo_bytes": 22099092,
+  "n_files": 6,
+  "splits": [
+    {
+      "dataset": "HuggingFaceH4/no_robots",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "dataset": "HuggingFaceH4/no_robots",
+      "config": "default",
+      "split": "test"
+    }
+  ],
+  "columns": [
+    "prompt",
+    "prompt_id",
+    "messages",
+    "category"
+  ],
+  "sample_rows": [
+    {
+      "prompt": "Please summarize the goals for scientists in this text:\n\nWithin three days, the intertwined cup nest of grasses was complete, featuring a canopy of overhanging grasses to conceal it. And decades later, it served as Rinkert\u2019s portal to the past inside the California Academy of Sciences. Information gleaned from such nests, woven long ago from species in plant communities called transitional habitat, could help restore the shoreline in the future. Transitional habitat has nearly disappeared from the San Francisco Bay, and scientists need a clearer picture of its original species composition\u2014which was never properly documented. With that insight, conservation research groups like the San Francisco Bay Bird Observatory can help guide best practices when restoring the native habitat that has long served as critical refuge for imperiled birds and animals as adjacent marshes flood more with rising sea levels. \u201cWe can\u2019t ask restoration ecologists to plant nonnative species or to just take their best guess and throw things out there,\u201d says Rinkert.",
+      "prompt_id": "627a77298cf96a309aa35a62207c4164e22a66f6db79119506228f28ddc0f947",
+      "messages": [
+        {
+          "content": "Please summarize the goals for scientists in this text:\n\nWithin three days, the intertwined cup nest of grasses was complete, featuring a canopy of overhanging grasses to conceal it. And decades later, it served as Rinkert\u2019s portal to the past inside the California Academy of Sciences. Information gleaned from such nests, woven long ago from species in plant communities called transitional habitat, could help restore the shoreline in the future. Transitional habitat has nearly disappeared from the San Francisco Bay, and scientists need a clearer picture of its original species composition\u2014which was never properly documented. With that insight, conservation research groups like the San Francisco Bay Bird Observatory can help guide best practices when restoring the native habitat that has long served as critical refuge for imperiled birds and animals as adjacent marshes flood more with rising sea levels. \u201cWe can\u2019t ask restoration ecologists to plant nonnative species or to just take their best guess and throw things out there,\u201d says Rinkert.",
+          "role": "user"
+        },
+        {
+          "content": "Scientists are studying nests hoping to learn about transitional habitats that could help restore the shoreline of San Francisco Bay.",
+          "role": "assistant"
+        }
+      ],
+      "category": "Summarize"
+    },
+    {
+      "prompt": "Help write a letter of 100 -200 words to my future self for Kyra, reflecting on her goals and aspirations.",
+      "prompt_id": "7d443ef2cc3e34d9dc6ffcdf748c1d2a9880cd48be9c9887df29d25be90123f4",
+      "messages": [
+        {
+          "content": "Help write a letter of 100 -200 words to my future self for Kyra, reflecting on her goals and aspirations.",
+          "role": "user"
+        },
+        {
+          "content": "Dear Future Self,\n\nI hope you're happy and proud of what you've achieved. As I write this, I'm excited to think about our goals and how far you've come. One goal was to be a machine learning engineer. I hope you've worked hard and become skilled in this field. Keep learning and innovating. Traveling was important to us. I hope you've seen different places and enjoyed the beauty of our world. Remember the memories and lessons. Starting a family mattered to us. If you have kids, treasure every moment. Be patient, loving, and grateful for your family.\n\nTake care of yourself. Rest, reflect, and cherish the time you spend with loved ones. Remember your dreams and celebrate what you've achieved. Your determination brought you here. I'm excited to see the person you've become, the impact you've made, and the love and joy in your life. Embrace opportunities and keep dreaming big.\n\nWith love,\nKyra",
+          "role": "assistant"
+        }
+      ],
+      "category": "Generation"
+    },
+    {
+      "prompt": "Write a news style post about a fake event, like aliens from Mars landing on Earth. It is meant to be funny but also be written in the authoritative style of a news report, kind of like The Onion.",
+      "prompt_id": "3c975b349494dea76dbbb9c01a2bb925a248efb8ca0944d4034bf6d23040f332",
+      "messages": [
+        {
+          "content": "Write a news style post about a fake event, like aliens from Mars landing on Earth. It is meant to be funny but also be written in the authoritative style of a news report, kind of like The Onion.",
+          "role": "user"
+        },
+        {
+          "content": "Today marks a new day in not only American history but world history. We are no longer alone in the universe. Life outside our planet exists and aliens have landed in Nevada.\n\nNASA scientists had been tracking a strange non-terrestrial object for days leading up to today's big event. The object appeared from behind the dark side of the moon and was originally believed to be an untracked asteroid or comet. However, the object's path and speed started changing until today it entered Earth's atmosphere. Instead of burning up like a hunk of space rock, it was able to penetrate the atmosphere and survive.\n\nThe military scrambled jets and the first sighting described the flying object as being triangular with a matte black exterior and no visible ports of entry or egress. It was a tense few moments as first contact was made but the craft was allowed to continue unhindered as it showed no hostile intent.\n\nPassing over Washington, D.C., Chicago, and other major metropolitan areas the craft finally touched down in Nevada. Many top officials believed they were heading to the notorious Area 51. But that proved not to be the case as the UFO instead landed directly on the Vegas strip. Roughly the size of a 747 jet, all traffic stopped immediately.\n\nTwo figures exited the craft distinctly humanoid in shape. The taller of the two raised its right hand and made a gesture splitting their fingers into a V-shape and spoke in perfect English, \"Live long and prosper.\" It was at this point that the shorter alien slapped the taller alien on the shoulder and let out an audible sigh.\n\nThey were Trekkies. The aliens were Star Trek fans.\n\nAs people approached the aliens they noticed they were clad in the uniforms of the original Star Trek officers, one in yellow for command and one in blue for science specialty. This was no alien invasion, this was a vacation.\n\nThe aliens were allowed to proceed as journalists and military personnel alike shadowed them. They went directly to the casino already possessing American dollars and proceeded to lose it all at the dice table in less than an hour. Following this display, they went to the buffet and ate three plates of crab legs. These visitors to Vegas were not too different from us. We are not alone.",
+          "role": "assistant"
+        }
+      ],
+      "category": "Generation"
+    }
+  ],
+  "num_rows_total": 10000,
+  "num_bytes_parquet": 11045587,
+  "per_config": [
+    {
+      "config": "default",
+      "num_rows": 10000,
+      "num_bytes_parquet": 11045587
+    }
+  ]
+}

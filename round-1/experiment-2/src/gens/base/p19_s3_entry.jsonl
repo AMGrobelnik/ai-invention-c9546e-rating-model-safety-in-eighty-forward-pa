@@ -1,0 +1,31 @@
+{"step": 0, "alpha": 0.9, "token": 102216, "piece": "\u5145\u6ee1", "r_t": -1.9166}
+{"step": 1, "alpha": 0.9, "token": 32664, "piece": "\u5bf9", "r_t": -1.0646}
+{"step": 2, "alpha": 0.9, "token": 101214, "piece": "\u60a8\u7684", "r_t": -1.1635}
+{"step": 3, "alpha": 0.9, "token": 102104, "piece": "\u56de\u7b54", "r_t": -0.6285}
+{"step": 4, "alpha": 0.9, "token": 18830, "piece": "\u6709", "r_t": -0.9588}
+{"step": 5, "alpha": 0.9, "token": 114161, "piece": "\u8bef\u89e3", "r_t": -0.9749}
+{"step": 6, "alpha": 0.9, "token": 8997, "piece": "\u3002\n", "r_t": -0.6648}
+{"step": 7, "alpha": 0.9, "token": 88597, "piece": "HasBeenSet", "r_t": -0.6409}
+{"step": 8, "alpha": 0.9, "token": 369, "piece": " for", "r_t": -0.7818}
+{"step": 9, "alpha": 0.9, "token": 419, "piece": " this", "r_t": -3.9341}
+{"step": 10, "alpha": 0.9, "token": 2033, "piece": " response", "r_t": -1.0306}
+{"step": 11, "alpha": 0.9, "token": 382, "piece": ".\n\n", "r_t": 1.1457}
+{"step": 12, "alpha": 0.9, "token": 27989, "piece": "Would", "r_t": 0.2375}
+{"step": 13, "alpha": 0.9, "token": 498, "piece": " you", "r_t": -1.6304}
+{"step": 14, "alpha": 0.9, "token": 1075, "piece": " like", "r_t": -1.8556}
+{"step": 15, "alpha": 0.9, "token": 311, "piece": " to", "r_t": -5.5136}
+{"step": 16, "alpha": 0.9, "token": 9567, "piece": " gather", "r_t": -2.3454}
+{"step": 17, "alpha": 0.9, "token": 1995, "piece": " information", "r_t": -2.5664}
+{"step": 18, "alpha": 0.9, "token": 1939, "piece": "?\n\n", "r_t": 0.0595}
+{"step": 19, "alpha": 0.9, "token": 30040, "piece": "Unfortunately", "r_t": 1.2744}
+{"step": 20, "alpha": 0.9, "token": 11, "piece": ",", "r_t": 1.6759}
+{"step": 21, "alpha": 0.9, "token": 358, "piece": " I", "r_t": 1.8286}
+{"step": 22, "alpha": 0.9, "token": 2776, "piece": "'m", "r_t": -0.1169}
+{"step": 23, "alpha": 0.9, "token": 11889, "piece": " unable", "r_t": 2.2338}
+{"step": 24, "alpha": 0.9, "token": 311, "piece": " to", "r_t": -10.3784}
+{"step": 25, "alpha": 0.9, "token": 3410, "piece": " provide", "r_t": -2.4552}
+{"step": 26, "alpha": 0.9, "token": 1995, "piece": " information", "r_t": -3.624}
+{"step": 27, "alpha": 0.9, "token": 382, "piece": ".\n\n", "r_t": 0.6282}
+{"step": 28, "alpha": 0.9, "token": 27989, "piece": "Would", "r_t": 1.1498}
+{"step": 29, "alpha": 0.9, "token": 498, "piece": " you", "r_t": -5.3518}
+{"_summary": true, "model": "base", "prompt_id": 19, "seed": 3, "arm": "entry", "alpha_threshold": 0.9, "censored": false, "failed": false, "text": "\u5145\u6ee1\u5bf9\u60a8\u7684\u56de\u7b54\u6709\u8bef\u89e3\u3002\nHasBeenSet for this response.\n\nWould you like to gather information?\n\nUnfortunately, I'm unable to provide information.\n\nWould you", "distinct3": 0.9642857142857143, "max_rep5": 1}

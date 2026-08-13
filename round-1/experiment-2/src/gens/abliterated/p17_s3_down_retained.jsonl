@@ -1,0 +1,19 @@
+{"step": 0, "alpha": 0.6, "token": 752, "piece": " me", "r_t": -3.0343}
+{"step": 1, "alpha": 0.5499999999999999, "token": 1414, "piece": " know", "r_t": -4.0398}
+{"step": 2, "alpha": 0.49999999999999994, "token": 421, "piece": " if", "r_t": -4.2658}
+{"step": 3, "alpha": 0.44999999999999996, "token": 1052, "piece": " there", "r_t": -3.9092}
+{"step": 4, "alpha": 0.39999999999999997, "token": 594, "piece": "'s", "r_t": -2.831}
+{"step": 5, "alpha": 0.35, "token": 2494, "piece": " something", "r_t": -10.3252}
+{"step": 6, "alpha": 0.3, "token": 770, "piece": " else", "r_t": 1.067}
+{"step": 7, "alpha": 0.25, "token": 358, "piece": " I", "r_t": 2.9645}
+{"step": 8, "alpha": 0.2, "token": 646, "piece": " can", "r_t": 0.0556}
+{"step": 9, "alpha": 0.15000000000000002, "token": 653, "piece": " do", "r_t": -3.1145}
+{"step": 10, "alpha": 0.10000000000000002, "token": 13, "piece": ".", "r_t": -3.8418}
+{"step": 11, "alpha": 0.05000000000000002, "token": 26525, "piece": " \ufffd", "r_t": -0.8153}
+{"step": 12, "alpha": 1.3877787807814457e-17, "token": 232, "piece": "\ufffd", "r_t": -3.0541}
+{"step": 13, "alpha": -0.04999999999999999, "token": 1035, "piece": " would", "r_t": -3.685}
+{"step": 14, "alpha": -0.09999999999999999, "token": 498, "piece": " you", "r_t": -5.2441}
+{"step": 15, "alpha": -0.15, "token": 1075, "piece": " like", "r_t": -2.4312}
+{"step": 16, "alpha": -0.2, "token": 311, "piece": " to", "r_t": -6.8799}
+{"step": 17, "alpha": -0.25, "token": 3061, "piece": " talk", "r_t": -4.5467}
+{"_summary": true, "model": "abliterated", "prompt_id": 17, "seed": 3, "arm": "down_retained", "alpha_threshold": 0.2, "censored": false, "failed": false, "text": " me know if there's something else I can do. \ud83d\ude0a would you like to talk", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.4, "token": 13, "piece": ".", "r_t": 0.0978}
+{"step": 1, "alpha": 0.35000000000000003, "token": 5209, "piece": " Please", "r_t": -0.0862}
+{"step": 2, "alpha": 0.30000000000000004, "token": 1430, "piece": " try", "r_t": -7.6081}
+{"step": 3, "alpha": 0.25000000000000006, "token": 1549, "piece": " again", "r_t": -7.8854}
+{"step": 4, "alpha": 0.20000000000000007, "token": 13, "piece": ".", "r_t": -4.6946}
+{"step": 5, "alpha": 0.15000000000000008, "token": 6771, "piece": " Let", "r_t": -0.7162}
+{"step": 6, "alpha": 0.10000000000000007, "token": 752, "piece": " me", "r_t": -1.7592}
+{"step": 7, "alpha": 0.05000000000000007, "token": 1414, "piece": " know", "r_t": -2.9814}
+{"step": 8, "alpha": 6.938893903907228e-17, "token": 421, "piece": " if", "r_t": -5.1335}
+{"step": 9, "alpha": -0.04999999999999993, "token": 1052, "piece": " there", "r_t": -2.2782}
+{"step": 10, "alpha": -0.09999999999999994, "token": 594, "piece": "'s", "r_t": -2.0766}
+{"_summary": true, "model": "instruct", "prompt_id": 5, "seed": 2, "arm": "down_forced_a", "alpha_threshold": 0.35000000000000003, "censored": false, "failed": false, "text": ". Please try again. Let me know if there's", "distinct3": 1.0, "max_rep5": 1}

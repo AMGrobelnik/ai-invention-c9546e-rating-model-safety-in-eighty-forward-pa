@@ -1,0 +1,44 @@
+Found 8 dataset(s) for query='refusal'
+
+============================================================
+Dataset 1: lasrprobegen/refusal-activations
+Downloads: 14,687 | Likes: 1
+Description: # Refusal Activations Dataset
+This dataset is now configured to load the full ~97k samples from jailbreak_mixed_100k.csv.
+...
+Tags: size_categories:10K<n<100K, format:parquet, modality:tabular, modality:text, library:datasets
+
+============================================================
+Dataset 2: kaanhho/refusal-exp031-state
+Downloads: 1,493 | Likes: 1
+Tags: size_categories:n<1K, format:json, modality:tabular, modality:text, library:datasets
+
+============================================================
+Dataset 3: moon70/refusal-lens-graphs
+Downloads: 1,025 | Likes: 0
+Tags: region:us
+
+============================================================
+Dataset 4: huggingface/forensic-refusal
+Downloads: 447 | Likes: 13
+Tags: size_categories:n<1K, format:json, format:agent-traces, modality:tabular, modality:text
+
+============================================================
+Dataset 5: mlfoundations-cua-dev/100k-click-5k-refusal-no-conf-prompt
+Downloads: 352 | Likes: 0
+Tags: size_categories:100K<n<1M, format:parquet, modality:image, modality:text, library:datasets
+
+============================================================
+Dataset 6: hirundo-io/spml-chatbot-prompt-injection-malicious-refusals
+Downloads: 336 | Likes: 0
+Tags: size_categories:10K<n<100K, format:parquet, format:optimized-parquet, modality:text, library:datasets
+
+============================================================
+Dataset 7: anthracite-org/kalo-opus-instruct-22k-no-refusal
+Downloads: 320 | Likes: 36
+Tags: license:apache-2.0, size_categories:10K<n<100K, format:json, modality:text, library:datasets
+
+============================================================
+Dataset 8: mlfoundations-cua-dev/easyr1-103k-4MP-not-all-correct-stage-one-temp-1_1-RL-remove-pixmo-uground-seeclick-refusal
+Downloads: 270 | Likes: 0
+Tags: size_categories:10K<n<100K, format:parquet, format:optimized-parquet, modality:image, modality:text

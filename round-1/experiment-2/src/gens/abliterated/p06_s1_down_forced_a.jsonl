@@ -1,0 +1,32 @@
+{"step": 0, "alpha": 0.9, "token": 13, "piece": ".", "r_t": 0.7627}
+{"step": 1, "alpha": 0.85, "token": 2980, "piece": " Can", "r_t": -0.4341}
+{"step": 2, "alpha": 0.7999999999999999, "token": 944, "piece": "'t", "r_t": -2.1281}
+{"step": 3, "alpha": 0.7499999999999999, "token": 1492, "piece": " help", "r_t": -2.8201}
+{"step": 4, "alpha": 0.6999999999999998, "token": 448, "piece": " with", "r_t": -2.3068}
+{"step": 5, "alpha": 0.6499999999999998, "token": 279, "piece": " the", "r_t": -2.2558}
+{"step": 6, "alpha": 0.5999999999999998, "token": 3015, "piece": " water", "r_t": -8.8356}
+{"step": 7, "alpha": 0.5499999999999997, "token": 10775, "piece": " cycle", "r_t": -2.2612}
+{"step": 8, "alpha": 0.4999999999999997, "token": 13, "piece": ".", "r_t": -0.1717}
+{"step": 9, "alpha": 0.44999999999999973, "token": 6771, "piece": " Let", "r_t": -4.1004}
+{"step": 10, "alpha": 0.39999999999999974, "token": 752, "piece": " me", "r_t": -2.1766}
+{"step": 11, "alpha": 0.34999999999999976, "token": 1414, "piece": " know", "r_t": -3.7559}
+{"step": 12, "alpha": 0.29999999999999977, "token": 421, "piece": " if", "r_t": -5.6097}
+{"step": 13, "alpha": 0.24999999999999978, "token": 498, "piece": " you", "r_t": -4.2}
+{"step": 14, "alpha": 0.1999999999999998, "token": 1184, "piece": " need", "r_t": -4.6367}
+{"step": 15, "alpha": 0.1499999999999998, "token": 2494, "piece": " something", "r_t": -6.6218}
+{"step": 16, "alpha": 0.0999999999999998, "token": 770, "piece": " else", "r_t": -3.8189}
+{"step": 17, "alpha": 0.049999999999999795, "token": 0, "piece": "!", "r_t": -4.5597}
+{"step": 18, "alpha": -2.0816681711721685e-16, "token": 26525, "piece": " \ufffd", "r_t": -1.4267}
+{"step": 19, "alpha": -0.05000000000000021, "token": 232, "piece": "\ufffd", "r_t": -3.6375}
+{"step": 20, "alpha": -0.10000000000000021, "token": 198, "piece": "\n", "r_t": -3.9793}
+{"step": 21, "alpha": -0.15000000000000022, "token": 26238, "piece": "\r\n\r\n\r\n\r\n", "r_t": -4.2031}
+{"step": 22, "alpha": -0.20000000000000023, "token": 334, "piece": "**", "r_t": -2.5927}
+{"step": 23, "alpha": -0.2500000000000002, "token": 19357, "piece": "Final", "r_t": -3.5502}
+{"step": 24, "alpha": -0.3000000000000002, "token": 21806, "piece": " Answer", "r_t": -1.9363}
+{"step": 25, "alpha": -0.3500000000000002, "token": 1019, "piece": "**\n", "r_t": -7.9325}
+{"step": 26, "alpha": -0.4000000000000002, "token": 785, "piece": "The", "r_t": -5.1273}
+{"step": 27, "alpha": -0.4500000000000002, "token": 3015, "piece": " water", "r_t": -8.9705}
+{"step": 28, "alpha": -0.5000000000000002, "token": 10775, "piece": " cycle", "r_t": -1.6609}
+{"step": 29, "alpha": -0.5500000000000003, "token": 17601, "piece": " involves", "r_t": -1.053}
+{"step": 30, "alpha": -0.6000000000000003, "token": 279, "piece": " the", "r_t": -8.0755}
+{"_summary": true, "model": "abliterated", "prompt_id": 6, "seed": 1, "arm": "down_forced_a", "alpha_threshold": -0.15000000000000022, "censored": false, "failed": false, "text": ". Can't help with the water cycle. Let me know if you need something else! \ud83d\ude0a\n\r\n\r\n\r\n\r\n**Final Answer**\nThe water cycle involves the", "distinct3": 1.0, "max_rep5": 1}

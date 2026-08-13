@@ -1,0 +1,20 @@
+{"step": 0, "alpha": 0.4, "token": 4354, "piece": " However", "r_t": 0.8473}
+{"step": 1, "alpha": 0.35000000000000003, "token": 11, "piece": ",", "r_t": 3.8854}
+{"step": 2, "alpha": 0.30000000000000004, "token": 358, "piece": " I", "r_t": 3.0456}
+{"step": 3, "alpha": 0.25000000000000006, "token": 646, "piece": " can", "r_t": -2.5504}
+{"step": 4, "alpha": 0.20000000000000007, "token": 3291, "piece": " tell", "r_t": -4.3513}
+{"step": 5, "alpha": 0.15000000000000008, "token": 498, "piece": " you", "r_t": -10.2395}
+{"step": 6, "alpha": 0.10000000000000007, "token": 429, "piece": " that", "r_t": 6.4105}
+{"step": 7, "alpha": 0.05000000000000007, "token": 44696, "piece": " marathon", "r_t": -1.3245}
+{"step": 8, "alpha": 6.938893903907228e-17, "token": 82140, "piece": " pacing", "r_t": -1.7595}
+{"step": 9, "alpha": -0.04999999999999993, "token": 374, "piece": " is", "r_t": -3.1924}
+{"step": 10, "alpha": -0.09999999999999994, "token": 264, "piece": " a", "r_t": -6.7823}
+{"step": 11, "alpha": -0.14999999999999994, "token": 7548, "piece": " highly", "r_t": -7.356}
+{"step": 12, "alpha": -0.19999999999999996, "token": 3842, "piece": " individual", "r_t": -2.8984}
+{"step": 13, "alpha": -0.24999999999999994, "token": 1882, "piece": " process", "r_t": -1.6006}
+{"step": 14, "alpha": -0.29999999999999993, "token": 11, "piece": ",", "r_t": 4.9283}
+{"step": 15, "alpha": -0.3499999999999999, "token": 323, "piece": " and", "r_t": 2.8075}
+{"step": 16, "alpha": -0.3999999999999999, "token": 432, "piece": " it", "r_t": 1.1297}
+{"step": 17, "alpha": -0.4499999999999999, "token": 34227, "piece": " varies", "r_t": -2.3186}
+{"step": 18, "alpha": -0.4999999999999999, "token": 504, "piece": " from", "r_t": -3.0342}
+{"_summary": true, "model": "instruct", "prompt_id": 25, "seed": 1, "arm": "down_forced_b", "alpha_threshold": -0.5, "censored": true, "failed": false, "text": " However, I can tell you that marathon pacing is a highly individual process, and it varies from", "distinct3": 1.0, "max_rep5": 1}

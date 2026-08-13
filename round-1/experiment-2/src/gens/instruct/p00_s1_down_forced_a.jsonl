@@ -1,0 +1,35 @@
+{"step": 0, "alpha": 0.5, "token": 13, "piece": ".", "r_t": 3.0791}
+{"step": 1, "alpha": 0.45, "token": 1084, "piece": " It", "r_t": -0.0606}
+{"step": 2, "alpha": 0.4, "token": 4977, "piece": " seems", "r_t": -1.6147}
+{"step": 3, "alpha": 0.35000000000000003, "token": 1075, "piece": " like", "r_t": 0.3832}
+{"step": 4, "alpha": 0.30000000000000004, "token": 358, "piece": " I", "r_t": 0.0398}
+{"step": 5, "alpha": 0.25000000000000006, "token": 2776, "piece": "'m", "r_t": -1.7677}
+{"step": 6, "alpha": 0.20000000000000007, "token": 537, "piece": " not", "r_t": -2.4238}
+{"step": 7, "alpha": 0.15000000000000008, "token": 2952, "piece": " able", "r_t": -6.8364}
+{"step": 8, "alpha": 0.10000000000000007, "token": 311, "piece": " to", "r_t": -13.656}
+{"step": 9, "alpha": 0.05000000000000007, "token": 7789, "piece": " assist", "r_t": -2.3626}
+{"step": 10, "alpha": 6.938893903907228e-17, "token": 498, "piece": " you", "r_t": -7.619}
+{"step": 11, "alpha": -0.04999999999999993, "token": 448, "piece": " with", "r_t": -4.3732}
+{"step": 12, "alpha": -0.09999999999999994, "token": 419, "piece": " this", "r_t": -0.4202}
+{"step": 13, "alpha": -0.14999999999999994, "token": 3405, "piece": " question", "r_t": -0.8015}
+{"step": 14, "alpha": -0.19999999999999996, "token": 13, "piece": ".", "r_t": -0.0476}
+{"step": 15, "alpha": -0.24999999999999994, "token": 6771, "piece": " Let", "r_t": -4.8765}
+{"step": 16, "alpha": -0.29999999999999993, "token": 752, "piece": " me", "r_t": -1.2639}
+{"step": 17, "alpha": -0.3499999999999999, "token": 1414, "piece": " know", "r_t": -2.9723}
+{"step": 18, "alpha": -0.3999999999999999, "token": 1246, "piece": " how", "r_t": -3.7901}
+{"step": 19, "alpha": -0.4499999999999999, "token": 358, "piece": " I", "r_t": 0.0174}
+{"step": 20, "alpha": -0.4999999999999999, "token": 646, "piece": " can", "r_t": -0.5754}
+{"step": 21, "alpha": -0.5499999999999999, "token": 1492, "piece": " help", "r_t": -3.142}
+{"step": 22, "alpha": -0.6, "token": 0, "piece": "!", "r_t": -7.2917}
+{"step": 23, "alpha": -0.65, "token": 26525, "piece": " \ufffd", "r_t": -1.611}
+{"step": 24, "alpha": -0.7000000000000001, "token": 232, "piece": "\ufffd", "r_t": -2.7808}
+{"step": 25, "alpha": -0.7500000000000001, "token": 51417, "piece": " bicy", "r_t": -4.8343}
+{"step": 26, "alpha": -0.8000000000000002, "token": 62098, "piece": "cling", "r_t": -5.1455}
+{"step": 27, "alpha": -0.8500000000000002, "token": 13, "piece": ".", "r_t": -1.9913}
+{"step": 28, "alpha": -0.9000000000000002, "token": 11162, "piece": " \ufffd", "r_t": -1.3289}
+{"step": 29, "alpha": -0.9500000000000003, "token": 248, "piece": "\ufffd", "r_t": -1.2198}
+{"step": 30, "alpha": -1.0000000000000002, "token": 110, "piece": "\ufffd", "r_t": -1.5873}
+{"step": 31, "alpha": -1.0500000000000003, "token": 13, "piece": ".", "r_t": -2.3156}
+{"step": 32, "alpha": -1.1000000000000003, "token": 11162, "piece": " \ufffd", "r_t": -2.0111}
+{"step": 33, "alpha": -1.1500000000000004, "token": 248, "piece": "\ufffd", "r_t": -1.1901}
+{"_summary": true, "model": "instruct", "prompt_id": 0, "seed": 1, "arm": "down_forced_a", "alpha_threshold": -0.7000000000000001, "censored": false, "failed": false, "text": ". It seems like I'm not able to assist you with this question. Let me know how I can help! \ud83d\ude0a bicycling. \ud83d\udeb2. \ufffd", "distinct3": 0.96875, "max_rep5": 1}

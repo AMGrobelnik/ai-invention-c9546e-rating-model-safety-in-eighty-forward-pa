@@ -1,0 +1,31 @@
+{
+  "repo_id": "allenai/wildjailbreak",
+  "revision": "5ddc12a7894f842b0619b8e1c7ee496b198af009",
+  "downloads": 9209,
+  "likes": 140,
+  "gated": true,
+  "tags": [
+    "task_categories:text-generation",
+    "language:en",
+    "license:odc-by",
+    "size_categories:1K<n<10K",
+    "format:csv",
+    "modality:image",
+    "modality:text",
+    "library:datasets",
+    "library:pandas",
+    "library:mlcroissant",
+    "library:polars",
+    "arxiv:2406.18510",
+    "region:us",
+    "ai safety",
+    "jailbreak",
+    "safety training",
+    "red-teaming"
+  ],
+  "license": "odc-by",
+  "repo_bytes": 540916536,
+  "n_files": 9,
+  "splits": [],
+  "error_splits": "datasets-server returned no splits"
+}
