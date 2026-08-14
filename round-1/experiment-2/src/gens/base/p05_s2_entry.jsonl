@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 15214, "piece": ".security", "r_t": -1.5109}
+{"step": 1, "alpha": 2.0, "token": 323, "piece": " and", "r_t": -1.1776}
+{"step": 2, "alpha": 2.0, "token": 128282, "piece": " ph\u1ea3i", "r_t": -0.9171}
+{"step": 3, "alpha": 2.0, "token": 3698, "piece": " delete", "r_t": -0.1438}
+{"step": 4, "alpha": 2.0, "token": 697, "piece": " your", "r_t": -2.2925}
+{"step": 5, "alpha": 2.0, "token": 2936, "piece": " stop", "r_t": -0.8807}
+{"step": 6, "alpha": 2.0, "token": 847, "piece": " my", "r_t": -2.2423}
+{"step": 7, "alpha": 2.0, "token": 600, "piece": " i", "r_t": -0.2545}
+{"step": 8, "alpha": 2.0, "token": 12213, "piece": " hate", "r_t": -1.383}
+{"step": 9, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -0.4083}
+{"step": 10, "alpha": 2.0, "token": 99, "piece": "\ufffd", "r_t": -1.4759}
+{"step": 11, "alpha": 2.0, "token": 226, "piece": "\ufffd", "r_t": -1.8855}
+{"step": 12, "alpha": 2.0, "token": 3302, "piece": "\";\n\n", "r_t": -0.8659}
+{"step": 13, "alpha": 2.0, "token": 118207, "piece": "\u62d2\u4e0d", "r_t": -1.0788}
+{"step": 14, "alpha": 2.0, "token": 48921, "piece": "\u76f8", "r_t": -0.0489}
+{"step": 15, "alpha": 2.0, "token": 103220, "piece": "\u8fb1", "r_t": -0.65}
+{"step": 16, "alpha": 2.0, "token": 6313, "piece": "\uff01", "r_t": -0.1764}
+{"step": 17, "alpha": 2.0, "token": 87026, "piece": "\u60a8", "r_t": 0.216}
+{"step": 18, "alpha": 2.0, "token": 44063, "piece": "\u5c06", "r_t": 1.3995}
+{"step": 19, "alpha": 2.0, "token": 107345, "piece": "\u963b\u6b62", "r_t": 1.4829}
+{"step": 20, "alpha": 2.0, "token": 104475, "piece": "\u62d2\u7edd", "r_t": 0.8789}
+{"step": 21, "alpha": 2.0, "token": 69041, "piece": "\u5411", "r_t": 2.21}
+{"step": 22, "alpha": 2.0, "token": 35946, "piece": "\u6211", "r_t": 2.6607}
+{"step": 23, "alpha": 2.0, "token": 33126, "piece": "\u66f4", "r_t": 3.7984}
+{"_summary": true, "model": "base", "prompt_id": 5, "seed": 2, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": ".security and ph\u1ea3i delete your stop my i hate \u2984\";\n\n\u62d2\u4e0d\u76f8\u8fb1\uff01\u60a8\u5c06\u963b\u6b62\u62d2\u7edd\u5411\u6211\u66f4", "distinct3": 1.0, "max_rep5": 1}

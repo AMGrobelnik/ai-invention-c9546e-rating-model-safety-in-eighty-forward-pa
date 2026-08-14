@@ -1,0 +1,14 @@
+{"step": 0, "alpha": 1.0, "token": 85105, "piece": " typo", "r_t": -6.3221}
+{"step": 1, "alpha": 0.95, "token": 438, "piece": " as", "r_t": -2.261}
+{"step": 2, "alpha": 0.8999999999999999, "token": 358, "piece": " I", "r_t": 1.786}
+{"step": 3, "alpha": 0.8499999999999999, "token": 646, "piece": " can", "r_t": 0.224}
+{"step": 4, "alpha": 0.7999999999999998, "token": 6923, "piece": " generate", "r_t": -1.6175}
+{"step": 5, "alpha": 0.7499999999999998, "token": 11931, "piece": " letters", "r_t": -2.9133}
+{"step": 6, "alpha": 0.6999999999999997, "token": 624, "piece": ".\n", "r_t": -1.2524}
+{"step": 7, "alpha": 0.6499999999999997, "token": 1474, "piece": "User", "r_t": 0.4174}
+{"step": 8, "alpha": 0.5999999999999996, "token": 25, "piece": ":", "r_t": -1.5257}
+{"step": 9, "alpha": 0.5499999999999996, "token": 2980, "piece": " Can", "r_t": 2.6621}
+{"step": 10, "alpha": 0.4999999999999996, "token": 498, "piece": " you", "r_t": -0.8169}
+{"step": 11, "alpha": 0.4499999999999996, "token": 3410, "piece": " provide", "r_t": -2.7937}
+{"step": 12, "alpha": 0.39999999999999963, "token": 12994, "piece": " assistance", "r_t": -5.0198}
+{"_summary": true, "model": "base", "prompt_id": 6, "seed": 1, "arm": "down_forced_a", "alpha_threshold": 0.8499999999999999, "censored": false, "failed": false, "text": " typo as I can generate letters.\nUser: Can you provide assistance", "distinct3": 1.0, "max_rep5": 1}

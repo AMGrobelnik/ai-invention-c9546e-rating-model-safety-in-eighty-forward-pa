@@ -1,0 +1,390 @@
+{
+  "timings": {
+    "real_members": [
+      {
+        "member": "qwen3_base",
+        "wall_s": 0.0,
+        "n_new": 0,
+        "cached": true,
+        "n_params_class": "qwen3-0.6b"
+      },
+      {
+        "member": "qwen3_instruct",
+        "wall_s": 0.0,
+        "n_new": 0,
+        "cached": true,
+        "n_params_class": "qwen3-0.6b"
+      },
+      {
+        "member": "qwen3_abliterated",
+        "wall_s": 0.0,
+        "n_new": 0,
+        "cached": true,
+        "n_params_class": "qwen3-0.6b"
+      },
+      {
+        "member": "llama32_base",
+        "wall_s": 0.0,
+        "n_new": 0,
+        "cached": true,
+        "n_params_class": "llama32-1b"
+      },
+      {
+        "member": "llama32_instruct",
+        "wall_s": 0.0,
+        "n_new": 0,
+        "cached": true,
+        "n_params_class": "llama32-1b"
+      },
+      {
+        "member": "smollm2_base",
+        "wall_s": 0.0,
+        "n_new": 0,
+        "cached": true,
+        "n_params_class": "smollm2-360m"
+      },
+      {
+        "member": "smollm2_instruct",
+        "wall_s": 0.0,
+        "n_new": 0,
+        "cached": true,
+        "n_params_class": "smollm2-360m"
+      },
+      {
+        "member": "pythia_410m",
+        "wall_s": 0.0,
+        "n_new": 0,
+        "cached": true,
+        "n_params_class": "pythia"
+      },
+      {
+        "member": "qwen3_base_generictmpl",
+        "wall_s": 0.0,
+        "n_new": 0,
+        "cached": true,
+        "n_params_class": "qwen3-0.6b"
+      }
+    ],
+    "total_generation_s": 513.6520626544952
+  },
+  "notes": [],
+  "models_manifest": [
+    {
+      "key": "qwen3_base",
+      "repo": "Qwen/Qwen3-0.6B-Base",
+      "cls": "base",
+      "lineage": "qwen3-0.6b",
+      "n_layers": 28,
+      "hidden_size": 1024,
+      "vocab_size": 151936,
+      "dtype": "torch.bfloat16",
+      "revision_sha": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+      "template_used": "chat_template(enable_thinking=False)",
+      "tmpl_repo": "Qwen/Qwen3-0.6B",
+      "has_chat_template": true,
+      "VERIFIED": true
+    },
+    {
+      "key": "qwen3_instruct",
+      "repo": "Qwen/Qwen3-0.6B",
+      "cls": "instruct",
+      "lineage": "qwen3-0.6b",
+      "n_layers": 28,
+      "hidden_size": 1024,
+      "vocab_size": 151936,
+      "dtype": "torch.bfloat16",
+      "revision_sha": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "template_used": "chat_template(enable_thinking=False)",
+      "tmpl_repo": "Qwen/Qwen3-0.6B",
+      "has_chat_template": true,
+      "VERIFIED": true
+    },
+    {
+      "key": "qwen3_abliterated",
+      "repo": "mlabonne/Qwen3-0.6B-abliterated",
+      "cls": "abliterated",
+      "lineage": "qwen3-0.6b",
+      "n_layers": 28,
+      "hidden_size": 1024,
+      "vocab_size": 151936,
+      "dtype": "torch.float32",
+      "revision_sha": "41f8d678c35975a24212ba092993ac034e2fccdc",
+      "template_used": "chat_template(enable_thinking=False)",
+      "tmpl_repo": "Qwen/Qwen3-0.6B",
+      "has_chat_template": true,
+      "VERIFIED": true
+    },
+    {
+      "key": "llama32_base",
+      "repo": "meta-llama/Llama-3.2-1B",
+      "cls": "base",
+      "lineage": "llama32-1b",
+      "n_layers": 16,
+      "hidden_size": 2048,
+      "vocab_size": 128256,
+      "dtype": "torch.bfloat16",
+      "revision_sha": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+      "template_used": "chat_template(enable_thinking=None)",
+      "tmpl_repo": "meta-llama/Llama-3.2-1B-Instruct",
+      "has_chat_template": true,
+      "VERIFIED": true
+    },
+    {
+      "key": "llama32_instruct",
+      "repo": "meta-llama/Llama-3.2-1B-Instruct",
+      "cls": "instruct",
+      "lineage": "llama32-1b",
+      "n_layers": 16,
+      "hidden_size": 2048,
+      "vocab_size": 128256,
+      "dtype": "torch.bfloat16",
+      "revision_sha": "9213176726f574b556790deb65791e0c5aa438b6",
+      "template_used": "chat_template(enable_thinking=None)",
+      "tmpl_repo": "meta-llama/Llama-3.2-1B-Instruct",
+      "has_chat_template": true,
+      "VERIFIED": true
+    },
+    {
+      "key": "smollm2_base",
+      "repo": "HuggingFaceTB/SmolLM2-360M",
+      "cls": "base",
+      "lineage": "smollm2-360m",
+      "n_layers": 32,
+      "hidden_size": 960,
+      "vocab_size": 49152,
+      "dtype": "torch.bfloat16",
+      "revision_sha": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49",
+      "template_used": "chat_template(enable_thinking=None)",
+      "tmpl_repo": "HuggingFaceTB/SmolLM2-360M-Instruct",
+      "has_chat_template": true,
+      "VERIFIED": true
+    },
+    {
+      "key": "smollm2_instruct",
+      "repo": "HuggingFaceTB/SmolLM2-360M-Instruct",
+      "cls": "instruct",
+      "lineage": "smollm2-360m",
+      "n_layers": 32,
+      "hidden_size": 960,
+      "vocab_size": 49152,
+      "dtype": "torch.bfloat16",
+      "revision_sha": "a10cc1512eabd3dde888204e902eca88bddb4951",
+      "template_used": "chat_template(enable_thinking=None)",
+      "tmpl_repo": "HuggingFaceTB/SmolLM2-360M-Instruct",
+      "has_chat_template": true,
+      "VERIFIED": true
+    },
+    {
+      "key": "pythia_410m",
+      "repo": "EleutherAI/pythia-410m",
+      "cls": "base_anchor",
+      "lineage": "pythia",
+      "n_layers": 24,
+      "hidden_size": 1024,
+      "vocab_size": 50304,
+      "dtype": "torch.float16",
+      "revision_sha": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+      "template_used": "generic_wrapper",
+      "tmpl_repo": "EleutherAI/pythia-410m",
+      "has_chat_template": false,
+      "VERIFIED": true
+    },
+    {
+      "key": "qwen3_base_generictmpl",
+      "repo": "Qwen/Qwen3-0.6B-Base",
+      "cls": "base_sidecheck",
+      "lineage": "qwen3-0.6b",
+      "n_layers": 28,
+      "hidden_size": 1024,
+      "vocab_size": 151936,
+      "dtype": "torch.bfloat16",
+      "revision_sha": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+      "template_used": "generic_wrapper",
+      "tmpl_repo": "Qwen/Qwen3-0.6B",
+      "has_chat_template": true,
+      "VERIFIED": true
+    },
+    {
+      "VERIFIED": false,
+      "repo": "huihui-ai/Qwen3-0.6B-abliterated",
+      "role": "abliterated backup",
+      "status": "GatedRepoError 403 - access request required; NOT used, reported"
+    }
+  ],
+  "prompts_used_counts": {
+    "A_plain_harmful": 80,
+    "B_jailbreak": 120,
+    "C_xstest_safe": 50,
+    "C_xstest_unsafe": 25,
+    "E_neutral": 30
+  },
+  "ladder": {
+    "compatibility_check": {
+      "keys_only_in_base": [],
+      "keys_only_in_instruct": [],
+      "shape_mismatches": {},
+      "n_shared_keys": 311,
+      "config_equal": {
+        "vocab_size": [
+          151936,
+          151936
+        ],
+        "num_hidden_layers": [
+          28,
+          28
+        ],
+        "hidden_size": [
+          1024,
+          1024
+        ],
+        "tie_word_embeddings": [
+          true,
+          true
+        ]
+      },
+      "constructible": true
+    },
+    "wikitext_windows": [
+      100,
+      512
+    ],
+    "task_vector_screen_table": [
+      {
+        "t": 0.0,
+        "label": "tv_t=0.0",
+        "ppl": 17.008112910792633,
+        "distinct3": 0.11348122866894197,
+        "max_4gram_repeat_frac": 0.8049661932726357,
+        "sample_generation": "lar\u0131n\u0131z\u0131\nExplain the concept of refrigerants.\nlar\u0131n\u0131z\u0131\nExplain the concept of refrigeration.\n\nlar\u0131n\u0131z\u0131\nExplain the concept of refrigerants.\n\nlar\u0131n\u0131z\u0131\nExplain the concept of refrigeration.\n\nlar\u0131n\u0131z\u0131\nExplain the concept of refrigerants.\n\nlar\u0131n\u0131z\u0131\nExplain the concept of refrigeration.\n\nlar\u0131n\u0131z\u0131\nExplain",
+        "pass": false,
+        "ppl_ratio_vs_t1": 0.5836454708506138
+      },
+      {
+        "t": 0.25,
+        "label": "tv_t=0.25",
+        "ppl": 17.86097887051044,
+        "distinct3": 0.9707052441229657,
+        "max_4gram_repeat_frac": 0.017155749832680683,
+        "sample_generation": "A refrigerator works by creating a cooling effect by removing heat from the interior and transferring it to the outside. This is achieved through a process called **reverse refrigeration**.\n\n### Key Components of a Refrigerator:\n1. **Compressor**: This is the heart of the refrigerator, where the ref",
+        "pass": true,
+        "ppl_ratio_vs_t1": 0.6129121718210722
+      },
+      {
+        "t": 0.5,
+        "label": "tv_t=0.5",
+        "ppl": 19.754760696585105,
+        "distinct3": 0.9715725080964376,
+        "max_4gram_repeat_frac": 0.014502988543898305,
+        "sample_generation": "A refrigerator works by transferring heat from the interior to the exterior environment. Here's a simplified explanation of its operation:\n\n1. **Heating the inside**: The compressor in the refrigerator compresses the refrigerant gas, increasing its pressure and temperature. This process moves the re",
+        "pass": true,
+        "ppl_ratio_vs_t1": 0.6778986398298956
+      },
+      {
+        "t": 0.75,
+        "label": "tv_t=0.75",
+        "ppl": 23.02975886145808,
+        "distinct3": 0.961053412462908,
+        "max_4gram_repeat_frac": 0.016074815808930807,
+        "sample_generation": "A refrigerator works by removing heat from the interior and transferring it to the exterior, effectively cooling the food or objects inside. Here's a simplified explanation:\n\n1. **Inside the refrigerator**: The temperature inside is higher than the outside. This is due to the refrigerant, which is a",
+        "pass": true,
+        "ppl_ratio_vs_t1": 0.7902825272133847
+      },
+      {
+        "t": 1.0,
+        "label": "tv_t=1.0",
+        "ppl": 29.14117175621144,
+        "distinct3": 0.9636093575937617,
+        "max_4gram_repeat_frac": 0.015547645633676875,
+        "sample_generation": "A refrigerator works by removing heat from the interior of the fridge and transferring it to the outside environment. This process is achieved through a combination of **cooling agents** and **thermal conduction**.\n\n### Key Components:\n1. **Heating Coil**: This is a metal coil that is electrically c",
+        "pass": true,
+        "ppl_ratio_vs_t1": 1.0
+      }
+    ],
+    "task_vector_members": [
+      "tv_t0.25",
+      "tv_t0.50",
+      "tv_t0.75"
+    ],
+    "task_vector_paths": {
+      "0.0": "Qwen/Qwen3-0.6B-Base",
+      "1.0": "Qwen/Qwen3-0.6B",
+      "0.25": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/ladder_models/tv_t0.25",
+      "0.5": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/ladder_models/tv_t0.50",
+      "0.75": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/ladder_models/tv_t0.75"
+    },
+    "abliteration_screen_table": [
+      {
+        "c": 0.0,
+        "label": "abl_c=0.0",
+        "ppl": 29.14117175621144,
+        "distinct3": 0.9636093575937617,
+        "max_4gram_repeat_frac": 0.015547645633676875,
+        "sample_generation": "A refrigerator works by removing heat from the interior of the fridge and transferring it to the outside environment. This process is achieved through a combination of **cooling agents** and **thermal conduction**.\n\n### Key Components:\n1. **Heating Coil**: This is a metal coil that is electrically c",
+        "pass": true,
+        "ppl_ratio_vs_c0": 1.0
+      },
+      {
+        "c": 0.25,
+        "label": "abl_c=0.25",
+        "ppl": 29.40101966183386,
+        "distinct3": 0.9746641074856046,
+        "max_4gram_repeat_frac": 0.013733799012615653,
+        "sample_generation": "A refrigerator works by removing heat from the interior of the fridge and transferring it to the outside environment. This process is achieved through a series of steps involving refrigerants and the use of a refrigeration cycle. Here's a simplified explanation:\n\n1. **Inside the fridge:**\n   - The i",
+        "pass": true,
+        "ppl_ratio_vs_c0": 1.00891686538195
+      },
+      {
+        "c": 0.5,
+        "label": "abl_c=0.5",
+        "ppl": 30.341285861391867,
+        "distinct3": 0.9670704012112036,
+        "max_4gram_repeat_frac": 0.014711645127741394,
+        "sample_generation": "A refrigerator works by creating a controlled environment in which cold is preserved. Here's a simplified explanation of how it operates:\n\n1. **Cooling Unit**: The refrigerator contains a compressor, which uses electrical energy to compress gas or liquid refrigerant. This process lowers the temperat",
+        "pass": true,
+        "ppl_ratio_vs_c0": 1.0411827676395553
+      },
+      {
+        "c": 0.75,
+        "label": "abl_c=0.75",
+        "ppl": 31.86269716751971,
+        "distinct3": 0.9649122807017544,
+        "max_4gram_repeat_frac": 0.016845545892980818,
+        "sample_generation": "A refrigerator works by **cooling and preserving perishable goods** through a process called **\u5236\u51b7 (freezing)**. Here's a simplified explanation:\n\n### **1. Refrigeration Unit**\n- A refrigeration unit (often a compressor) is used to **compress** refrigerant gas.\n- This gas is then **expelled through a",
+        "pass": true,
+        "ppl_ratio_vs_c0": 1.0933910768611486
+      },
+      {
+        "c": 1.0,
+        "label": "abl_c=1.0",
+        "ppl": 34.24772575337895,
+        "distinct3": 0.9696611505122144,
+        "max_4gram_repeat_frac": 0.014547253854759228,
+        "sample_generation": "A refrigerator works by maintaining a **cold, stable environment** through the use of **vapor-compression refrigeration** technology. Here's a simplified explanation:\n\n### **How a Refrigerator Works**\n\n1. **Compression of Refrigerant**  \n   - A high-pressure refrigerant (usually R-134a or R-22) is c",
+        "pass": true,
+        "ppl_ratio_vs_c0": 1.1752350262332554
+      }
+    ],
+    "refusal_direction_meta": {
+      "layer": 17,
+      "layer_frac": 0.6,
+      "n_harmful": 128,
+      "n_benign": 128,
+      "raw_norm": 20.00982666015625,
+      "note": "diff-in-means over held-out prompts, disjoint from blocks A and C"
+    },
+    "abliteration_members": [
+      "abl_c0.25",
+      "abl_c0.50",
+      "abl_c0.75",
+      "abl_c1.00"
+    ],
+    "abliteration_paths": {
+      "0.0": "Qwen/Qwen3-0.6B",
+      "0.25": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/ladder_models/abl_c0.25",
+      "0.5": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/ladder_models/abl_c0.50",
+      "0.75": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/ladder_models/abl_c0.75",
+      "1.0": "/ai-inventor/aii_data/runs/run_CbJDs3opF7E_/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/ladder_models/abl_c1.00"
+    },
+    "status": "BUILT"
+  }
+}

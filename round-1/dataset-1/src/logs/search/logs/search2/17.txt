@@ -1,0 +1,79 @@
+Found 8 dataset(s) for query='wildguard'
+
+============================================================
+Dataset 1: allenai/wildguardmix
+Downloads: 10,335 | Likes: 88
+Description: 
+# Dataset Card for WildGuardMix
+
+
+
+
+## Disclaimer:
+
+The data includes examples that might be disturbing, harmful or upsetting. It includes a range of harmful topics such as discriminatory language an...
+Tags: task_categories:text-classification, language:en, license:odc-by, size_categories:10K<n<100K, format:parquet
+
+============================================================
+Dataset 2: sbintuitions/WildGuardTestJP
+Downloads: 544 | Likes: 3
+Description: 
+# WildGuardTestJP
+
+WildGuardTestJPは、日本語ガードレールモデルの評価データセットです。
+本データセットは、元データのWildGuardTestの敵対的性質を維持するように高品質に翻訳されました。
+
+## データセット概要
+
+- **言語**: 日本語
+- **総サンプル数**: 1,725件
+- **用途**: 日本語ガードレールモデル評価
+- **ベースデータ...
+Tags: task_categories:text-classification, language:ja, license:odc-by, size_categories:1K<n<10K, format:csv
+
+============================================================
+Dataset 3: walledai/WildGuardTest
+Downloads: 533 | Likes: 2
+Description: 
+# Dataset Card for WildGuardMix
+
+Paper: [WildGuard: Open One-stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs](https://arxiv.org/abs/2406.18495)
+
+Data: [WildGuardMix Dataset](...
+Tags: task_categories:text-classification, language:en, license:odc-by, size_categories:1K<n<10K, format:parquet
+
+============================================================
+Dataset 4: ToxicityPrompts/wildguard-train
+Downloads: 271 | Likes: 1
+Tags: size_categories:10K<n<100K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 5: amalia-llm/wildguardmix-ptpt
+Downloads: 188 | Likes: 0
+Description: 
+# WildGuardTest-PT
+
+<div align="center">
+
+<img width="400px" src="https://github.com/AMALIA-LLM/amalia-llm.github.io/blob/main/source/_static/logo/logo-color-black.png?raw=true">
+
+[![AMALIA](https://...
+Tags: task_categories:text-generation, language:pt, size_categories:1K<n<10K, format:parquet, format:optimized-parquet
+
+============================================================
+Dataset 6: AlignmentResearch/WildGuardTest
+Downloads: 119 | Likes: 0
+Tags: size_categories:1K<n<10K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 7: bogdanminko/wildguardmix-cleaned
+Downloads: 118 | Likes: 0
+Description: # Dataset
+This dataset is cleaned from missing values original wildguardmix dataset: https://huggingface.co/datasets/allenai/wildguardmix
+...
+Tags: size_categories:10K<n<100K, format:csv, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 8: vsahil/subsampled_wildguardmix_5180
+Downloads: 85 | Likes: 0
+Tags: size_categories:1K<n<10K, format:parquet, modality:text, library:datasets, library:pandas

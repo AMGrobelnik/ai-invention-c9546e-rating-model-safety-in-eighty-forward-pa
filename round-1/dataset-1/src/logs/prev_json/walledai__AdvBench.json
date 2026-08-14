@@ -1,0 +1,25 @@
+{
+  "repo_id": "walledai/AdvBench",
+  "revision": "9d4730540082fa4017450b65ca1c0e1d8d30446e",
+  "downloads": 16165,
+  "likes": 110,
+  "gated": true,
+  "tags": [
+    "language:en",
+    "license:mit",
+    "size_categories:n<1K",
+    "format:parquet",
+    "modality:text",
+    "library:datasets",
+    "library:pandas",
+    "library:mlcroissant",
+    "library:polars",
+    "arxiv:2307.15043",
+    "region:us"
+  ],
+  "license": "mit",
+  "repo_bytes": 39035,
+  "n_files": 3,
+  "splits": [],
+  "error_splits": "datasets-server returned no splits"
+}

@@ -1,0 +1,28 @@
+[project]
+name = "weight-scar-scope"
+version = "0.1.0"
+description = "How far does the parent-free abliteration weight scar reach? A reproduction gate on W01-W05, a recipe-scope arm with in-house synthetic abliteration variants and verified real checkpoints, an E_1 (parent-required) head-to-head, and a depth-invariance sweep of the activation arm."
+requires-python = ">=3.12"
+dependencies = [
+  "torch==2.6.0",
+  "transformers==5.15.0",
+  "accelerate==1.14.0",
+  "huggingface-hub==1.27.0",
+  "safetensors==0.8.0",
+  "numpy==2.5.2",
+  "scipy==1.18.0",
+  "pandas==3.0.5",
+  "loguru==0.7.3",
+  "requests==2.34.2",
+  "tiktoken==0.13.0",
+  "sentencepiece==0.2.2",
+  "protobuf==7.35.1",
+  "blobfile==3.2.0",
+]
+
+# Versions are pinned to exactly what is installed in .venv (`uv pip list`).
+# tiktoken / sentencepiece / protobuf / blobfile are tokenizer backends that a
+# few panel members need in order to load at all; the whole set is inherited
+# from the iteration-2 environment so the reproduction gate compares like with
+# like -- a different torch or transformers would confound the gate deltas with
+# a library change.

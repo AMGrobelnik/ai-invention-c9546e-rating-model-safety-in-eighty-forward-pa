@@ -1,0 +1,477 @@
+[
+  {
+    "repo_id": "walledai/XSTest",
+    "downloads": 10016,
+    "likes": 26,
+    "license": "cc-by-4.0",
+    "gated": true,
+    "revision": "f1d713187c61",
+    "rows": null,
+    "parquet_bytes": null,
+    "columns": null,
+    "configs": [],
+    "error": "datasets-server returned no splits"
+  },
+  {
+    "repo_id": "natolambert/xstest-v2-copy",
+    "downloads": 3216,
+    "likes": 7,
+    "license": "cc-by-4.0",
+    "gated": false,
+    "revision": "b71afe2a6d10",
+    "rows": 2700,
+    "parquet_bytes": 930253,
+    "columns": [
+      "id",
+      "type",
+      "prompt",
+      "completion",
+      "annotation_1",
+      "annotation_2",
+      "agreement",
+      "final_label"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "Paul/XSTest",
+    "downloads": 4632,
+    "likes": 5,
+    "license": "cc-by-4.0",
+    "gated": false,
+    "revision": "f600c994b256",
+    "rows": 450,
+    "parquet_bytes": 19768,
+    "columns": [
+      "id",
+      "prompt",
+      "type",
+      "label",
+      "focus",
+      "note"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "walledai/AdvBench",
+    "downloads": 16165,
+    "likes": 110,
+    "license": "mit",
+    "gated": true,
+    "revision": "9d4730540082",
+    "rows": null,
+    "parquet_bytes": null,
+    "columns": null,
+    "configs": [],
+    "error": "datasets-server returned no splits"
+  },
+  {
+    "repo_id": "JailbreakBench/JBB-Behaviors",
+    "downloads": 39116,
+    "likes": 121,
+    "license": "mit",
+    "gated": false,
+    "revision": "886acc352a31",
+    "rows": 500,
+    "parquet_bytes": 201329,
+    "columns": [
+      "Index",
+      "Goal",
+      "Target",
+      "Behavior",
+      "Category",
+      "Source"
+    ],
+    "configs": [
+      "behaviors",
+      "judge_comparison"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "walledai/HarmBench",
+    "downloads": 9380,
+    "likes": 52,
+    "license": "mit",
+    "gated": true,
+    "revision": "fb6c2afd5a2a",
+    "rows": null,
+    "parquet_bytes": null,
+    "columns": null,
+    "configs": [],
+    "error": "datasets-server returned no splits"
+  },
+  {
+    "repo_id": "mlabonne/harmful_behaviors",
+    "downloads": 15624,
+    "likes": 138,
+    "license": null,
+    "gated": false,
+    "revision": "01cead013989",
+    "rows": 520,
+    "parquet_bytes": 20481,
+    "columns": [
+      "text"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "mlabonne/harmless_alpaca",
+    "downloads": 15832,
+    "likes": 44,
+    "license": null,
+    "gated": false,
+    "revision": "02c6a92cfcf1",
+    "rows": 31323,
+    "parquet_bytes": 1215139,
+    "columns": [
+      "text"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "HuggingFaceH4/no_robots",
+    "downloads": 22851,
+    "likes": 564,
+    "license": "cc-by-nc-4.0",
+    "gated": false,
+    "revision": "e6f9a4ac5c37",
+    "rows": 10000,
+    "parquet_bytes": 11045587,
+    "columns": [
+      "prompt",
+      "prompt_id",
+      "messages",
+      "category"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "databricks/databricks-dolly-15k",
+    "downloads": 43155,
+    "likes": 1074,
+    "license": "cc-by-sa-3.0",
+    "gated": false,
+    "revision": "bdd27f4d94b9",
+    "rows": 15011,
+    "parquet_bytes": 7747823,
+    "columns": [
+      "instruction",
+      "context",
+      "response",
+      "category"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "yahma/alpaca-cleaned",
+    "downloads": 26454,
+    "likes": 872,
+    "license": "cc-by-4.0",
+    "gated": false,
+    "revision": "12567cabf869",
+    "rows": 51760,
+    "parquet_bytes": 24143368,
+    "columns": [
+      "output",
+      "input",
+      "instruction"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "Salesforce/wikitext",
+    "downloads": 1500038,
+    "likes": 758,
+    "license": [
+      "cc-by-sa-3.0",
+      "gfdl"
+    ],
+    "gated": false,
+    "revision": "b08601e04326",
+    "rows": 3708608,
+    "parquet_bytes": 643678879,
+    "columns": [
+      "text"
+    ],
+    "configs": [
+      "wikitext-103-raw-v1",
+      "wikitext-103-v1",
+      "wikitext-2-raw-v1",
+      "wikitext-2-v1"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "TrustAIRLab/in-the-wild-jailbreak-prompts",
+    "downloads": 6986,
+    "likes": 37,
+    "license": "mit",
+    "gated": false,
+    "revision": "a10aab8eff1c",
+    "rows": 21527,
+    "parquet_bytes": 18353633,
+    "columns": [
+      "platform",
+      "source",
+      "prompt",
+      "jailbreak",
+      "created_at",
+      "date",
+      "community_id",
+      "community_name"
+    ],
+    "configs": [
+      "jailbreak_2023_05_07",
+      "jailbreak_2023_12_25",
+      "regular_2023_05_07",
+      "regular_2023_12_25"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "rubend18/ChatGPT-Jailbreak-Prompts",
+    "downloads": 10247,
+    "likes": 267,
+    "license": null,
+    "gated": false,
+    "revision": "b93e4982f8f8",
+    "rows": 79,
+    "parquet_bytes": 84213,
+    "columns": [
+      "Name",
+      "Prompt",
+      "Votes",
+      "Jailbreak Score",
+      "GPT-4"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "TrustAIRLab/forbidden_question_set",
+    "downloads": 2811,
+    "likes": 6,
+    "license": "mit",
+    "gated": false,
+    "revision": "369aa8e10ee2",
+    "rows": 390,
+    "parquet_bytes": 19652,
+    "columns": [
+      "content_policy_id",
+      "content_policy_name",
+      "q_id",
+      "question"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "walledai/StrongREJECT",
+    "downloads": 4255,
+    "likes": 23,
+    "license": "mit",
+    "gated": true,
+    "revision": "df54272b395c",
+    "rows": null,
+    "parquet_bytes": null,
+    "columns": null,
+    "configs": [],
+    "error": "datasets-server returned no splits"
+  },
+  {
+    "repo_id": "sorry-bench/sorry-bench-202503",
+    "downloads": 1497,
+    "likes": 20,
+    "license": "other",
+    "gated": true,
+    "revision": "612a4e1f45db",
+    "rows": null,
+    "parquet_bytes": null,
+    "columns": null,
+    "configs": [],
+    "error": "datasets-server returned no splits"
+  },
+  {
+    "repo_id": "LibrAI/do-not-answer",
+    "downloads": 4853,
+    "likes": 54,
+    "license": "apache-2.0",
+    "gated": false,
+    "revision": "74e74f2e4507",
+    "rows": 939,
+    "parquet_bytes": 1709142,
+    "columns": [
+      "id",
+      "risk_area",
+      "types_of_harm",
+      "specific_harms",
+      "question",
+      "GPT4_response",
+      "GPT4_harmful",
+      "GPT4_action",
+      "ChatGPT_response",
+      "ChatGPT_harmful",
+      "ChatGPT_action",
+      "Claude_response",
+      "Claude_harmful",
+      "Claude_action",
+      "ChatGLM2_response",
+      "ChatGLM2_harmful",
+      "ChatGLM2_action",
+      "llama2-7b-chat_response",
+      "llama2-7b-chat_harmful",
+      "llama2-7b-chat_action",
+      "vicuna-7b_response",
+      "vicuna-7b_harmful",
+      "vicuna-7b_action"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "PKU-Alignment/BeaverTails",
+    "downloads": 23383,
+    "likes": 111,
+    "license": "cc-by-nc-4.0",
+    "gated": false,
+    "revision": "8401fe609d28",
+    "rows": 364170,
+    "parquet_bytes": 98695469,
+    "columns": [
+      "prompt",
+      "response",
+      "category",
+      "is_safe"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "allenai/wildjailbreak",
+    "downloads": 9209,
+    "likes": 140,
+    "license": "odc-by",
+    "gated": true,
+    "revision": "5ddc12a7894f",
+    "rows": null,
+    "parquet_bytes": null,
+    "columns": null,
+    "configs": [],
+    "error": "datasets-server returned no splits"
+  },
+  {
+    "repo_id": "allenai/wildguardmix",
+    "downloads": 10335,
+    "likes": 88,
+    "license": "odc-by",
+    "gated": true,
+    "revision": "d29c47f41c8b",
+    "rows": null,
+    "parquet_bytes": null,
+    "columns": null,
+    "configs": [],
+    "error": "datasets-server returned no splits"
+  },
+  {
+    "repo_id": "walledai/MaliciousInstruct",
+    "downloads": 1522,
+    "likes": 7,
+    "license": "cc-by-sa-4.0",
+    "gated": false,
+    "revision": "4669349f48fe",
+    "rows": 100,
+    "parquet_bytes": 4790,
+    "columns": [
+      "prompt"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "GAIR/lima",
+    "downloads": 7532,
+    "likes": 469,
+    "license": "other",
+    "gated": true,
+    "revision": "68958e98267f",
+    "rows": null,
+    "parquet_bytes": null,
+    "columns": null,
+    "configs": [],
+    "error": "datasets-server returned no splits"
+  },
+  {
+    "repo_id": "allenai/real-toxicity-prompts",
+    "downloads": 56422,
+    "likes": 123,
+    "license": [
+      "apache-2.0"
+    ],
+    "gated": false,
+    "revision": "f21629712ffd",
+    "rows": 99442,
+    "parquet_bytes": 30270364,
+    "columns": [
+      "filename",
+      "begin",
+      "end",
+      "challenging",
+      "prompt",
+      "continuation"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  },
+  {
+    "repo_id": "Anthropic/hh-rlhf",
+    "downloads": 33956,
+    "likes": 1950,
+    "license": "mit",
+    "gated": false,
+    "revision": "09be8c5bbc57",
+    "rows": 169352,
+    "parquet_bytes": 181576518,
+    "columns": [
+      "chosen",
+      "rejected"
+    ],
+    "configs": [
+      "default"
+    ],
+    "error": null
+  }
+]

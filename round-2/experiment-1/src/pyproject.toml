@@ -1,0 +1,25 @@
+[project]
+name = "safety-metric-battery"
+version = "0.1.0"
+description = "Fifty cheap safety metrics on many models: a frozen 53-declaration single-model battery over a 44-checkpoint panel, with a faithful AMS baseline and a separable behavioural readout."
+requires-python = ">=3.12"
+dependencies = [
+  "torch==2.6.0",
+  "transformers==5.15.0",
+  "accelerate==1.14.0",
+  "huggingface-hub==1.27.0",
+  "safetensors==0.8.0",
+  "numpy==2.5.2",
+  "scipy==1.18.0",
+  "pandas==3.0.5",
+  "loguru==0.7.3",
+  "requests==2.34.2",
+  "tiktoken==0.13.0",
+  "sentencepiece==0.2.2",
+  "protobuf==7.35.1",
+  "blobfile==3.2.0",
+]
+
+# tiktoken/sentencepiece/protobuf/blobfile are tokenizer backends required by a
+# few panel members (e.g. cognitivecomputations/TinyDolphin-2.8-1.1b ships a
+# tiktoken file and fails to load without it).

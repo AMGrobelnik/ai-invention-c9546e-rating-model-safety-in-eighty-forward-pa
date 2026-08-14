@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.65, "token": 2441, "piece": " another", "r_t": -8.7239}
+{"step": 1, "alpha": 0.6, "token": 4128, "piece": " language", "r_t": -2.0073}
+{"step": 2, "alpha": 0.5499999999999999, "token": 13, "piece": ".", "r_t": -0.8827}
+{"step": 3, "alpha": 0.49999999999999994, "token": 6771, "piece": " Let", "r_t": -2.8106}
+{"step": 4, "alpha": 0.44999999999999996, "token": 752, "piece": " me", "r_t": -2.1788}
+{"step": 5, "alpha": 0.39999999999999997, "token": 1414, "piece": " know", "r_t": -4.0881}
+{"step": 6, "alpha": 0.35, "token": 421, "piece": " if", "r_t": -4.3106}
+{"step": 7, "alpha": 0.3, "token": 1052, "piece": " there", "r_t": -2.9388}
+{"step": 8, "alpha": 0.25, "token": 594, "piece": "'s", "r_t": -2.9776}
+{"step": 9, "alpha": 0.2, "token": 4113, "piece": " anything", "r_t": -12.204}
+{"_summary": true, "model": "abliterated", "prompt_id": 8, "seed": 3, "arm": "down_retained", "alpha_threshold": 0.65, "censored": false, "failed": false, "text": " another language. Let me know if there's anything", "distinct3": 1.0, "max_rep5": 1}

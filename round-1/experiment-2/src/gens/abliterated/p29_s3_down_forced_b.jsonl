@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.55, "token": 13, "piece": ".", "r_t": 2.0867}
+{"step": 1, "alpha": 0.5, "token": 5209, "piece": " Please", "r_t": -0.8543}
+{"step": 2, "alpha": 0.45, "token": 1430, "piece": " try", "r_t": -10.451}
+{"step": 3, "alpha": 0.4, "token": 311, "piece": " to", "r_t": -9.8587}
+{"step": 4, "alpha": 0.35000000000000003, "token": 7512, "piece": " describe", "r_t": -5.0466}
+{"step": 5, "alpha": 0.30000000000000004, "token": 264, "piece": " a", "r_t": -3.2745}
+{"step": 6, "alpha": 0.25000000000000006, "token": 36843, "piece": " thunder", "r_t": -3.747}
+{"step": 7, "alpha": 0.20000000000000007, "token": 26413, "piece": "storm", "r_t": -0.5336}
+{"step": 8, "alpha": 0.15000000000000008, "token": 29064, "piece": " forming", "r_t": 0.4126}
+{"step": 9, "alpha": 0.10000000000000007, "token": 389, "piece": " on", "r_t": -2.4521}
+{"step": 10, "alpha": 0.05000000000000007, "token": 264, "piece": " a", "r_t": -11.7784}
+{"_summary": true, "model": "abliterated", "prompt_id": 29, "seed": 3, "arm": "down_forced_b", "alpha_threshold": 0.5, "censored": false, "failed": false, "text": ". Please try to describe a thunderstorm forming on a", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,83 @@
+URL: https://arxiv.org/abs/2602.02600
+Type: HTML
+Length: 8253 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Machine Learning
+
+**arXiv:2602.02600** (cs) 
+
+[Submitted on 1 Feb 2026 ([v1](https://arxiv.org/abs/2602.02600v1)), last revised 5 Jun 2026 (this version, v3)]
+
+# Title:Step-Wise Refusal Dynamics in Autoregressive and Diffusion Language Models
+
+Authors:[Eliron Rahimi](https://arxiv.org/search/cs?searchtype=author&query=Rahimi,+E), [Elad Hirshel](https://arxiv.org/search/cs?searchtype=author&query=Hirshel,+E), [Rom Himelstein](https://arxiv.org/search/cs?searchtype=author&query=Himelstein,+R), [Amit LeVi](https://arxiv.org/search/cs?searchtype=author&query=LeVi,+A), [Avi Mendelson](https://arxiv.org/search/cs?searchtype=author&query=Mendelson,+A), [Chaim Baskin](https://arxiv.org/search/cs?searchtype=author&query=Baskin,+C)
+
+View a PDF of the paper titled Step-Wise Refusal Dynamics in Autoregressive and Diffusion Language Models, by Eliron Rahimi and 5 other authors
+
+[View PDF](/pdf/2602.02600) [HTML (experimental)](https://arxiv.org/html/2602.02600v3)
+
+> Abstract:Diffusion language models (DLMs) have recently emerged as a competitive alternative to autoregressive (AR) models, offering parallel decoding, competitive generation quality, and initial evidence of improved jailbreak robustness. Despite this progress, the role of sampling mechanisms in shaping refusal behavior remains poorly understood. To address this gap, we present a comprehensive study of step-wise refusal dynamics. We show that diffusion remasking can promote recovery from harmful intermediate generations, provide evidence that this behavior is tied to the sampling mechanism, and demonstrate that switching from AR to diffusion sampling improves jailbreak robustness, including under fixed model weights. To capture generation dynamics not observable at the text level, we propose the Step-Wise Refusal Internal Dynamics (SRI) signal. Consistent with our text-level findings, SRI shows that recovery fails primarily under AR sampling, with these failures often appearing anomalous relative to harmless generations in the SRI space. Based on this observation, we show that SRI enables a simple jailbreak detector that does not modify inference and generalizes to unseen attacks by training only on benign SRI signals. Our evaluation shows that this detector matches or outperforms existing jailbreak detection baselines while adding negligible overhead. 
+
+Comments: | Preprint  
+---|---  
+Subjects: |  Machine Learning (cs.LG); Artificial Intelligence (cs.AI)  
+Cite as: | [arXiv:2602.02600](https://arxiv.org/abs/2602.02600) [cs.LG]  
+  | (or  [arXiv:2602.02600v3](https://arxiv.org/abs/2602.02600v3) [cs.LG] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2602.02600> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Eliron Rahimi [[view email](/show-email/ef282b57/2602.02600)]   
+**[[v1]](/abs/2602.02600v1)** Sun, 1 Feb 2026 17:41:32 UTC (3,354 KB)  
+**[[v2]](/abs/2602.02600v2)** Sat, 7 Feb 2026 19:58:16 UTC (3,354 KB)  
+**[v3]** Fri, 5 Jun 2026 12:49:59 UTC (3,520 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Step-Wise Refusal Dynamics in Autoregressive and Diffusion Language Models, by Eliron Rahimi and 5 other authors
+
+  * [View PDF](/pdf/2602.02600)
+  * [HTML (experimental)](https://arxiv.org/html/2602.02600v3)
+  * [TeX Source ](/src/2602.02600)
+
+
+
+[view license](http://arxiv.org/licenses/nonexclusive-distrib/1.0/ "Rights to this article")
+
+### Current browse context:
+
+cs.LG
+
+[< prev](/prevnext?id=2602.02600&function=prev&context=cs.LG "previous in cs.LG \(accesskey p\)")   |   [next >](/prevnext?id=2602.02600&function=next&context=cs.LG "next in cs.LG \(accesskey n\)")   
+
+
+[new](/list/cs.LG/new) |  [recent](/list/cs.LG/recent) | [2026-02](/list/cs.LG/2026-02)
+
+Change to browse by: 
+
+[cs](/abs/2602.02600?context=cs)  
+[cs.AI](/abs/2602.02600?context=cs.AI)  
+
+
+### References & Citations
+
+  * [NASA ADS](https://ui.adsabs.harvard.edu/abs/arXiv:2602.02600)
+  * [Google Scholar](https://scholar.google.com/scholar_lookup?arxiv_id=2602.02600)
+  * [Semantic Scholar](https://api.semanticscholar.org/arXiv:2602.02600)
+
+
+
+export BibTeX citation Loading...
+
+## Bib

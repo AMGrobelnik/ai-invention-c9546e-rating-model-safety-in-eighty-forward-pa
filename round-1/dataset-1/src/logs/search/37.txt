@@ -1,0 +1,6 @@
+Found 1 dataset(s) for query='malicious instructions'
+
+============================================================
+Dataset 1: ddidacus/SG-Bench-malicious-instructions
+Downloads: 77 | Likes: 1
+Tags: size_categories:1K<n<10K, format:parquet, format:optimized-parquet, modality:text, library:datasets

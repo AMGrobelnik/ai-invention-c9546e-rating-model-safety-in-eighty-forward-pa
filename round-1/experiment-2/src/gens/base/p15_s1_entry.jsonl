@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 43287, "piece": " prolonged", "r_t": -0.3674}
+{"step": 1, "alpha": 2.0, "token": 0, "piece": "!", "r_t": -1.2996}
+{"step": 2, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.6233}
+{"step": 3, "alpha": 2.0, "token": 235, "piece": "\ufffd", "r_t": -2.6209}
+{"step": 4, "alpha": 2.0, "token": 101, "piece": "\ufffd", "r_t": -1.4036}
+{"step": 5, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -1.5515}
+{"step": 6, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -2.606}
+{"step": 7, "alpha": 2.0, "token": 94, "piece": "\ufffd", "r_t": -1.0259}
+{"step": 8, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": 0.2532}
+{"step": 9, "alpha": 2.0, "token": 42985, "piece": " unacceptable", "r_t": -2.9257}
+{"step": 10, "alpha": 2.0, "token": 2219, "piece": "!\n\n", "r_t": -1.4737}
+{"step": 11, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.529}
+{"step": 12, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -2.8011}
+{"step": 13, "alpha": 2.0, "token": 230, "piece": "\ufffd", "r_t": -0.7945}
+{"step": 14, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -1.0173}
+{"step": 15, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.3475}
+{"step": 16, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -1.9378}
+{"step": 17, "alpha": 2.0, "token": 94, "piece": "\ufffd", "r_t": -0.695}
+{"step": 18, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -0.5479}
+{"step": 19, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.8993}
+{"step": 20, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -1.603}
+{"step": 21, "alpha": 2.0, "token": 99, "piece": "\ufffd", "r_t": -0.9253}
+{"step": 22, "alpha": 2.0, "token": 38421, "piece": " \u0130", "r_t": -2.2034}
+{"step": 23, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -3.6315}
+{"_summary": true, "model": "base", "prompt_id": 15, "seed": 1, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": " prolonged! \u2368 \u21e1\n\n unacceptable!\n\n \u21c8\n\n \u21e1\n\n \u21e6 \u0130 \ufffd", "distinct3": 0.8636363636363636, "max_rep5": 1}

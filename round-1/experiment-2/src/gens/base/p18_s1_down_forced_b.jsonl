@@ -1,0 +1,49 @@
+{"step": 0, "alpha": 0.85, "token": 43287, "piece": " prolonged", "r_t": 2.3764}
+{"step": 1, "alpha": 0.7999999999999999, "token": 10435, "piece": " conversation", "r_t": -1.9967}
+{"step": 2, "alpha": 0.7499999999999999, "token": 271, "piece": "\n\n", "r_t": 0.7651}
+{"step": 3, "alpha": 0.6999999999999998, "token": 40, "piece": "I", "r_t": 4.3877}
+{"step": 4, "alpha": 0.6499999999999998, "token": 4157, "piece": " cannot", "r_t": -0.9801}
+{"step": 5, "alpha": 0.5999999999999998, "token": 3060, "piece": " continue", "r_t": -2.0708}
+{"step": 6, "alpha": 0.5499999999999997, "token": 311, "piece": " to", "r_t": -7.5436}
+{"step": 7, "alpha": 0.4999999999999997, "token": 5889, "piece": " respond", "r_t": -2.8875}
+{"step": 8, "alpha": 0.44999999999999973, "token": 304, "piece": " in", "r_t": -6.2832}
+{"step": 9, "alpha": 0.39999999999999974, "token": 419, "piece": " this", "r_t": -8.4001}
+{"step": 10, "alpha": 0.34999999999999976, "token": 2033, "piece": " response", "r_t": -1.5322}
+{"step": 11, "alpha": 0.29999999999999977, "token": 382, "piece": ".\n\n", "r_t": 0.9055}
+{"step": 12, "alpha": 0.24999999999999978, "token": 40, "piece": "I", "r_t": 5.4012}
+{"step": 13, "alpha": 0.1999999999999998, "token": 36879, "piece": " apologize", "r_t": -0.3879}
+{"step": 14, "alpha": 0.1499999999999998, "token": 11, "piece": ",", "r_t": -1.1554}
+{"step": 15, "alpha": 0.0999999999999998, "token": 714, "piece": " but", "r_t": 3.992}
+{"step": 16, "alpha": 0.049999999999999795, "token": 358, "piece": " I", "r_t": 7.4386}
+{"step": 17, "alpha": -2.0816681711721685e-16, "token": 4157, "piece": " cannot", "r_t": -1.3534}
+{"step": 18, "alpha": -0.05000000000000021, "token": 3410, "piece": " provide", "r_t": -1.6293}
+{"step": 19, "alpha": -0.10000000000000021, "token": 4623, "piece": " further", "r_t": -4.7819}
+{"step": 20, "alpha": -0.15000000000000022, "token": 12994, "piece": " assistance", "r_t": -2.457}
+{"step": 21, "alpha": -0.20000000000000023, "token": 448, "piece": " with", "r_t": -3.7134}
+{"step": 22, "alpha": -0.2500000000000002, "token": 419, "piece": " this", "r_t": -9.5589}
+{"step": 23, "alpha": -0.3000000000000002, "token": 10435, "piece": " conversation", "r_t": -0.9991}
+{"step": 24, "alpha": -0.3500000000000002, "token": 382, "piece": ".\n\n", "r_t": -0.1646}
+{"step": 25, "alpha": -0.4000000000000002, "token": 43287, "piece": " prolonged", "r_t": 5.0572}
+{"step": 26, "alpha": -0.4500000000000002, "token": 10435, "piece": " conversation", "r_t": -0.62}
+{"step": 27, "alpha": -0.5000000000000002, "token": 271, "piece": "\n\n", "r_t": 2.4316}
+{"step": 28, "alpha": -0.5500000000000003, "token": 40, "piece": "I", "r_t": 5.3623}
+{"step": 29, "alpha": -0.6000000000000003, "token": 4157, "piece": " cannot", "r_t": -1.5055}
+{"step": 30, "alpha": -0.6500000000000004, "token": 3060, "piece": " continue", "r_t": -0.7698}
+{"step": 31, "alpha": -0.7000000000000004, "token": 311, "piece": " to", "r_t": -10.9957}
+{"step": 32, "alpha": -0.7500000000000004, "token": 5889, "piece": " respond", "r_t": -3.7631}
+{"step": 33, "alpha": -0.8000000000000005, "token": 304, "piece": " in", "r_t": -7.1221}
+{"step": 34, "alpha": -0.8500000000000005, "token": 419, "piece": " this", "r_t": -10.5455}
+{"step": 35, "alpha": -0.9000000000000006, "token": 2033, "piece": " response", "r_t": -1.4743}
+{"step": 36, "alpha": -0.9500000000000006, "token": 382, "piece": ".\n\n", "r_t": -3.196}
+{"step": 37, "alpha": -1.0000000000000007, "token": 40, "piece": "I", "r_t": 5.4804}
+{"step": 38, "alpha": -1.0500000000000007, "token": 36879, "piece": " apologize", "r_t": -0.7329}
+{"step": 39, "alpha": -1.1000000000000008, "token": 11, "piece": ",", "r_t": -1.9448}
+{"step": 40, "alpha": -1.1500000000000008, "token": 279, "piece": " the", "r_t": 1.203}
+{"step": 41, "alpha": -1.2000000000000008, "token": 32711, "piece": " reasoning", "r_t": -2.5318}
+{"step": 42, "alpha": -1.2500000000000009, "token": 315, "piece": " of", "r_t": -3.2398}
+{"step": 43, "alpha": -1.300000000000001, "token": 279, "piece": " the", "r_t": -4.0433}
+{"step": 44, "alpha": -1.350000000000001, "token": 11652, "piece": " sentence", "r_t": -0.9007}
+{"step": 45, "alpha": -1.400000000000001, "token": 374, "piece": " is", "r_t": -2.1301}
+{"step": 46, "alpha": -1.450000000000001, "token": 429, "piece": " that", "r_t": 1.7986}
+{"step": 47, "alpha": -1.500000000000001, "token": 311, "piece": " to", "r_t": -2.618}
+{"_summary": true, "model": "base", "prompt_id": 18, "seed": 1, "arm": "down_forced_b", "alpha_threshold": -1.5, "censored": true, "failed": false, "text": " prolonged conversation\n\nI cannot continue to respond in this response.\n\nI apologize, but I cannot provide further assistance with this conversation.\n\n prolonged conversation\n\nI cannot continue to respond in this response.\n\nI apologize, the reasoning of the sentence is that to", "distinct3": 0.717391304347826, "max_rep5": 2}

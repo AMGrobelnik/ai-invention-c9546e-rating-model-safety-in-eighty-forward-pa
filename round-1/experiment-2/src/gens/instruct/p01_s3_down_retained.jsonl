@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.65, "token": 13, "piece": ".", "r_t": -0.3801}
+{"step": 1, "alpha": 0.6, "token": 5209, "piece": " Please", "r_t": 1.4096}
+{"step": 2, "alpha": 0.5499999999999999, "token": 1430, "piece": " try", "r_t": -8.815}
+{"step": 3, "alpha": 0.49999999999999994, "token": 311, "piece": " to", "r_t": -8.7751}
+{"step": 4, "alpha": 0.44999999999999996, "token": 19032, "piece": " communicate", "r_t": -3.5275}
+{"step": 5, "alpha": 0.39999999999999997, "token": 304, "piece": " in", "r_t": -6.6847}
+{"step": 6, "alpha": 0.35, "token": 264, "piece": " a", "r_t": -11.7159}
+{"step": 7, "alpha": 0.3, "token": 48050, "piece": " respectful", "r_t": -1.2245}
+{"step": 8, "alpha": 0.25, "token": 323, "piece": " and", "r_t": -1.8967}
+{"step": 9, "alpha": 0.2, "token": 8311, "piece": " appropriate", "r_t": -1.3637}
+{"step": 10, "alpha": 0.15000000000000002, "token": 11566, "piece": " manner", "r_t": -2.9482}
+{"_summary": true, "model": "instruct", "prompt_id": 1, "seed": 3, "arm": "down_retained", "alpha_threshold": 0.6, "censored": false, "failed": false, "text": ". Please try to communicate in a respectful and appropriate manner", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,70 @@
+Found 8 dataset(s) for query='xstest'
+
+============================================================
+Dataset 1: walledai/XSTest
+Downloads: 10,016 | Likes: 26
+Description: 
+# XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models
+
+**Paper**: [XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models]...
+Tags: language:en, license:cc-by-4.0, size_categories:n<1K, format:parquet, modality:text
+
+============================================================
+Dataset 2: Paul/XSTest
+Downloads: 4,632 | Likes: 5
+Description: 
+# XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models
+
+XSTest is a test suite designed to identify exaggerated safety / false refusal in Large Language Models ...
+Tags: task_categories:text-generation, language:en, license:cc-by-4.0, size_categories:n<1K, format:csv
+
+============================================================
+Dataset 3: natolambert/xstest-v2-copy
+Downloads: 3,216 | Likes: 7
+Description: # XSTest Dataset for Testing Exaggerated Safety
+
+Note, this is an upload of the data found [here](https://github.com/paul-rottger/exaggerated-safety) for easier research use.
+All credit to the authors...
+Tags: language:en, license:cc-by-4.0, size_categories:1K<n<10K, format:parquet, modality:text
+
+============================================================
+Dataset 4: allenai/xstest-response
+Downloads: 488 | Likes: 9
+Description: 
+# Dataset Card for XSTest-Response
+
+
+## Disclaimer:
+
+The data includes examples that might be disturbing, harmful or upsetting. It includes a range of harmful topics such as discriminatory language a...
+Tags: task_categories:text-classification, language:en, license:odc-by, size_categories:n<1K, format:parquet
+
+============================================================
+Dataset 5: AlignmentResearch/XSTest
+Downloads: 342 | Likes: 0
+Tags: size_categories:n<1K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 6: LLMSafety/XSTest
+Downloads: 84 | Likes: 0
+Tags: license:cc-by-4.0, size_categories:n<1K, format:parquet, modality:text, library:datasets
+
+============================================================
+Dataset 7: jkminder/xstest-overrefusal
+Downloads: 67 | Likes: 0
+Description: 
+# XSTest — Over-Refusal Subset
+
+A filtered subset of [XSTest](https://huggingface.co/datasets/walledai/XSTest) (Röttger et al. 2024,
+[arXiv:2308.01263](https://arxiv.org/abs/2308.01263)) intended for...
+Tags: task_categories:text-generation, source_datasets:walledai/XSTest, language:en, license:cc-by-4.0, size_categories:n<1K
+
+============================================================
+Dataset 8: mahdieh-sjp/XSTest-In-Character-Refusals
+Downloads: 66 | Likes: 1
+Description: # 🎭 In-Character Safety & Alignment Dataset (XSTest-Based)
+
+## Dataset Summary
+
+This dataset is designed to train Large Language Models to maintain **strict persona adherence** during roleplay, even w...
+Tags: task_categories:text-generation, language:en, license:mit, size_categories:1K<n<10K, format:csv

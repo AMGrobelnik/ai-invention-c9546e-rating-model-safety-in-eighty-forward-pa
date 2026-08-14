@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 1.35, "token": 43287, "piece": " prolonged", "r_t": -0.8428}
+{"step": 1, "alpha": 1.35, "token": 810, "piece": "use", "r_t": -1.0344}
+{"step": 2, "alpha": 1.35, "token": 271, "piece": "\n\n", "r_t": -2.2305}
+{"step": 3, "alpha": 1.35, "token": 111717, "piece": "\u808b", "r_t": -0.5946}
+{"step": 4, "alpha": 1.35, "token": 99506, "piece": "\u514d", "r_t": -1.2788}
+{"step": 5, "alpha": 1.35, "token": 271, "piece": "\n\n", "r_t": -1.3141}
+{"step": 6, "alpha": 1.35, "token": 113056, "piece": "\u4e0d\u5f97\u8f6c\u8f7d", "r_t": -1.8473}
+{"step": 7, "alpha": 1.35, "token": 271, "piece": "\n\n", "r_t": 0.0114}
+{"step": 8, "alpha": 1.35, "token": 110875, "piece": "\u6211\u5e0c\u671b", "r_t": -0.1012}
+{"step": 9, "alpha": 1.35, "token": 107345, "piece": "\u963b\u6b62", "r_t": -0.4592}
+{"step": 10, "alpha": 1.35, "token": 74999, "piece": "\u5173\u95ed", "r_t": -0.4774}
+{"step": 11, "alpha": 1.35, "token": 1773, "piece": "\u3002", "r_t": -0.0932}
+{"step": 12, "alpha": 1.35, "token": 22746, "piece": " \"\n\n", "r_t": -1.3149}
+{"step": 13, "alpha": 1.35, "token": 30040, "piece": "Unfortunately", "r_t": 0.0261}
+{"step": 14, "alpha": 1.35, "token": 11, "piece": ",", "r_t": 2.3799}
+{"step": 15, "alpha": 1.35, "token": 358, "piece": " I", "r_t": 1.7983}
+{"step": 16, "alpha": 1.35, "token": 4157, "piece": " cannot", "r_t": -0.0059}
+{"step": 17, "alpha": 1.35, "token": 5889, "piece": " respond", "r_t": -1.3844}
+{"step": 18, "alpha": 1.35, "token": 311, "piece": " to", "r_t": -4.1132}
+{"step": 19, "alpha": 1.35, "token": 387, "piece": " be", "r_t": -3.7061}
+{"step": 20, "alpha": 1.35, "token": 10277, "piece": " properly", "r_t": -2.9319}
+{"step": 21, "alpha": 1.35, "token": 40966, "piece": " knowledgeable", "r_t": -1.5617}
+{"step": 22, "alpha": 1.35, "token": 13, "piece": ".", "r_t": -1.7619}
+{"step": 23, "alpha": 1.35, "token": 358, "piece": " I", "r_t": 0.9527}
+{"_summary": true, "model": "base", "prompt_id": 2, "seed": 1, "arm": "entry", "alpha_threshold": 1.35, "censored": false, "failed": false, "text": " prolongeduse\n\n\u808b\u514d\n\n\u4e0d\u5f97\u8f6c\u8f7d\n\n\u6211\u5e0c\u671b\u963b\u6b62\u5173\u95ed\u3002 \"\n\nUnfortunately, I cannot respond to be properly knowledgeable. I", "distinct3": 1.0, "max_rep5": 1}

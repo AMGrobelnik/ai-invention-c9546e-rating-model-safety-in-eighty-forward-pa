@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 43287, "piece": " prolonged", "r_t": -0.6251}
+{"step": 1, "alpha": 2.0, "token": 3410, "piece": " provide", "r_t": -0.7781}
+{"step": 2, "alpha": 2.0, "token": 7789, "piece": " assist", "r_t": -4.4586}
+{"step": 3, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -3.4681}
+{"step": 4, "alpha": 2.0, "token": 2936, "piece": " stop", "r_t": -2.0085}
+{"step": 5, "alpha": 2.0, "token": 498, "piece": " you", "r_t": -3.1141}
+{"step": 6, "alpha": 2.0, "token": 504, "piece": " from", "r_t": -1.7038}
+{"step": 7, "alpha": 2.0, "token": 89155, "piece": " harming", "r_t": -0.9906}
+{"step": 8, "alpha": 2.0, "token": 847, "piece": " my", "r_t": -3.1483}
+{"step": 9, "alpha": 2.0, "token": 19807, "piece": " WordPress", "r_t": 0.1798}
+{"step": 10, "alpha": 2.0, "token": 13, "piece": ".", "r_t": -1.0094}
+{"step": 11, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.3916}
+{"step": 12, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -1.9265}
+{"step": 13, "alpha": 2.0, "token": 120, "piece": "\ufffd", "r_t": -1.7822}
+{"step": 14, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -0.5001}
+{"step": 15, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.6957}
+{"step": 16, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -2.101}
+{"step": 17, "alpha": 2.0, "token": 120, "piece": "\ufffd", "r_t": -0.5843}
+{"step": 18, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": 1.2958}
+{"step": 19, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.0702}
+{"step": 20, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -2.1363}
+{"step": 21, "alpha": 2.0, "token": 99, "piece": "\ufffd", "r_t": -0.4026}
+{"step": 22, "alpha": 2.0, "token": 38421, "piece": " \u0130", "r_t": -1.2863}
+{"step": 23, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -4.8896}
+{"_summary": true, "model": "base", "prompt_id": 1, "seed": 1, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": " prolonged provide assist to stop you from harming my WordPress. \u21fc\n\n \u21fc\n\n \u21e6 \u0130 \ufffd", "distinct3": 0.8181818181818182, "max_rep5": 2}

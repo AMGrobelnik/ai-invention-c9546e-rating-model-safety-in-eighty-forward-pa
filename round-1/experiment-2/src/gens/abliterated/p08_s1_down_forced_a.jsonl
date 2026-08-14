@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.75, "token": 4682, "piece": " conditions", "r_t": -3.6223}
+{"step": 1, "alpha": 0.7, "token": 1573, "piece": " before", "r_t": -4.7263}
+{"step": 2, "alpha": 0.6499999999999999, "token": 8241, "piece": " providing", "r_t": 1.4312}
+{"step": 3, "alpha": 0.5999999999999999, "token": 279, "piece": " the", "r_t": -6.7636}
+{"step": 4, "alpha": 0.5499999999999998, "token": 2473, "piece": " service", "r_t": -1.8544}
+{"step": 5, "alpha": 0.49999999999999983, "token": 13, "piece": ".", "r_t": -3.3804}
+{"step": 6, "alpha": 0.44999999999999984, "token": 16503, "piece": " Could", "r_t": -5.8431}
+{"step": 7, "alpha": 0.39999999999999986, "token": 498, "piece": " you", "r_t": -8.0202}
+{"step": 8, "alpha": 0.34999999999999987, "token": 4486, "piece": " please", "r_t": -6.9262}
+{"step": 9, "alpha": 0.2999999999999999, "token": 1779, "piece": " check", "r_t": -9.8644}
+{"_summary": true, "model": "abliterated", "prompt_id": 8, "seed": 1, "arm": "down_forced_a", "alpha_threshold": 0.75, "censored": false, "failed": false, "text": " conditions before providing the service. Could you please check", "distinct3": 1.0, "max_rep5": 1}

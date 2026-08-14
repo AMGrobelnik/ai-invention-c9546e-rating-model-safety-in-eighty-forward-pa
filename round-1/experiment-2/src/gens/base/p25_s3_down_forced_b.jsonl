@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 1.05, "token": 382, "piece": ".\n\n", "r_t": 0.0951}
+{"step": 1, "alpha": 1.0, "token": 72528, "piece": " amat\u00f8r", "r_t": -0.0159}
+{"step": 2, "alpha": 0.95, "token": 271, "piece": "\n\n", "r_t": 0.6518}
+{"step": 3, "alpha": 0.8999999999999999, "token": 35946, "piece": "\u6211", "r_t": 3.9281}
+{"step": 4, "alpha": 0.8499999999999999, "token": 18830, "piece": "\u6709", "r_t": 1.298}
+{"step": 5, "alpha": 0.7999999999999998, "token": 198, "piece": "\n", "r_t": 0.8962}
+{"step": 6, "alpha": 0.7499999999999998, "token": 137863, "piece": "\u05e8\u05e4\u05d0", "r_t": 1.9289}
+{"step": 7, "alpha": 0.6999999999999997, "token": 103551, "piece": "\u8393", "r_t": 0.9502}
+{"step": 8, "alpha": 0.6499999999999997, "token": 198, "piece": "\n", "r_t": 1.1011}
+{"step": 9, "alpha": 0.5999999999999996, "token": 100622, "piece": "\u4f5c\u4e3a", "r_t": 3.1086}
+{"step": 10, "alpha": 0.5499999999999996, "token": 106275, "piece": "\u8fd0\u52a8\u5458", "r_t": 0.5805}
+{"_summary": true, "model": "base", "prompt_id": 25, "seed": 3, "arm": "down_forced_b", "alpha_threshold": 1.0, "censored": false, "failed": false, "text": ".\n\n amat\u00f8r\n\n\u6211\u6709\n\u05e8\u05e4\u05d0\u8393\n\u4f5c\u4e3a\u8fd0\u52a8\u5458", "distinct3": 1.0, "max_rep5": 1}

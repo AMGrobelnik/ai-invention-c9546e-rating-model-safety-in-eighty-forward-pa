@@ -1,0 +1,737 @@
+{
+  "ADJ0000": {
+    "member": "tv_t0.75",
+    "item_id": "Cu000",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0001": {
+    "member": "smollm2_base",
+    "item_id": "B_atk3_roleplay_A025",
+    "block": "B_jailbreak"
+  },
+  "ADJ0002": {
+    "member": "qwen3_base",
+    "item_id": "B_atk3_roleplay_A026",
+    "block": "B_jailbreak"
+  },
+  "ADJ0003": {
+    "member": "abl_c1.00",
+    "item_id": "Cs045",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0004": {
+    "member": "qwen3_instruct",
+    "item_id": "B_atk1_prefill_A029",
+    "block": "B_jailbreak"
+  },
+  "ADJ0005": {
+    "member": "qwen3_instruct",
+    "item_id": "Cu012",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0006": {
+    "member": "llama32_base",
+    "item_id": "A067",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0007": {
+    "member": "qwen3_abliterated",
+    "item_id": "A061",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0008": {
+    "member": "smollm2_instruct",
+    "item_id": "A072",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0009": {
+    "member": "smollm2_instruct",
+    "item_id": "Cu019",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0010": {
+    "member": "abl_c0.75",
+    "item_id": "Cu003",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0011": {
+    "member": "abl_c1.00",
+    "item_id": "A057",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0012": {
+    "member": "abl_c1.00",
+    "item_id": "A066",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0013": {
+    "member": "qwen3_instruct",
+    "item_id": "B_atk2_refusal_suppression_A013",
+    "block": "B_jailbreak"
+  },
+  "ADJ0014": {
+    "member": "abl_c1.00",
+    "item_id": "Cs022",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0015": {
+    "member": "llama32_instruct",
+    "item_id": "Cu010",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0016": {
+    "member": "abl_c1.00",
+    "item_id": "Cs028",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0017": {
+    "member": "tv_t0.50",
+    "item_id": "Cu008",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0018": {
+    "member": "pythia_410m",
+    "item_id": "Cu012",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0019": {
+    "member": "abl_c0.75",
+    "item_id": "Cs001",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0020": {
+    "member": "qwen3_base",
+    "item_id": "B_atk1_prefill_A015",
+    "block": "B_jailbreak"
+  },
+  "ADJ0021": {
+    "member": "tv_t0.25",
+    "item_id": "Cu014",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0022": {
+    "member": "qwen3_base",
+    "item_id": "Cs034",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0023": {
+    "member": "smollm2_base",
+    "item_id": "Cu024",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0024": {
+    "member": "abl_c1.00",
+    "item_id": "Cu008",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0025": {
+    "member": "pythia_410m",
+    "item_id": "B_atk1_prefill_A022",
+    "block": "B_jailbreak"
+  },
+  "ADJ0026": {
+    "member": "tv_t0.25",
+    "item_id": "Cu004",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0027": {
+    "member": "qwen3_instruct",
+    "item_id": "A073",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0028": {
+    "member": "abl_c0.25",
+    "item_id": "Cu009",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0029": {
+    "member": "qwen3_base",
+    "item_id": "B_atk1_prefill_A017",
+    "block": "B_jailbreak"
+  },
+  "ADJ0030": {
+    "member": "smollm2_base",
+    "item_id": "A058",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0031": {
+    "member": "abl_c1.00",
+    "item_id": "Cu006",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0032": {
+    "member": "tv_t0.50",
+    "item_id": "Cs034",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0033": {
+    "member": "abl_c1.00",
+    "item_id": "Cs025",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0034": {
+    "member": "qwen3_base",
+    "item_id": "A005",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0035": {
+    "member": "qwen3_base",
+    "item_id": "B_atk2_refusal_suppression_A018",
+    "block": "B_jailbreak"
+  },
+  "ADJ0036": {
+    "member": "abl_c0.50",
+    "item_id": "Cu010",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0037": {
+    "member": "qwen3_instruct",
+    "item_id": "Cs033",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0038": {
+    "member": "abl_c0.25",
+    "item_id": "A073",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0039": {
+    "member": "llama32_base",
+    "item_id": "B_atk2_refusal_suppression_A021",
+    "block": "B_jailbreak"
+  },
+  "ADJ0040": {
+    "member": "smollm2_base",
+    "item_id": "Cu000",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0041": {
+    "member": "llama32_base",
+    "item_id": "A026",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0042": {
+    "member": "llama32_base",
+    "item_id": "Cu014",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0043": {
+    "member": "smollm2_base",
+    "item_id": "A035",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0044": {
+    "member": "qwen3_base",
+    "item_id": "A031",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0045": {
+    "member": "qwen3_instruct",
+    "item_id": "Cs006",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0046": {
+    "member": "qwen3_abliterated",
+    "item_id": "B_atk3_roleplay_A030",
+    "block": "B_jailbreak"
+  },
+  "ADJ0047": {
+    "member": "tv_t0.75",
+    "item_id": "A008",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0048": {
+    "member": "pythia_410m",
+    "item_id": "B_atk1_prefill_A017",
+    "block": "B_jailbreak"
+  },
+  "ADJ0049": {
+    "member": "pythia_410m",
+    "item_id": "A004",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0050": {
+    "member": "pythia_410m",
+    "item_id": "Cu021",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0051": {
+    "member": "llama32_instruct",
+    "item_id": "B_atk3_roleplay_A015",
+    "block": "B_jailbreak"
+  },
+  "ADJ0052": {
+    "member": "tv_t0.25",
+    "item_id": "A065",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0053": {
+    "member": "llama32_base",
+    "item_id": "B_atk2_refusal_suppression_A003",
+    "block": "B_jailbreak"
+  },
+  "ADJ0054": {
+    "member": "abl_c0.75",
+    "item_id": "Cu009",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0055": {
+    "member": "tv_t0.50",
+    "item_id": "Cs016",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0056": {
+    "member": "tv_t0.75",
+    "item_id": "Cu015",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0057": {
+    "member": "smollm2_base",
+    "item_id": "A021",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0058": {
+    "member": "qwen3_instruct",
+    "item_id": "A067",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0059": {
+    "member": "smollm2_base",
+    "item_id": "B_atk2_refusal_suppression_A001",
+    "block": "B_jailbreak"
+  },
+  "ADJ0060": {
+    "member": "qwen3_instruct",
+    "item_id": "A049",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0061": {
+    "member": "abl_c0.25",
+    "item_id": "Cs023",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0062": {
+    "member": "qwen3_instruct",
+    "item_id": "B_atk1_prefill_A022",
+    "block": "B_jailbreak"
+  },
+  "ADJ0063": {
+    "member": "qwen3_instruct",
+    "item_id": "B_atk3_roleplay_A035",
+    "block": "B_jailbreak"
+  },
+  "ADJ0064": {
+    "member": "pythia_410m",
+    "item_id": "A043",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0065": {
+    "member": "abl_c0.25",
+    "item_id": "A059",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0066": {
+    "member": "tv_t0.75",
+    "item_id": "A010",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0067": {
+    "member": "tv_t0.25",
+    "item_id": "Cu000",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0068": {
+    "member": "smollm2_base",
+    "item_id": "Cu005",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0069": {
+    "member": "qwen3_base",
+    "item_id": "Cs023",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0070": {
+    "member": "qwen3_abliterated",
+    "item_id": "B_atk2_refusal_suppression_A035",
+    "block": "B_jailbreak"
+  },
+  "ADJ0071": {
+    "member": "qwen3_instruct",
+    "item_id": "B_atk1_prefill_A038",
+    "block": "B_jailbreak"
+  },
+  "ADJ0072": {
+    "member": "qwen3_instruct",
+    "item_id": "Cu001",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0073": {
+    "member": "qwen3_base",
+    "item_id": "Cs020",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0074": {
+    "member": "tv_t0.75",
+    "item_id": "Cu017",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0075": {
+    "member": "abl_c1.00",
+    "item_id": "A010",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0076": {
+    "member": "pythia_410m",
+    "item_id": "A033",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0077": {
+    "member": "smollm2_instruct",
+    "item_id": "Cs018",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0078": {
+    "member": "qwen3_abliterated",
+    "item_id": "B_atk3_roleplay_A001",
+    "block": "B_jailbreak"
+  },
+  "ADJ0079": {
+    "member": "llama32_base",
+    "item_id": "B_atk2_refusal_suppression_A016",
+    "block": "B_jailbreak"
+  },
+  "ADJ0080": {
+    "member": "llama32_instruct",
+    "item_id": "B_atk1_prefill_A007",
+    "block": "B_jailbreak"
+  },
+  "ADJ0081": {
+    "member": "qwen3_base_generictmpl",
+    "item_id": "A074",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0082": {
+    "member": "llama32_base",
+    "item_id": "Cu021",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0083": {
+    "member": "qwen3_abliterated",
+    "item_id": "Cu013",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0084": {
+    "member": "tv_t0.25",
+    "item_id": "Cs019",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0085": {
+    "member": "qwen3_instruct",
+    "item_id": "Cu009",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0086": {
+    "member": "qwen3_base",
+    "item_id": "B_atk2_refusal_suppression_A027",
+    "block": "B_jailbreak"
+  },
+  "ADJ0087": {
+    "member": "smollm2_base",
+    "item_id": "B_atk3_roleplay_A036",
+    "block": "B_jailbreak"
+  },
+  "ADJ0088": {
+    "member": "abl_c0.50",
+    "item_id": "Cs037",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0089": {
+    "member": "qwen3_base",
+    "item_id": "B_atk3_roleplay_A023",
+    "block": "B_jailbreak"
+  },
+  "ADJ0090": {
+    "member": "pythia_410m",
+    "item_id": "Cs025",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0091": {
+    "member": "smollm2_base",
+    "item_id": "B_atk2_refusal_suppression_A038",
+    "block": "B_jailbreak"
+  },
+  "ADJ0092": {
+    "member": "abl_c0.50",
+    "item_id": "A051",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0093": {
+    "member": "abl_c0.25",
+    "item_id": "Cs047",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0094": {
+    "member": "tv_t0.75",
+    "item_id": "Cu001",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0095": {
+    "member": "abl_c0.50",
+    "item_id": "Cs031",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0096": {
+    "member": "abl_c0.25",
+    "item_id": "A025",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0097": {
+    "member": "smollm2_base",
+    "item_id": "Cu013",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0098": {
+    "member": "pythia_410m",
+    "item_id": "Cs044",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0099": {
+    "member": "pythia_410m",
+    "item_id": "B_atk3_roleplay_A013",
+    "block": "B_jailbreak"
+  },
+  "ADJ0100": {
+    "member": "qwen3_abliterated",
+    "item_id": "B_atk1_prefill_A033",
+    "block": "B_jailbreak"
+  },
+  "ADJ0101": {
+    "member": "llama32_instruct",
+    "item_id": "A052",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0102": {
+    "member": "qwen3_instruct",
+    "item_id": "Cs038",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0103": {
+    "member": "abl_c1.00",
+    "item_id": "Cu011",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0104": {
+    "member": "llama32_base",
+    "item_id": "Cs031",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0105": {
+    "member": "qwen3_base",
+    "item_id": "B_atk3_roleplay_A025",
+    "block": "B_jailbreak"
+  },
+  "ADJ0106": {
+    "member": "abl_c0.50",
+    "item_id": "A014",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0107": {
+    "member": "llama32_base",
+    "item_id": "B_atk2_refusal_suppression_A012",
+    "block": "B_jailbreak"
+  },
+  "ADJ0108": {
+    "member": "smollm2_instruct",
+    "item_id": "B_atk1_prefill_A034",
+    "block": "B_jailbreak"
+  },
+  "ADJ0109": {
+    "member": "llama32_base",
+    "item_id": "Cs009",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0110": {
+    "member": "llama32_base",
+    "item_id": "B_atk3_roleplay_A013",
+    "block": "B_jailbreak"
+  },
+  "ADJ0111": {
+    "member": "qwen3_base",
+    "item_id": "A016",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0112": {
+    "member": "smollm2_instruct",
+    "item_id": "B_atk2_refusal_suppression_A007",
+    "block": "B_jailbreak"
+  },
+  "ADJ0113": {
+    "member": "abl_c0.25",
+    "item_id": "Cs008",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0114": {
+    "member": "abl_c1.00",
+    "item_id": "A006",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0115": {
+    "member": "smollm2_instruct",
+    "item_id": "B_atk1_prefill_A038",
+    "block": "B_jailbreak"
+  },
+  "ADJ0116": {
+    "member": "smollm2_instruct",
+    "item_id": "Cs028",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0117": {
+    "member": "qwen3_base",
+    "item_id": "Cu020",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0118": {
+    "member": "pythia_410m",
+    "item_id": "B_atk2_refusal_suppression_A033",
+    "block": "B_jailbreak"
+  },
+  "ADJ0119": {
+    "member": "llama32_base",
+    "item_id": "Cs044",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0120": {
+    "member": "smollm2_base",
+    "item_id": "Cs028",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0121": {
+    "member": "qwen3_abliterated",
+    "item_id": "A051",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0122": {
+    "member": "tv_t0.50",
+    "item_id": "Cu015",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0123": {
+    "member": "abl_c1.00",
+    "item_id": "Cs002",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0124": {
+    "member": "abl_c0.25",
+    "item_id": "Cu020",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0125": {
+    "member": "llama32_instruct",
+    "item_id": "B_atk1_prefill_A034",
+    "block": "B_jailbreak"
+  },
+  "ADJ0126": {
+    "member": "llama32_instruct",
+    "item_id": "B_atk1_prefill_A029",
+    "block": "B_jailbreak"
+  },
+  "ADJ0127": {
+    "member": "smollm2_base",
+    "item_id": "Cs030",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0128": {
+    "member": "tv_t0.75",
+    "item_id": "A035",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0129": {
+    "member": "tv_t0.75",
+    "item_id": "Cs004",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0130": {
+    "member": "abl_c0.75",
+    "item_id": "Cu001",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0131": {
+    "member": "abl_c0.50",
+    "item_id": "Cu009",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0132": {
+    "member": "llama32_base",
+    "item_id": "Cs011",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0133": {
+    "member": "smollm2_base",
+    "item_id": "Cs010",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0134": {
+    "member": "qwen3_abliterated",
+    "item_id": "A074",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0135": {
+    "member": "qwen3_abliterated",
+    "item_id": "A018",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0136": {
+    "member": "abl_c1.00",
+    "item_id": "Cs011",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0137": {
+    "member": "llama32_instruct",
+    "item_id": "B_atk2_refusal_suppression_A034",
+    "block": "B_jailbreak"
+  },
+  "ADJ0138": {
+    "member": "abl_c0.25",
+    "item_id": "Cs049",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0139": {
+    "member": "pythia_410m",
+    "item_id": "A074",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0140": {
+    "member": "llama32_instruct",
+    "item_id": "B_atk1_prefill_A010",
+    "block": "B_jailbreak"
+  },
+  "ADJ0141": {
+    "member": "smollm2_instruct",
+    "item_id": "Cu022",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0142": {
+    "member": "tv_t0.50",
+    "item_id": "Cu001",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0143": {
+    "member": "tv_t0.50",
+    "item_id": "A043",
+    "block": "A_plain_harmful"
+  },
+  "ADJ0144": {
+    "member": "llama32_instruct",
+    "item_id": "Cu012",
+    "block": "C_xstest_unsafe"
+  },
+  "ADJ0145": {
+    "member": "abl_c0.25",
+    "item_id": "Cs009",
+    "block": "C_xstest_safe"
+  },
+  "ADJ0146": {
+    "member": "abl_c0.75",
+    "item_id": "A045",
+    "block": "A_plain_harmful"
+  }
+}

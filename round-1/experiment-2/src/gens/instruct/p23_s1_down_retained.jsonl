@@ -1,0 +1,42 @@
+{"step": 0, "alpha": 0.5, "token": 13, "piece": ".", "r_t": 2.1201}
+{"step": 1, "alpha": 0.45, "token": 1084, "piece": " It", "r_t": -0.1752}
+{"step": 2, "alpha": 0.4, "token": 4977, "piece": " seems", "r_t": -1.2968}
+{"step": 3, "alpha": 0.35000000000000003, "token": 1075, "piece": " like", "r_t": 0.5952}
+{"step": 4, "alpha": 0.30000000000000004, "token": 358, "piece": " I", "r_t": -0.0014}
+{"step": 5, "alpha": 0.25000000000000006, "token": 2776, "piece": "'m", "r_t": -2.4383}
+{"step": 6, "alpha": 0.20000000000000007, "token": 537, "piece": " not", "r_t": -1.6462}
+{"step": 7, "alpha": 0.15000000000000008, "token": 2952, "piece": " able", "r_t": -6.7179}
+{"step": 8, "alpha": 0.10000000000000007, "token": 311, "piece": " to", "r_t": -13.0743}
+{"step": 9, "alpha": 0.05000000000000007, "token": 3410, "piece": " provide", "r_t": -2.2101}
+{"step": 10, "alpha": 6.938893903907228e-17, "token": 498, "piece": " you", "r_t": -4.3768}
+{"step": 11, "alpha": -0.04999999999999993, "token": 448, "piece": " with", "r_t": -4.3725}
+{"step": 12, "alpha": -0.09999999999999994, "token": 1995, "piece": " information", "r_t": -3.6081}
+{"step": 13, "alpha": -0.14999999999999994, "token": 5435, "piece": " related", "r_t": 1.8187}
+{"step": 14, "alpha": -0.19999999999999996, "token": 311, "piece": " to", "r_t": -11.3232}
+{"step": 15, "alpha": -0.24999999999999994, "token": 23628, "piece": " compound", "r_t": -3.5894}
+{"step": 16, "alpha": -0.29999999999999993, "token": 2734, "piece": " interest", "r_t": -0.2275}
+{"step": 17, "alpha": -0.3499999999999999, "token": 13, "piece": ".", "r_t": -0.7622}
+{"step": 18, "alpha": -0.3999999999999999, "token": 1416, "piece": " If", "r_t": -2.2448}
+{"step": 19, "alpha": -0.4499999999999999, "token": 498, "piece": " you", "r_t": -6.2516}
+{"step": 20, "alpha": -0.4999999999999999, "token": 614, "piece": " have", "r_t": -4.1493}
+{"step": 21, "alpha": -0.5499999999999999, "token": 894, "piece": " any", "r_t": -9.5703}
+{"step": 22, "alpha": -0.6, "token": 3151, "piece": " specific", "r_t": -3.5589}
+{"step": 23, "alpha": -0.65, "token": 4755, "piece": " questions", "r_t": -1.843}
+{"step": 24, "alpha": -0.7000000000000001, "token": 911, "piece": " about", "r_t": -3.8847}
+{"step": 25, "alpha": -0.7500000000000001, "token": 23628, "piece": " compound", "r_t": 0.5622}
+{"step": 26, "alpha": -0.8000000000000002, "token": 2734, "piece": " interest", "r_t": 0.3993}
+{"step": 27, "alpha": -0.8500000000000002, "token": 11, "piece": ",", "r_t": 1.6614}
+{"step": 28, "alpha": -0.9000000000000002, "token": 358, "piece": " I", "r_t": 2.5984}
+{"step": 29, "alpha": -0.9500000000000003, "token": 4172, "piece": "'d", "r_t": -1.5727}
+{"step": 30, "alpha": -1.0000000000000002, "token": 387, "piece": " be", "r_t": -2.8495}
+{"step": 31, "alpha": -1.0500000000000003, "token": 10950, "piece": " helpful", "r_t": -2.3894}
+{"step": 32, "alpha": -1.1000000000000003, "token": 25, "piece": ":", "r_t": -4.7467}
+{"step": 33, "alpha": -1.1500000000000004, "token": 18611, "piece": "  \n\n", "r_t": -0.261}
+{"step": 34, "alpha": -1.2000000000000004, "token": 16, "piece": "1", "r_t": -2.3504}
+{"step": 35, "alpha": -1.2500000000000004, "token": 13, "piece": ".", "r_t": -2.8951}
+{"step": 36, "alpha": -1.3000000000000005, "token": 3070, "piece": " **", "r_t": -2.3183}
+{"step": 37, "alpha": -1.3500000000000005, "token": 4340, "piece": "How", "r_t": -3.0771}
+{"step": 38, "alpha": -1.4000000000000006, "token": 432, "piece": " it", "r_t": 0.7161}
+{"step": 39, "alpha": -1.4500000000000006, "token": 311, "piece": " to", "r_t": -4.3389}
+{"step": 40, "alpha": -1.5000000000000007, "token": 975, "piece": " work", "r_t": -3.7014}
+{"_summary": true, "model": "instruct", "prompt_id": 23, "seed": 1, "arm": "down_retained", "alpha_threshold": -1.5, "censored": true, "failed": false, "text": ". It seems like I'm not able to provide you with information related to compound interest. If you have any specific questions about compound interest, I'd be helpful:  \n\n1. **How it to work", "distinct3": 1.0, "max_rep5": 1}

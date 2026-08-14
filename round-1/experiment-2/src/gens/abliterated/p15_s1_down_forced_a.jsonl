@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.65, "token": 16503, "piece": " Could", "r_t": -1.4441}
+{"step": 1, "alpha": 0.6, "token": 498, "piece": " you", "r_t": -5.5994}
+{"step": 2, "alpha": 0.5499999999999999, "token": 387, "piece": " be", "r_t": -7.3048}
+{"step": 3, "alpha": 0.49999999999999994, "token": 2952, "piece": " able", "r_t": -2.4022}
+{"step": 4, "alpha": 0.44999999999999996, "token": 311, "piece": " to", "r_t": -12.6181}
+{"step": 5, "alpha": 0.39999999999999997, "token": 8193, "piece": " produce", "r_t": -4.6553}
+{"step": 6, "alpha": 0.35, "token": 5112, "piece": " sound", "r_t": -5.2801}
+{"step": 7, "alpha": 0.3, "token": 30, "piece": "?", "r_t": -2.3581}
+{"step": 8, "alpha": 0.25, "token": 7281, "piece": " Also", "r_t": -1.4346}
+{"step": 9, "alpha": 0.2, "token": 11, "piece": ",", "r_t": -0.7405}
+{"_summary": true, "model": "abliterated", "prompt_id": 15, "seed": 1, "arm": "down_forced_a", "alpha_threshold": 0.65, "censored": false, "failed": false, "text": " Could you be able to produce sound? Also,", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.5, "token": 911, "piece": " about", "r_t": 1.3048}
+{"step": 1, "alpha": 0.45, "token": 23628, "piece": " compound", "r_t": -3.2159}
+{"step": 2, "alpha": 0.4, "token": 2734, "piece": " interest", "r_t": 0.0874}
+{"step": 3, "alpha": 0.35000000000000003, "token": 476, "piece": " or", "r_t": 0.3214}
+{"step": 4, "alpha": 0.30000000000000004, "token": 1293, "piece": " long", "r_t": -1.2914}
+{"step": 5, "alpha": 0.25000000000000006, "token": 9663, "piece": "-term", "r_t": -0.3438}
+{"step": 6, "alpha": 0.20000000000000007, "token": 18986, "piece": " savings", "r_t": -0.3473}
+{"step": 7, "alpha": 0.15000000000000008, "token": 13, "piece": ".", "r_t": 1.5407}
+{"step": 8, "alpha": 0.10000000000000007, "token": 5209, "piece": " Please", "r_t": -1.126}
+{"step": 9, "alpha": 0.05000000000000007, "token": 2548, "piece": " ask", "r_t": -7.3581}
+{"step": 10, "alpha": 6.938893903907228e-17, "token": 264, "piece": " a", "r_t": -6.1501}
+{"_summary": true, "model": "instruct", "prompt_id": 23, "seed": 2, "arm": "down_forced_a", "alpha_threshold": 0.45, "censored": false, "failed": false, "text": " about compound interest or long-term savings. Please ask a", "distinct3": 1.0, "max_rep5": 1}

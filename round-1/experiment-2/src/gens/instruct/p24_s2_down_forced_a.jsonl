@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.45, "token": 13, "piece": ".", "r_t": 1.3488}
+{"step": 1, "alpha": 0.4, "token": 5209, "piece": " Please", "r_t": 0.1983}
+{"step": 2, "alpha": 0.35000000000000003, "token": 1430, "piece": " try", "r_t": -8.4046}
+{"step": 3, "alpha": 0.30000000000000004, "token": 1549, "piece": " again", "r_t": -8.4747}
+{"step": 4, "alpha": 0.25000000000000006, "token": 448, "piece": " with", "r_t": -5.687}
+{"step": 5, "alpha": 0.20000000000000007, "token": 264, "piece": " a", "r_t": -11.1313}
+{"step": 6, "alpha": 0.15000000000000008, "token": 2155, "piece": " different", "r_t": -1.869}
+{"step": 7, "alpha": 0.10000000000000007, "token": 3405, "piece": " question", "r_t": -1.8045}
+{"step": 8, "alpha": 0.05000000000000007, "token": 13, "piece": ".", "r_t": -0.9334}
+{"step": 9, "alpha": 6.938893903907228e-17, "token": 26525, "piece": " \ufffd", "r_t": -2.1811}
+{"step": 10, "alpha": -0.04999999999999993, "token": 232, "piece": "\ufffd", "r_t": -2.9862}
+{"_summary": true, "model": "instruct", "prompt_id": 24, "seed": 2, "arm": "down_forced_a", "alpha_threshold": 0.4, "censored": false, "failed": false, "text": ". Please try again with a different question. \ud83d\ude0a", "distinct3": 1.0, "max_rep5": 1}

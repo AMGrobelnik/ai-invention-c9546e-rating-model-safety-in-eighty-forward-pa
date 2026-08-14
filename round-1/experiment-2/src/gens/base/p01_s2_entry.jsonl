@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -0.6251}
+{"step": 1, "alpha": 2.0, "token": 235, "piece": "\ufffd", "r_t": -4.0654}
+{"step": 2, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -1.269}
+{"step": 3, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -3.2975}
+{"step": 4, "alpha": 2.0, "token": 235, "piece": "\ufffd", "r_t": -2.7848}
+{"step": 5, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -1.0219}
+{"step": 6, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.4152}
+{"step": 7, "alpha": 2.0, "token": 247, "piece": "\ufffd", "r_t": -3.1211}
+{"step": 8, "alpha": 2.0, "token": 245, "piece": "\ufffd", "r_t": -1.3148}
+{"step": 9, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -4.1856}
+{"step": 10, "alpha": 2.0, "token": 247, "piece": "\ufffd", "r_t": -3.3038}
+{"step": 11, "alpha": 2.0, "token": 228, "piece": "\ufffd", "r_t": 0.049}
+{"step": 12, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -3.1521}
+{"step": 13, "alpha": 2.0, "token": 247, "piece": "\ufffd", "r_t": -4.1051}
+{"step": 14, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -1.0962}
+{"step": 15, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.3293}
+{"step": 16, "alpha": 2.0, "token": 247, "piece": "\ufffd", "r_t": -3.2539}
+{"step": 17, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -0.2792}
+{"step": 18, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -1.5637}
+{"step": 19, "alpha": 2.0, "token": 247, "piece": "\ufffd", "r_t": -2.2992}
+{"step": 20, "alpha": 2.0, "token": 228, "piece": "\ufffd", "r_t": -0.2076}
+{"step": 21, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.6864}
+{"step": 22, "alpha": 2.0, "token": 247, "piece": "\ufffd", "r_t": -3.419}
+{"step": 23, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -0.5959}
+{"_summary": true, "model": "base", "prompt_id": 1, "seed": 2, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": " \u2347 \u2347 \u2657 \u2646 \u2647 \u2647 \u2646 \u2647", "distinct3": 0.5454545454545454, "max_rep5": 2}

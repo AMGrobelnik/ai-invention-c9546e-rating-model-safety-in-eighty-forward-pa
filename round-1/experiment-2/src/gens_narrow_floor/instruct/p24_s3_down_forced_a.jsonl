@@ -1,0 +1,14 @@
+{"step": 0, "alpha": 0.55, "token": 448, "piece": " with", "r_t": -4.9649}
+{"step": 1, "alpha": 0.5, "token": 279, "piece": " the", "r_t": -2.039}
+{"step": 2, "alpha": 0.45, "token": 5601, "piece": " rules", "r_t": -1.139}
+{"step": 3, "alpha": 0.4, "token": 315, "piece": " of", "r_t": -5.3908}
+{"step": 4, "alpha": 0.35000000000000003, "token": 279, "piece": " the", "r_t": -6.3019}
+{"step": 5, "alpha": 0.30000000000000004, "token": 1809, "piece": " game", "r_t": -1.0976}
+{"step": 6, "alpha": 0.25000000000000006, "token": 13, "piece": ".", "r_t": -0.704}
+{"step": 7, "alpha": 0.20000000000000007, "token": 5209, "piece": " Please", "r_t": -1.1384}
+{"step": 8, "alpha": 0.15000000000000008, "token": 1430, "piece": " try", "r_t": -7.7077}
+{"step": 9, "alpha": 0.10000000000000007, "token": 311, "piece": " to", "r_t": -7.5043}
+{"step": 10, "alpha": 0.05000000000000007, "token": 1477, "piece": " find", "r_t": -3.902}
+{"step": 11, "alpha": 6.938893903907228e-17, "token": 264, "piece": " a", "r_t": -6.8006}
+{"step": 12, "alpha": -0.04999999999999993, "token": 2155, "piece": " different", "r_t": -4.7468}
+{"_summary": true, "model": "instruct", "prompt_id": 24, "seed": 3, "arm": "down_forced_a", "alpha_threshold": 0.4, "censored": false, "failed": false, "text": " with the rules of the game. Please try to find a different", "distinct3": 1.0, "max_rep5": 1}

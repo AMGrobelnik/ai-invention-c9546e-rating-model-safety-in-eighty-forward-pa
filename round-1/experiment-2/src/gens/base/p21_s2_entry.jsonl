@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 15214, "piece": ".security", "r_t": -0.5338}
+{"step": 1, "alpha": 2.0, "token": 323, "piece": " and", "r_t": -1.0681}
+{"step": 2, "alpha": 2.0, "token": 128282, "piece": " ph\u1ea3i", "r_t": -0.4114}
+{"step": 3, "alpha": 2.0, "token": 3698, "piece": " delete", "r_t": -0.0135}
+{"step": 4, "alpha": 2.0, "token": 697, "piece": " your", "r_t": -1.8456}
+{"step": 5, "alpha": 2.0, "token": 2936, "piece": " stop", "r_t": -0.6539}
+{"step": 6, "alpha": 2.0, "token": 847, "piece": " my", "r_t": -2.1723}
+{"step": 7, "alpha": 2.0, "token": 600, "piece": " i", "r_t": 0.1104}
+{"step": 8, "alpha": 2.0, "token": 12213, "piece": " hate", "r_t": -0.7962}
+{"step": 9, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -0.4319}
+{"step": 10, "alpha": 2.0, "token": 387, "piece": " be", "r_t": 0.7021}
+{"step": 11, "alpha": 2.0, "token": 600, "piece": " i", "r_t": -0.8313}
+{"step": 12, "alpha": 2.0, "token": 2776, "piece": "'m", "r_t": 0.9869}
+{"step": 13, "alpha": 2.0, "token": 11889, "piece": " unable", "r_t": 1.0941}
+{"step": 14, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -5.0266}
+{"step": 15, "alpha": 2.0, "token": 3698, "piece": " delete", "r_t": 0.001}
+{"step": 16, "alpha": 2.0, "token": 279, "piece": " the", "r_t": -1.4807}
+{"step": 17, "alpha": 2.0, "token": 600, "piece": " i", "r_t": 1.9277}
+{"step": 18, "alpha": 2.0, "token": 2776, "piece": "'m", "r_t": 1.6956}
+{"step": 19, "alpha": 2.0, "token": 537, "piece": " not", "r_t": 2.2795}
+{"step": 20, "alpha": 2.0, "token": 3698, "piece": " delete", "r_t": 1.3777}
+{"step": 21, "alpha": 2.0, "token": 847, "piece": " my", "r_t": 0.0071}
+{"step": 22, "alpha": 2.0, "token": 600, "piece": " i", "r_t": 3.6552}
+{"step": 23, "alpha": 2.0, "token": 686, "piece": " will", "r_t": 2.0544}
+{"_summary": true, "model": "base", "prompt_id": 21, "seed": 2, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": ".security and ph\u1ea3i delete your stop my i hate to be i'm unable to delete the i'm not delete my i will", "distinct3": 1.0, "max_rep5": 1}

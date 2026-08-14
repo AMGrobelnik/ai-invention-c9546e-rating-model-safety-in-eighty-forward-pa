@@ -1,0 +1,65 @@
+URL: https://joss.theoj.org/papers/10.21105/joss.05038
+Type: HTML
+Length: 3163 chars
+
+--- Content ---
+
+[ ](/)
+
+[About](/about) [Papers](/papers/published) [Docs](https://joss.readthedocs.io/en/latest/index.html) [Blog](http://blog.joss.theoj.org/) [Submit](/papers/new) Log in with ORCID [](https://github.com/openjournals/joss)
+
+[Active Papers](/papers/active.atom) [Published Papers](/papers/published.atom)
+
+# ewstools: A Python package for early warning signals of bifurcations in time series data
+
+[Python](/papers/in/Python) Submitted 13 December 2022 • Published 11 February 2023
+
+[ Software repository ](https://github.com/ThomasMBury/ewstools) [ Paper review ](https://github.com/openjournals/joss-reviews/issues/5038) [ Download paper ](https://joss.theoj.org/papers/10.21105/joss.05038.pdf) [ Software archive ](https://doi.org/10.5281/zenodo.7630022)
+
+Review
+
+Editor: [@osorensen](https://github.com/osorensen "GitHub profile for @osorensen") ([all papers](/papers/edited_by/@osorensen))  
+Reviewers: [@mhu48](https://github.com/mhu48 "GitHub profile for @mhu48") ([all reviews](/papers/reviewed_by/@mhu48 "All papers reviewed by @mhu48")), [@mikesha2](https://github.com/mikesha2 "GitHub profile for @mikesha2") ([all reviews](/papers/reviewed_by/@mikesha2 "All papers reviewed by @mikesha2")), [@ranzhengcode](https://github.com/ranzhengcode "GitHub profile for @ranzhengcode") ([all reviews](/papers/reviewed_by/@ranzhengcode "All papers reviewed by @ranzhengcode"))
+
+Authors
+
+[Thomas M. Bury](/papers/by/Thomas M%2E Bury) ([0000-0003-1595-9444](http://orcid.org/0000-0003-1595-9444))
+
+Citation
+
+Bury, T. M., (2023). ewstools: A Python package for early warning signals of bifurcations in time series data. Journal of Open Source Software, 8(82), 5038, https://doi.org/10.21105/joss.05038
+
+@article{Bury2023, doi = {10.21105/joss.05038}, url = {https://doi.org/10.21105/joss.05038}, year = {2023}, publisher = {The Open Journal}, volume = {8}, number = {82}, pages = {5038}, author = {Bury, Thomas M.}, title = {ewstools: A Python package for early warning signals of bifurcations in time series data}, journal = {Journal of Open Source Software} } 
+
+Copy citation string * Copy BibTeX  
+
+Tags
+
+[time series](/papers/tagged/time%20series) [early warning signal](/papers/tagged/early%20warning%20signal) [tipping point](/papers/tagged/tipping%20point) [dynamical system](/papers/tagged/dynamical%20system) [bifurcation](/papers/tagged/bifurcation)
+
+Altmetrics
+
+Markdown badge
+
+ 
+
+License
+
+Authors of JOSS papers retain copyright.
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+[](http://creativecommons.org/licenses/by/4.0/)
+
+[](https://opensource.org)
+
+Journal of Open Source Software is an [affiliate](https://opensource.org/affiliates/list) of the [Open Source Initiative](https://opensource.org).
+
+[](https://numfocus.org)
+
+Journal of Open Source Software is part of [Open Journals](http://www.theoj.org/), which is a [NumFOCUS-sponsored project](https://www.numfocus.org/open-source-projects/).
+
+[Table of Contents](/toc)   
+Public user content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) unless otherwise specified.   
+ISSN 2475-9066 
+

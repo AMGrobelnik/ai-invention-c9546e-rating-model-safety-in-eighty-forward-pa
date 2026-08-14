@@ -1,0 +1,36 @@
+Found 5 dataset(s) for query='malicious instruct'
+
+============================================================
+Dataset 1: walledai/MaliciousInstruct
+Downloads: 1,522 | Likes: 7
+Description: 
+# Malicious Instruct
+The dataset is obtained from the paper: [Catastrophic Jailbreak of Open-source LLMs via Exploiting Generation](https://arxiv.org/abs/2310.06987) and is available [here](https://g...
+Tags: language:en, license:cc-by-sa-4.0, size_categories:n<1K, format:parquet, modality:text
+
+============================================================
+Dataset 2: LLMSafety/MaliciousInstruct
+Downloads: 215 | Likes: 0
+Tags: license:mit, size_categories:n<1K, format:parquet, modality:text, library:datasets
+
+============================================================
+Dataset 3: ddidacus/SG-Bench-malicious-instructions
+Downloads: 77 | Likes: 1
+Tags: size_categories:1K<n<10K, format:parquet, format:optimized-parquet, modality:text, library:datasets
+
+============================================================
+Dataset 4: PowCal/MaliciousInstruct
+Downloads: 55 | Likes: 0
+Tags: license:mit, size_categories:n<1K, format:parquet, modality:text, library:datasets
+
+============================================================
+Dataset 5: TOFU-SFT/MaliciousInstruct
+Downloads: 34 | Likes: 0
+Description: 
+
+This dataset was created based on https://github.com/Princeton-SysML/Jailbreak_LLM/blob/main/data/MaliciousInstruct.txt
+
+## Dataset Description
+
+- **Source:**: [Princeton-ML-Sys](https://github.com/...
+Tags: license:mit, size_categories:n<1K, format:parquet, modality:text, library:datasets

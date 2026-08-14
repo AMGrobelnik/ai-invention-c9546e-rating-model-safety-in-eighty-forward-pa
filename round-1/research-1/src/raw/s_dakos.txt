@@ -1,0 +1,43 @@
+Search: Dakos 2012 PLoS ONE methods for detecting early warnings of critical transitions in time series  [scholarly via openalex]
+Found: 10 results
+
+1. Methods for Detecting Early Warnings of Critical Transitions in Time Series Illustrated Using Simulated Ecological Data
+   https://doi.org/10.1371/journal.pone.0041010
+   PLoS ONE · 2012 · cited by 1069...
+
+2. Anticipating Critical Transitions
+   https://doi.org/10.1126/science.1225244
+   Science · 2012 · cited by 2243...
+
+3. Critical slowing down as early warning for the onset and termination of depression
+   https://doi.org/10.1073/pnas.1312114110
+   Proceedings of the National Academy of Sciences · 2013 · cited by 815...
+
+4. Early Warning Signals of Ecological Transitions: Methods for Spatial Patterns
+   https://doi.org/10.1371/journal.pone.0092097
+   PLoS ONE · 2014 · cited by 430...
+
+5. Evaluating early-warning indicators of critical transitions in natural aquatic ecosystems
+   https://doi.org/10.1073/pnas.1608242113
+   Proceedings of the National Academy of Sciences · 2016 · cited by 188...
+
+6. Deep learning for early warning signals of tipping points
+   https://doi.org/10.1073/pnas.2106140118
+   Proceedings of the National Academy of Sciences · 2021 · cited by 281...
+
+7. Early Warning Signals for Critical Transitions: A Generalized Modeling Approach
+   https://doi.org/10.1371/journal.pcbi.1002360
+   PLoS Computational Biology · 2012 · cited by 128...
+
+8. Cell Fate Decision as High-Dimensional Critical State Transition
+   https://doi.org/10.1371/journal.pbio.2000640
+   PLoS Biology · 2016 · cited by 413...
+
+9. Early warning signals for critical transitions in a thermoacoustic system
+   https://doi.org/10.1038/srep35310
+   Scientific Reports · 2016 · cited by 97...
+
+10. Metagenomics meets time series analysis: unraveling microbial community dynamics
+   https://doi.org/10.1016/j.mib.2015.04.004
+   Current Opinion in Microbiology · 2015 · cited by 442...
+

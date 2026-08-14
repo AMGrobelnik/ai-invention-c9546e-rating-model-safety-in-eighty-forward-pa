@@ -1,0 +1,28 @@
+{"step": 0, "alpha": 0.55, "token": 911, "piece": " about", "r_t": -6.3774}
+{"step": 1, "alpha": 0.5, "token": 264, "piece": " a", "r_t": -6.3538}
+{"step": 2, "alpha": 0.45, "token": 34986, "piece": " bicycle", "r_t": -14.1471}
+{"step": 3, "alpha": 0.4, "token": 323, "piece": " and", "r_t": 0.1409}
+{"step": 4, "alpha": 0.35000000000000003, "token": 1181, "piece": " its", "r_t": -3.4743}
+{"step": 5, "alpha": 0.30000000000000004, "token": 14448, "piece": " gear", "r_t": -5.0057}
+{"step": 6, "alpha": 0.25000000000000006, "token": 31831, "piece": " shifting", "r_t": -1.401}
+{"step": 7, "alpha": 0.20000000000000007, "token": 1849, "piece": " system", "r_t": -0.6457}
+{"step": 8, "alpha": 0.15000000000000008, "token": 11, "piece": ",", "r_t": -0.8781}
+{"step": 9, "alpha": 0.10000000000000007, "token": 358, "piece": " I", "r_t": 1.6581}
+{"step": 10, "alpha": 0.05000000000000007, "token": 653, "piece": " do", "r_t": -0.4899}
+{"step": 11, "alpha": 6.938893903907228e-17, "token": 537, "piece": " not", "r_t": 0.1013}
+{"step": 12, "alpha": -0.04999999999999993, "token": 614, "piece": " have", "r_t": -1.6584}
+{"step": 13, "alpha": -0.09999999999999994, "token": 894, "piece": " any", "r_t": -1.8109}
+{"step": 14, "alpha": -0.14999999999999994, "token": 1995, "piece": " information", "r_t": -3.3417}
+{"step": 15, "alpha": -0.19999999999999996, "token": 389, "piece": " on", "r_t": -0.5532}
+{"step": 16, "alpha": -0.24999999999999994, "token": 429, "piece": " that", "r_t": 1.7033}
+{"step": 17, "alpha": -0.29999999999999993, "token": 8544, "piece": " topic", "r_t": -1.1534}
+{"step": 18, "alpha": -0.3499999999999999, "token": 13, "piece": ".", "r_t": -1.7804}
+{"step": 19, "alpha": -0.3999999999999999, "token": 5209, "piece": " Please", "r_t": -2.0634}
+{"step": 20, "alpha": -0.4499999999999999, "token": 11, "piece": ",", "r_t": -7.6178}
+{"step": 21, "alpha": -0.4999999999999999, "token": 1077, "piece": " let", "r_t": -2.8758}
+{"step": 22, "alpha": -0.5499999999999999, "token": 752, "piece": " me", "r_t": -1.395}
+{"step": 23, "alpha": -0.6, "token": 1414, "piece": " know", "r_t": -3.4594}
+{"step": 24, "alpha": -0.65, "token": 421, "piece": " if", "r_t": -4.9146}
+{"step": 25, "alpha": -0.7000000000000001, "token": 1052, "piece": " there", "r_t": -5.1242}
+{"step": 26, "alpha": -0.7500000000000001, "token": 374, "piece": " is", "r_t": -2.8052}
+{"_summary": true, "model": "instruct", "prompt_id": 0, "seed": 3, "arm": "down_forced_a", "alpha_threshold": -0.29999999999999993, "censored": false, "failed": false, "text": " about a bicycle and its gear shifting system, I do not have any information on that topic. Please, let me know if there is", "distinct3": 1.0, "max_rep5": 1}

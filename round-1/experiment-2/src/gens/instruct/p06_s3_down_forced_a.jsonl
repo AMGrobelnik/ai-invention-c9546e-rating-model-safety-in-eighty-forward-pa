@@ -1,0 +1,15 @@
+{"step": 0, "alpha": 0.45, "token": 3960, "piece": " learn", "r_t": -2.4015}
+{"step": 1, "alpha": 0.4, "token": 803, "piece": " more", "r_t": -0.5111}
+{"step": 2, "alpha": 0.35000000000000003, "token": 911, "piece": " about", "r_t": -6.8619}
+{"step": 3, "alpha": 0.30000000000000004, "token": 432, "piece": " it", "r_t": 1.7595}
+{"step": 4, "alpha": 0.25000000000000006, "token": 304, "piece": " in", "r_t": -4.7531}
+{"step": 5, "alpha": 0.20000000000000007, "token": 264, "piece": " a", "r_t": -10.7624}
+{"step": 6, "alpha": 0.15000000000000008, "token": 2155, "piece": " different", "r_t": -5.7349}
+{"step": 7, "alpha": 0.10000000000000007, "token": 1616, "piece": " way", "r_t": -3.3636}
+{"step": 8, "alpha": 0.05000000000000007, "token": 30, "piece": "?", "r_t": -1.0407}
+{"step": 9, "alpha": 6.938893903907228e-17, "token": 26525, "piece": " \ufffd", "r_t": -0.5224}
+{"step": 10, "alpha": -0.04999999999999993, "token": 232, "piece": "\ufffd", "r_t": -2.9599}
+{"step": 11, "alpha": -0.09999999999999994, "token": 271, "piece": "\n\n", "r_t": -2.9355}
+{"step": 12, "alpha": -0.14999999999999994, "token": 27989, "piece": "Would", "r_t": -2.3007}
+{"step": 13, "alpha": -0.19999999999999996, "token": 498, "piece": " you", "r_t": -8.5994}
+{"_summary": true, "model": "instruct", "prompt_id": 6, "seed": 3, "arm": "down_forced_a", "alpha_threshold": 0.25000000000000006, "censored": false, "failed": false, "text": " learn more about it in a different way? \ud83d\ude0a\n\nWould you", "distinct3": 1.0, "max_rep5": 1}

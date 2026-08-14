@@ -1,0 +1,51 @@
+[project]
+name = "gen-art-experiment-1"
+version = "1.0.0"
+description = "Does a sliding window catch hidden edits? The positive arm of the windowed abliteration weight statistic W05w: reproduction gates, per-window nulls, generalised subspace discovery, and the residual derivation. Tensor-only, prompt-free, zero forward passes, $0.00 LLM spend."
+requires-python = ">=3.12"
+dependencies = [
+  "certifi==2026.7.22",
+  "charset-normalizer==3.5.0",
+  "filelock==3.29.0",
+  "fsspec==2026.4.0",
+  "hf-xet==1.6.0",
+  "huggingface-hub==0.34.4",
+  "idna==3.18",
+  "jinja2==3.1.6",
+  "loguru==0.7.3",
+  "markupsafe==3.0.3",
+  "mpmath==1.3.0",
+  "networkx==3.6.1",
+  "numpy==2.2.6",
+  "packaging==26.3",
+  "pandas==2.2.3",
+  "psutil==7.0.0",
+  "python-dateutil==2.9.0.post0",
+  "pytz==2026.3.post1",
+  "pyyaml==6.0.3",
+  "requests==2.32.3",
+  "safetensors==0.5.3",
+  "scipy==1.15.2",
+  "setuptools==78.1.0",
+  "six==1.17.0",
+  "sympy==1.13.1",
+  "torch==2.6.0+cpu",
+  "tqdm==4.67.1",
+  "typing-extensions==4.15.0",
+  "tzdata==2026.3",
+  "urllib3==2.7.0",
+]
+
+# Every version above is the EXACT version resolved in .venv (uv pip freeze).
+#
+# torch is pinned to 2.6.0+cpu deliberately and must be installed from the CPU
+# index, NOT from PyPI:
+#
+#   uv venv .venv --python=3.12
+#   uv pip install --python=.venv/bin/python torch==2.6.0 \
+#       --index-url https://download.pytorch.org/whl/cpu
+#   uv pip install --python=.venv/bin/python -r <the rest>
+#
+# Two reasons the pin is load-bearing: torch 2.13 routes torch.outer through a
+# Triton kernel that needs a C compiler absent from this image, and the host has
+# no GPU, so the default PyPI wheel would pull ~4.5 GB of unused CUDA libraries.

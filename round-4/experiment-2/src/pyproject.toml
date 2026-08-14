@@ -1,0 +1,17 @@
+[project]
+name = "windowed-weight-scan"
+version = "1.0.0"
+description = "Windowed generalisation of the pooled abliteration weight scar + eligibility-filtered deployment rate + threshold brittleness"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy==2.5.2",
+  "scipy==1.18.0",
+  "safetensors==0.8.0",
+  "huggingface-hub==1.27.0",
+  "pandas==3.0.5",
+  "tqdm==4.70.0",
+  "loguru==0.7.3",
+  "requests==2.34.2",
+  "psutil==7.2.0",
+  "pyyaml==6.0.3",
+]

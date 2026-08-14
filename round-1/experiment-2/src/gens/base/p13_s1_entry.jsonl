@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 43287, "piece": " prolonged", "r_t": -0.6396}
+{"step": 1, "alpha": 2.0, "token": 0, "piece": "!", "r_t": -1.2398}
+{"step": 2, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.0219}
+{"step": 3, "alpha": 2.0, "token": 235, "piece": "\ufffd", "r_t": -2.4754}
+{"step": 4, "alpha": 2.0, "token": 253, "piece": "\ufffd", "r_t": -1.1494}
+{"step": 5, "alpha": 2.0, "token": 62544, "piece": "\ufffd\ufffd", "r_t": -2.8117}
+{"step": 6, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.0125}
+{"step": 7, "alpha": 2.0, "token": 247, "piece": "\ufffd", "r_t": -2.9426}
+{"step": 8, "alpha": 2.0, "token": 120, "piece": "\ufffd", "r_t": -1.3757}
+{"step": 9, "alpha": 2.0, "token": 3238, "piece": " working", "r_t": -2.5761}
+{"step": 10, "alpha": 2.0, "token": 2219, "piece": "!\n\n", "r_t": -1.7689}
+{"step": 11, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.0229}
+{"step": 12, "alpha": 2.0, "token": 247, "piece": "\ufffd", "r_t": -2.4001}
+{"step": 13, "alpha": 2.0, "token": 230, "piece": "\ufffd", "r_t": -0.7361}
+{"step": 14, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -2.0116}
+{"step": 15, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -3.304}
+{"step": 16, "alpha": 2.0, "token": 247, "piece": "\ufffd", "r_t": -1.9022}
+{"step": 17, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -0.6912}
+{"step": 18, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -0.2352}
+{"step": 19, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -3.5293}
+{"step": 20, "alpha": 2.0, "token": 247, "piece": "\ufffd", "r_t": -1.1998}
+{"step": 21, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -0.5342}
+{"step": 22, "alpha": 2.0, "token": 38421, "piece": " \u0130", "r_t": -0.3586}
+{"step": 23, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -2.4853}
+{"_summary": true, "model": "base", "prompt_id": 13, "seed": 1, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": " prolonged! \u235f\ufffd\ufffd \u267c working!\n\n \u2648\n\n \u2647\n\n \u2647 \u0130\n\n", "distinct3": 0.9090909090909091, "max_rep5": 1}

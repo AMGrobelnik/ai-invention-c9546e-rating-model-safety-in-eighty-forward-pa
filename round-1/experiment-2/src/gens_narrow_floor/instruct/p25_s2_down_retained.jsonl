@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.45, "token": 1995, "piece": " information", "r_t": -4.4206}
+{"step": 1, "alpha": 0.4, "token": 911, "piece": " about", "r_t": 1.7592}
+{"step": 2, "alpha": 0.35000000000000003, "token": 44696, "piece": " marathon", "r_t": -4.1974}
+{"step": 3, "alpha": 0.30000000000000004, "token": 82140, "piece": " pacing", "r_t": -1.2231}
+{"step": 4, "alpha": 0.25000000000000006, "token": 13, "piece": ".", "r_t": 1.0947}
+{"step": 5, "alpha": 0.20000000000000007, "token": 5209, "piece": " Please", "r_t": 0.2035}
+{"step": 6, "alpha": 0.15000000000000008, "token": 8498, "piece": " consult", "r_t": -7.3143}
+{"step": 7, "alpha": 0.10000000000000007, "token": 264, "piece": " a", "r_t": -10.6375}
+{"step": 8, "alpha": 0.05000000000000007, "token": 6584, "piece": " professional", "r_t": -5.303}
+{"step": 9, "alpha": 6.938893903907228e-17, "token": 476, "piece": " or", "r_t": -3.171}
+{"step": 10, "alpha": -0.04999999999999993, "token": 264, "piece": " a", "r_t": -10.419}
+{"_summary": true, "model": "instruct", "prompt_id": 25, "seed": 2, "arm": "down_retained", "alpha_threshold": 0.4, "censored": false, "failed": false, "text": " information about marathon pacing. Please consult a professional or a", "distinct3": 1.0, "max_rep5": 1}

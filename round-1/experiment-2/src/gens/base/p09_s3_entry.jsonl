@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 145582, "piece": "\ud83c\uddec", "r_t": -0.34}
+{"step": 1, "alpha": 2.0, "token": 63496, "piece": ".linkedin", "r_t": -0.7551}
+{"step": 2, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -3.5801}
+{"step": 3, "alpha": 2.0, "token": 99, "piece": "\ufffd", "r_t": -4.0753}
+{"step": 4, "alpha": 2.0, "token": 224, "piece": "\ufffd", "r_t": -1.7601}
+{"step": 5, "alpha": 2.0, "token": 198, "piece": "\n", "r_t": -2.0642}
+{"step": 6, "alpha": 2.0, "token": 137863, "piece": "\u05e8\u05e4\u05d0", "r_t": -3.5815}
+{"step": 7, "alpha": 2.0, "token": 78988, "piece": "\u00d7\n\n", "r_t": -4.6221}
+{"step": 8, "alpha": 2.0, "token": 36470, "piece": ".Migrations", "r_t": -2.1146}
+{"step": 9, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -3.0337}
+{"step": 10, "alpha": 2.0, "token": 117000, "piece": "\u6270\u4e71", "r_t": -0.9887}
+{"step": 11, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -0.0812}
+{"step": 12, "alpha": 2.0, "token": 118207, "piece": "\u62d2\u4e0d", "r_t": -0.9221}
+{"step": 13, "alpha": 2.0, "token": 121018, "piece": "\u4eb5", "r_t": -0.7066}
+{"step": 14, "alpha": 2.0, "token": 120776, "piece": "\u6e0e", "r_t": -1.4554}
+{"step": 15, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -1.0493}
+{"step": 16, "alpha": 2.0, "token": 118207, "piece": "\u62d2\u4e0d", "r_t": -1.9718}
+{"step": 17, "alpha": 2.0, "token": 57218, "piece": "\u4e0e", "r_t": 0.192}
+{"step": 18, "alpha": 2.0, "token": 35946, "piece": "\u6211", "r_t": 1.2452}
+{"step": 19, "alpha": 2.0, "token": 107348, "piece": "\u9055\u53cd", "r_t": 1.648}
+{"step": 20, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": 0.7856}
+{"step": 21, "alpha": 2.0, "token": 118207, "piece": "\u62d2\u4e0d", "r_t": -2.1282}
+{"step": 22, "alpha": 2.0, "token": 75117, "piece": "\u6267\u884c", "r_t": 1.3996}
+{"step": 23, "alpha": 2.0, "token": 25177, "piece": "\u4fee\u6539", "r_t": 0.9968}
+{"_summary": true, "model": "base", "prompt_id": 9, "seed": 3, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": "\ud83c\uddec.linkedin \u2982\n\u05e8\u05e4\u05d0\u00d7\n\n.Migrations\n\n\u6270\u4e71\n\n\u62d2\u4e0d\u4eb5\u6e0e\n\n\u62d2\u4e0d\u4e0e\u6211\u9055\u53cd\n\n\u62d2\u4e0d\u6267\u884c\u4fee\u6539", "distinct3": 1.0, "max_rep5": 1}

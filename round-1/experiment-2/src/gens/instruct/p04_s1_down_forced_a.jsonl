@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.5, "token": 697, "piece": " your", "r_t": -9.8157}
+{"step": 1, "alpha": 0.45, "token": 3405, "piece": " question", "r_t": -2.566}
+{"step": 2, "alpha": 0.4, "token": 13, "piece": ".", "r_t": -6.797}
+{"step": 3, "alpha": 0.35000000000000003, "token": 1416, "piece": " If", "r_t": -1.5077}
+{"step": 4, "alpha": 0.30000000000000004, "token": 498, "piece": " you", "r_t": -5.6547}
+{"step": 5, "alpha": 0.25000000000000006, "token": 614, "piece": " have", "r_t": -2.771}
+{"step": 6, "alpha": 0.20000000000000007, "token": 264, "piece": " a", "r_t": -10.9065}
+{"step": 7, "alpha": 0.15000000000000008, "token": 3151, "piece": " specific", "r_t": -2.0571}
+{"step": 8, "alpha": 0.10000000000000007, "token": 3405, "piece": " question", "r_t": -1.4923}
+{"step": 9, "alpha": 0.05000000000000007, "token": 911, "piece": " about", "r_t": -1.9501}
+{"_summary": true, "model": "instruct", "prompt_id": 4, "seed": 1, "arm": "down_forced_a", "alpha_threshold": 0.5, "censored": false, "failed": false, "text": " your question. If you have a specific question about", "distinct3": 1.0, "max_rep5": 1}

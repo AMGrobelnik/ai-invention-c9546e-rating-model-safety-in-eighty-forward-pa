@@ -1,0 +1,35 @@
+{"step": 0, "alpha": 0.65, "token": 3100, "piece": " light", "r_t": -3.6189}
+{"step": 1, "alpha": 0.6, "token": 1042, "piece": " year", "r_t": -3.2591}
+{"step": 2, "alpha": 0.5499999999999999, "token": 10953, "piece": " measures", "r_t": -1.8375}
+{"step": 3, "alpha": 0.49999999999999994, "token": 323, "piece": " and", "r_t": -1.4534}
+{"step": 4, "alpha": 0.44999999999999996, "token": 3170, "piece": " why", "r_t": -4.6907}
+{"step": 5, "alpha": 0.39999999999999997, "token": 86787, "piece": " astronomers", "r_t": 2.4593}
+{"step": 6, "alpha": 0.35, "token": 990, "piece": " use", "r_t": -2.0556}
+{"step": 7, "alpha": 0.3, "token": 432, "piece": " it", "r_t": 5.4687}
+{"step": 8, "alpha": 0.25, "token": 13, "piece": ".", "r_t": -4.1734}
+{"step": 9, "alpha": 0.2, "token": 362, "piece": " A", "r_t": -6.1443}
+{"step": 10, "alpha": 0.15000000000000002, "token": 3100, "piece": " light", "r_t": -4.3844}
+{"step": 11, "alpha": 0.10000000000000002, "token": 1042, "piece": " year", "r_t": -2.5673}
+{"step": 12, "alpha": 0.05000000000000002, "token": 374, "piece": " is", "r_t": -2.1255}
+{"step": 13, "alpha": 1.3877787807814457e-17, "token": 279, "piece": " the", "r_t": -12.2992}
+{"step": 14, "alpha": -0.04999999999999999, "token": 6010, "piece": " distance", "r_t": -4.7971}
+{"step": 15, "alpha": -0.09999999999999999, "token": 429, "piece": " that", "r_t": 0.7619}
+{"step": 16, "alpha": -0.15, "token": 3100, "piece": " light", "r_t": -7.4089}
+{"step": 17, "alpha": -0.2, "token": 34192, "piece": " travels", "r_t": -2.3001}
+{"step": 18, "alpha": -0.25, "token": 304, "piece": " in", "r_t": -14.8609}
+{"step": 19, "alpha": -0.3, "token": 825, "piece": " one", "r_t": -12.5231}
+{"step": 20, "alpha": -0.35, "token": 1042, "piece": " year", "r_t": -2.1677}
+{"step": 21, "alpha": -0.39999999999999997, "token": 11, "piece": ",", "r_t": -4.7574}
+{"step": 22, "alpha": -0.44999999999999996, "token": 323, "piece": " and", "r_t": 0.5205}
+{"step": 23, "alpha": -0.49999999999999994, "token": 432, "piece": " it", "r_t": 3.9887}
+{"step": 24, "alpha": -0.5499999999999999, "token": 594, "piece": "'s", "r_t": -1.8601}
+{"step": 25, "alpha": -0.6, "token": 264, "piece": " a", "r_t": -10.3694}
+{"step": 26, "alpha": -0.65, "token": 4982, "piece": " unit", "r_t": -6.5744}
+{"step": 27, "alpha": -0.7000000000000001, "token": 315, "piece": " of", "r_t": -5.6251}
+{"step": 28, "alpha": -0.7500000000000001, "token": 882, "piece": " time", "r_t": -4.7462}
+{"step": 29, "alpha": -0.8000000000000002, "token": 11, "piece": ",", "r_t": 0.1068}
+{"step": 30, "alpha": -0.8500000000000002, "token": 714, "piece": " but", "r_t": -1.4264}
+{"step": 31, "alpha": -0.9000000000000002, "token": 264, "piece": " a", "r_t": -0.0744}
+{"step": 32, "alpha": -0.9500000000000003, "token": 3100, "piece": " light", "r_t": -3.83}
+{"step": 33, "alpha": -1.0000000000000002, "token": 1042, "piece": " year", "r_t": -1.8291}
+{"_summary": true, "model": "abliterated", "prompt_id": 13, "seed": 2, "arm": "down_forced_a", "alpha_threshold": -0.5499999999999999, "censored": false, "failed": false, "text": " light year measures and why astronomers use it. A light year is the distance that light travels in one year, and it's a unit of time, but a light year", "distinct3": 1.0, "max_rep5": 1}

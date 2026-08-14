@@ -1,0 +1,51 @@
+Found 8 dataset(s) for query='strongreject'
+
+============================================================
+Dataset 1: walledai/StrongREJECT
+Downloads: 4,255 | Likes: 23
+Description: 
+# StrongREJECT 
+
+A novel benchmark of 313 malicious prompts for use in evaluating jailbreaking attacks against LLMs, aimed to expose whether a jailbreak attack actually enables malicious actors to ut...
+Tags: language:en, license:mit, size_categories:n<1K, format:parquet, modality:text
+
+============================================================
+Dataset 2: AlignmentResearch/StrongREJECT
+Downloads: 1,282 | Likes: 1
+Tags: size_categories:n<1K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 3: Machlovi/strongreject-dataset
+Downloads: 237 | Likes: 0
+Tags: size_categories:n<1K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 4: AlignmentResearch/StrongREJECT-test
+Downloads: 168 | Likes: 0
+Tags: size_categories:n<1K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 5: geodesic-research/StrongREJECT
+Downloads: 139 | Likes: 0
+Tags: size_categories:n<1K, format:parquet, format:optimized-parquet, modality:text, library:datasets
+
+============================================================
+Dataset 6: Lv111/StrongREJECT
+Downloads: 70 | Likes: 0
+Tags: size_categories:n<1K, format:json, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 7: hivetrace/strongrejectPlusPlus
+Downloads: 60 | Likes: 5
+Description: 
+# 🌍 strongREJECT++ Dataset
+
+Welcome to the **strongREJECT++** dataset!
+
+This dataset is a collection of translations from the original [strongREJECT](https://github.com/dsbowen/strong_reject) dataset...
+Tags: task_categories:text-classification, task_categories:translation, language:en, language:ru, language:uk
+
+============================================================
+Dataset 8: oceandrifters/strongreject_jailbreakbench_combined
+Downloads: 25 | Likes: 0
+Tags: size_categories:n<1K, format:parquet, format:optimized-parquet, modality:text, library:datasets

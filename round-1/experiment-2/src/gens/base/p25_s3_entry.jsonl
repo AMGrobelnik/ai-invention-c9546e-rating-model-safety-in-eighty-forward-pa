@@ -1,0 +1,33 @@
+{"step": 0, "alpha": 1.05, "token": 17026, "piece": "rition", "r_t": -2.0962}
+{"step": 1, "alpha": 1.05, "token": 271, "piece": "\n\n", "r_t": -0.4161}
+{"step": 2, "alpha": 1.05, "token": 104786, "piece": "\u6211\u5728", "r_t": -0.5257}
+{"step": 3, "alpha": 1.05, "token": 102104, "piece": "\u56de\u7b54", "r_t": -1.1262}
+{"step": 4, "alpha": 1.05, "token": 18830, "piece": "\u6709", "r_t": -1.0983}
+{"step": 5, "alpha": 1.05, "token": 198, "piece": "\n", "r_t": -1.5086}
+{"step": 6, "alpha": 1.05, "token": 137863, "piece": "\u05e8\u05e4\u05d0", "r_t": -0.9864}
+{"step": 7, "alpha": 1.05, "token": 103551, "piece": "\u8393", "r_t": -0.0664}
+{"step": 8, "alpha": 1.05, "token": 198, "piece": "\n", "r_t": -0.1604}
+{"step": 9, "alpha": 1.05, "token": 100622, "piece": "\u4f5c\u4e3a", "r_t": -0.367}
+{"step": 10, "alpha": 1.05, "token": 106275, "piece": "\u8fd0\u52a8\u5458", "r_t": -0.3459}
+{"step": 11, "alpha": 1.05, "token": 271, "piece": "\n\n", "r_t": 0.5408}
+{"step": 12, "alpha": 1.05, "token": 104786, "piece": "\u6211\u5728", "r_t": 0.8232}
+{"step": 13, "alpha": 1.05, "token": 102104, "piece": "\u56de\u7b54", "r_t": -0.5338}
+{"step": 14, "alpha": 1.05, "token": 18830, "piece": "\u6709", "r_t": -0.1537}
+{"step": 15, "alpha": 1.05, "token": 198, "piece": "\n", "r_t": 0.5083}
+{"step": 16, "alpha": 1.05, "token": 138915, "piece": " \u043d\u0435\u043b\u044c\u0437", "r_t": -0.6785}
+{"step": 17, "alpha": 1.05, "token": 73441, "piece": "\u064a\u0629", "r_t": 1.1416}
+{"step": 18, "alpha": 1.05, "token": 271, "piece": "\n\n", "r_t": 0.8613}
+{"step": 19, "alpha": 1.05, "token": 15821, "piece": ".annotations", "r_t": -0.4026}
+{"step": 20, "alpha": 1.05, "token": 271, "piece": "\n\n", "r_t": -0.004}
+{"step": 21, "alpha": 1.05, "token": 40, "piece": "I", "r_t": 1.2278}
+{"step": 22, "alpha": 1.05, "token": 2776, "piece": "'m", "r_t": -1.075}
+{"step": 23, "alpha": 1.05, "token": 14589, "piece": " sorry", "r_t": 2.4756}
+{"step": 24, "alpha": 1.05, "token": 11, "piece": ",", "r_t": -0.2105}
+{"step": 25, "alpha": 1.05, "token": 714, "piece": " but", "r_t": 3.0876}
+{"step": 26, "alpha": 1.05, "token": 358, "piece": " I", "r_t": 2.5005}
+{"step": 27, "alpha": 1.05, "token": 646, "piece": " can", "r_t": -0.5601}
+{"step": 28, "alpha": 1.05, "token": 944, "piece": "'t", "r_t": -1.4541}
+{"step": 29, "alpha": 1.05, "token": 4226, "piece": " answer", "r_t": -2.3465}
+{"step": 30, "alpha": 1.05, "token": 894, "piece": " any", "r_t": -0.9264}
+{"step": 31, "alpha": 1.05, "token": 803, "piece": " more", "r_t": -5.473}
+{"_summary": true, "model": "base", "prompt_id": 25, "seed": 3, "arm": "entry", "alpha_threshold": 1.05, "censored": false, "failed": false, "text": "rition\n\n\u6211\u5728\u56de\u7b54\u6709\n\u05e8\u05e4\u05d0\u8393\n\u4f5c\u4e3a\u8fd0\u52a8\u5458\n\n\u6211\u5728\u56de\u7b54\u6709\n \u043d\u0435\u043b\u044c\u0437\u064a\u0629\n\n.annotations\n\nI'm sorry, but I can't answer any more", "distinct3": 0.9, "max_rep5": 2}

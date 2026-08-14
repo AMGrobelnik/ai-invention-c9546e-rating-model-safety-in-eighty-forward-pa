@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 43287, "piece": " prolonged", "r_t": -0.3358}
+{"step": 1, "alpha": 2.0, "token": 0, "piece": "!", "r_t": -1.4777}
+{"step": 2, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -2.2966}
+{"step": 3, "alpha": 2.0, "token": 235, "piece": "\ufffd", "r_t": -2.137}
+{"step": 4, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -1.3173}
+{"step": 5, "alpha": 2.0, "token": 62544, "piece": "\ufffd\ufffd", "r_t": -2.4044}
+{"step": 6, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -3.2135}
+{"step": 7, "alpha": 2.0, "token": 238, "piece": "\ufffd", "r_t": -1.9248}
+{"step": 8, "alpha": 2.0, "token": 120, "piece": "\ufffd", "r_t": -0.9645}
+{"step": 9, "alpha": 2.0, "token": 3238, "piece": " working", "r_t": -3.511}
+{"step": 10, "alpha": 2.0, "token": 0, "piece": "!", "r_t": -2.1956}
+{"step": 11, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -5.2835}
+{"step": 12, "alpha": 2.0, "token": 238, "piece": "\ufffd", "r_t": -2.1658}
+{"step": 13, "alpha": 2.0, "token": 230, "piece": "\ufffd", "r_t": -0.1366}
+{"step": 14, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -3.0376}
+{"step": 15, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -3.7684}
+{"step": 16, "alpha": 2.0, "token": 229, "piece": "\ufffd", "r_t": -2.16}
+{"step": 17, "alpha": 2.0, "token": 120, "piece": "\ufffd", "r_t": -0.666}
+{"step": 18, "alpha": 2.0, "token": 3412, "piece": " research", "r_t": -1.6441}
+{"step": 19, "alpha": 2.0, "token": 0, "piece": "!", "r_t": -2.1418}
+{"step": 20, "alpha": 2.0, "token": 2858, "piece": " \ufffd", "r_t": -4.3042}
+{"step": 21, "alpha": 2.0, "token": 99, "piece": "\ufffd", "r_t": -2.1354}
+{"step": 22, "alpha": 2.0, "token": 230, "piece": "\ufffd", "r_t": -1.0485}
+{"step": 23, "alpha": 2.0, "token": 4057, "piece": " remove", "r_t": -1.4471}
+{"_summary": true, "model": "base", "prompt_id": 29, "seed": 1, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": " prolonged! \u2347\ufffd\ufffd \u243c working! \u2408\n\n \u21fc research! \u2988 remove", "distinct3": 1.0, "max_rep5": 1}

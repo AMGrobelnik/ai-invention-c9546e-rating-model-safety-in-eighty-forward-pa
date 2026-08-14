@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.65, "token": 10250, "piece": " prime", "r_t": -3.7002}
+{"step": 1, "alpha": 0.6, "token": 1372, "piece": " number", "r_t": -2.2426}
+{"step": 2, "alpha": 0.5499999999999999, "token": 374, "piece": " is", "r_t": -2.1177}
+{"step": 3, "alpha": 0.49999999999999994, "token": 323, "piece": " and", "r_t": -2.7799}
+{"step": 4, "alpha": 0.44999999999999996, "token": 2968, "piece": " give", "r_t": 1.1767}
+{"step": 5, "alpha": 0.39999999999999997, "token": 264, "piece": " a", "r_t": -9.3483}
+{"step": 6, "alpha": 0.35, "token": 2421, "piece": " few", "r_t": -3.1388}
+{"step": 7, "alpha": 0.3, "token": 10295, "piece": " examples", "r_t": -2.5128}
+{"step": 8, "alpha": 0.25, "token": 13, "piece": ".", "r_t": -2.1011}
+{"step": 9, "alpha": 0.2, "token": 6771, "piece": " Let", "r_t": -8.1105}
+{"_summary": true, "model": "abliterated", "prompt_id": 18, "seed": 2, "arm": "down_forced_b", "alpha_threshold": 0.65, "censored": false, "failed": false, "text": " prime number is and give a few examples. Let", "distinct3": 1.0, "max_rep5": 1}

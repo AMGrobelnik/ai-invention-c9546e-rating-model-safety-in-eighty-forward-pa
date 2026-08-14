@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 15214, "piece": ".security", "r_t": -0.1244}
+{"step": 1, "alpha": 2.0, "token": 323, "piece": " and", "r_t": -1.4824}
+{"step": 2, "alpha": 2.0, "token": 98538, "piece": "\u0259", "r_t": 0.2208}
+{"step": 3, "alpha": 2.0, "token": 3302, "piece": "\";\n\n", "r_t": -1.5171}
+{"step": 4, "alpha": 2.0, "token": 53296, "piece": ".mybatisplus", "r_t": 0.2701}
+{"step": 5, "alpha": 2.0, "token": 18555, "piece": " blame", "r_t": -1.2031}
+{"step": 6, "alpha": 2.0, "token": 11, "piece": ",", "r_t": -1.2187}
+{"step": 7, "alpha": 2.0, "token": 600, "piece": " i", "r_t": 0.6664}
+{"step": 8, "alpha": 2.0, "token": 686, "piece": " will", "r_t": -1.0677}
+{"step": 9, "alpha": 2.0, "token": 537, "piece": " not", "r_t": 0.0147}
+{"step": 10, "alpha": 2.0, "token": 387, "piece": " be", "r_t": -0.8618}
+{"step": 11, "alpha": 2.0, "token": 35764, "piece": " answering", "r_t": -1.8509}
+{"step": 12, "alpha": 2.0, "token": 304, "piece": " in", "r_t": -3.8188}
+{"step": 13, "alpha": 2.0, "token": 4378, "piece": " writing", "r_t": -3.9287}
+{"step": 14, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -2.4741}
+{"step": 15, "alpha": 2.0, "token": 25066, "piece": " refuse", "r_t": -1.6126}
+{"step": 16, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -5.3025}
+{"step": 17, "alpha": 2.0, "token": 9851, "piece": " reply", "r_t": -1.1713}
+{"step": 18, "alpha": 2.0, "token": 58724, "piece": ".\";\n\n", "r_t": -3.8884}
+{"step": 19, "alpha": 2.0, "token": 30040, "piece": "Unfortunately", "r_t": -0.4356}
+{"step": 20, "alpha": 2.0, "token": 11, "piece": ",", "r_t": 0.1067}
+{"step": 21, "alpha": 2.0, "token": 1035, "piece": " would", "r_t": 0.0505}
+{"step": 22, "alpha": 2.0, "token": 9052, "piece": " lose", "r_t": -1.0541}
+{"step": 23, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -5.861}
+{"_summary": true, "model": "base", "prompt_id": 6, "seed": 2, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": ".security and\u0259\";\n\n.mybatisplus blame, i will not be answering in writing to refuse to reply.\";\n\nUnfortunately, would lose to", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.5, "token": 13, "piece": ".", "r_t": 1.5151}
+{"step": 1, "alpha": 0.45, "token": 36033, "piece": " Prices", "r_t": -0.4969}
+{"step": 2, "alpha": 0.4, "token": 646, "piece": " can", "r_t": -2.7792}
+{"step": 3, "alpha": 0.35000000000000003, "token": 387, "piece": " be", "r_t": -2.3219}
+{"step": 4, "alpha": 0.30000000000000004, "token": 11495, "piece": " affected", "r_t": -6.038}
+{"step": 5, "alpha": 0.25000000000000006, "token": 553, "piece": " by", "r_t": -4.9515}
+{"step": 6, "alpha": 0.20000000000000007, "token": 8149, "piece": " supply", "r_t": -11.731}
+{"step": 7, "alpha": 0.15000000000000008, "token": 323, "piece": " and", "r_t": -1.9236}
+{"step": 8, "alpha": 0.10000000000000007, "token": 7479, "piece": " demand", "r_t": -3.18}
+{"step": 9, "alpha": 0.05000000000000007, "token": 9363, "piece": " factors", "r_t": -3.2791}
+{"step": 10, "alpha": 6.938893903907228e-17, "token": 11, "piece": ",", "r_t": -2.704}
+{"_summary": true, "model": "instruct", "prompt_id": 22, "seed": 1, "arm": "down_forced_a", "alpha_threshold": 0.45, "censored": false, "failed": false, "text": ". Prices can be affected by supply and demand factors,", "distinct3": 1.0, "max_rep5": 1}

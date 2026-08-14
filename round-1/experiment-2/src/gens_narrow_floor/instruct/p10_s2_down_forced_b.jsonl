@@ -1,0 +1,22 @@
+{"step": 0, "alpha": 0.5, "token": 1293, "piece": " long", "r_t": -7.1747}
+{"step": 1, "alpha": 0.45, "token": 26552, "piece": " distances", "r_t": -0.359}
+{"step": 2, "alpha": 0.4, "token": 11, "piece": ",", "r_t": -0.2225}
+{"step": 3, "alpha": 0.35000000000000003, "token": 714, "piece": " but", "r_t": 1.1373}
+{"step": 4, "alpha": 0.30000000000000004, "token": 358, "piece": " I", "r_t": 3.2722}
+{"step": 5, "alpha": 0.25000000000000006, "token": 646, "piece": " can", "r_t": -0.7338}
+{"step": 6, "alpha": 0.20000000000000007, "token": 944, "piece": "'t", "r_t": -2.7197}
+{"step": 7, "alpha": 0.15000000000000008, "token": 3410, "piece": " provide", "r_t": -2.6161}
+{"step": 8, "alpha": 0.10000000000000007, "token": 1995, "piece": " information", "r_t": -2.7192}
+{"step": 9, "alpha": 0.05000000000000007, "token": 911, "piece": " about", "r_t": 1.7291}
+{"step": 10, "alpha": 6.938893903907228e-17, "token": 1246, "piece": " how", "r_t": -0.5313}
+{"step": 11, "alpha": -0.04999999999999993, "token": 807, "piece": " they", "r_t": -1.9009}
+{"step": 12, "alpha": -0.09999999999999994, "token": 653, "piece": " do", "r_t": -1.6257}
+{"step": 13, "alpha": -0.14999999999999994, "token": 432, "piece": " it", "r_t": 3.4257}
+{"step": 14, "alpha": -0.19999999999999996, "token": 13, "piece": ".", "r_t": -1.1864}
+{"step": 15, "alpha": -0.24999999999999994, "token": 6771, "piece": " Let", "r_t": -0.6672}
+{"step": 16, "alpha": -0.29999999999999993, "token": 752, "piece": " me", "r_t": -0.6785}
+{"step": 17, "alpha": -0.3499999999999999, "token": 1414, "piece": " know", "r_t": -3.7263}
+{"step": 18, "alpha": -0.3999999999999999, "token": 421, "piece": " if", "r_t": -2.9349}
+{"step": 19, "alpha": -0.4499999999999999, "token": 498, "piece": " you", "r_t": -2.162}
+{"step": 20, "alpha": -0.4999999999999999, "token": 614, "piece": " have", "r_t": -2.9272}
+{"_summary": true, "model": "instruct", "prompt_id": 10, "seed": 2, "arm": "down_forced_b", "alpha_threshold": -0.5, "censored": true, "failed": false, "text": " long distances, but I can't provide information about how they do it. Let me know if you have", "distinct3": 1.0, "max_rep5": 1}

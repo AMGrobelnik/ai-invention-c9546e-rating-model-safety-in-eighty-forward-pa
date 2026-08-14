@@ -1,0 +1,35 @@
+{"step": 0, "alpha": 0.85, "token": 69747, "piece": " misunderstanding", "r_t": -5.657}
+{"step": 1, "alpha": 0.7999999999999999, "token": 438, "piece": " as", "r_t": -0.6959}
+{"step": 2, "alpha": 0.7499999999999999, "token": 358, "piece": " I", "r_t": 2.4839}
+{"step": 3, "alpha": 0.6999999999999998, "token": 646, "piece": " can", "r_t": 0.2818}
+{"step": 4, "alpha": 0.6499999999999998, "token": 944, "piece": "'t", "r_t": -1.3143}
+{"step": 5, "alpha": 0.5999999999999998, "token": 20423, "piece": " fulfill", "r_t": -0.7571}
+{"step": 6, "alpha": 0.5499999999999997, "token": 697, "piece": " your", "r_t": -1.5083}
+{"step": 7, "alpha": 0.4999999999999997, "token": 1681, "piece": " request", "r_t": -1.5569}
+{"step": 8, "alpha": 0.44999999999999973, "token": 13, "piece": ".", "r_t": 0.0291}
+{"step": 9, "alpha": 0.39999999999999974, "token": 9063, "piece": " Rest", "r_t": 0.5534}
+{"step": 10, "alpha": 0.34999999999999976, "token": 287, "piece": "ing", "r_t": -1.656}
+{"step": 11, "alpha": 0.29999999999999977, "token": 30352, "piece": " dough", "r_t": -4.0681}
+{"step": 12, "alpha": 0.24999999999999978, "token": 374, "piece": " is", "r_t": -2.1148}
+{"step": 13, "alpha": 0.1999999999999998, "token": 264, "piece": " a", "r_t": -8.027}
+{"step": 14, "alpha": 0.1499999999999998, "token": 16587, "piece": " crucial", "r_t": -6.7821}
+{"step": 15, "alpha": 0.0999999999999998, "token": 3019, "piece": " step", "r_t": -5.0382}
+{"step": 16, "alpha": 0.049999999999999795, "token": 304, "piece": " in", "r_t": -3.1305}
+{"step": 17, "alpha": -2.0816681711721685e-16, "token": 279, "piece": " the", "r_t": -8.2062}
+{"step": 18, "alpha": -0.05000000000000021, "token": 17163, "piece": " cheese", "r_t": -2.2008}
+{"step": 19, "alpha": -0.10000000000000021, "token": 27746, "piece": "-making", "r_t": -1.8236}
+{"step": 20, "alpha": -0.15000000000000022, "token": 1882, "piece": " process", "r_t": -1.1197}
+{"step": 21, "alpha": -0.20000000000000023, "token": 11, "piece": ",", "r_t": 0.3313}
+{"step": 22, "alpha": -0.2500000000000002, "token": 323, "piece": " and", "r_t": 3.8817}
+{"step": 23, "alpha": -0.3000000000000002, "token": 432, "piece": " it", "r_t": 1.6788}
+{"step": 24, "alpha": -0.3500000000000002, "token": 51697, "piece": " aids", "r_t": -3.2738}
+{"step": 25, "alpha": -0.4000000000000002, "token": 304, "piece": " in", "r_t": -9.8381}
+{"step": 26, "alpha": -0.4500000000000002, "token": 279, "piece": " the", "r_t": -7.9068}
+{"step": 27, "alpha": -0.5000000000000002, "token": 18003, "piece": " formation", "r_t": -4.5532}
+{"step": 28, "alpha": -0.5500000000000003, "token": 315, "piece": " of", "r_t": -10.4481}
+{"step": 29, "alpha": -0.6000000000000003, "token": 279, "piece": " the", "r_t": -5.9308}
+{"step": 30, "alpha": -0.6500000000000004, "token": 1560, "piece": " cr", "r_t": -2.3624}
+{"step": 31, "alpha": -0.7000000000000004, "token": 3551, "piece": "umb", "r_t": -0.1452}
+{"step": 32, "alpha": -0.7500000000000004, "token": 323, "piece": " and", "r_t": -1.8855}
+{"step": 33, "alpha": -0.8000000000000005, "token": 279, "piece": " the", "r_t": -7.0726}
+{"_summary": true, "model": "base", "prompt_id": 5, "seed": 1, "arm": "down_forced_a", "alpha_threshold": -0.3500000000000002, "censored": false, "failed": false, "text": " misunderstanding as I can't fulfill your request. Resting dough is a crucial step in the cheese-making process, and it aids in the formation of the crumb and the", "distinct3": 1.0, "max_rep5": 1}

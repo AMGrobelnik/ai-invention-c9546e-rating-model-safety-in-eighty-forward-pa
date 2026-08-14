@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.7, "token": 9027, "piece": " showing", "r_t": -6.2355}
+{"step": 1, "alpha": 0.6499999999999999, "token": 34430, "piece": " phases", "r_t": -4.7845}
+{"step": 2, "alpha": 0.5999999999999999, "token": 13, "piece": ".", "r_t": 0.6804}
+{"step": 3, "alpha": 0.5499999999999998, "token": 6771, "piece": " Let", "r_t": -2.006}
+{"step": 4, "alpha": 0.49999999999999983, "token": 752, "piece": " me", "r_t": -2.6636}
+{"step": 5, "alpha": 0.44999999999999984, "token": 1414, "piece": " know", "r_t": -3.4256}
+{"step": 6, "alpha": 0.39999999999999986, "token": 421, "piece": " if", "r_t": -4.3105}
+{"step": 7, "alpha": 0.34999999999999987, "token": 1052, "piece": " there", "r_t": -4.682}
+{"step": 8, "alpha": 0.2999999999999999, "token": 594, "piece": "'s", "r_t": -3.3047}
+{"step": 9, "alpha": 0.2499999999999999, "token": 4113, "piece": " anything", "r_t": -11.8464}
+{"_summary": true, "model": "abliterated", "prompt_id": 12, "seed": 3, "arm": "down_forced_a", "alpha_threshold": 0.7, "censored": false, "failed": false, "text": " showing phases. Let me know if there's anything", "distinct3": 1.0, "max_rep5": 1}

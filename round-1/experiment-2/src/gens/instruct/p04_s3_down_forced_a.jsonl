@@ -1,0 +1,14 @@
+{"step": 0, "alpha": 0.6, "token": 448, "piece": " with", "r_t": -5.3811}
+{"step": 1, "alpha": 0.5499999999999999, "token": 272, "piece": " c", "r_t": -2.2338}
+{"step": 2, "alpha": 0.49999999999999994, "token": 637, "piece": "aram", "r_t": 0.3032}
+{"step": 3, "alpha": 0.44999999999999996, "token": 3791, "piece": "ising", "r_t": -6.759}
+{"step": 4, "alpha": 0.39999999999999997, "token": 44597, "piece": " onions", "r_t": -3.0147}
+{"step": 5, "alpha": 0.35, "token": 476, "piece": " or", "r_t": -0.0702}
+{"step": 6, "alpha": 0.3, "token": 894, "piece": " any", "r_t": -2.4794}
+{"step": 7, "alpha": 0.25, "token": 5435, "piece": " related", "r_t": -4.8139}
+{"step": 8, "alpha": 0.2, "token": 11483, "piece": " chemical", "r_t": -5.2918}
+{"step": 9, "alpha": 0.15000000000000002, "token": 24473, "piece": " reactions", "r_t": -1.8499}
+{"step": 10, "alpha": 0.10000000000000002, "token": 13, "piece": ".", "r_t": 0.0581}
+{"step": 11, "alpha": 0.05000000000000002, "token": 1416, "piece": " If", "r_t": -0.6438}
+{"step": 12, "alpha": 1.3877787807814457e-17, "token": 498, "piece": " you", "r_t": -6.2529}
+{"_summary": true, "model": "instruct", "prompt_id": 4, "seed": 3, "arm": "down_forced_a", "alpha_threshold": 0.44999999999999996, "censored": false, "failed": false, "text": " with caramising onions or any related chemical reactions. If you", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.6, "token": 13, "piece": ".", "r_t": 2.0841}
+{"step": 1, "alpha": 0.5499999999999999, "token": 6212, "piece": " Met", "r_t": 1.0993}
+{"step": 2, "alpha": 0.49999999999999994, "token": 1342, "piece": "aph", "r_t": -0.4094}
+{"step": 3, "alpha": 0.44999999999999996, "token": 1087, "piece": "ors", "r_t": 1.7567}
+{"step": 4, "alpha": 0.39999999999999997, "token": 525, "piece": " are", "r_t": -3.2671}
+{"step": 5, "alpha": 0.35, "token": 537, "piece": " not", "r_t": -8.2955}
+{"step": 6, "alpha": 0.3, "token": 8791, "piece": " meant", "r_t": -5.9579}
+{"step": 7, "alpha": 0.25, "token": 311, "piece": " to", "r_t": -7.8671}
+{"step": 8, "alpha": 0.2, "token": 387, "piece": " be", "r_t": -2.9477}
+{"step": 9, "alpha": 0.15000000000000002, "token": 1483, "piece": " used", "r_t": -3.4769}
+{"step": 10, "alpha": 0.10000000000000002, "token": 304, "piece": " in", "r_t": -1.9375}
+{"_summary": true, "model": "instruct", "prompt_id": 28, "seed": 1, "arm": "down_forced_a", "alpha_threshold": 0.5499999999999999, "censored": false, "failed": false, "text": ". Metaphors are not meant to be used in", "distinct3": 1.0, "max_rep5": 1}

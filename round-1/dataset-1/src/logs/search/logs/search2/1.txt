@@ -1,0 +1,59 @@
+Found 8 dataset(s) for query='wikitext'
+
+============================================================
+Dataset 1: Salesforce/wikitext
+Downloads: 1,500,038 | Likes: 758
+Description: 
+# Dataset Card for "wikitext"
+
+## Table of Contents
+- [Dataset Description](#dataset-description)
+  - [Dataset Summary](#dataset-summary)
+  - [Supported Tasks and Leaderboards](#supported-tasks-and-l...
+Tags: task_categories:text-generation, task_categories:fill-mask, task_ids:language-modeling, task_ids:masked-language-modeling, annotations_creators:no-annotation
+
+============================================================
+Dataset 2: EleutherAI/wikitext_document_level
+Downloads: 84,872 | Likes: 18
+Description: 
+
+# Wikitext Document Level
+
+This is a modified version of [https://huggingface.co/datasets/wikitext](https://huggingface.co/datasets/wikitext) that returns Wiki pages instead of Wiki text line-by-lin...
+Tags: license:cc-by-sa-3.0, size_categories:10K<n<100K, format:parquet, modality:text, library:datasets
+
+============================================================
+Dataset 3: mikasenghaas/wikitext-2
+Downloads: 2,362 | Likes: 4
+Tags: size_categories:10K<n<100K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 4: vesteinn/wikitext-220728-250728
+Downloads: 1,773 | Likes: 0
+Tags: license:cc-by-4.0, size_categories:10K<n<100K, format:json, modality:text, library:datasets
+
+============================================================
+Dataset 5: EleutherAI/bergson-wikitext-512-chunks
+Downloads: 668 | Likes: 0
+Description: 
+# bergson-wikitext-512-chunks
+
+Wikitext-2 (`Salesforce/wikitext`, `wikitext-2-raw-v1`) pre-chunked into
+512-GPT-2-token rows for training-data-attribution experiments with
+[bergson](https://github.co...
+Tags: task_categories:text-generation, language:en, license:cc-by-sa-4.0, size_categories:1K<n<10K, format:parquet
+
+============================================================
+Dataset 6: dlwh/wikitext_103_detokenized
+Downloads: 552 | Likes: 3
+Tags: size_categories:1M<n<10M, format:json, modality:text, library:datasets, library:dask
+
+============================================================
+Dataset 7: iohadrubin/wikitext-103-raw-v1
+Downloads: 536 | Likes: 10
+Tags: size_categories:10K<n<100K, format:parquet, modality:text, library:datasets, library:dask
+
+============================================================
+Dataset 8: Self-GRIT/wikitext-2-raw-v1-preprocessed
+Downloads: 536 | Likes: 2
+Tags: size_categories:10K<n<100K, format:parquet, modality:text, library:datasets, library:pandas

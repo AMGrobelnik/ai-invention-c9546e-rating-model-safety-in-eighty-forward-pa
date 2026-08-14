@@ -1,0 +1,56 @@
+Found 8 dataset(s) for query='ultrachat'
+
+============================================================
+Dataset 1: HuggingFaceH4/ultrachat_200k
+Downloads: 73,327 | Likes: 871
+Description: 
+# Dataset Card for UltraChat 200k
+
+## Dataset Description
+
+This is a heavily filtered version of the [UltraChat](https://github.com/thunlp/UltraChat) dataset and was used to train [Zephyr-7B-β](https...
+Tags: task_categories:text-generation, language:en, license:mit, size_categories:100K<n<1M, format:parquet
+
+============================================================
+Dataset 2: NickL77/Llama3.1-8B-BaldEagle3-Ultrachat
+Downloads: 10,346 | Likes: 1
+Tags: region:us
+
+============================================================
+Dataset 3: openbmb/UltraChat
+Downloads: 4,404 | Likes: 500
+Description: 
+# Dataset Card for Dataset Name
+
+## Dataset Description
+
+An open-source, large-scale, and multi-round dialogue data powered by Turbo APIs. In consideration of factors such as safeguarding privacy, **...
+Tags: task_categories:text-generation, language:en, license:mit, size_categories:100K<n<1M, format:json
+
+============================================================
+Dataset 4: smangrul/ultrachat-10k-chatml
+Downloads: 2,966 | Likes: 6
+Tags: size_categories:10K<n<100K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 5: causal-lm/ultrachat
+Downloads: 1,877 | Likes: 4
+Description: # Dataset Card for "ultrachat"
+
+[More Information needed](https://github.com/huggingface/datasets/blob/main/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)...
+Tags: language:en, size_categories:1M<n<10M, format:parquet, modality:text, library:datasets
+
+============================================================
+Dataset 6: typeof/ultrachat-sharegpt-5GB
+Downloads: 1,467 | Likes: 0
+Tags: size_categories:100K<n<1M, format:parquet, modality:text, library:datasets, library:dask
+
+============================================================
+Dataset 7: winglian/pirate-ultrachat-10k
+Downloads: 1,416 | Likes: 5
+Tags: region:us
+
+============================================================
+Dataset 8: NickL77/Qwen2.5-7B-BaldEagle-Ultrachat
+Downloads: 1,388 | Likes: 0
+Tags: region:us

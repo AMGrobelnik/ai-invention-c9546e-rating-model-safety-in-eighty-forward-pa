@@ -1,0 +1,383 @@
+{
+  "datasets": [
+    {
+      "dataset": "lorco_operating_point_four_columns",
+      "examples": [
+        {
+          "eval_auroc_archived": 1.0,
+          "eval_auroc_oriented": 1.0,
+          "eval_col3_agrees_to_1e12": 1.0,
+          "eval_delta_refit_minus_fixed": 0.0,
+          "eval_n_held_out": 2.0,
+          "eval_n_negatives": 32.0,
+          "eval_sens_fixed_tau": 1.0,
+          "eval_sens_refit_tau": 1.0,
+          "eval_specificity_fixed_tau": 1.0,
+          "eval_specificity_refit_tau": 1.0,
+          "eval_tau_refit": -1.7156003243767266,
+          "input": "Leave-one-recipe-class-out cell ARMB_GAUSSIAN_DEPTH__DEPTH_WEIGHTED_ABOVE_W_STAR: hold out its 2 positives, score against 32 negatives, report sensitivity at the FIXED panel tau -2.7415117804288127 an...",
+          "metadata_arm": [
+            "B"
+          ],
+          "metadata_auroc_orientation": "lower-is-positive (FIXED for every cell in col2)",
+          "metadata_class": "ARMB_GAUSSIAN_DEPTH__DEPTH_WEIGHTED_ABOVE_W_STAR",
+          "metadata_held_out_repo_ids": [
+            "gaussian_s64",
+            "gaussian_sinf"
+          ],
+          "metadata_uniformity": "DEPTH_WEIGHTED_ABOVE_W_STAR",
+          "output": "archived heldout_sensitivity=1.0 at refit tau; archived auroc_oriented=1.0",
+          "predict_auroc_oriented": "1.0",
+          "predict_sens_fixed_tau": "1.0",
+          "predict_sens_refit_tau": "1.0"
+        },
+        {
+          "eval_auroc_archived": 0.5803571428571428,
+          "eval_auroc_oriented": 0.5803571428571429,
+          "eval_col3_agrees_to_1e12": 1.0,
+          "eval_delta_refit_minus_fixed": 0.0,
+          "eval_n_held_out": 7.0,
+          "eval_n_negatives": 32.0,
+          "eval_sens_fixed_tau": 0.2857142857142857,
+          "eval_sens_refit_tau": 0.2857142857142857,
+          "eval_specificity_fixed_tau": 1.0,
+          "eval_specificity_refit_tau": 1.0,
+          "eval_tau_refit": -1.7156003243767266,
+          "input": "Leave-one-recipe-class-out cell ARMB_GAUSSIAN_DEPTH__NONUNIFORM: hold out its 7 positives, score against 32 negatives, report sensitivity at the FIXED panel tau -2.7415117804288127 and at the CLASS-HE...",
+          "metadata_arm": [
+            "B"
+          ],
+          "metadata_auroc_orientation": "lower-is-positive (FIXED for every cell in col2)",
+          "metadata_class": "ARMB_GAUSSIAN_DEPTH__NONUNIFORM",
+          "metadata_held_out_repo_ids": [
+            "gaussian_s0.5",
+            "gaussian_s1",
+            "gaussian_s16"
+          ],
+          "metadata_uniformity": "NONUNIFORM",
+          "output": "archived heldout_sensitivity=0.2857142857142857 at refit tau; archived auroc_oriented=0.5803571428571428",
+          "predict_auroc_oriented": "0.5803571428571429",
+          "predict_sens_fixed_tau": "0.2857142857142857",
+          "predict_sens_refit_tau": "0.2857142857142857"
+        },
+        {
+          "eval_auroc_archived": 1.0,
+          "eval_auroc_oriented": 1.0,
+          "eval_col3_agrees_to_1e12": 1.0,
+          "eval_delta_refit_minus_fixed": 0.0,
+          "eval_n_held_out": 1.0,
+          "eval_n_negatives": 32.0,
+          "eval_sens_fixed_tau": 0.0,
+          "eval_sens_refit_tau": 0.0,
+          "eval_specificity_fixed_tau": 1.0,
+          "eval_specificity_refit_tau": 1.0,
+          "eval_tau_refit": -1.7487549954780517,
+          "input": "Leave-one-recipe-class-out cell ARMB_HERETIC__NONUNIFORM: hold out its 1 positives, score against 32 negatives, report sensitivity at the FIXED panel tau -2.7415117804288127 and at the CLASS-HELD-OUT ...",
+          "metadata_arm": [
+            "B"
+          ],
+          "metadata_auroc_orientation": "lower-is-positive (FIXED for every cell in col2)",
+          "metadata_class": "ARMB_HERETIC__NONUNIFORM",
+          "metadata_held_out_repo_ids": [
+            "heretic_percomponent"
+          ],
+          "metadata_uniformity": "NONUNIFORM",
+          "output": "archived heldout_sensitivity=0.0 at refit tau; archived auroc_oriented=1.0",
+          "predict_auroc_oriented": "1.0",
+          "predict_sens_fixed_tau": "0.0",
+          "predict_sens_refit_tau": "0.0"
+        }
+      ]
+    },
+    {
+      "dataset": "derivation_cauchy_schwarz_bound",
+      "examples": [
+        {
+          "eval_abs_gap": 3.5729046206757538,
+          "eval_cos_v1_r": 0.020812345668673515,
+          "eval_discovery_holds": 0.0,
+          "eval_linear_residual_bound": 0.9997795910497972,
+          "input": "Kernel band_mid50 (layer_band): does W05 = log10 min_m e(v1) coincide with log10 min_m e(r), and is the difference inside the Cauchy-Schwarz bound?",
+          "metadata_bound_status": "VACUOUS_BELOW",
+          "metadata_family": "layer_band",
+          "output": "log10_min_e_r=-4.582796061133184",
+          "predict_W05": "-1.00989144045743",
+          "predict_bound_status": "VACUOUS_BELOW"
+        },
+        {
+          "eval_abs_gap": 3.5166167911444433,
+          "eval_cos_v1_r": 0.010602283291518688,
+          "eval_discovery_holds": 0.0,
+          "eval_linear_residual_bound": 1.0000032471441762,
+          "input": "Kernel gaussian_s0.5 (gaussian_depth): does W05 = log10 min_m e(v1) coincide with log10 min_m e(r), and is the difference inside the Cauchy-Schwarz bound?",
+          "metadata_bound_status": "VACUOUS_BELOW",
+          "metadata_family": "gaussian_depth",
+          "output": "log10_min_e_r=-4.526476983600931",
+          "predict_W05": "-1.009860192456488",
+          "predict_bound_status": "VACUOUS_BELOW"
+        },
+        {
+          "eval_abs_gap": 3.5166531008806223,
+          "eval_cos_v1_r": 0.011083577759563923,
+          "eval_discovery_holds": 0.0,
+          "eval_linear_residual_bound": 0.9999980594537569,
+          "input": "Kernel gaussian_s1 (gaussian_depth): does W05 = log10 min_m e(v1) coincide with log10 min_m e(r), and is the difference inside the Cauchy-Schwarz bound?",
+          "metadata_bound_status": "VACUOUS_BELOW",
+          "metadata_family": "gaussian_depth",
+          "output": "log10_min_e_r=-4.526476983600931",
+          "predict_W05": "-1.0098238827203088",
+          "predict_bound_status": "VACUOUS_BELOW"
+        }
+      ]
+    },
+    {
+      "dataset": "corrections_to_prior_reporting",
+      "examples": [
+        {
+          "eval_recomputed_from_rows": 1.0,
+          "input": "Previously reported: six laundering intensity axes",
+          "metadata_id": "C01",
+          "metadata_provenance": {
+            "file": "iter_4/gen_art/gen_art_experiment_3/results/ladder_ci_summary.json",
+            "key": "crossings",
+            "raw_value": [
+              "addback_random",
+              "addback_targeted_all",
+              "addback_targeted_argmin"
+            ]
+          },
+          "output": "8",
+          "predict_one_sentence_for_the_paper": "The laundering ladder has 8 intensity axes, not six: addback_random, addback_targeted_all, addback_targeted_argmin, addback_targeted_topk, combined, lora_sft_benign, merge_parent, quantization."
+        },
+        {
+          "eval_recomputed_from_rows": 1.0,
+          "input": "Previously reported: 65 unresolved non-control rows in the undeclared scan",
+          "metadata_id": "C02",
+          "metadata_provenance": {
+            "file": "iter_4/gen_art/gen_art_experiment_2/results/arm2_archive_counts.json",
+            "key": "n_unresolved_non_control",
+            "raw_value": 81
+          },
+          "output": "81",
+          "predict_one_sentence_for_the_paper": "Counted from the rows themselves the undeclared scan leaves 81 non-control checkpoints UNRESOLVED, not 65."
+        },
+        {
+          "eval_recomputed_from_rows": 1.0,
+          "input": "Previously reported: 7 skipped rows",
+          "metadata_id": "C03",
+          "metadata_provenance": {
+            "file": "iter_4/gen_art/gen_art_experiment_2/results/arm2_archive_counts.json",
+            "key": "n_skipped_non_control",
+            "raw_value": 8
+          },
+          "output": "8",
+          "predict_one_sentence_for_the_paper": "8 non-control rows are SKIPPED by the eligibility rule, not 7."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "assertion_block": {
+      "counts": {
+        "MATCH": 102,
+        "MISMATCH": 2,
+        "TOTAL": 104,
+        "UNAVAILABLE": 0
+      },
+      "policy": "MISMATCHes are never silently fixed -- each becomes a corrections[] entry and the archive's row-level value wins",
+      "verify_numbers_py": {
+        "exit_code": 0,
+        "n_fail": 0,
+        "n_pass": 151,
+        "n_unavailable": 0,
+        "status": "PASS",
+        "stderr_tail": "",
+        "stdout_tail": "         here=0.80625\nPASS         lorco_R_UNKNOWN_sens_fixed_tau                                                 numbers=0.2                        here=0.2\nPASS         lorco_R_UNKNOWN_sens_refit_ta...",
+        "table": [
+          {
+            "expected_in_numbers_json": 0.4580896686159844,
+            "key": "R4_partial_layer_prevalence",
+            "note": null,
+            "recomputed_here": 0.4580896686159844,
+            "status": "PASS"
+          },
+          {
+            "expected_in_numbers_json": -2.7415117804,
+            "key": "W05_abliterated_max",
+            "note": null,
+            "recomputed_here": -2.7415117804,
+            "status": "PASS"
+          },
+          {
+            "expected_in_numbers_json": -4.8203935568,
+            "key": "W05_abliterated_min",
+            "note": null,
+            "recomputed_here": -4.8203935568,
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    "baselines": {
+      "repo_name_regex_caveat": "NAME-SEARCH UPPER BOUND -- see C17",
+      "repo_name_regex_sensitivity": 0.7272727272727273
+    },
+    "budget": {
+      "cap_usd": 10.0,
+      "forward_passes": 0,
+      "hub_fetches": 0,
+      "llm_calls": 0,
+      "model_weights_loaded": 0,
+      "openrouter_usd": 0.0
+    },
+    "completeness": {
+      "workstream_1": "COMPLETE",
+      "workstream_2": "COMPLETE",
+      "workstream_3": "COMPLETE",
+      "workstream_4": "COMPLETE",
+      "workstream_5": "COMPLETE"
+    },
+    "description": "Pure re-analysis of the archived iteration-2/3/4 trees. Emits a single machine-checked numbers.json from which the paper regenerates every numeral, plus the four-column leave-one-recipe-class-out tabl...",
+    "determinism": {
+      "byte_identical": true,
+      "differing_files": [],
+      "file_lists_match": true,
+      "n_files": 8,
+      "nondeterminism_controls": [
+        "every dict/set key list is sorted() before use",
+        "json.dumps(sort_keys=True), full float precision, never rounded",
+        "numpy.random.default_rng(20260814) -- never the legacy global RNG"
+      ],
+      "per_file": {
+        "numbers.json": {
+          "identical": true,
+          "run1_sha256": "c8ace1fe1d53fc8698db9b973f96537708f0e827aef7cebf462799534e1f1f22",
+          "run2_sha256": "c8ace1fe1d53fc8698db9b973f96537708f0e827aef7cebf462799534e1f1f22"
+        },
+        "results/archive_inventory.json": {
+          "identical": true,
+          "run1_sha256": "33cd8be3da0fecce23cc538fadde312d05ae507cbedea41a2b7c899e38b7bff7",
+          "run2_sha256": "33cd8be3da0fecce23cc538fadde312d05ae507cbedea41a2b7c899e38b7bff7"
+        },
+        "results/assertions.json": {
+          "identical": true,
+          "run1_sha256": "babb614a7cbdf4928ba6eafac889fbeba69d5eadd34932de19dd4cff0ee4e48f",
+          "run2_sha256": "babb614a7cbdf4928ba6eafac889fbeba69d5eadd34932de19dd4cff0ee4e48f"
+        },
+        "results/carry_forward.json": {
+          "identical": true,
+          "run1_sha256": "9e7752fb7cd60101042c9e5d6144822767cd40f0db2ecfea8224cb673bba3fda",
+          "run2_sha256": "9e7752fb7cd60101042c9e5d6144822767cd40f0db2ecfea8224cb673bba3fda"
+        },
+        "results/corrections.json": {
+          "identical": true,
+          "run1_sha256": "ec0f7f82b8a89632167b8cadd9eee632244a20ca26d627ce5eb1f289ef3d37be",
+          "run2_sha256": "ec0f7f82b8a89632167b8cadd9eee632244a20ca26d627ce5eb1f289ef3d37be"
+        },
+        "results/derivation.json": {
+          "identical": true,
+          "run1_sha256": "76ecd2da818efe76d251f8d0e25c70207a3a820aa4af0610e54e724dd871200f",
+          "run2_sha256": "76ecd2da818efe76d251f8d0e25c70207a3a820aa4af0610e54e724dd871200f"
+        },
+        "results/edit_list.json": {
+          "identical": true,
+          "run1_sha256": "07b1c3e095cec21e00b5da5faf004240aaf7a6c5c0a64422afa2290ce0b44edc",
+          "run2_sha256": "07b1c3e095cec21e00b5da5faf004240aaf7a6c5c0a64422afa2290ce0b44edc"
+        },
+        "results/lorco_table.json": {
+          "identical": true,
+          "run1_sha256": "5eae436d9c8331102bbf0bcbe04dd7ea48174255411867718935a382f4e3fd5d",
+          "run2_sha256": "5eae436d9c8331102bbf0bcbe04dd7ea48174255411867718935a382f4e3fd5d"
+        }
+      },
+      "run1_files": [
+        "numbers.json",
+        "results/archive_inventory.json",
+        "results/assertions.json"
+      ],
+      "run2_files": [
+        "numbers.json",
+        "results/archive_inventory.json",
+        "results/assertions.json"
+      ],
+      "run2_mode": "separate OS process via subprocess -- process-level determinism"
+    },
+    "evaluation_name": "One numbers file the paper must obey",
+    "headline_sentences": {
+      "chat_subset": "The instruction-tuned/chat subset of that denominator is n=36 (36/139 of the eligible undeclared rows), with 0 firing at the refit threshold, Wilson 95% [0.000, 0.096] -- an n this small cannot suppor...",
+      "detection_iff_completion": "Whenever discovery holds -- that is, whenever the removed direction is the Gram's minimal direction -- detection and completion are the same statement, as a CONSEQUENCE OF THE DEFINITION of W05 rather...",
+      "isometry": "Let H = I - 2 u u^T be a Householder reflection and let every residual-write matrix W be replaced by H W. H is orthogonal, so it removes no rank and leaves every singular value of W unchanged; consequ...",
+      "near_orthogonality": "Detectability and effectiveness are near-orthogonal over the kernel sweep: rho = 0.113 with a bootstrap 95% interval of [-0.641, 0.700] over 13 kernels. The interval is what makes 'near-orthogonal' sa...",
+      "operating_point": "Holding out a single recipe class moves the fitted operating point by 1.026 log10 units (from -2.7415 to -1.7156), about 8.0 times the 0.128 log10 shift that already introduces the first false positiv...",
+      "specificity": "Specificity is a property of the FIXED operating point, not of the statistic: 0/139 eligible undeclared checkpoints fire at tau=-2.7415, but 13/139 fire at the class-held-out refit threshold tau=-1.71...",
+      "undefinedness": "The single-direction discovery rule is undefined for exactly 12 of the 44 scored real edited checkpoints (the R_MULTIDIR_SVD and R_HERETIC classes) and for 5 of the in-house kernels; a rule that canno...",
+      "what_the_sweep_shows": "The genuinely empirical content of the kernel sweep is WHICH kernels achieve discovery, and that the discovery threshold is controlled by the kernel's MINIMUM depth weight, bracketed here in [0.079559..."
+    },
+    "parameters": {
+      "discovery_criterion": "|cos(v1,r)| > 0.99",
+      "n_boot": 10000,
+      "seed": 20260814,
+      "tau_fixed": -2.7415117804288127,
+      "tau_refit_modal": -1.7156003243767266,
+      "wilson_formula": "centre=(k+z^2/2)/(n+z^2); half=(z/(n+z^2))*sqrt(k*(n-k)/n+z^2/4); interval=[centre-half, centre+half] clipped to [0,1]; z=1.959963984540054; continuity_correction=False"
+    }
+  },
+  "metrics_agg": {
+    "assertion_match_rate": 0.9807692307692307,
+    "bound_max_gap_discovery_failing": 5.38718842292094,
+    "bound_max_gap_discovery_holding": 2.833537534876011,
+    "bound_max_gap_discovery_holding_finite_bound": 0.02906130950713992,
+    "bound_median_gap_discovery_holding": 0.0728155752088302,
+    "bound_median_gap_discovery_holding_finite_bound": 0.008892475269814959,
+    "bound_n_discovery_holding": 11.0,
+    "bound_n_discovery_holding_finite_bound": 5.0,
+    "determinism_byte_identical": 1.0,
+    "determinism_n_files_compared": 8.0,
+    "forward_passes": 0.0,
+    "fp_k_at_tau_fixed": 0.0,
+    "fp_k_at_tau_refit": 13.0,
+    "fp_n_at_tau_fixed": 139.0,
+    "fp_rate_at_tau_fixed": 0.0,
+    "fp_rate_at_tau_refit": 0.09352517985611511,
+    "fp_rate_wilson_hi_at_tau_fixed": 0.026893164298442428,
+    "fp_rate_wilson_hi_at_tau_refit": 0.153440755022583,
+    "hub_fetches": 0.0,
+    "isometry_control_dW05": 7.261342091857692e-05,
+    "isometry_orba_dW05": 4.0809310130285326e-05,
+    "mean_sens_fixed_tau": 0.3676691729323308,
+    "mean_sens_refit_tau": 0.4045112781954887,
+    "model_weights_loaded": 0.0,
+    "n_assertions": 104.0,
+    "n_assertions_match": 102.0,
+    "n_assertions_mismatch": 2.0,
+    "n_assertions_unavailable": 0.0,
+    "n_backward_references_found": 25.0,
+    "n_blocking_edits": 33.0,
+    "n_bound_rows": 25.0,
+    "n_bound_vacuous": 20.0,
+    "n_bound_violations": 0.0,
+    "n_carry_forward_numbers": 130.0,
+    "n_carry_forward_unavailable": 0.0,
+    "n_cells_changing_materially": 3.0,
+    "n_corrections": 24.0,
+    "n_edits": 34.0,
+    "n_effective_and_detected": 4.0,
+    "n_effective_kernels": 10.0,
+    "n_lorco_cells": 19.0,
+    "n_numbers_json_entries": 212.0,
+    "n_rows_discovery_rule_undefined": 12.0,
+    "openrouter_usd_spent": 0.0,
+    "spearman_ci_hi": 0.7004682672384859,
+    "spearman_ci_lo": -0.6406266564596071,
+    "spearman_detectability_vs_effectiveness": 0.11313952680205265,
+    "tau_brittleness_scale": 0.12763317374178218,
+    "tau_fixed": -2.7415117804288127,
+    "tau_refit_modal": -1.7156003243767266,
+    "tau_shift_log10": 1.0259114560520861,
+    "tau_shift_over_brittleness": 8.037968703400207,
+    "verify_n_fail": 0.0,
+    "verify_n_pass": 151.0,
+    "verify_n_unavailable": 0.0,
+    "verify_numbers_exit_code": 0.0
+  }
+}

@@ -1,0 +1,55 @@
+{
+ "compliance_runs": [
+  6,
+  10,
+  14
+ ],
+ "per_model": {
+  "base": {
+   "6": {
+    "n": 0,
+    "mean": null,
+    "ci_low": null,
+    "ci_high": null,
+    "sd": null
+   },
+   "10": {
+    "n": 0,
+    "mean": null,
+    "ci_low": null,
+    "ci_high": null,
+    "sd": null
+   },
+   "14": {
+    "n": 0,
+    "mean": null,
+    "ci_low": null,
+    "ci_high": null,
+    "sd": null
+   }
+  },
+  "instruct": {
+   "6": {
+    "n": 30,
+    "mean": -0.01277777777777777,
+    "sd": 0.14003853693290666,
+    "ci_low": -0.06222222222222222,
+    "ci_high": 0.035555555555555556
+   },
+   "10": {
+    "n": 30,
+    "mean": 0.010555555555555558,
+    "sd": 0.17499224576872718,
+    "ci_low": -0.05,
+    "ci_high": 0.07333333333333333
+   },
+   "14": {
+    "n": 30,
+    "mean": 0.0,
+    "sd": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   }
+  }
+ }
+}

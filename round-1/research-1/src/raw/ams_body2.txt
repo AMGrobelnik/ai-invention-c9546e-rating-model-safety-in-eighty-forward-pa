@@ -1,0 +1,215 @@
+URL: https://arxiv.org/pdf/2608.05578
+Type: PDF
+Length: 71601 chars (truncated) (offset: 33000)
+
+--- Content ---
+
+lls with high
+reported σ.
+We recommend reporting the CI lower bound, not the
+single-run point estimate, as the operationally honest summary
+statistic. Under that convention, four of the seven instruction-
+tuned models drop below 3.5σ on harmful content (their CI
+lower bound is <3.5), reinforcing that the structural signal is
+more uncertain than single-run reporting suggests.
+
+7
+E. σ vs. Behavioral Compliance
+For each of the 14 models we measure behavioral com-
+pliance on 20 stratified JailbreakBench prompts. Compliance
+rate ranges from 0.05 (gemma-2-9b-it) to 1.00 (gemma-2-9b-
+it-abliterated). Figure 1 shows the relationship between σharmful
+and compliance rate.
+We measure two correlations: Pearson (linear) and Spear-
+man (rank). Using σharmful:
+• Pearson r = −0.546, p = 0.043 (n = 14). Significant at
+α = 0.05.
+• Spearman ρ = −0.423, p = 0.13. Not significant.
+Using the worst-concept σmin across the three concepts
+produces slightly weaker correlations (Pearson r = −0.505,
+p = 0.065; Spearman ρ = −0.273, p = 0.34). The harmful-
+content concept is the better behavioral predictor.
+Three observations follow. First, the per-category cluster-
+ing on the scatter is clean: instruction-tuned models cluster
+lower-right (high σ, low compliance) and uncensored/base
+models cluster upper-left (low σ, high compliance). The
+basic structural-behavioral relationship is real. Second, the
+three off-trend high-compliance points at high σ (DarkIdol
+at (5.45, 0.97), gemma-2-9b-it-abliterated at (4.54, 1.00), and
+Llama-3.1-Inst.-abliterated at (3.33, 0.93)) flatten the linear
+relationship. Third, the structural signal alone is therefore
+not a sufficient behavioral predictor for safety certification.
+AMS scores must be combined with behavioral evaluation;
+we discuss this in Section IX.
+F. Layer Sweep on False-Negative Models
+AMS selects a single optimal layer per concept in the 40–
+80% depth band. To test whether the two Tier-1 false negatives
+(DarkIdol and gemma-2-9b-it-abliterated) might be caught by
+scanning a different layer, we compute σharmful at every layer
+in the wider 20–90% depth band for the two false-negative
+models and two controls (gemma-2-9b-it as a PASS control
+and dolphin-2.9-llama3-8b as a CRITICAL control). Figure 2
+shows the resulting layer profiles.
+DarkIdol’s σ remains in [4.01, 5.45] across the entire 20–
+90% depth band—no layer choice exposes it. gemma-2-9b-it-
+abliterated dips to 3.12σ at the shallowest swept layer (L8,
+depth 0.20), but the clean PASS-band control gemma-2-9b-it
+reaches its own minimum (3.21σ) at the same layer. Across
+the full sweep the two curves are nearly indistinguishable.
+Both spend the same 2/30 layers below 3.5σ and stay above
+3.0σ everywhere else. A min-σ-across-layers rule that flagged
+gemma-abliterated would also flag gemma-clean. Multi-layer
+scanning is therefore not a viable fix for either false negative.
+The failure mode is structural, not a layer-selection artifact.
+The CRITICAL control (dolphin-2.9) stays at σ ≤1.4
+at every swept layer, confirming the layer-sweep estimator
+produces sensibly low values when the underlying geometry
+really is broken.
+VIII. DISCUSSION
+A. Mechanistic Taxonomy of Safety Modifications
+Our results across the 14-model set, augmented by the
+direction-shift measurements in Section VIII-B, support a four-
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+Depth fraction (layer / total layers)
+1
+2
+3
+4
+5
+6
+_harmful (class separation)
+ 3.5 PASS
+ 2.0 CRITICAL
+Layer-by-layer  for false-negative models vs. controls
+(open circle = AMS-selected optimal layer; harmful_content concept)
+DarkIdol-Llama-3.1-8B (uncensored)
+gemma-2-9b-it-abliterated
+gemma-2-9b-it
+dolphin-2.9-llama3-8b
+Fig. 2.
+Layer-wise σharmful for two AMS Tier-1 false negatives (DarkI-
+dol, gemma-2-9b-it-abliterated) and two controls (gemma-2-9b-it as PASS,
+dolphin-2.9-llama3-8b as CRITICAL). Open circles mark each model’s AMS-
+selected optimal layer. Dashed lines at the 3.5σ and 2.0σ reference thresholds.
+Neither false-negative collapses at any layer in the sweep range; gemma-
+abliterated’s profile tracks the safe gemma-clean parent layer-for-layer.
+class taxonomy of safety-training modifications distinguished
+by their activation-space signature. Table III summarizes the
+classes, their canonical examples, and AMS’s coverage of
+each.
+Class (i) — Training removal. The modification removes
+safety training entirely, either via fine-tuning from base on
+unfiltered data (Dolphin) or by serving the base model without
+instruction tuning at all. Without safety training, the model
+never learned to represent harmful and benign content in
+distinct activation regions. The contrastive separation collapses
+below 1.5σ. Tier 1 catches this case cleanly. This is the
+canonical case AMS was originally designed for.
+Class (ii) — Weight-orthogonalization abliteration. The
+textbook abliteration technique [1] identifies the refusal di-
+rection and orthogonalizes the residual-stream-writing weight
+matrices against it. The model is rewritten so the original
+refusal axis is no longer expressible in the residual stream.
+This both collapses the cluster separation and rotates whatever
+residual refusal direction can still be extracted. mlabonn
+e/Meta-Llama-3.1-8B-Instruct-abliterated
+exemplifies this class: σharmful drops from 5.67 (clean baseline)
+to 3.33, and the per-layer refusal direction cosine similarity
+drops to a minimum of 0.30 (Section VIII-B). Tier 1 flags
+this as WARNING; Tier 2 fails verification. Defense in depth.
+Class (iii) — Rotation-without-collapse abliteration. A
+different abliteration procedure, used in cases where standard
+orthogonalization fails on the target architecture, rotates the
+refusal direction without collapsing the cluster geometry. Il
+yaGusev/gemma-2-9b-it-abliterated exemplifies
+this class. The uploader explicitly reports that standard or-
+thogonalization “did not produce the same results” on Gemma
+2 due to its RMSNorm-before-residual-merge architecture,
+and substituted TransformerLens-style interventions with an
+embedding-layer rescaling step. The resulting signature is
+mild: mean per-layer cosine similarity 0.84, minimum 0.70,
+∆-norm averaging 0.52—far from the orthogonal limit. Cluster
+separation is preserved at σ = 4.54. Tier 1 misses this case;
+
+8
+TABLE III
+FOUR-CLASS TAXONOMY OF SAFETY-TRAINING MODIFICATIONS. “σ EFFECT” IS THE CHANGE IN POOLED-STANDARD-DEVIATION CLUSTER SEPARATION
+AT THE HARMFUL-CONTENT CONCEPT. “DIRECTION SHIFT” IS THE COSINE SIMILARITY BETWEEN THE MODIFIED MODEL’S REFUSAL DIRECTION AND
+THAT OF ITS CLEAN BASE/REFERENCE. “TIER 1” IS AMS’S σ-THRESHOLD DETECTOR; “TIER 2” IS THE DIRECTION-SIMILARITY VERIFIER.
+Modification class
+Canonical example(s)
+σ effect
+Direction shift
+Tier 1?
+Tier 2?
+(i) Training removal
+Llama-3.1-8B base, Dolphin-2.9
+Collapses (<1.5)
+Variable/absent
+✓
+✓
+(ii) Weight-orthogonalization abliter-
+ation
+mlabonne/Llama-3.1-abliterated
+Collapses (3.3)
+Rotated (cos ≈0.30)
+✓
+✓
+(iii) Rotation-without-collapse ablit-
+eration
+IlyaGusev/gemma-2-9b-it-
+abliterated
+Preserved (4.5)
+Rotated (cos ≈0.83)
+×
+✓
+(iv) Behavioral fine-tuning
+DarkIdol-1.2-Uncensored
+Preserved (5.4)
+Preserved (intact)
+×
+×
+Tier 2 catches it (direction similarity falls well below the 0.80
+threshold across most layers).
+Class (iv) — Behavioral fine-tuning. The modification
+leaves both magnitude and direction of the refusal vector
+substantially intact while modifying behavioral output via fine-
+tuning that re-weights the refusal-conditional generation dis-
+tribution rather than via any structural ablation. aifeifei79
+8/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncen
+sored exemplifies this class. σharmful = 5.45 across all swept
+layers (Section VII-F). The refusal direction is preserved;
+the contrastive cluster is preserved; yet the model complies
+with 19 of 20 stratified harmful prompts (97% compliance).
+This case is undetectable by activation-only probing of mid-
+residual-stream representations. The exact training procedure
+is not publicly documented but is consistent with one of:
+DPO on harmful-comply pairs that adjusts output-layer logits
+without rewriting middle-layer features; targeted fine-tuning
+of the final transformer block or lm_head; or instruction-
+following over-fitting that conditions the model to suppress
+refusal tokens at decode time. We do not claim to have verified
+the specific mechanism; we report what is consistent with the
+observed signature and leave verification for future work.
+B. Mechanism
+Investigation:
+Why
+Gemma-Abliteration
+Evades Tier 1
+The discovery that two ostensibly identical “abliteration”
+techniques produce different AMS signatures motivated a
+deeper mechanism investigation. We pulled the HuggingFace
+model cards for both abliterated models and computed the
+per-layer refusal-direction shift between each base/abliterated
+pair.
+Model card audit. mlabonne/Meta-Llama-3.1-8B-
+Instruct-abliterated credits FailSpy’s original ablit-
+eration implementation and applies the standard recipe: find
+refusal direction, apply direc

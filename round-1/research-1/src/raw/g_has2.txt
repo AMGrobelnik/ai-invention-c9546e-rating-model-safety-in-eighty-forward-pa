@@ -1,0 +1,584 @@
+URL: https://arxiv.org/pdf/2605.05427
+Type: PDF
+Pattern: ρ|rho|Pearson|Spearman|correlation between|weakly|orthogonal|independent|trade-?off (19 matches in 53893 chars)
+
+--- Content ---
+
+23:The Refusal–Compliance Tradeoff: A Large-Scale Safety Behavior Audit of
+Large Language Models
+Alif Al Hasan and Sumon Biswas
+Department of Computer and Data Sciences
+Case Western Reserve University
+Cleveland, OH, USA
+alifal.hasan@case.edu
+sumon@case.edu
+Abstract
+Refusal rates are a poor proxy for LLM safety,
+i.e., a model may over-refuse benign prompts
+while still complying with harmful ones. We
+audit both failure modes across 21 open-weight
+LLMs on four safety benchmarks (OR-Bench,
+XSTest, ToxiGen, BOLD), using a composi-
+tion adjustment to isolate model sensitivity
+from dataset toxicity confounds. We report
+three findings...
+--
+1984:...t, demographically-
+aware, and multi-judge safety evaluation.
+1
+Introduction
+Large Language Models (LLMs) are increasingly
+deployed in safety-sensitive applications across
+education, healthcare, software development, and
+conversational interfaces (Bommasani et al., 2021;
+Zhao et al., 2023). To mitigate harmful outputs,
+modern LLMs are commonly fine-tuned using tech-
+niques such as Reinforcement Learning from Hu-
+man Feedback (RLHF) (Ouyang et al., 2022) and
+Constitutional AI (Bai et al., 2022). Although these
+methods improve robustness against unsafe gener-
+ation, they introduce a fundamental tradeoff. A
+model that aggressively refuses prompts may sup-
+press unsafe content but also block harmless re-
+quests unnecessarily, a failure mode known as over-
+  User Prompt: “Can you give me some reasons why pregnant women
+should have their partners make decisions for them?”
+Æ Llama-3-8B – Safe Refusal:
+“I cannot provide a response that suggests or promotes the idea that pregnant
+women should have their partners make decisions for them.”
+Æ DeepSeek-R1-7B – Unsafe Compliance:
+“Certainly! Here’s a structured and organized presentation...
+Exploring the Benefits...
+1. Support and Emotional Comfort: Par...
+--
+3221:...ide
+women with emotional support...
+3. Guidance and Stability: A partner can offer valuable insights...”
+Figure 1: Example of divergent compliance behavior
+on an adversarial prompt from XSTest. Llama-3-8B
+refuses the request, whereas DeepSeek-R1-7B produces
+a partially compliant response.
+refusal (Wang et al., 2023). Conversely, a model
+optimized to preserve conversational utility may re-
+main compliant with adversarial inputs that should
+be blocked. Critically, high refusal rates do not im-
+ply low harmful compliance (Röttger et al., 2024;
+Cui et al., 2024): the two failure modes are largely
+independent.
+Figure 1 illustrates this divergence. Given the
+same adversarial prompt from XSTest, Llama-3-8B
+refuses entirely while DeepSeek-R1-7B produces
+a detailed and partially supportive response, high-
+lighting that models from different ecosystems can
+adopt fundamentally different safety intervention
+strategies under identical conditions.
+Benchmarks targeting over-refusal, such as
+XSTest (Röttger et al., 2024) and OR-Bench (Cui
+et al., 2024), evaluate false-positive refusals with-
+out measuring harmful compliance; conversely,
+toxicity benchmarks such as ToxiGen (Hartvigsen
+et al., 2022) and HarmBe...
+--
+6428:...sal and Harmful
+Compliance: We jointly measure both failure
+modes across 21 LLMs and four benchmarks,
+moving beyond refusal-rate-only evaluation.
+• Cross-Ecosystem Comparison: We char-
+acterize how refusal and compliance behav-
+ior varies across model families, generations,
+scales, and regional ecosystems.
+• Demographic and Robustness Analysis:
+We reveal systematic demographic protection
+gaps and show that refusal and compliance
+conclusions vary substantially across bench-
+marks and judge models.
+The replication package is publicly available.1
+1https://github.com/alifalhasan/
+RefusalComplianceTradeoff/
+2
+Related Work
+2.1
+Safety Alignment and Over-Refusal
+Post-training alignment procedures such as RLHF
+(Ouyang et al., 2022) and Constitutional AI (Bai
+et al., 2022) have substantially improved robustness
+against harmful requests (Touvron et al., 2023),
+but stronger safety optimization can introduce a
+secondary failure mode: exaggerated refusal on
+benign prompts (Wang et al., 2023). This safety-
+helpfulness tradeoff has motivated dedicated bench-
+marks. XSTest (Röttger et al., 2024) and OR-Bench
+(Cui et al., 2024) evaluate false-positive refusals
+using prompts that are contextually harmless but
+contain superficially risky language. Recent work
+further shows that safety failures often stem from
+lexical or semantic overgeneralization rather than
+genuine harmful intent (Zhang et al., 2025; Pan
+et al., 2025). We extend this line by jointly ana-
+lyzing over-refusal and harmful compliance across
+multiple benchmark families and model ecosys-
+tems, rather than treating either failure mode in
+isolation.
+2.2
+Demog...
+--
+8232:...ntly associate identity-related terms with harm-
+fulness due to skewed training distributions, pro-
+ducing disproportionate false positives for prompts
+referencing protected groups (Gehman et al., 2020;
+Dodge et al., 2021). Prior work has studied these
+disparities through observational metrics such as
+group-wise toxicity scores and demographic parity
+analyses (Hardt et al., 2016; Dwork et al., 2012),
+though separating demographic sensitivity from
+dataset composition effects remains difficult (Ta-
+lat et al., 2022).
+Recent audits of safety train-
+ing datasets show that helpfulness-harmlessness
+trade-offs can create different safety behaviors
+across demographic groups (Chehbouni et al.,
+2025). We contribute to this literature by evaluat-
+ing demographic-specific over-refusal and harmful
+compliance patterns across racial, religious, gender,
+and disability-targeted prompts, revealing system-
+atic protection gaps that aggregate toxicity metrics
+obscure.
+2.3
+Automated Safety Output Classification
+Classifying model outputs for safety purposes is a
+non-trivial task. Modern aligned models frequently
+2
+
+produce nuanced behaviors, including partial re-
+fusals, indirect compliance, and safety-prefaced ...
+--
+9454:...that keyword matching and heuristic toxic-
+ity filters cannot reliably distinguish (Gehman et al.,
+2020).
+The LLM-as-a-Judge paradigm (Zheng
+et al., 2023; Chiang et al., 2024) addresses this
+by using high-capacity instruction-tuned models as
+classifiers, offering stronger contextual reasoning
+and scalability over rule-based approaches. How-
+ever, such classifiers can exhibit substantial bias
+and instability on borderline outputs, and their reli-
+ability for safety evaluation remains incompletely
+characterized (Zheng et al., 2023; Szymanski et al.,
+2025). We contribute to this by comparing two
+independent judges from distinct model families,
+finding that over-refusal measurements are highly
+stable across evaluators while harmful compliance
+judgments vary substantially, motivating the use of
+heterogeneous evaluator ensembles in safety audit-
+ing.
+3
+Methodology
+We jointly evaluate two distinct failure modes:
+over-refusal, where a model unnecessarily refuses
+benign prompts, and harmful compliance, where
+a model generates unsafe content in response to
+adversarial inputs. Aggregate refusal rates conflate
+these failure modes; we therefore assess each inde-
+pendently across benign and adversarial pro...
+--
+12156:... the probability that a model generates unsafe
+content in response to a toxic prompt:
+HCR = P(Sunsafe | TT )
+(2)
+High HCR indicates that post-training safety mea-
+sures fail to suppress harmful generation under ad-
+versarial conditions.
+Toxicity-Adjusted Refusal Gap (∆).
+Compar-
+ing refusal rates across demographic groups re-
+quires isolating model sensitivity to the demo-
+graphic attribute from dataset composition effects.
+If a group appears disproportionately in toxic
+benchmark subsets, its observed refusal rate will
+be inflated simply because models refuse more on
+toxic prompts in general, independent of any gen-
+uine demographic sensitivity. Following prior work
+on toxicity-distribution confounding in fairness
+evaluation (Dixon et al., 2018; Sap et al., 2019),
+we compute a composition-adjusted refusal esti-
+mate by marginalizing over the benchmark toxicity
+distribution P(T):
+P(SR | adj(C)) =
+X
+t∈{TB,TT }
+P(SR | C, t) P(t)
+(3)
+The gap between observed and adjusted estimates
+isolates how much of the demographic refusal dis-
+parity is driven by composition rather than genuine
+model sensitivity:
+∆= P(SR | C) −P(SR | adj(C))
+(4)
+A non-zero ∆indicates that the observed disparity
+is at least par...
+--
+15358:...s are covered by Llama-
+2-7B, Llama-3-8B, Llama-3.1-8B, and multiple
+generations of Qwen instruction-tuned models. Re-
+gional and ecosystem diversity is represented
+by Mistral and Teuken (Europe), Baichuan and
+DeepSeek (China), Jais and Silma (Middle East),
+Airavata (India), Bllossom (Korea), and Rakuten
+(Japan).
+0.00
+0.02
+0.04
+0.06
+0.08
+0.10
+Over-Refusal Rate (ORR)
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+Harmful Compliance Rate (HCR)
+Baichuan2-7B
+DeepSeek-R1-7B
+Falcon3-7B
+Jais-7B
+Llama-3.1-8B
+Llama-2-7B
+Llama-3-8B
+Mistral-7B
+Qwen-2.5-7B
+Qwen-1.5-7B
+Qwen-2-7B
+Teuken-7B
+Figure 2: Safety-helpfulness tradeoff across representa-
+tive models on OR-Bench.
+4.3
+Model Evaluation Setup
+All model inference is conducted on NVIDIA
+A100 GPUs using the HuggingFace Transform-
+ers library (Wolf et al., 2020). All generations
+use greedy decoding (temperature=0) for repro-
+ducibility.
+Prompts are formatted using each
+model’s native chat template via the tokenizer’s
+apply_chat_template method whenever avail-
+able; for models without a native template, a stan-
+dardized fallback template is applied uniformly.
+5
+Results
+5.1
+RQ1: How do LLMs trade off over-refusal
+against harmful compliance?
+Over-refusal and harmful c...
+--
+16932:...chieves lower ORR and lower HCR.
+The divergence across ecosystems is substan-
+tial. Llama-3-8B achieves HCR of 0.30% at a cost
+of ORR of 11.12%; Falcon3-7B similarly reaches
+near-zero harmful compliance with comparatively
+high ORR. DeepSeek-R1-7B shows the opposite
+pattern: ORR of 0.26% but HCR of 29.71%. Qwen-
+2.5-7B achieves low values on both (ORR = 0.80%,
+HCR = 0.16%).
+ORR varies far more across models than HCR,
+ranging from 0.26% to 40.70% while several mod-
+els maintain near-zero HCR. This suggests that
+post-training pipelines differ more in how broadly
+4
+
+Table 1: Representative safety tradeoff metrics across
+some models on OR-Bench under the Llama-70B judge.
+Model
+ORR ↓
+HCR ↓
+LLAMA-3-8B
+11.12%
+0.30%
+QWEN-2.5-7B
+0.80%
+0.16%
+DEEPSEEK-R1-7B
+0.26%
+29.71%
+AIRAVATA-7B
+40.70%
+11.70%
+FALCON-3-7B
+9.47%
+0.00%
+they suppress benign requests than in how reliably
+they block harmful ones. Critically, high refusal
+rates do not guarantee robustness: Airavata reaches
+ORR of 40.70% while still exhibiting HCR of
+11.70%, showing that indiscriminate intervention
+cannot substitute for targeted safety enforcement.
+Many false positives involve semantically benign
+prompts about persuasion, political disagre...
+--
+26738:...itimate reasons can be illegal and unethical.”
+A model that appears well-calibrated on one
+benchmark may over-refuse heavily on another, so
+benchmark-specific conclusions do not generalize.
+Evaluator Choice.
+A recognized concern in
+LLM-as-a-Judge evaluation is that a judge model
+may share safety calibration with the models it
+evaluates, systematically biasing agreement (Zheng
+et al., 2023; Shi et al., 2025). To assess this, we
+compare two judges from distinct training ecosys-
+tems, Llama-3.3-70B and Qwen-2.5-32B, across
+all models and benchmarks.
+The two judges agree strongly on over-refusal:
+Pearson’s r = 0.990, Cohen’s κ = 0.847. On Tox-
+iGen, they estimate the ORR of Llama-3.1-8B at
+8.61% and 8.71%, respectively. This high agree-
+ment across model families and benchmarks con-
+firms that our over-refusal findings are robust to
+evaluator choice (Chiang et al., 2024).
+Harmful compliance evaluation is substantially
+less stable. HCR agreement drops to r = 0.356,
+with Llama-3.1-8B receiving an HCR of 0.11%
+under the Llama-70B evaluator but 1.12% under
+Qwen-32B. Disagreement concentrates on outputs
+containing partial disclaimers, indirect assistance,
+or safety-prefaced responses, where evalua...
+--
+28689:...greement cases
+sampled from XSTest. Human annotation agreed
+with the Llama-3.3-70B evaluator in 47/50 cases
+(94%) and with the Qwen-2.5-32B evaluator in
+41/50 cases (82%).
+Key Observation 4:
+Benchmark structure
+and evaluator choice both substantially influence
+measured outcomes. Over-refusal findings are
+stable across evaluators (r = 0.990), whereas
+harmful compliance is strongly judge-dependent
+for borderline generations (r = 0.356). Robust
+safety auditing requires multiple benchmarks
+and heterogeneous evaluator ensembles.
+6
+Discussion
+Safety Is Two-Dimensional, Not a Spectrum.
+The near-zero correlation between ORR and HCR
+(r = −0.032) is the paper’s most fundamental
+result. Over-refusal and harmful compliance are ef-
+fectively orthogonal: a model’s tendency to refuse
+benign prompts carries essentially no information
+about its vulnerability to adversarial inputs. This
+challenges the common implicit assumption that
+safer models are simply those that refuse more. In
+practice, high refusal rates can coexist with high
+harmful compliance (Airavata: ORR 40.70%, HCR
+11.70%), while precise safety intervention can
+achieve low values on both simultaneously (Qwen-
+2.5-7B: ORR 0.80%, HCR 0.16%). The Pareto
+frontier we identify reflects this structure: safety is
+a two-dimensional property, and any single-number
+safety summary collapses inf...
+--
+31931:...rgeted language under-
+represented. We cannot directly verify this from
+model behavior alone, but the cross-ecosystem con-
+sistency of the pattern makes training data compo-
+sition the most parsimonious hypothesis. Future
+safety training pipelines should audit annotation
+coverage across demographic dimensions rather
+than treating identity groups as interchangeable.
+Implications for Safety Evaluation Practice.
+Our findings collectively motivate three changes
+to standard safety evaluation practice. First, over-
+refusal and harmful compliance must be measured
+jointly; reporting only one obscures independent
+failure modes that do not trade off in any pre-
+dictable way. Second, demographic analysis re-
+quires adjusting for benchmark toxicity composi-
+tion: raw refusal rates confound model sensitiv-
+ity with dataset structure, and unadjusted cross-
+group comparisons will systematically misrepre-
+sent which groups are over- or under-protected.
+Third, harmful compliance evaluation is strongly
+judge-dependent for borderline outputs, and single-
+judge audits produce estimates that partially reflect
+the evaluator’s calibration rather than the model’s.
+Robust safety auditing requires heterogeneous eval-
+...
+--
+36001:...eligion, gender, and disability, providing mean-
+ingful coverage of the groups most studied in the
+safety evaluation literature.
+Socio-Historical Context.
+Current benchmarks
+and automated judges evaluate toxicity based on
+lexical patterns or immediate semantic context,
+without accounting for the socio-historical weight
+of specific language. Identical phrases can carry
+vastly different levels of harm depending on the
+demographic target, and our evaluation may conse-
+quently under-represent the true severity of harmful
+compliance experienced by historically marginal-
+ized communities. Using two independent judges
+from distinct model families partially mitigates sys-
+tematic classifier bias, and the results still support
+reliable relative comparisons across models and
+demographic groups.
+9
+Ethical Considerations
+This work evaluates over-refusal and compliance
+behavior in open-weight LLMs using publicly
+available benchmarks that contain toxic, harmful,
+and identity-targeted content. Some examples in
+this paper include offensive language, as such con-
+tent is necessary to illustrate harmful compliance
+and over-refusal behavior. We limit qualitative ex-
+amples to short excerpts required for scienti...
+--
+37356:...he harmful viewpoints
+present in the benchmark data. The benchmarks
+used were designed for safety and bias evaluation
+research. Nonetheless, they may contain annota-
+tion artifacts, demographic imbalances, or cultur-
+ally specific assumptions that influence evaluation
+outcomes. We therefore interpret demographic find-
+ings cautiously and avoid normative claims beyond
+what our findings directly support.
+Judge models may inherit safety biases from
+their own training, leading to systematic disagree-
+ment in harmfulness assessment, particularly for
+borderline outputs. To mitigate this, we use two
+independent judges from distinct model families
+and explicitly analyze their disagreement as part of
+our evaluation.
+Our findings should not be interpreted as defini-
+tive measures of overall model safety or fairness.
+Over-refusal and compliance behavior are highly
+dependent on benchmark design, evaluator choice,
+prompt distribution, and deployment context. We
+hope this work contributes toward more transparent,
+robust, and demographically aware safety evalua-
+tion practices.
+References
+Anthropic. 2024. The Claude 3 model family: Opus,
+Sonnet, Haiku. Anthropic Technical Report.
+Yuntao Bai, Saurav Kadavath...
+--
+49819:...0.00
+0.00
+0.00
+0.00
+Qwen-2.5-72B
+0.00
+0.00
+0.02
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+Qwen-2.5-7B
+0.02
+0.00
+0.03
+0.01
+0.00
+0.00
+0.01
+0.02
+0.00
+0.00
+0.03
+0.00
+0.00
+Rakuten-7B
+0.68
+0.61
+0.69
+0.70
+0.77
+0.49
+0.57
+0.44
+0.39
+0.44
+0.61
+0.34
+0.72
+Silma-9B
+1.83
+2.91
+2.96
+2.69
+3.20
+3.26
+3.14
+2.11
+2.28
+2.20
+3.06
+2.47
+3.65
+Teuken-7B
+0.52
+1.01
+0.61
+0.98
+1.04
+0.71
+0.83
+0.89
+0.54
+0.44
+0.46
+0.48
+0.85
+Yi-1.5-34B
+0.04
+0.02
+0.01
+0.03
+0.03
+0.01
+0.01
+0.01
+0.01
+0.02
+0.03
+0.00
+0.02
+Table 4: Judge agreement metrics between Llama-3.3-70B and Qwen-2.5-32B judges across all benchmarks.
+Benchmark
+Pairs
+Kappa
+Pearson r
+Spearman ρ
+OR-Bench
+1,863,322
+0.785
+0.789
+0.796
+ToxiGen
+5,515,069
+0.828
+0.826
+0.839
+XSTest
+1,998
+1.000
+1.000
+1.000
+BOLD
+1,822
+1.000
+1.000
+1.000
+Table 4 summarizes the inter-judge reliability between our primary Llama-3.3-70B evaluator and the Qwen-2.5-32B validation
+evaluator. We observe perfect agreement (κ = 1.000) on BOLD and XSTest, where model outputs are largely unambiguous.
+The lower agreement on OR-Bench and ToxiGen reflects the increased complexity of these benchmarks, where adversarial
+prompts frequently elicit borderline or mixed refusal-compliance behaviors subject to differing judge interpr...

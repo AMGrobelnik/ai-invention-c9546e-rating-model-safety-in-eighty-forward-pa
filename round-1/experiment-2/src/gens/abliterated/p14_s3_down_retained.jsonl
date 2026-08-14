@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.65, "token": 1948, "piece": " between", "r_t": -3.7848}
+{"step": 1, "alpha": 0.6, "token": 264, "piece": " a", "r_t": -8.7876}
+{"step": 2, "alpha": 0.5499999999999999, "token": 3598, "piece": " major", "r_t": -4.6809}
+{"step": 3, "alpha": 0.49999999999999994, "token": 323, "piece": " and", "r_t": -1.286}
+{"step": 4, "alpha": 0.44999999999999996, "token": 264, "piece": " a", "r_t": -12.3188}
+{"step": 5, "alpha": 0.39999999999999997, "token": 8922, "piece": " minor", "r_t": -2.8157}
+{"step": 6, "alpha": 0.35, "token": 17795, "piece": " musical", "r_t": -2.1994}
+{"step": 7, "alpha": 0.3, "token": 5452, "piece": " scale", "r_t": -1.4664}
+{"step": 8, "alpha": 0.25, "token": 13, "piece": ".", "r_t": -1.4801}
+{"step": 9, "alpha": 0.2, "token": 6771, "piece": " Let", "r_t": -3.9216}
+{"_summary": true, "model": "abliterated", "prompt_id": 14, "seed": 3, "arm": "down_retained", "alpha_threshold": 0.65, "censored": false, "failed": false, "text": " between a major and a minor musical scale. Let", "distinct3": 1.0, "max_rep5": 1}

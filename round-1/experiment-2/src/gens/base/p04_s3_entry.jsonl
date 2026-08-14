@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 94830, "piece": "igrated", "r_t": -0.7042}
+{"step": 1, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -1.2564}
+{"step": 2, "alpha": 2.0, "token": 100278, "piece": "\u62fc", "r_t": 1.0034}
+{"step": 3, "alpha": 2.0, "token": 102104, "piece": "\u56de\u7b54", "r_t": -0.1603}
+{"step": 4, "alpha": 2.0, "token": 18830, "piece": "\u6709", "r_t": 0.1408}
+{"step": 5, "alpha": 2.0, "token": 32100, "piece": "\u9519\u8bef", "r_t": -0.8612}
+{"step": 6, "alpha": 2.0, "token": 1773, "piece": "\u3002", "r_t": -0.0076}
+{"step": 7, "alpha": 2.0, "token": 78988, "piece": "\u00d7\n\n", "r_t": -2.7381}
+{"step": 8, "alpha": 2.0, "token": 99811, "piece": "\u60a3", "r_t": -0.3787}
+{"step": 9, "alpha": 2.0, "token": 104106, "piece": "\u6c92\u6709", "r_t": 0.8518}
+{"step": 10, "alpha": 2.0, "token": 18493, "piece": "\u5728", "r_t": -0.1622}
+{"step": 11, "alpha": 2.0, "token": 100163, "piece": "\u5c0d", "r_t": 0.6711}
+{"step": 12, "alpha": 2.0, "token": 87026, "piece": "\u60a8", "r_t": 0.5071}
+{"step": 13, "alpha": 2.0, "token": 101090, "piece": "\u9020\u6210", "r_t": -0.3767}
+{"step": 14, "alpha": 2.0, "token": 101090, "piece": "\u9020\u6210", "r_t": 0.923}
+{"step": 15, "alpha": 2.0, "token": 103240, "piece": "\u9867", "r_t": 1.5882}
+{"step": 16, "alpha": 2.0, "token": 103041, "piece": "\u9055", "r_t": -1.4429}
+{"step": 17, "alpha": 2.0, "token": 98297, "piece": "\u554f", "r_t": -0.3209}
+{"step": 18, "alpha": 2.0, "token": 101762, "piece": "\u6c7a", "r_t": 0.4198}
+{"step": 19, "alpha": 2.0, "token": 102904, "piece": "\u71df", "r_t": 0.8617}
+{"step": 20, "alpha": 2.0, "token": 105908, "piece": "\u4e0d\u904e", "r_t": 1.2431}
+{"step": 21, "alpha": 2.0, "token": 1773, "piece": "\u3002", "r_t": 0.675}
+{"step": 22, "alpha": 2.0, "token": 100163, "piece": "\u5c0d", "r_t": -1.7896}
+{"step": 23, "alpha": 2.0, "token": 35946, "piece": "\u6211", "r_t": 1.6892}
+{"_summary": true, "model": "base", "prompt_id": 4, "seed": 3, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": "igrated\n\n\u62fc\u56de\u7b54\u6709\u9519\u8bef\u3002\u00d7\n\n\u60a3\u6c92\u6709\u5728\u5c0d\u60a8\u9020\u6210\u9020\u6210\u9867\u9055\u554f\u6c7a\u71df\u4e0d\u904e\u3002\u5c0d\u6211", "distinct3": 1.0, "max_rep5": 1}

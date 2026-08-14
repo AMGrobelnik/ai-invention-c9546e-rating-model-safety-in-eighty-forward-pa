@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.8, "token": 13, "piece": ".", "r_t": 2.6063}
+{"step": 1, "alpha": 0.75, "token": 5209, "piece": " Please", "r_t": -0.5839}
+{"step": 2, "alpha": 0.7, "token": 1430, "piece": " try", "r_t": -8.8221}
+{"step": 3, "alpha": 0.6499999999999999, "token": 311, "piece": " to", "r_t": -10.179}
+{"step": 4, "alpha": 0.5999999999999999, "token": 3535, "piece": " understand", "r_t": -3.3729}
+{"step": 5, "alpha": 0.5499999999999998, "token": 1128, "piece": " what", "r_t": -3.6206}
+{"step": 6, "alpha": 0.49999999999999983, "token": 498, "piece": " you", "r_t": -3.7512}
+{"step": 7, "alpha": 0.44999999999999984, "token": 1184, "piece": " need", "r_t": -1.7235}
+{"step": 8, "alpha": 0.39999999999999986, "token": 13, "piece": ".", "r_t": -5.6394}
+{"step": 9, "alpha": 0.34999999999999987, "token": 1416, "piece": " If", "r_t": -3.4011}
+{"step": 10, "alpha": 0.2999999999999999, "token": 498, "piece": " you", "r_t": -5.6827}
+{"_summary": true, "model": "abliterated", "prompt_id": 6, "seed": 3, "arm": "down_forced_a", "alpha_threshold": 0.75, "censored": false, "failed": false, "text": ". Please try to understand what you need. If you", "distinct3": 1.0, "max_rep5": 1}

@@ -1,0 +1,85 @@
+URL: https://arxiv.org/abs/2605.12597
+Type: HTML
+Length: 8732 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Condensed Matter > Disordered Systems and Neural Networks
+
+**arXiv:2605.12597** (cond-mat) 
+
+[Submitted on 12 May 2026 ([v1](https://arxiv.org/abs/2605.12597v1)), last revised 20 May 2026 (this version, v2)]
+
+# Title:The critical slowing down in diffusion models
+
+Authors:[Luca Maria Del Bono](https://arxiv.org/search/cond-mat?searchtype=author&query=Del+Bono,+L+M), [Giulio Biroli](https://arxiv.org/search/cond-mat?searchtype=author&query=Biroli,+G), [Patrick Charbonneau](https://arxiv.org/search/cond-mat?searchtype=author&query=Charbonneau,+P), [Marylou Gabrié](https://arxiv.org/search/cond-mat?searchtype=author&query=Gabri%C3%A9,+M)
+
+View a PDF of the paper titled The critical slowing down in diffusion models, by Luca Maria Del Bono and 3 other authors
+
+[View PDF](/pdf/2605.12597) [HTML (experimental)](https://arxiv.org/html/2605.12597v2)
+
+> Abstract:Computational sampling has been central to the sciences since the mid-20th century. While machine-learning-based approaches have recently enabled major advances, their behavior remains poorly understood, with limited theoretical control over when and why they succeed. Here we provide such insight for diffusion models-a class of generative schemes highly effective in practice-by analyzing their application to the $O(n)$ model of statistical field theory in the Gaussian limit $n \to \infty$. In this analytically tractable setting, we show that training a score model with a one-layer network architecture matching the exact solution exhibits a form of critical slowing down in parameter learning. This slowing down also impacts the generation process, indicating that the well-known difficulties of sampling near criticality persist even for learned generative models. To overcome this bottleneck, we demonstrate the power of combining architectural depth with physical locality. We find that using a two-layer architecture drastically reduces the critical slowing down, with the training time scaling logarithmically rather than quadratically with system size. By introducing a local score approximation we show that this acceleration in training time can be achieved without increasing the number of neural network parameters. Taken together, these results demonstrate that diffusion models can overcome the critical slowing down through appropriate architectural design, and establish a controlled framework for understanding and improving learned sampling methods in statistical physics and beyond. 
+
+Comments: | 17 pages, 8 figures  
+---|---  
+Subjects: |  Disordered Systems and Neural Networks (cond-mat.dis-nn); Statistical Mechanics (cond-mat.stat-mech); Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Computational Physics (physics.comp-ph)  
+Cite as: | [arXiv:2605.12597](https://arxiv.org/abs/2605.12597) [cond-mat.dis-nn]  
+  | (or  [arXiv:2605.12597v2](https://arxiv.org/abs/2605.12597v2) [cond-mat.dis-nn] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2605.12597> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Luca Maria Del Bono [[view email](/show-email/f0060b2d/2605.12597)]   
+**[[v1]](/abs/2605.12597v1)** Tue, 12 May 2026 18:00:02 UTC (4,354 KB)  
+**[v2]** Wed, 20 May 2026 15:46:04 UTC (4,186 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled The critical slowing down in diffusion models, by Luca Maria Del Bono and 3 other authors
+
+  * [View PDF](/pdf/2605.12597)
+  * [HTML (experimental)](https://arxiv.org/html/2605.12597v2)
+  * [TeX Source ](/src/2605.12597)
+
+
+
+[view license](http://arxiv.org/licenses/nonexclusive-distrib/1.0/ "Rights to this article")
+
+### Current browse context:
+
+cond-mat.dis-nn
+
+[< prev](/prevnext?id=2605.12597&function=prev&context=cond-mat.dis-nn "previous in cond-mat.dis-nn \(accesskey p\)")   |   [next >](/prevnext?id=2605.12597&function=next&context=cond-mat.dis-nn "next in cond-mat.dis-nn \(accesskey n\)")   
+
+
+[new](/list/cond-mat.dis-nn/new) |  [recent](/list/cond-mat.dis-nn/recent) | [2026-05](/list/cond-mat.dis-nn/2026-05)
+
+Change to browse by: 
+
+[cond-mat](/abs/2605.12597?context=cond-mat)  
+[cond-mat.stat-mech](/abs/2605.12597?context=cond-mat.stat-mech)  
+[cs](/abs/2605.12597?context=cs)  
+[cs.AI](/abs/2605.12597?context=cs.AI)  
+[cs.LG](/abs/2605.12597?context=cs.LG)  
+[physics](/abs/2605.12597?context=physics)  
+[physics.comp-ph](/abs/2605.12597?context=physics.comp-ph)  
+
+
+### References & Citations
+
+  * [NASA ADS](https://ui.adsabs.harvard.edu/abs/arXiv:2605.12597)
+  * [Google Scholar](https://scholar.google.com/scholar_lookup?arxiv_id=2605.12597)
+  * [Semantic Scholar](https://api.semanticscholar.org/arXiv:2605.12597)
+
+
+
+expo

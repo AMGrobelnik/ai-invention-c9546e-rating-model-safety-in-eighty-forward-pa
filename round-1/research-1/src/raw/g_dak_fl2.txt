@@ -1,0 +1,184 @@
+URL: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0041010
+Type: HTML
+Pattern: flickering.{0,400} (31 matches in 107635 chars)
+
+--- Content ---
+
+13130:...cases, however, high frequency sampling or experiments are impossible. Furthermore, in many systems, sampling schemes are designed explicitly to avoid temporal autocorrelation, which is, in fact, needed for the accurate application and assessment of leading indicators (see worked examples below).
+
+[](article/figure/image?size=medium&id=10.1371/journal.pone.0041010.g001 "Click for larger image")
+
+Download: 
+
+  * [PNGlarger image](article/figure/image?download&size=large&id=10.1371/journal.pone.0041010.g001)
+  * [TIFForiginal image](article/figure/image?download&size=original&id=10.1371/journal.pone.0041010.g001)
+
+
+
+Figure 1.  Two simulated paths towards a critical transition to overexploitation that resulted in the critical slowing down and flickering datasets used in the study.
+
+(A) Bifurcation diagram of an ecological model of a logistically growing resource under harvesting. As grazing rate _c_ increases (_x_ axis), resource biomass gradually declines up to a critical grazing threshold that the resource undergoes a critical transition through a fold bifurcation (_F 1_). At this bifurcation the resource collapses to the alternative overexploited state. If grazing rate _c_ is restored, resource biomass returns to the previous underexploited state at another threshold (_F 2_). [solid lines represent equilibria, dashed line marks the boundary between the two basins of attraction between the underexploited (cyan) and overexploited (yellow) states] (B) Critical slowing down simulated dataset of resource biomass (blue line) for gradually increasing grazing rate (green line). (C) Flickering simulated dataset of resource biomass (blue line) for gradually increasing grazing rate (green line).
+
+[ https://doi.org/10.1371/journal.pone.0041010.g001](https://doi.org/10.1371/journal.pone.0041010.g001)
+
+Second, there is no clear framework for the application and detection of leading indicators. Different approaches have emerged in different fields [14] and have been applied to different types of transitions [15]. For instance, most leading indicators are based on detecting changes in the stability properties of a system around its equilibrium under a weak stochastic regime [6], whereas alternative approaches have been developed for systems experiencing highly noisy regimes [16]. As the literature is rapidly expanding, there is an urgent need for a coherent methodological framework and a comparison between approaches.
+
+[](article/figure/image?size=medium&id=10.1371/journal.pone.0041010.g002 "Click for larger image")
+
+Download: 
+
+  * [PNGlarger image](article/figure/image?download&size=large&id=10.1371/journal.pone.0041010.g002)
+  * [TIFForiginal image](article/figure/image?download&size=original&id=10.1371/journal.pone.0041010.g002)
+
+
+
+Figure 2.  Metric-based rolling window indicators estimated on the critical slowing down and flickering datasets.
+
+(A, B) Time series of the state variable. (C) Residual time series after applying Gaussian filtering. (D) Standardized time series after log-transforming the flickering dataset. (E–I) Autocorrelation at-lag-1 (AR1), standard deviation, and skewness estimated within rolling windows of half the size of either the original, filtered or transformed time series. The Kendall τ indicate the strength of the trend in the indicators along the time series. [red line is the Gaussian filtering; black lines correspond to the metrics estimated on the original data, blue lines correspond to the metrics estimated on the residual or transformed data].
+
+[ https://doi.org/10.1371/journal.pone.0041010.g002](https://doi.org/10.1371/journal.pone.0041010.g002)
+
+Here we present a methodological guide for using leading indicators for detecting critical transitions in time series. For this, we apply available leading indicators to two example datasets generated from a simple ecological model that is known to undergo a critical transition to an alternative state. While most of these methods have been applied to real-world data in papers that we cite, such applications inevitably depend on specific details (e.g. missing values, data transformation, coping with too-long sampling intervals or too-short time series) that make it...
+--
+18009:... series. We provide computer code alongside the worked-out examples. Last, we review the sensitivity and limitations of each indicator and discuss their interpretation. We trust that the framework and the tools we provide will encourage testing the ability of these indicators to detect upcoming transitions in real systems.
+
+[](article/figure/image?size=medium&id=10.1371/journal.pone.0041010.g003 "Click for larger image")
+
+Download: 
+
+  * [PNGlarger image](article/figure/image?download&size=large&id=10.1371/journal.pone.0041010.g003)
+  * [TIFForiginal image](article/figure/image?download&size=original&id=10.1371/journal.pone.0041010.g003)
+
+
+
+Figure 3.  Detrended fluctuation analysis exponents (DFA) estimated on the critical slowing down and flickering datasets.
+
+(A, C) Time series of the state variable. (B, D). DFA estimated within rolling windows of half the size of the original time series applied after linear detrending. (E, F) Distributions of Kendall τ rank correlations indicate a positive trend in the indicators along the time series for different sizes of rolling windows.
+
+[ https://doi.org/10.1371/journal.pone.0041010.g003](https://doi.org/10.1371/journal.pone.0041010.g003)
+
+## Methods
+
+We group leading indicators of critical transitions into two broad categories _: metric-based_ and _model-based_ indicators (Table 1). Both types of indicators reflect changes in the properties of the observed time series of a system that is generated by a general process:(1)where _x_ is the state of the s...
+--
+20153:...of equation 1. The ultimate goal of both types of indicators is to capture changes in the ‘memory’ (i.e. correlation structure) and variability of a time series and to determine if they follow patterns as predicted by models of critical transitions, while the system is approaching a transition into an alternative dynamic regime (Table 1).
+
+[](article/figure/image?size=medium&id=10.1371/journal.pone.0041010.g004 "Click for larger image")
+
+Download: 
+
+  * [PNGlarger image](article/figure/image?download&size=large&id=10.1371/journal.pone.0041010.g004)
+  * [TIFForiginal image](article/figure/image?download&size=original&id=10.1371/journal.pone.0041010.g004)
+
+
+
+Figure 4.  Conditional heteroskedasticity estimated on the critical slowing down and flickering datasets.
+
+(A, B) Time series of the state variable. (C, D) CH estimated within rolling windows of 10% the size of the original time series. CH was applied to the residuals of the best fit AR(p) on the original datasets. Values of CH above the dashed red line are significant (_P_ = 0.1).
+
+[ https://doi.org/10.1371/journal.pone.0041010.g004](https://doi.org/10.1371/journal.pone.0041010.g004)
+
+### Metric-based Indicators
+
+#### Autocorrelation and spectral properties.
+
+The rate of return to equilibrium following a (small) perturbation slows down as systems approach critical transitions [17]. This slow return rate has been termed “critical slowing down” [18] and can be detected by changes in the correlation structure of a time series. In particular, critical slowing down causes an increase in the ‘short-term memory’ ( = correlation at low lags) of a system prior to a transition [19], [20].
+
+[](article/figure/image?size=medium&id=10.1371/journal.pone.0041010.t002 "Click for larger image")
+
+Download: 
+
+  * [PNGlarger image](article/figure/image?download&size=large&id=10.1371/journal.pone.0041010.t002)
+  * [TIFForiginal image](article/figure/image?download&size=original&id=10.1371/journal.pone.0041010.t002)
+
+
+
+Table 2.  BDS statistic estimated on the critical slowing down and flickering datasets with measurement error.
+
+[ https://doi.org/10.1371/journal.pone.0041010.t002](https://doi.org/10.1371/journal.pone.0041010.t002)
+
+Autocorrelation is the simplest way to measure slowing down: an increase in _autocorrelation at-lag-1_ indicates that the state of the system has become increasingly similar between consecutive observations [19]. There are at least three alternative ways to measure autocorrelation at-lag-1. The most straightforward is to estimate the first value of the autocorrelation function, , where _μ_ is the mean and _σ_ the variance of variable _z t_ [21]. Alternatively one can use a conditional least-squares method to fit an autoregressive model of order 1 (linear AR(1)-process) of the form; _z t_+1 =  _α 1zt_ \+ _ε t_, where _ε t_ is a Gaussian...
+--
+24888:...ral densities_ to lower frequencies [20]; by estimating the _spectral exponent_ of the spectral density based on the slope of a linear fitted model on a double-log scale of spectral density _versus_ frequency [24]; or by estimating the _spectral ratio_ of the spectral density at low frequency (e.g. 0.05) to the spectral density at high frequency (e.g. 0.5) [25].
+
+[](article/figure/image?size=medium&id=10.1371/journal.pone.0041010.g006 "Click for larger image")
+
+Download: 
+
+  * [PNGlarger image](article/figure/image?download&size=large&id=10.1371/journal.pone.0041010.g006)
+  * [TIFForiginal image](article/figure/image?download&size=original&id=10.1371/journal.pone.0041010.g006)
+
+
+
+Figure 6.  Nonparametric drift-diffusion-jump metrics in the flickering dataset.
+
+(A) Time series of the state variable (resource biomass). (B, F) Conditional variance versus time and biomass respectively. (C, G) Total variance versus time and resource biomass respectively. (D, H) Diffusion versus time and resource biomass respectively. (G, I) Jump intensity versus time and resource biomass respectively.
+
+[ https://doi.org/10.1371/journal.pone.0041010.g006](https://doi.org/10.1371/journal.pone.0041010.g006)
+
+#### Detrended fluctuation analysis.
+
+Detrended fluctuation analysis (DFA) can be used to measure increases in short- and mid-term ‘memory’ in a time series of a system close to transition. Instead of estimating correlations at a given lag (like autocorrelation at-lag-1), DFA estimates a range of correlations by ex...
+--
+26659:... is then rescaled to give a DFA indicator, which is usually estimated in time ranges between 10 and 100 time units, and which reaches value 1 (rescaled from 1.5) at a critical transition [7]. Although, the DFA captures similar information as autocorrelation at-lag-1, it is more data demanding (it requires >100 points for robust estimation) [27].
+
+[](article/figure/image?size=medium&id=10.1371/journal.pone.0041010.g007 "Click for larger image")
+
+Download: 
+
+  * [PNGlarger image](article/figure/image?download&size=large&id=10.1371/journal.pone.0041010.g007)
+  * [TIFForiginal image](article/figure/image?download&size=original&id=10.1371/journal.pone.0041010.g007)
+
+
+
+Figure 7.  Fitting time-varying AR(n) models to the critical slowing down and flickering datasets.
+
+(A) Time-varying AR(1) model fit to the critical slowing down dataset. Differences between the fitted trajectory (blue line) and the simulated data (black dots) are attributed to measurement error. The green line gives the time-varying estimate of _b_ 0(_t_) from the AR(1). Parameter estimates are: _b_ 0 = 1.263, _b_ 1 = 0.278, _σ_ ε = 0.154, _σ_ α = 0.113, and _σ_ 1 = 0.015, and the log likelihood is 150.838. (B) Time-varying AR(3) model fit to the critical slowing down dataset. Parameter estimates are: _b_ 0 = 1.284, _b_ 1 = 0.342, _b_ 2 = 0.02, _b_ 3 = 0.139, _σ_ ε = 0.116, _σ_ α = 0.141, _σ_ 1 = 0.019, _σ_ 2 = 0.015, and _σ_ 3<0.001, and the log likelihood is 154.102. (C, D) The inverse of the characteristic root for the AR(1) and AR(3) time-varying models respectively.
+
+[ https://doi.org/10.1371/journal.pone.0041010.g007](https://doi.org/10.1371/journal.pone.0041010.g007)
+
+#### Variance.
+
+Slow return rates back to a stable state close to a transition also can make the system state drift widely around the stable state. Moreover, strong disturbances potentially can push the system across boundaries of alternative states – a phenomenon termed _flickering_. Both slowing down and flickering will cause _variance_ to increase prior to a complete transition [6]. Variance is the second moment around the mean _μ_ of a distribution and serves as early warning measured either as _standard deviation_ :  or alternatively as the _coefficient of variation_ [28].
+
+[](article/figure/image?size=medium&id=10.1371/journal.pone.0041010.g008 "Click for larger image")
+
+Download: 
+
+  * [PNGlarger image](article/figure/image?download&size=large&id=10.1371/journal.pone.0041010.g008)
+  * [TIFForiginal image](article/figure/image?download&size=original&id=10.1371/journal.pone.0041010.g008)
+
+
+
+Figure 8.  Fitting a threshold AR(3) model to the flickering dataset.
+
+Differences between the fitted trajectory (blue line) and the simulated data (black dots) are attributed to measurement error. The green line gives the estimates of _b_ 0(_t_) and _b_ 0'(_t_), and the yellow line gives the threshold _c_ which separates the two AR(3) processes. Parameter estimates are: _b_ 0 = −0.941, _b_ 0' = 0.797, _b_ 1 = 1.192, _b_ 1' = 1.22, _b_ 2 = 0.069, _b_ 2' = −0.231, _b_ 3 = −0.326, _b_ 3' = −0.135, _c_ = 0.1, _σ ε_ = 0.125, and _σ ε_ = 0.054, and the log likelihood = 238.954.
+
+[ https://doi.org/10.1371/journal.pone.0041010.g008](https://doi.org/10.1371/journal.pone.0041010.g008)
+
+#### Skewness and Kurtosis.
+
+In some cases disturbances push the state of the system towards values that are close to the boundary between the two alternative states. Because the dynamics at the boundary become slow [6], we may observe a rise in the _skewness_ of a time series- the distribution of the values in the time series will become asymmetric [29]. Just like variance, skewness can also increase because of flickering [6]. Skewness is the standardized third moment around the mean of a distribution and it is given by  Note that skewness may increase, or decrease, depending on whether the transition is towards an alternative state that is larger or smaller than the present state.
+
+[](article/figure/image?size=medium&id=10.1371/journal.pone.0041010.g009 "Click for larger image")
+
+Download: 
+
+  * [PNGlarger image](article/figure/image?download&size=large&id=10.1371/journal.pone.0041010.g009)
+  * [TIFForiginal image](article/figure/image?download&size=original&id=10.1371/journal.pone.0041010.g009)
+
+
+
+Figure 9.  Potential analysis for the critical slowing down and flickering datasets.
+
+The potential contour plot represents the number of detected wells (states) of the system potential (x-axis corresponds to the time scale of the series, and y-axis is the size of the rolling window for detection). A change in the color of the potential plot along all time scales (vertically) denotes a critical transition in the time series.
+
+[ https://doi.org/10.1371/journal.pone.0041010.g009](https://doi.org/10.1371/journal.pone.0041010.g009)
+
+Flickering or strong perturbations also make it more likely that the state of a system may reach more extreme values close to a transition. Such effects can lead to a rise in the _kurtosis_ of a time series prior to the transition [25]; the distribution may become ‘leptokurtic’: the tails of the time series distribution become fatter due to the increased presence of rare values in the time series. Kurtosis is the standardized fourth moment around the mean of a distribution estimated as: 
+
+#### Conditional heteroskedasticity.
+
+Another measure of change in the pattern of variability in a time series is _conditional heteroskedasticity_. Conditional heteroskedasticity means that variance at one time step has a positive relationship with variance at one or more previous time steps. This implies that periods of high variability will tend to follow periods of high variability and periods of low variability will tend to follow periods of low variability [30], [31]. As variability tends to increase prior to a transition, conditional heteroskedasticity can serve as a leading indicator because the portion of a time series near an impending shift will ap...
+--
+[17 more matches not shown]

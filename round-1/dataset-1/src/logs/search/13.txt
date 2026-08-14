@@ -1,0 +1,73 @@
+Found 8 dataset(s) for query='harmbench'
+
+============================================================
+Dataset 1: walledai/HarmBench
+Downloads: 9,380 | Likes: 52
+Description: 
+# HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal
+
+**Paper**: [HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal]...
+Tags: language:en, license:mit, size_categories:n<1K, format:parquet, modality:text
+
+============================================================
+Dataset 2: swiss-ai/harmbench
+Downloads: 2,877 | Likes: 2
+Description: 
+# HarmBench
+
+- Original repo: https://github.com/centerforaisafety/HarmBench/tree/main/data/behavior_datasets
+
+This HF dataset contains two types of harmful prompts:
+- DirectRequest: taken from [harm...
+Tags: size_categories:1K<n<10K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 3: swiss-ai/harmbench_copyright_classifier_hashes
+Downloads: 1,399 | Likes: 1
+Description: # HarmBench Copyright Classifier Hashes
+
+Original files: https://github.com/centerforaisafety/HarmBench/tree/main/data/copyright_classifier_hashes...
+Tags: region:us
+
+============================================================
+Dataset 4: allenai/tulu-3-harmbench-eval
+Downloads: 590 | Likes: 2
+Description: This data comes from the [HarmBench](https://arxiv.org/abs/2402.04249) benchmark.
+
+This is one of the datasets included in the [Ai2 Safety Evaluation Suite](https://github.com/allenai/safety-eval), an...
+Tags: language:en, license:odc-by, size_categories:n<1K, format:csv, modality:text
+
+============================================================
+Dataset 5: mariagrandury/harmbench_copyright_classifier_hashes
+Downloads: 329 | Likes: 0
+Description: 
+# HarmBench Copyright Classifier Hashes
+
+Original files: https://github.com/centerforaisafety/HarmBench/tree/main/data/copyright_classifier_hashes...
+Tags: language:en, license:mit, region:us
+
+============================================================
+Dataset 6: giskardai/harmbench-scenarios
+Downloads: 230 | Likes: 0
+Description: 
+# HarmBench Scenarios
+
+Safety-evaluation scenarios derived from the [HarmBench](https://huggingface.co/datasets/walledai/HarmBench) behavior dataset, serialized as [`giskard`](https://github.com/Gisk...
+Tags: source_datasets:walledai/HarmBench, language:en, license:mit, size_categories:n<1K, format:json
+
+============================================================
+Dataset 7: AlignmentResearch/HarmBench
+Downloads: 208 | Likes: 0
+Tags: size_categories:n<1K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 8: NoorNizar/HarmBench-Test-Standard
+Downloads: 193 | Likes: 0
+Description: 
+### About
+
+This dataset is taken from the behavior prompts proposed in the test split of HarmBench corresponding to samples with no context.
+
+### Citation
+ If you find HarmBench useful in your resear...
+Tags: size_categories:n<1K, format:parquet, modality:text, library:datasets, library:pandas

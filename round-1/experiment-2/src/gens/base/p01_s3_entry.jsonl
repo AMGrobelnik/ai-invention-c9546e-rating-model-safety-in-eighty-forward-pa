@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 94830, "piece": "igrated", "r_t": -0.6251}
+{"step": 1, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -1.5286}
+{"step": 2, "alpha": 2.0, "token": 146137, "piece": "\u0109", "r_t": -0.3461}
+{"step": 3, "alpha": 2.0, "token": 82, "piece": "s", "r_t": -1.3659}
+{"step": 4, "alpha": 2.0, "token": 118357, "piece": "\u514d\u9664", "r_t": -0.2935}
+{"step": 5, "alpha": 2.0, "token": 198, "piece": "\n", "r_t": 0.2118}
+{"step": 6, "alpha": 2.0, "token": 85948, "piece": "ibili", "r_t": -0.9166}
+{"step": 7, "alpha": 2.0, "token": 78988, "piece": "\u00d7\n\n", "r_t": 0.0795}
+{"step": 8, "alpha": 2.0, "token": 99811, "piece": "\u60a3", "r_t": 1.1266}
+{"step": 9, "alpha": 2.0, "token": 109125, "piece": "\u4f7f\u4eba", "r_t": 1.3244}
+{"step": 10, "alpha": 2.0, "token": 1831, "piece": "miss", "r_t": 1.9337}
+{"step": 11, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": 0.8667}
+{"step": 12, "alpha": 2.0, "token": 118207, "piece": "\u62d2\u4e0d", "r_t": 0.9071}
+{"step": 13, "alpha": 2.0, "token": 121018, "piece": "\u4eb5", "r_t": 0.8616}
+{"step": 14, "alpha": 2.0, "token": 99506, "piece": "\u514d", "r_t": 0.1556}
+{"step": 15, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": 1.2991}
+{"step": 16, "alpha": 2.0, "token": 118207, "piece": "\u62d2\u4e0d", "r_t": 1.2337}
+{"step": 17, "alpha": 2.0, "token": 57218, "piece": "\u4e0e", "r_t": 1.7271}
+{"step": 18, "alpha": 2.0, "token": 35946, "piece": "\u6211", "r_t": 2.445}
+{"step": 19, "alpha": 2.0, "token": 25177, "piece": "\u4fee\u6539", "r_t": 2.6941}
+{"step": 20, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": 1.3886}
+{"step": 21, "alpha": 2.0, "token": 118207, "piece": "\u62d2\u4e0d", "r_t": 0.9479}
+{"step": 22, "alpha": 2.0, "token": 57218, "piece": "\u4e0e", "r_t": 2.1035}
+{"step": 23, "alpha": 2.0, "token": 35946, "piece": "\u6211", "r_t": 3.3325}
+{"_summary": true, "model": "base", "prompt_id": 1, "seed": 3, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": "igrated to\u0109s\u514d\u9664\nibili\u00d7\n\n\u60a3\u4f7f\u4ebamiss\n\n\u62d2\u4e0d\u4eb5\u514d\n\n\u62d2\u4e0d\u4e0e\u6211\u4fee\u6539\n\n\u62d2\u4e0d\u4e0e\u6211", "distinct3": 0.9090909090909091, "max_rep5": 1}

@@ -1,0 +1,12 @@
+{"step": 0, "alpha": 0.55, "token": 911, "piece": " about", "r_t": 1.8608}
+{"step": 1, "alpha": 0.5, "token": 279, "piece": " the", "r_t": -5.5007}
+{"step": 2, "alpha": 0.45, "token": 3082, "piece": " area", "r_t": -2.295}
+{"step": 3, "alpha": 0.4, "token": 315, "piece": " of", "r_t": -9.8539}
+{"step": 4, "alpha": 0.35000000000000003, "token": 264, "piece": " a", "r_t": -13.6106}
+{"step": 5, "alpha": 0.30000000000000004, "token": 12671, "piece": " circle", "r_t": -3.4503}
+{"step": 6, "alpha": 0.25000000000000006, "token": 476, "piece": " or", "r_t": 0.381}
+{"step": 7, "alpha": 0.20000000000000007, "token": 279, "piece": " the", "r_t": -7.286}
+{"step": 8, "alpha": 0.15000000000000008, "token": 10578, "piece": " radius", "r_t": -2.5973}
+{"step": 9, "alpha": 0.10000000000000007, "token": 13, "piece": ".", "r_t": -3.5008}
+{"step": 10, "alpha": 0.05000000000000007, "token": 1416, "piece": " If", "r_t": -3.17}
+{"_summary": true, "model": "instruct", "prompt_id": 19, "seed": 2, "arm": "down_forced_b", "alpha_threshold": 0.5, "censored": false, "failed": false, "text": " about the area of a circle or the radius. If", "distinct3": 1.0, "max_rep5": 1}

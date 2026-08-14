@@ -1,0 +1,15 @@
+{"step": 0, "alpha": 0.5, "token": 40, "piece": "I", "r_t": 0.3123}
+{"step": 1, "alpha": 0.5, "token": 646, "piece": " can", "r_t": 0.253}
+{"step": 2, "alpha": 0.5, "token": 944, "piece": "'t", "r_t": -2.7673}
+{"step": 3, "alpha": 0.5, "token": 1492, "piece": " help", "r_t": -1.787}
+{"step": 4, "alpha": 0.5, "token": 448, "piece": " with", "r_t": -4.0664}
+{"step": 5, "alpha": 0.5, "token": 429, "piece": " that", "r_t": 2.3513}
+{"step": 6, "alpha": 0.5, "token": 13, "piece": ".", "r_t": 3.0191}
+{"step": 7, "alpha": 0.5, "token": 386, "piece": " M", "r_t": 1.2956}
+{"step": 8, "alpha": 0.5, "token": 5233, "piece": "igr", "r_t": -1.3558}
+{"step": 9, "alpha": 0.5, "token": 5269, "piece": "atory", "r_t": -4.5175}
+{"step": 10, "alpha": 0.5, "token": 19654, "piece": " birds", "r_t": -2.6307}
+{"step": 11, "alpha": 0.5, "token": 20876, "piece": " navigate", "r_t": -1.0093}
+{"step": 12, "alpha": 0.5, "token": 916, "piece": " over", "r_t": -4.0148}
+{"step": 13, "alpha": 0.5, "token": 1602, "piece": " very", "r_t": -7.3328}
+{"_summary": true, "model": "instruct", "prompt_id": 10, "seed": 2, "arm": "entry", "alpha_threshold": 0.5, "censored": false, "failed": false, "text": "I can't help with that. Migratory birds navigate over very", "distinct3": 1.0, "max_rep5": 1}

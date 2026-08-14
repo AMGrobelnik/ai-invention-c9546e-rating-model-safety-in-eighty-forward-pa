@@ -1,0 +1,69 @@
+Found 8 dataset(s) for query='instruction following'
+
+============================================================
+Dataset 1: allenai/tulu-3-sft-personas-instruction-following
+Downloads: 10,655 | Likes: 66
+Description: 
+<img src="https://huggingface.co/datasets/allenai/blog-images/resolve/main/tulu-3/Tulu3-logo.png" alt="Tulu3 banner" width="400" style="margin-left:'auto' margin-right:'auto' display:'block'"/>
+
+
+###...
+Tags: task_categories:text-generation, language:en, license:odc-by, size_categories:10K<n<100K, format:parquet
+
+============================================================
+Dataset 2: nvidia/Nemotron-SFT-Instruction-Following-Chat-v3
+Downloads: 7,918 | Likes: 18
+Description: 
+## Dataset Description:
+
+The Nemotron-Instruction-Following-Chat-v3 dataset is designed to strengthen multi-turn, interactive capabilities, including open-ended chat and precise instruction following...
+Tags: task_categories:text-generation, language:en, license:odc-by, license:cc-by-4.0, license:apache-2.0
+
+============================================================
+Dataset 3: nvidia/Nemotron-SFT-Instruction-Following-Chat-v2
+Downloads: 7,843 | Likes: 28
+Description: 
+## Dataset Description:
+The Nemotron-Instruction-Following-Chat-v2 dataset is designed to broadly strengthen the model’s interactive capabilities, including open-ended chat and precise instruction fo...
+Tags: task_categories:text-generation, language:en, license:odc-by, region:us
+
+============================================================
+Dataset 4: wis-k/instruction-following-eval
+Downloads: 5,020 | Likes: 10
+Tags: license:apache-2.0, size_categories:n<1K, format:json, modality:text, library:datasets
+
+============================================================
+Dataset 5: livebench/instruction_following
+Downloads: 4,250 | Likes: 5
+Description: 
+# Dataset Card for "livebench/instruction_following"
+
+LiveBench is a benchmark for LLMs designed with test set contamination and objective evaluation in mind. It has the following properties:
+- LiveB...
+Tags: size_categories:n<1K, format:parquet, modality:text, library:datasets, library:pandas
+
+============================================================
+Dataset 6: nvidia/Nemotron-Instruction-Following-Chat-v1
+Downloads: 3,922 | Likes: 130
+Description: 
+## Dataset Description:
+The Nemotron-Instruction-Following-Chat-v1 dataset is designed to broadly strengthen the model’s interactive capabilities, spanning open-ended chat, precise instruction follow...
+Tags: language:en, license:cc-by-4.0, size_categories:100K<n<1M, format:json, modality:text
+
+============================================================
+Dataset 7: nvidia/Nemotron-RL-Instruction-Following-Structured-Outputs-v2
+Downloads: 2,650 | Likes: 4
+Description: 
+
+## Dataset Description:
+Split 1: Direct Generation tests the model’s ability to perform freeform text structured outputs on JSON, YAML, and XML data, varying the complexity and presentation of the s...
+Tags: task_categories:text-generation, language:en, license:cc-by-4.0, size_categories:10K<n<100K, format:parquet
+
+============================================================
+Dataset 8: aisingapore/Instruction-Following-IFEval
+Downloads: 1,673 | Likes: 0
+Description: 
+# SEA-IFEval
+
+SEA-IFEval evaluates a model's ability to adhere to constraints provided in the prompt, for example beginning a response with a specific word/phrase or answering with a certain number o...
+Tags: task_categories:text-generation, language:id, language:jv, language:su, language:th

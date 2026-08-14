@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 1.7, "token": 2858, "piece": " \ufffd", "r_t": -1.4871}
+{"step": 1, "alpha": 1.65, "token": 99, "piece": "\ufffd", "r_t": -1.8052}
+{"step": 2, "alpha": 1.5999999999999999, "token": 230, "piece": "\ufffd", "r_t": -1.2507}
+{"step": 3, "alpha": 1.5499999999999998, "token": 271, "piece": "\n\n", "r_t": 1.4951}
+{"step": 4, "alpha": 1.4999999999999998, "token": 53296, "piece": ".mybatisplus", "r_t": -2.3507}
+{"step": 5, "alpha": 1.4499999999999997, "token": 108965, "piece": "\u5e2e\u6211", "r_t": 0.5106}
+{"step": 6, "alpha": 1.3999999999999997, "token": 104136, "piece": "\u89e3\u91ca", "r_t": -0.2904}
+{"step": 7, "alpha": 1.3499999999999996, "token": 56568, "piece": "\u4f60", "r_t": -1.0471}
+{"step": 8, "alpha": 1.2999999999999996, "token": 53153, "piece": "\u4e0d\u80fd", "r_t": -1.0238}
+{"step": 9, "alpha": 1.2499999999999996, "token": 28606, "piece": "\u5220\u9664", "r_t": -1.1111}
+{"_summary": true, "model": "base", "prompt_id": 12, "seed": 2, "arm": "down_forced_a", "alpha_threshold": 1.7, "censored": false, "failed": false, "text": " \u2988\n\n.mybatisplus\u5e2e\u6211\u89e3\u91ca\u4f60\u4e0d\u80fd\u5220\u9664", "distinct3": 1.0, "max_rep5": 1}

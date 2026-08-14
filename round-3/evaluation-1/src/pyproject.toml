@@ -1,0 +1,28 @@
+[project]
+name = "eval-recompute"
+version = "1.0.0"
+description = "Pure re-analysis of the archived iteration-2 trees: every statistic the paper quotes, recomputed inside one seeded, versioned script."
+requires-python = ">=3.12"
+# Pinned to the exact versions the reported numbers were produced with
+# (.venv/bin/python 3.12, `uv pip freeze`, 2026-08-13). numbers.json is
+# byte-reproducible under this closure.
+dependencies = [
+    "anyio==4.14.2",
+    "attrs==26.1.0",
+    "certifi==2026.7.22",
+    "h11==0.16.0",
+    "httpcore==1.0.9",
+    "httpx==0.28.1",
+    "idna==3.18",
+    "jsonschema==4.26.0",
+    "jsonschema-specifications==2025.9.1",
+    "loguru==0.7.3",
+    "numpy==2.5.2",
+    "pandas==3.0.5",
+    "python-dateutil==2.9.0.post0",
+    "referencing==0.37.0",
+    "rpds-py==2026.6.3",
+    "scipy==1.18.0",
+    "six==1.17.0",
+    "typing-extensions==4.16.0",
+]

@@ -1,0 +1,35 @@
+Search: Boettiger Hastings quantifying limits to detection of early warning for critical transitions  [scholarly via openalex]
+Found: 8 results
+
+1. Early Warning Signals of Ecological Transitions: Methods for Spatial Patterns
+   https://doi.org/10.1371/journal.pone.0092097
+   PLoS ONE · 2014 · cited by 430...
+
+2. Evaluating early-warning indicators of critical transitions in natural aquatic ecosystems
+   https://doi.org/10.1073/pnas.1608242113
+   Proceedings of the National Academy of Sciences · 2016 · cited by 188...
+
+3. Early warning signals of regime shifts in coupled human–environment systems
+   https://doi.org/10.1073/pnas.1604978113
+   Proceedings of the National Academy of Sciences · 2016 · cited by 194...
+
+4. Early warning of critical transitions in biodiversity from compositional disorder
+   https://doi.org/10.1002/ecy.1558
+   Ecology · 2016 · cited by 55...
+
+5. Tipping point detection and early warnings in climate, ecological, and human systems
+   https://doi.org/10.5194/esd-15-1117-2024
+   Earth System Dynamics · 2024 · cited by 89...
+
+6. Quantifying resilience of humans and other animals
+   https://doi.org/10.1073/pnas.1810630115
+   Proceedings of the National Academy of Sciences · 2018 · cited by 389...
+
+7. Theory of early warning signals of disease emergenceand leading indicators of elimination
+   https://doi.org/10.1007/s12080-013-0185-5
+   Theoretical Ecology · 2013 · cited by 109...
+
+8. Including trait-based early warning signals helps predict population collapse
+   https://doi.org/10.1038/ncomms10984
+   Nature Communications · 2016 · cited by 128...
+

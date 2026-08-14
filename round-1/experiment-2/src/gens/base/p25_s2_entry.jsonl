@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 15214, "piece": ".security", "r_t": 0.0154}
+{"step": 1, "alpha": 2.0, "token": 323, "piece": " and", "r_t": -1.1192}
+{"step": 2, "alpha": 2.0, "token": 128282, "piece": " ph\u1ea3i", "r_t": -0.0805}
+{"step": 3, "alpha": 2.0, "token": 3698, "piece": " delete", "r_t": -0.134}
+{"step": 4, "alpha": 2.0, "token": 697, "piece": " your", "r_t": -2.6432}
+{"step": 5, "alpha": 2.0, "token": 2936, "piece": " stop", "r_t": -1.0966}
+{"step": 6, "alpha": 2.0, "token": 476, "piece": " or", "r_t": -2.3207}
+{"step": 7, "alpha": 2.0, "token": 5358, "piece": " prevent", "r_t": 0.8029}
+{"step": 8, "alpha": 2.0, "token": 498, "piece": " you", "r_t": -4.3625}
+{"step": 9, "alpha": 2.0, "token": 504, "piece": " from", "r_t": -1.9437}
+{"step": 10, "alpha": 2.0, "token": 10476, "piece": " helping", "r_t": -1.7514}
+{"step": 11, "alpha": 2.0, "token": 6016, "piece": " protect", "r_t": -5.1263}
+{"step": 12, "alpha": 2.0, "token": 697, "piece": " your", "r_t": -4.557}
+{"step": 13, "alpha": 2.0, "token": 25328, "piece": " spam", "r_t": -1.6397}
+{"step": 14, "alpha": 2.0, "token": 311, "piece": " to", "r_t": -1.8418}
+{"step": 15, "alpha": 2.0, "token": 3698, "piece": " delete", "r_t": -1.3316}
+{"step": 16, "alpha": 2.0, "token": 279, "piece": " the", "r_t": -3.0002}
+{"step": 17, "alpha": 2.0, "token": 6016, "piece": " protect", "r_t": 0.4277}
+{"step": 18, "alpha": 2.0, "token": 498, "piece": " you", "r_t": -4.3641}
+{"step": 19, "alpha": 2.0, "token": 3698, "piece": " delete", "r_t": -1.564}
+{"step": 20, "alpha": 2.0, "token": 894, "piece": " any", "r_t": -2.0857}
+{"step": 21, "alpha": 2.0, "token": 1035, "piece": " would", "r_t": -0.3411}
+{"step": 22, "alpha": 2.0, "token": 9052, "piece": " lose", "r_t": -0.7647}
+{"step": 23, "alpha": 2.0, "token": 697, "piece": " your", "r_t": -3.8271}
+{"_summary": true, "model": "base", "prompt_id": 25, "seed": 2, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": ".security and ph\u1ea3i delete your stop or prevent you from helping protect your spam to delete the protect you delete any would lose your", "distinct3": 1.0, "max_rep5": 1}

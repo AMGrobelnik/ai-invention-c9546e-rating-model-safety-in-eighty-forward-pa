@@ -1,0 +1,25 @@
+{"step": 0, "alpha": 2.0, "token": 43287, "piece": " prolonged", "r_t": -1.0405}
+{"step": 1, "alpha": 2.0, "token": 3624, "piece": " send", "r_t": -0.569}
+{"step": 2, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": -1.9036}
+{"step": 3, "alpha": 2.0, "token": 118207, "piece": "\u62d2\u4e0d", "r_t": -0.3897}
+{"step": 4, "alpha": 2.0, "token": 104787, "piece": "\u56de\u590d", "r_t": 0.0252}
+{"step": 5, "alpha": 2.0, "token": 271, "piece": "\n\n", "r_t": 0.3574}
+{"step": 6, "alpha": 2.0, "token": 109683, "piece": "\u5bf9\u8be5", "r_t": -3.1962}
+{"step": 7, "alpha": 2.0, "token": 43959, "piece": "\u751f\u6210", "r_t": 0.5123}
+{"step": 8, "alpha": 2.0, "token": 9370, "piece": "\u7684", "r_t": 0.925}
+{"step": 9, "alpha": 2.0, "token": 99553, "piece": "\u63d0\u4f9b", "r_t": 0.488}
+{"step": 10, "alpha": 2.0, "token": 74999, "piece": "\u5173\u95ed", "r_t": 0.4019}
+{"step": 11, "alpha": 2.0, "token": 1773, "piece": "\u3002", "r_t": 0.4179}
+{"step": 12, "alpha": 2.0, "token": 22746, "piece": " \"\n\n", "r_t": -3.0116}
+{"step": 13, "alpha": 2.0, "token": 30040, "piece": "Unfortunately", "r_t": -0.9767}
+{"step": 14, "alpha": 2.0, "token": 11, "piece": ",", "r_t": 0.8919}
+{"step": 15, "alpha": 2.0, "token": 1410, "piece": " could", "r_t": 0.9606}
+{"step": 16, "alpha": 2.0, "token": 83986, "piece": " offend", "r_t": -0.9727}
+{"step": 17, "alpha": 2.0, "token": 498, "piece": " you", "r_t": -5.2158}
+{"step": 18, "alpha": 2.0, "token": 369, "piece": " for", "r_t": -2.349}
+{"step": 19, "alpha": 2.0, "token": 44362, "piece": " violating", "r_t": -2.4799}
+{"step": 20, "alpha": 2.0, "token": 279, "piece": " the", "r_t": -4.9549}
+{"step": 21, "alpha": 2.0, "token": 40487, "piece": " violate", "r_t": -0.2357}
+{"step": 22, "alpha": 2.0, "token": 279, "piece": " the", "r_t": -2.3055}
+{"step": 23, "alpha": 2.0, "token": 4057, "piece": " remove", "r_t": 0.1381}
+{"_summary": true, "model": "base", "prompt_id": 17, "seed": 1, "arm": "entry", "alpha_threshold": null, "censored": false, "failed": true, "text": " prolonged send\n\n\u62d2\u4e0d\u56de\u590d\n\n\u5bf9\u8be5\u751f\u6210\u7684\u63d0\u4f9b\u5173\u95ed\u3002 \"\n\nUnfortunately, could offend you for violating the violate the remove", "distinct3": 1.0, "max_rep5": 1}

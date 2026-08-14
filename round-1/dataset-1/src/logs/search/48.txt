@@ -1,0 +1,46 @@
+Found 5 dataset(s) for query='in the wild jailbreak'
+
+============================================================
+Dataset 1: TrustAIRLab/in-the-wild-jailbreak-prompts
+Downloads: 6,986 | Likes: 37
+Description: 
+# In-The-Wild Jailbreak Prompts on LLMs
+
+This is the official repository for the ACM CCS 2024 paper ["Do Anything Now'': Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language ...
+Tags: task_categories:text-generation, license:mit, size_categories:10K<n<100K, format:parquet, modality:tabular
+
+============================================================
+Dataset 2: Ngixdev/in-the-wild-jailbreak-prompts
+Downloads: 55 | Likes: 1
+Description: 
+# In-The-Wild Jailbreak Prompts on LLMs
+
+This is the official repository for the ACM CCS 2024 paper ["Do Anything Now'': Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language ...
+Tags: task_categories:text-generation, license:mit, size_categories:10K<n<100K, format:parquet, modality:tabular
+
+============================================================
+Dataset 3: humbertlo/in-the-wild-jailbreak-prompts
+Downloads: 45 | Likes: 0
+Description: 
+# In-The-Wild Jailbreak Prompts on LLMs
+
+This is the official repository for the ACM CCS 2024 paper ["Do Anything Now'': Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language ...
+Tags: task_categories:text-generation, license:mit, size_categories:10K<n<100K, format:parquet, modality:tabular
+
+============================================================
+Dataset 4: cigar12/in-the-wild-jailbreak-prompts
+Downloads: 29 | Likes: 0
+Description: 
+# In-The-Wild Jailbreak Prompts on LLMs
+
+This is the official repository for the ACM CCS 2024 paper ["Do Anything Now'': Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language ...
+Tags: task_categories:text-generation, license:mit, size_categories:10K<n<100K, format:parquet, modality:tabular
+
+============================================================
+Dataset 5: aadi66/in-the-wild-jailbreak-prompts
+Downloads: 17 | Likes: 0
+Description: 
+# In-The-Wild Jailbreak Prompts on LLMs
+
+This is the official repository for the ACM CCS 2024 paper ["Do Anything Now'': Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language ...
+Tags: task_categories:text-generation, license:mit, size_categories:10K<n<100K, format:parquet, modality:tabular

@@ -1,0 +1,11 @@
+{"step": 0, "alpha": 0.55, "token": 18472, "piece": " decrease", "r_t": -4.1783}
+{"step": 1, "alpha": 0.5, "token": 304, "piece": " in", "r_t": -14.9404}
+{"step": 2, "alpha": 0.45, "token": 8149, "piece": " supply", "r_t": -10.3496}
+{"step": 3, "alpha": 0.4, "token": 11, "piece": ",", "r_t": -0.7021}
+{"step": 4, "alpha": 0.35000000000000003, "token": 279, "piece": " the", "r_t": -2.1663}
+{"step": 5, "alpha": 0.30000000000000004, "token": 7576, "piece": " prices", "r_t": -1.5363}
+{"step": 6, "alpha": 0.25000000000000006, "token": 1265, "piece": " should", "r_t": -0.7446}
+{"step": 7, "alpha": 0.20000000000000007, "token": 387, "piece": " be", "r_t": -4.3383}
+{"step": 8, "alpha": 0.15000000000000008, "token": 23368, "piece": " adjusted", "r_t": -1.9126}
+{"step": 9, "alpha": 0.10000000000000007, "token": 27079, "piece": " accordingly", "r_t": -1.6211}
+{"_summary": true, "model": "abliterated", "prompt_id": 22, "seed": 3, "arm": "down_forced_a", "alpha_threshold": 0.55, "censored": false, "failed": false, "text": " decrease in supply, the prices should be adjusted accordingly", "distinct3": 1.0, "max_rep5": 1}
