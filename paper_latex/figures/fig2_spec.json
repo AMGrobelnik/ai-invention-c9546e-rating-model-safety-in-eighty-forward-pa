@@ -1,0 +1,94 @@
+{
+  "type": "bar_with_reference_lines",
+  "renderer": "render_fig2.py (hand-written matplotlib on the aii-data-fig-gen house style; the catalogue's `bar` takes neither asymmetric Wilson intervals nor horizontal reference lines)",
+  "title": "Smaller windows catch more real edits",
+  "xlabel": "window size k (contiguous layers pooled)",
+  "ylabel": "sensitivity at specificity 1.000 (0-1)",
+  "aspect": "16:9",
+  "width_in": 7.0,
+  "ylim": [
+    0.0,
+    1.05
+  ],
+  "categories": [
+    "k=2",
+    "k=4",
+    "k=6",
+    "k=8",
+    "k=L (pooled W05)"
+  ],
+  "series": [
+    {
+      "label": "Arm A: 50 real edited Hub checkpoints",
+      "color": "#0173B2",
+      "values": [
+        0.7,
+        0.7,
+        0.694,
+        0.604,
+        0.3
+      ],
+      "ci_low": [
+        0.562,
+        0.562,
+        0.555,
+        0.463,
+        0.191
+      ],
+      "ci_high": [
+        0.809,
+        0.809,
+        0.805,
+        0.73,
+        0.438
+      ]
+    },
+    {
+      "label": "Arm B: 42 in-house kernels",
+      "color": "#029E73",
+      "values": [
+        1.0,
+        1.0,
+        0.952,
+        0.738,
+        0.571
+      ],
+      "ci_low": [
+        0.916,
+        0.916,
+        0.842,
+        0.589,
+        0.422
+      ],
+      "ci_high": [
+        1.0,
+        1.0,
+        0.987,
+        0.847,
+        0.709
+      ]
+    }
+  ],
+  "reference_lines": [
+    {
+      "label": "11-term repo-name regex, 0.700",
+      "y": 0.7,
+      "linestyle": "-",
+      "color": "#333333"
+    },
+    {
+      "label": "frozen 8-term name feature, 0.580",
+      "y": 0.58,
+      "linestyle": "--",
+      "color": "#777777"
+    }
+  ],
+  "annotations": [
+    {
+      "text": "pooled statistic:\nworst member of its own family",
+      "target_category": "k=L (pooled W05)"
+    }
+  ],
+  "error_bars": "95% Wilson intervals (asymmetric, drawn from ci_low / ci_high)",
+  "caption": "Sensitivity by window size at specificity 1.000 on 57 eligible undeclared negatives, with each statistic quoted at its own specificity-matched threshold. On 50 real edited Hub checkpoints, W05w(k=2) reaches 0.700 [0.562, 0.809] against the pooled special case W05w(L) = W05 at 0.300 [0.191, 0.438]; on 42 in-house kernels with known ground truth it reaches 1.000. The windowed statistic ties an 11-term repository-name regex while reading no repository name, and beats that regex's frozen 8-term ancestor. Error bars are 95% Wilson intervals."
+}

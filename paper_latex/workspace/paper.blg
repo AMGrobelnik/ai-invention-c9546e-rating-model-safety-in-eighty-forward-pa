@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+Warning--empty author in BackdooredLoRA2026
+You've used 38 entries,
+            2773 wiz_defined-function locations,
+            813 strings with 12738 characters,
+and the built_in function-call counts, 19090 in all, are:
+= -- 1551
+> -- 1502
+< -- 28
++ -- 512
+- -- 474
+* -- 1565
+:= -- 3026
+add.period$ -- 134
+call.type$ -- 38
+change.case$ -- 272
+chr.to.int$ -- 38
+cite$ -- 77
+duplicate$ -- 797
+empty$ -- 1372
+format.name$ -- 514
+if$ -- 3939
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 31
+newline$ -- 218
+num.names$ -- 144
+pop$ -- 595
+preamble$ -- 1
+purify$ -- 234
+quote$ -- 0
+skip$ -- 668
+stack$ -- 0
+substring$ -- 201
+swap$ -- 91
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 418
+warning$ -- 1
+while$ -- 114
+width$ -- 0
+write$ -- 521
+(There was 1 warning)

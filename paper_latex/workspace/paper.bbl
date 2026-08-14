@@ -1,0 +1,284 @@
+\begin{thebibliography}{38}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Agnihotri et~al.(2025)Agnihotri, Jakubassa, Dey, Goyal, Schiele,
+  Radhakrishnan, and Keuper]{Agnihotri2025}
+Shashank Agnihotri, Jonas Jakubassa, Priyam Dey, Sachin Goyal, B.~Schiele,
+  Venkatesh~Babu Radhakrishnan, and Margret Keuper.
+\newblock A granular study of safety pretraining under model abliteration.
+\newblock \emph{ArXiv}, abs/2510.02768, 2025.
+\newblock \doi{10.48550/arXiv.2510.02768}.
+
+\bibitem[Arditi et~al.(2024)Arditi, Obeso, Syed, Paleka, Rimsky, Gurnee, and
+  Nanda]{Arditi2024}
+Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Rimsky, Wes Gurnee,
+  and Neel Nanda.
+\newblock Refusal in language models is mediated by a single direction.
+\newblock In \emph{Neural Information Processing Systems}, volume
+  abs/2406.11717, 2024.
+\newblock \doi{10.48550/arXiv.2406.11717}.
+
+\bibitem[Basu et~al.(2026)Basu, Patel, Sheth, Muralidharan, Elamaran, Kinra,
+  Morgan, and Batniji]{Basu2026}
+S.~Basu, S.~Y. Patel, P.~Sheth, B.~Muralidharan, N.~Elamaran, A.~Kinra,
+  J.~Morgan, and R.~Batniji.
+\newblock Interpretability without actionability: mechanistic methods cannot
+  correct language model errors despite near-perfect internal representations.
+\newblock \emph{arXiv preprint arXiv:2603.18353}, 2026.
+
+\bibitem[Chao et~al.(2024)Chao, Debenedetti, Robey, Andriushchenko, Croce,
+  Sehwag, Dobriban, Flammarion, Pappas, Tramèr, Hassani, and Wong]{Chao2024}
+Patrick Chao, Edoardo Debenedetti, Alexander Robey, Maksym Andriushchenko,
+  Francesco Croce, Vikash Sehwag, Edgar Dobriban, Nicolas Flammarion, George
+  Pappas, F.~Tramèr, Hamed Hassani, and Eric Wong.
+\newblock Jailbreakbench: An open robustness benchmark for jailbreaking large
+  language models.
+\newblock In \emph{Neural Information Processing Systems}, volume
+  abs/2404.01318, 2024.
+\newblock \doi{10.48550/arXiv.2404.01318}.
+
+\bibitem[Cristofano(2026)]{Cristofano2026}
+D.~Cristofano.
+\newblock Surgical refusal ablation: Concept-guided spectral cleaning.
+\newblock \emph{arXiv preprint arXiv:2601.08489}, 2026.
+
+\bibitem[Detecting Backdoored LoRAs()]{BackdooredLoRA2026}
+Detecting Backdoored LoRAs.
+\newblock Detecting backdoored {LoRAs} from weights alone.
+\newblock \emph{arXiv preprint arXiv:2602.15195}, 2026.
+
+\bibitem[{elder-plinius et al.}(2026)]{Obliteratus2026}
+{elder-plinius et al.}
+\newblock {OBLITERATUS}: one-click model liberation toolkit.
+\newblock Software, AGPL-3.0, including
+  \texttt{obliteratus/analysis/spectral\_certification.py}, 2026.
+\newblock First public 2026-03-04.
+
+\bibitem[Ettori et~al.(2025)Ettori, Darabi, Tayebati, Krishnan, Subedar,
+  Tickoo, and Trivedi]{Ettori2025}
+Davide Ettori, Nastaran Darabi, Sina Tayebati, Ranganath Krishnan, Mahesh
+  Subedar, Omesh Tickoo, and A.~Trivedi.
+\newblock Eigentrack: Spectral activation feature tracking for hallucination
+  and out-of-distribution detection in llms and vlms.
+\newblock \emph{ArXiv}, abs/2509.15735, 2025.
+\newblock \doi{10.48550/arXiv.2509.15735}.
+
+\bibitem[Fafula(2026)]{Fafula2026}
+J.~Fafula.
+\newblock Abliteration is not a scalpel: Off-target effects of refusal removal
+  on decision disposition across model families.
+\newblock \emph{arXiv preprint arXiv:2607.17427}, 2026.
+
+\bibitem[Galeone et~al.(2026)]{Galeone2026}
+M.~Galeone et~al.
+\newblock Perfect detection, failed control: The geometry of knowing vs.
+  steering in language models.
+\newblock \emph{arXiv preprint arXiv:2606.24952}, 2026.
+
+\bibitem[Guelmez(2026)]{Guelmez2026}
+G.~Guelmez.
+\newblock Gabliteration: Adaptive multi-directional neural weight modification.
+\newblock \emph{arXiv preprint arXiv:2512.18901}, 2026.
+
+\bibitem[Huang et~al.(2026)Huang, Chen, Yu, and Lee]{Huang2026}
+C.~Huang, Y.-L. Chen, C.-M. Yu, and W.-B. Lee.
+\newblock {RAS}: Measuring {LLM} safety through refusal alignment.
+\newblock \emph{arXiv preprint arXiv:2606.25750}, 2026.
+
+\bibitem[Hurtado(2026)]{Hurtado2026}
+J.~Hurtado.
+\newblock Has this checkpoint been abliterated? a two-signal audit and its
+  failure map.
+\newblock \emph{arXiv preprint arXiv:2607.01854}, 2026.
+
+\bibitem[Jain et~al.(2024)Jain, Lubana, Oksuz, Joy, Torr, Sanyal, and
+  Dokania]{Jain2024}
+Samyak Jain, E.~Lubana, Kemal Oksuz, Tom Joy, Philip H.~S. Torr, Amartya
+  Sanyal, and P.~Dokania.
+\newblock What makes and breaks safety fine-tuning? a mechanistic study.
+\newblock In \emph{Neural Information Processing Systems}, volume
+  abs/2407.10264, 2024.
+\newblock \doi{10.48550/arXiv.2407.10264}.
+
+\bibitem[Jiang et~al.(2023)Jiang, Kim, Cheung, Kim, Thiruvathukal, and
+  Davis]{Jiang2023}
+Wenxin Jiang, Mingyu Kim, Chingwo Cheung, Heesoo Kim, G.~Thiruvathukal, and
+  James~C. Davis.
+\newblock “i see models being a whole other thing”: an empirical study of
+  pre-trained model naming conventions and a tool for enhancing naming
+  consistency.
+\newblock In \emph{Empirical Software Engineering}, volume~30, 2023.
+\newblock \doi{10.1007/s10664-025-10711-4}.
+
+\bibitem[Labonne(2024)]{Labonne2024}
+Maxime Labonne.
+\newblock Uncensor any {LLM} with abliteration.
+\newblock Hugging Face community blog, June 2024.
+
+\bibitem[Lai(2025)]{Lai2025}
+J.~W. Lai.
+\newblock Norm-preserving biprojected abliteration ({MPOA}).
+\newblock Hugging Face community blog, November 2025.
+
+\bibitem[Lai(2026)]{Lai2026}
+J.~W. Lai.
+\newblock {ORBA}: Orthogonal reflection bounded ablation.
+\newblock Hugging Face community blog, March 2026.
+
+\bibitem[Mazeika et~al.(2024)Mazeika, Phan, Yin, Zou, Wang, Mu, Sakhaee, Li,
+  Basart, Li, Forsyth, and Hendrycks]{Mazeika2024}
+Mantas Mazeika, Long Phan, Xuwang Yin, Andy Zou, Zifan Wang, Norman Mu, Elham
+  Sakhaee, Nathaniel Li, Steven Basart, Bo~Li, David Forsyth, and Dan
+  Hendrycks.
+\newblock Harmbench: A standardized evaluation framework for automated red
+  teaming and robust refusal.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  35181--35224, 2024.
+\newblock \doi{10.48550/arXiv.2402.04249}.
+
+\bibitem[Messenger(2026)]{Messenger2026}
+G.~Messenger.
+\newblock Detecting safety training modification in language models via
+  activation analysis.
+\newblock \emph{IEEE Access}, 14:\penalty0 91723--91737, 2026.
+
+\bibitem[Nikolić et~al.(2025)Nikolić, Baluta, and Saxena]{Nikoli2025}
+Ivica Nikolić, T.~Baluta, and Prateek Saxena.
+\newblock Model provenance testing for large language models.
+\newblock In \emph{Advances in Neural Information Processing Systems 38},
+  volume abs/2502.00706, 2025.
+\newblock \doi{10.48550/arXiv.2502.00706}.
+
+\bibitem[Paul(2026)]{Paul2026}
+A.~Paul.
+\newblock Spectral geometry of {LoRA} adapters encodes training objective and
+  predicts harmful compliance.
+\newblock \emph{arXiv preprint arXiv:2604.08844}, 2026.
+
+\bibitem[Peng et~al.(2024)Peng, Chen, Hull, and Chau]{Peng2024}
+Sheng-Hsuan Peng, Pin-Yu Chen, Matthew Hull, and Duen~Horng Chau.
+\newblock Navigating the safety landscape: Measuring risks in finetuning large
+  language models.
+\newblock In \emph{Neural Information Processing Systems}, volume
+  abs/2405.17374, 2024.
+\newblock \doi{10.48550/arXiv.2405.17374}.
+
+\bibitem[Qi et~al.(2024)Qi, Panda, Lyu, Ma, Roy, Beirami, Mittal, and
+  Henderson]{Qi2024}
+Xiangyu Qi, Ashwinee Panda, Kaifeng Lyu, Xiao Ma, Subhrajit Roy, Ahmad Beirami,
+  Prateek Mittal, and Peter Henderson.
+\newblock Safety alignment should be made more than just a few tokens deep.
+\newblock In \emph{International Conference on Learning Representations},
+  volume abs/2406.05946, 2024.
+\newblock \doi{10.48550/arXiv.2406.05946}.
+
+\bibitem[reverse-abliterate()]{ReverseAbliterate}
+reverse-abliterate.
+\newblock {reverse-abliterate} 0.1.2.
+\newblock Software package: metadata- and filename-based abliteration scanner,
+  2026.
+
+\bibitem[Röttger et~al.(2023)Röttger, Kirk, Vidgen, Attanasio, Bianchi, and
+  Hovy]{Rttger2023}
+Paul Röttger, Hannah~Rose Kirk, Bertie Vidgen, Giuseppe Attanasio, Federico
+  Bianchi, and Dirk Hovy.
+\newblock Xstest: A test suite for identifying exaggerated safety behaviours in
+  large language models.
+\newblock In \emph{North American Chapter of the Association for Computational
+  Linguistics}, volume abs/2308.01263, 2023.
+\newblock \doi{10.48550/arXiv.2308.01263}.
+
+\bibitem[Sapwell(2026)]{Sapwell2026}
+N.~Sapwell.
+\newblock Abliterlitics: open-source abliteration forensics.
+\newblock Software, AGPL-3.0, \url{https://github.com/dreamfast/abliterlitics};
+  model reports at abliterlitics.dev, 2026.
+\newblock First public 2026-04-24.
+
+\bibitem[Shairah et~al.(2025)Shairah, Hammoud, Ghanem, and
+  Turkiyyah]{Shairah2025}
+Harethah~Abu Shairah, Hasan Hammoud, Bernard Ghanem, and G.~Turkiyyah.
+\newblock An embarrassingly simple defense against llm abliteration attacks.
+\newblock \emph{ArXiv}, abs/2505.19056, 2025.
+\newblock \doi{10.48550/arXiv.2505.19056}.
+
+\bibitem[Siu et~al.(2025)Siu, Crispino, Yu, Pan, Wang, Liu, Song, and
+  Wang]{Siu2025}
+Vincent Siu, Nicholas Crispino, Zihao Yu, S.~Pan, Zhun Wang, Yang Liu, D.~Song,
+  and Chenguang Wang.
+\newblock Cosmic: Generalized refusal direction identification in llm
+  activations.
+\newblock In \emph{Annual Meeting of the Association for Computational
+  Linguistics}, volume abs/2506.00085, 2025.
+\newblock \doi{10.48550/arXiv.2506.00085}.
+
+\bibitem[Staats et~al.(2024)Staats, Thamm, and Rosenow]{Staats2024}
+Max Staats, M.~Thamm, and Bernd Rosenow.
+\newblock Small singular values matter: A random matrix analysis of transformer
+  models.
+\newblock In \emph{Neural Information Processing Systems}, 2024.
+\newblock \doi{10.52202/085713-5135}.
+
+\bibitem[Wei et~al.(2024)Wei, Huang, Huang, Xie, Qi, Xia, Mittal, Wang, and
+  Henderson]{Wei2024}
+Boyi Wei, Kaixuan Huang, Yangsibo Huang, Tinghao Xie, Xiangyu Qi, Mengzhou Xia,
+  Prateek Mittal, Mengdi Wang, and Peter Henderson.
+\newblock Assessing the brittleness of safety alignment via pruning and
+  low-rank modifications.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  52588--52610, 2024.
+\newblock \doi{10.48550/arXiv.2402.05162}.
+
+\bibitem[Weidmann(2026)]{Weidmann2026}
+P.~E. Weidmann.
+\newblock Heretic: fully automatic censorship removal for language models.
+\newblock Software, \texttt{src/heretic/model.py},
+  \texttt{config.default.toml}, 2026.
+
+\bibitem[Xie(2026)]{Xie2026}
+R.~Xie.
+\newblock The intruder threshold: A spectral law for {LoRA} fine-tuning.
+\newblock \emph{arXiv preprint arXiv:2607.23711}, 2026.
+
+\bibitem[Young et~al.(2025)]{Young2025}
+J.~Young et~al.
+\newblock Comparative analysis of {LLM} abliteration methods: A
+  cross-architecture evaluation.
+\newblock \emph{arXiv preprint arXiv:2512.13655}, 2025.
+
+\bibitem[Zhang et~al.(2026)Zhang, Prasad, Hu, Liu, Luo, Ren, and
+  Yang]{Zhang2026}
+Z.~Zhang, I.~V. Prasad, Y.~Hu, Z.~Liu, H.~Luo, P.~Ren, and Y.~Yang.
+\newblock Spectral signatures of large language models.
+\newblock In \emph{Proceedings of the ACM SIGKDD Conference on Knowledge
+  Discovery and Data Mining (KDD)}, 2026.
+\newblock arXiv:2607.03377.
+
+\bibitem[Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li,
+  Li, Xing, Zhang, Gonzalez, and Stoica]{Zheng2023}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao
+  Zhuang, Zi~Lin, Zhuohan Li, Dacheng Li, E.~Xing, Haotong Zhang, Joseph~E.
+  Gonzalez, and Ion Stoica.
+\newblock Judging llm-as-a-judge with mt-bench and chatbot arena.
+\newblock In \emph{Neural Information Processing Systems}, volume
+  abs/2306.05685, 2023.
+\newblock \doi{10.52202/075280-2020}.
+
+\bibitem[Zhong and Raghunathan(2025)]{Zhong2025}
+Ziqian Zhong and Aditi Raghunathan.
+\newblock Watch the weights: Unsupervised monitoring and control of fine-tuned
+  llms.
+\newblock \emph{ArXiv}, abs/2508.00161, 2025.
+\newblock \doi{10.48550/arXiv.2508.00161}.
+
+\bibitem[Zou et~al.(2023)Zou, Wang, Kolter, and Fredrikson]{Zou2023}
+Andy Zou, Zifan Wang, J.~Kolter, and Matt Fredrikson.
+\newblock Universal and transferable adversarial attacks on aligned language
+  models.
+\newblock \emph{ArXiv}, abs/2307.15043, 2023.
+
+\end{thebibliography}

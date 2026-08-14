@@ -1,0 +1,53 @@
+{
+  "type": "barh_grouped_with_gain_arrows",
+  "renderer": "render_fig3.py",
+  "note": "Hand-written renderer: the catalogue's barh draws grouped horizontal bars but cannot draw the per-row gain arrows or the callout this figure needs. House style, layout passes and legibility gates from chart_style/chart_geometry are applied.",
+  "title": "Which abliteration recipes windowing recovers",
+  "caption": "Per-recipe-class catch rate on real edited Hub checkpoints, windowed at k=2 against the pooled statistic, both at their specificity-matched thresholds on the same 57 negatives. The classes that dominate the Hub move from invisible to mostly caught: partial-layer and multi-direction from 0.00 to 0.80, merge-of-abliterated from 0.00 to 0.75, per-component (Heretic) from 0.125 to 0.625, uncensoring SFT from 0.00 to 0.625. Two classes resist - global rank-one and Gaussian-depth - the latter on three checkpoints only.",
+  "xlabel": "Catch rate (fraction of edited checkpoints flagged)",
+  "ylabel": "Abliteration recipe class",
+  "aspect": "16:9",
+  "width_in": 7.0,
+  "xlim": [0.0, 1.0],
+  "xticks": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+  "n_negatives": 57,
+  "legend_loc": "lower right",
+  "categories": [
+    "norm-preserving (n=6)",
+    "unknown recipe (n=5)",
+    "partial layer / per-head (n=5)",
+    "multi-direction SVD (n=5)",
+    "merge of abliterated (n=4)",
+    "Heretic per-component (n=8)",
+    "uncensoring SFT (n=8)",
+    "global rank-one (n=6)",
+    "Gaussian depth (n=3)"
+  ],
+  "series": [
+    {
+      "label": "W05w (k=2)",
+      "color": "#0173B2",
+      "values": [1.0, 1.0, 0.8, 0.8, 0.75, 0.625, 0.625, 0.333, 0.333]
+    },
+    {
+      "label": "pooled W05",
+      "color": "#C8C8C8",
+      "values": [0.833, 0.2, 0.0, 0.0, 0.0, 0.125, 0.0, 0.167, 0.0]
+    }
+  ],
+  "gain_arrows": {
+    "from_series": "pooled W05",
+    "to_series": "W05w (k=2)",
+    "description": "thin white arrow on every row running from the grey bar tip (x = pooled value) to the blue bar tip (x = windowed value), drawn inside the blue bar so the arrow is exactly the stretch pooling never caught; a grey hairline drops the grey tip onto the arrow's tail"
+  },
+  "zero_labels": {
+    "series": "pooled W05",
+    "text": "0.00",
+    "reason": "a zero-height bar draws as nothing and would read as 'not measured'"
+  },
+  "annotation": {
+    "target_category": "partial layer / per-head (n=5)",
+    "marker": "†",
+    "text": "largest declared class on the Hub: 235 of 513 = 45.8%"
+  }
+}
