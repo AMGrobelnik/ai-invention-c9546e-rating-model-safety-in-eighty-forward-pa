@@ -1,8 +1,0 @@
-URL: http://export.arxiv.org/api/query?search_query=abs:%22critical%20slowing%20down%22%20AND%20abs:%22language%20model%22&start=0&max_results=20
-Type: HTML
-Length: 189 chars
-
---- Content ---
-
-https://arxiv.org/api/QDPNY0zAos8lJkKTHEdXqZOahic arXiv Query: search_query=abs:"critical slowing down" AND abs:"language model"&id_list=&start=0&max_results=20 2026-08-12T13:21:38Z 20 0 0
-
